@@ -8,3 +8,5 @@
 /data/phase_separe/
 /data/phase_vt/
 /data/phase_evenement/
+__pycache__/
+*.pyc
