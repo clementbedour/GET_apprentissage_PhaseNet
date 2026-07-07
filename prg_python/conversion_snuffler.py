@@ -63,7 +63,7 @@ def convertir_fichier_phase(fichier_entree, fichier_sortie, temps_origine_evenem
     # Étape 3 : Insérer l'événement principal
     # Si aucun temps d'origine n'est donné, on prend par défaut 0.5s avant la première phase P
     if temps_origine_evenement is None and marqueurs:
-        temps_origine_evenement = marqueurs[0][0] - timedelta(seconds=0.5)
+        temps_origine_evenement = marqueurs[0][0] - timedelta(seconds=0.0)
         
     if temps_origine_evenement:
         t_orig_str = temps_origine_evenement.strftime("%Y-%m-%d %H:%M:%S.%f")[:-2]
