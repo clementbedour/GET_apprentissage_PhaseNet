@@ -8,5 +8,6 @@
 /data/phase_separe/
 /data/phase_vt/
 /data/phase_evenement/
+/data/phase_snuffler/
 __pycache__/
 *.pyc
