@@ -35,7 +35,7 @@ def main():
 
     print(f"{len(marker_files)} fichiers trouvés.")
     
-    start_input = input("Par quel fichier commencer ?\nEntrez le nom du fichier ou Entrée pour le premier fichier) : ").strip()
+    start_input = input("Par quel fichier commencer ?\nEntrez le nom du fichier ou Entrée pour le premier fichier : ").strip()
     
     #var d'index pour savoir où on est (0 si Entrée, sinon on doit l'init jusqu'à trouver start_input)
     start_idx = 0
@@ -71,8 +71,8 @@ def main():
         year = event_date.strftime('%Y')
         jday = event_date.strftime('%j')
         
-        tmin_global = min_time - 10
-        tmax_global = min_time + 20
+        tmin_global = min_time - 40
+        tmax_global = min_time + 30
         
         print(f"Événement du {event_date.strftime('%Y-%m-%d %H:%M:%S')} UTC | Jour julien : {jday}")
         

@@ -1,0 +1,6 @@
+#dataset: GeoCSV 2.0
+#delimiter: |
+#field_unit: unitless | unitless | degrees_north | degrees_east | meters | unitless | ISO_8601 | ISO_8601
+#field_type: string | string | float | float | float | string | datetime | datetime
+Network|Station|Latitude|Longitude|Elevation|SiteName|StartTime|EndTime
+WI|SAM|14.84108|-61.1638|485.0|Savane Anatole - Martinique|2013-09-01T00:00:00.0000|

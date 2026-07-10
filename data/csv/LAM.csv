@@ -1,0 +1,6 @@
+#dataset: GeoCSV 2.0
+#delimiter: |
+#field_unit: unitless | unitless | degrees_north | degrees_east | meters | unitless | ISO_8601 | ISO_8601
+#field_type: string | string | float | float | float | string | datetime | datetime
+Network|Station|Latitude|Longitude|Elevation|SiteName|StartTime|EndTime
+MQ|LAM|14.81292|-61.16314|1240.0|Morne Lacroix - Martinique|1980-11-01T00:00:00.0000|

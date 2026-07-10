@@ -1,0 +1,6 @@
+#dataset: GeoCSV 2.0
+#delimiter: |
+#field_unit: unitless | unitless | degrees_north | degrees_east | meters | unitless | ISO_8601 | ISO_8601
+#field_type: string | string | float | float | float | string | datetime | datetime
+Network|Station|Latitude|Longitude|Elevation|SiteName|StartTime|EndTime
+MQ|IA2|14.80307|-61.20515|289.0|RI Julien - Martinique|2005-03-10T00:00:00.0000|
