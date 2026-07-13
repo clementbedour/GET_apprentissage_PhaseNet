@@ -1,0 +1,90 @@
+{
+  "BAM": {
+    "network": "MQ",
+    "channels": [
+      "EHZ"
+    ],
+    "coords": [
+      14.8171,
+      -61.1445,
+      670.0
+    ]
+  },
+  "CPM": {
+    "network": "MQ",
+    "channels": [
+      "EHZ"
+    ],
+    "coords": [
+      14.8168,
+      -61.2074,
+      242.0
+    ]
+  },
+  "FDF": {
+    "network": "G",
+    "channels": [
+      "BHE"
+    ],
+    "coords": [
+      14.734971,
+      -61.146311,
+      467.0
+    ]
+  },
+  "GBM": {
+    "network": "MQ",
+    "channels": [
+      "EHZ"
+    ],
+    "coords": [
+      14.799451,
+      -61.159276,
+      800.0
+    ]
+  },
+  "IA2": {
+    "network": "MQ",
+    "channels": [
+      "EHE"
+    ],
+    "coords": [
+      14.80307,
+      -61.20515,
+      289.0
+    ]
+  },
+  "LAM": {
+    "network": "MQ",
+    "channels": [
+      "HHE"
+    ],
+    "coords": [
+      14.81292,
+      -61.16314,
+      1240.0
+    ]
+  },
+  "MLM": {
+    "network": "MQ",
+    "channels": [
+      "EHZ"
+    ],
+    "coords": [
+      14.7846,
+      -61.1786,
+      370.0
+    ]
+  },
+  "SAM": {
+    "network": "WI",
+    "channels": [
+      "HHE"
+    ],
+    "coords": [
+      14.84108,
+      -61.1638,
+      485.0
+    ]
+  }
+}
