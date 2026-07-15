@@ -21,4 +21,7 @@ Une fois l'enregistrement terminé, vous pouvez quitter snuffler. A ce moment, l
 Si vous mettez '1' le programme va s'arreter en affichant le dernier fichier traité (utile pour reprendre le lendemain), sinon il va continuer jusqu'à la fin (ou jusqu'à trouver NL.txt, ce qui revient à la même chose).
 Bravo, vous avez fini de faire tout vos pointés, nous allons pouvoir passer sur SeisBench.
 
-En cours de programmation ...
+
+Alors si vous avais bien tout les fichiers au bon endroit, il suffit de lancer **format_csv_hdf5.py** et vous aurais (au bout de 2-3 minutes d'attentes) 2 fichiers dans ../data/seisbench_format, metadata.csv et waveform.hdf5
+
+Le reste est en cours de programmation ...
