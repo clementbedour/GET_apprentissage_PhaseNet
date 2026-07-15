@@ -10,4 +10,4 @@
 /data/phase_evenement/
 /data/phase_snuffler/
 __pycache__/
-*.pyc
+*.pycdata/seisbench_format/waveforms.hdf5
