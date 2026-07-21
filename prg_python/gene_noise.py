@@ -12,8 +12,14 @@ from collections import Counter
 
 #------------PARAMETRES--------------------
 BASE_DIR = "../data"
-MSEED_DIR = os.path.join(BASE_DIR, "2014/MQ")
 EXISTING_METADATA_CSV = os.path.join(BASE_DIR, "seisbench/seisbench_format/metadata.csv") 
+
+
+BASE_MSEED ="/get/ggs/clov/mseed_data/martinique"
+MSEED_DIR = os.path.join(BASE_MSEED, "MQ")
+
+#BASE_MSEED ="../data"
+#MSEED_DIR = os.path.join(BASE_MSEED, "2014/MQ")
 
 OUTPUT_DIR = os.path.join(BASE_DIR, "seisbench/seisbench_format_noise")
 os.makedirs(OUTPUT_DIR, exist_ok=True)

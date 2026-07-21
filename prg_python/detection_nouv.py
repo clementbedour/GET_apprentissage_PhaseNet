@@ -9,11 +9,15 @@ from obspy import UTCDateTime
 
 # PARAMETRES
 BASE_DIR = "../data"
-MSEED_DIR = os.path.join(BASE_DIR, "2014/MQ")
 MODEL_PATH = "seisbench/phasenet_volcan_v1.pt"
 BASE_OUT = "../data/seisbench/seisbench_nouv"
 os.makedirs(BASE_OUT, exist_ok=True)
 OUTPUT_CSV = os.path.join(BASE_OUT, "catalogue_vt_detectes.csv")
+
+#BASE_MSEED ="../data"
+#MSEED_DIR = os.path.join(BASE_DIR, "2014/MQ")
+BASE_MSEED ="/get/ggs/clov/mseed_data/martinique"
+MSEED_DIR = os.path.join(BASE_MSEED, "MQ")
 
 # Valeurs seuils ajustées pour la précision
 THRESHOLD_P = 0.95
@@ -28,28 +32,28 @@ YEAR = 2014
 
 EXPECTED_COMPONENTS = {"Z", "N", "E"}
 MIN_GAP_SECONDS = 1.0
-STATIONS_MONO = {"BAM", "CPM", "GBM", "MLM", "FDF"}
+STATIONS_MONO = {"BAM", "CPM", "GBM", "MLM"}
 
 ASSOCIATION_WINDOW_SECONDS = 5.0
 MIN_STATIONS = 4
 
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-# ============================================================
-# FONCTIONS REQUISES
-# ============================================================
+#enleve doublons et garde la picks la plus probable si rapproché
 def dedupliquer_picks(df, min_gap_seconds=MIN_GAP_SECONDS):
     if df.empty:
         return df
     df = df.copy()
     df["time"] = pd.to_datetime(df["time"], format="ISO8601")
     resultats = []
-
+    
+    
+    #separe les
     for (station, phase), groupe in df.groupby(["station", "phase"]):
         groupe = groupe.sort_values("time").reset_index(drop=True)
         garde = []
         dernier_temps_garde = None
-
+        
         for _, row in groupe.iterrows():
             if dernier_temps_garde is None or (row["time"] - dernier_temps_garde).total_seconds() > min_gap_seconds:
                 garde.append(row)
@@ -176,9 +180,14 @@ for julian_day in range(START_DAY, END_DAY + 1):
                             st.append(tr_vide)
                             
             st.sort() 
-
+            
             # Détection
-            output = model.classify(st, P_threshold=THRESHOLD_P, S_threshold=THRESHOLD_S)
+            output = model.classify(
+                st, 
+                P_threshold=THRESHOLD_P, 
+                S_threshold=THRESHOLD_S,
+                batch_size=32
+            )
             picks = list(getattr(output, "picks", output))
             
             # Filtrage logique

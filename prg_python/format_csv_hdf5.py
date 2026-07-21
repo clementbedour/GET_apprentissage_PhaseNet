@@ -12,11 +12,18 @@ import random
 
 #------------PARAMETRES--------------------
 BASE_DIR = "../data"
-MSEED_DIR = os.path.join(BASE_DIR, "2014/MQ")
 STATION_CSV_DIR = os.path.join(BASE_DIR, "csv")
 OUTPUT_DIR = os.path.join(BASE_DIR, "seisbench/seisbench_format")
 PICK_DIR = os.path.join(BASE_DIR, "phase_snuffler")
 os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+
+#BASE_MSEED ="../data"
+#MSEED_DIR = os.path.join(BASE_MSEED, "2014/MQ")
+
+BASE_MSEED ="/get/ggs/clov/mseed_data/martinique"
+MSEED_DIR = os.path.join(BASE_MSEED, "MQ")
+
 
 # --- Fenêtre autour du pick ---
 WINDOW_LENGTH_SEC = 60
@@ -176,6 +183,7 @@ with sbd.WaveformDataWriter(path_csv, path_hdf5) as writer:
 
         folder_mseed = os.path.join(MSEED_DIR, stat)
         if not os.path.exists(folder_mseed):
+            print(f"Attention: Dossier introuvable -> {folder_mseed}")
             continue
 
         # on construit le pattern voulu pour un jour précis et une station

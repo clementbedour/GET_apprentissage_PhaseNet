@@ -8,11 +8,14 @@ import seisbench.data as sbd
 from seisbench.util import stream_to_array
 import random
 
-# ============================================================
-# PARAMÈTRES ET CHEMINS
-# ============================================================
+#------------PARAMETRES--------------------
 BASE_DIR = "../data"
-MSEED_DIR = os.path.join(BASE_DIR, "2014/MQ")
+
+#BASE_MSEED ="../data"
+#MSEED_DIR = os.path.join(BASE_MSEED, "2014/MQ")
+
+BASE_MSEED ="/get/ggs/clov/mseed_data/martinique"
+MSEED_DIR = os.path.join(BASE_MSEED, "MQ")
 
 BASE_OUT = "../data/seisbench/seisbench_nouv"
 PICKS_CSV = os.path.join(BASE_OUT, "catalogue_vt_detectes.csv")
@@ -29,9 +32,9 @@ POST_PICK_SEC = 30
 EXPECTED_COMPONENTS = ["Z", "N", "E"]
 
 # --- NOUVEAUX PARAMÈTRES DE FILTRAGE GOLD STANDARD ---
-MIN_STATIONS = 3          # Nombre minimum de stations ayant détecté l'événement
-MIN_PROBA_EVENT = 0.85    # Seuil de confiance : probabilité maximale de l'événement
-FREQ_MIN = 3.0            # Filtre passe-bande
+MIN_STATIONS = 3          # Nbr min de stat qui doivent detecte l'event
+MIN_PROBA_EVENT = 0.85    # Seuil de confiance
+FREQ_MIN = 3.0
 FREQ_MAX = 15.0
 
 # ============================================================
@@ -49,19 +52,16 @@ df_events["time_fin"] = pd.to_datetime(df_events["time_fin"], format="ISO8601")
 masque = (df_events["n_stations"] >= MIN_STATIONS) & (df_events["probabilite_max"] >= MIN_PROBA_EVENT)
 df_gold_events = df_events[masque].reset_index(drop=True)
 
-print(f"Événements Gold Standard trouvés ({MIN_STATIONS}+ stations, proba >= {MIN_PROBA_EVENT}) : {len(df_gold_events)}")
+print(f"Événements Gold trouvés ({MIN_STATIONS}+ stations, proba >= {MIN_PROBA_EVENT}) : {len(df_gold_events)}")
 
 if len(df_gold_events) == 0:
-    print("Aucun événement ne correspond à ces critères stricts. Essayez de baisser le seuil. Arrêt du script.")
+    print("Aucun événement ne correspond à ces critères stricts") #baisser le seuil
     exit()
 
-# ============================================================
-# 2. EXTRACTION ET CRÉATION DU DATASET SEISBENCH
-# ============================================================
 traces_ajoutees = 0
 erreurs_lecture = 0
 
-print(f"\nDébut de l'extraction vers {OUTPUT_DATASET_DIR}...")
+print(f"\nDébut de l'extraction vers {OUTPUT_DATASET_DIR}")
 
 with sbd.WaveformDataWriter(PATH_METADATA, PATH_HDF5) as writer:
     
@@ -76,7 +76,7 @@ with sbd.WaveformDataWriter(PATH_METADATA, PATH_HDF5) as writer:
         event_end = event["time_fin"]
         
         mask = (df_picks["time"] >= event_start - pd.Timedelta(seconds=2)) & \
-               (df_picks["time"] <= event_end + pd.Timedelta(seconds=2))
+                (df_picks["time"] <= event_end + pd.Timedelta(seconds=2))
         picks_event = df_picks[mask]
         
         for stat in picks_event["station"].unique():
@@ -116,7 +116,7 @@ with sbd.WaveformDataWriter(PATH_METADATA, PATH_HDF5) as writer:
             try:
                 st.merge(method=1, fill_value=0)
                 st.detrend("linear")
-                # --- APPLICATION DU FILTRE PASSE-BANDE ---
+                #passe bande
                 st.filter("bandpass", freqmin=FREQ_MIN, freqmax=FREQ_MAX)
             except:
                 continue
@@ -160,7 +160,7 @@ with sbd.WaveformDataWriter(PATH_METADATA, PATH_HDF5) as writer:
             writer.add_trace(trace_metadata, data_array)
             traces_ajoutees += 1
 
-print(f"\nMAGNIFIQUE ! Création du dataset terminée.")
-print(f"-> {traces_ajoutees} traces parfaites à 3 composantes ont été sauvegardées dans {OUTPUT_DATASET_DIR}.")
+print(f"\nCréation du dataset terminée.")
+print(f"-> {traces_ajoutees} traces ont été sauvegardées dans {OUTPUT_DATASET_DIR}")
 if erreurs_lecture > 0:
-    print(f"-> {erreurs_lecture} fichiers MiniSEED ont été ignorés (erreurs de lecture locales).")
+    print(f"-> {erreurs_lecture} fichiers MiniSEED ont été ignorés erreurs de lecture")
