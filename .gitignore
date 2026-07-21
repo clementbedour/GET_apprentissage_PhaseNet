@@ -1,4 +1,5 @@
 /Support.docx
+/images
 /data/2014/MQ/
 /data/phase_evenement/
 /data/phase_magnetude/
@@ -15,3 +16,4 @@
 /prg_python/eval_model.py
 /prg_python/comparaison_gold_ia.csv
 /prg_python/resultats_validation.csv
+/prg_python/test_IA.py
