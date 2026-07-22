@@ -13,12 +13,12 @@ import seisbench.generate as sbg
 #------------PARAMETRES--------------------
 
 # FROM SCRATCH
-DATASET_DIR = "../data/seisbench/seisbench_dataset"
-START_FROM_ZERO = True  
+#DATASET_DIR = "../data/seisbench/seisbench_dataset"
+#START_FROM_ZERO = True  
 
 # PAS FROM SCRATCH
-#DATASET_DIR = "../data/seisbench/seisbench_dataset_ultime"
-#START_FROM_ZERO = False  
+DATASET_DIR = "../data/seisbench/seisbench_dataset_ultime"
+START_FROM_ZERO = False  
 
 
 BATCH_SIZE = 32
@@ -142,7 +142,7 @@ for epoch in range(EPOCHS):
     if val_loss < best_val_loss:
         best_val_loss = val_loss
         
-        save_name = "seisbench/phasenet_volcan_v2_FINAL.pt" if not START_FROM_ZERO else LOCAL_MODEL_PATH
+        save_name = "seisbench/phasenet_volcan_v2.pt" if not START_FROM_ZERO else LOCAL_MODEL_PATH
         
         dossier_parent = os.path.dirname(save_name)
         if dossier_parent != "":
