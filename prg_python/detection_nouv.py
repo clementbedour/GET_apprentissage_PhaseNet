@@ -75,7 +75,7 @@ def dedupliquer_picks(df, min_gap_seconds=MIN_GAP_SECONDS):
     df_dedup["time"] = df_dedup["time"].apply(lambda t: t.isoformat())
     return df_dedup
 
-#prend les detection individuelle pour voir si event sur les autres stations
+#regroupe les detection individuelle de P pour voir si event sur les autres stations
 def associer_evenements(df, fenetre_secondes=ASSOCIATION_WINDOW_SECONDS,
                         min_stations=MIN_STATIONS, phase_filtre="P",
                         retourner_diagnostic=False):
@@ -182,7 +182,7 @@ for julian_day in range(START_DAY, END_DAY + 1):
                 safe_freq_max = min(FREQ_MAX, nyquist - 0.1) #TH Shannon Nyquist
                 tr.filter("bandpass", freqmin=FREQ_MIN, freqmax=safe_freq_max) #applique passe bande
             
-            #mono composantes
+            #on s'occupe des mono composantes
             existing_components = list(set([tr.stats.channel[-1] for tr in st]))
             if stat in STATIONS_MONO or len(existing_components) < 3:
                 ref_comp = "Z" if "Z" in existing_components else existing_components[0] #on mets Z en compo de base, sinon la première dispo (N puis E)
@@ -211,7 +211,7 @@ for julian_day in range(START_DAY, END_DAY + 1):
             dernier_temps_P = None
             picks_valides = []
             
-            #filtrage logique
+            #filtrage logique (S doit suivre P)
             for pick in picks:
                 if pick.phase == "P": #Si P on enregistre direct
                     dernier_temps_P = pick.peak_time
@@ -262,8 +262,8 @@ else:
 if tous_les_evenements:
     df_events_total = pd.concat(tous_les_evenements, ignore_index=True)
     
-    #application filtre strict
-    masque_strict = (df_events_total["n_stations"] >= MIN_STATIONS) & (df_events_total["probabilite_max"] >= MIN_PROBA_EVENT)
+    #application filtre strict pour proba car MIN_STATION déjà appliqué
+    masque_strict = df_events_total["probabilite_max"] >= MIN_PROBA_EVENT
     df_events_valides = df_events_total[masque_strict].reset_index(drop=True)
     
     df_events_valides.to_csv(OUTPUT_EVENTS_CSV, index=False)

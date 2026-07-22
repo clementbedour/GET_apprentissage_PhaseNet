@@ -26,38 +26,29 @@ os.makedirs(OUTPUT_DATASET_DIR, exist_ok=True)
 PATH_METADATA = os.path.join(OUTPUT_DATASET_DIR, "metadata.csv")
 PATH_HDF5 = os.path.join(OUTPUT_DATASET_DIR, "waveforms.hdf5")
 
-# Paramètres d'extraction (Fenêtre de 60 secondes centrée sur le P)
+# Paramètres d'extraction
 PRE_PICK_SEC = 30
 POST_PICK_SEC = 30
 EXPECTED_COMPONENTS = ["Z", "N", "E"]
-
-# --- NOUVEAUX PARAMÈTRES DE FILTRAGE GOLD STANDARD ---
-MIN_STATIONS = 3          # Nbr min de stat qui doivent detecte l'event
-MIN_PROBA_EVENT = 0.85    # Seuil de confiance
 FREQ_MIN = 3.0
 FREQ_MAX = 15.0
 
-# ============================================================
-# 1. CHARGEMENT ET FILTRAGE DES DONNÉES
-# ============================================================
-print("Chargement des catalogues...")
+#chargement des catalogues
+print("Chargement des catalogues")
 df_picks = pd.read_csv(PICKS_CSV)
-df_events = pd.read_csv(EVENTS_CSV)
+df_gold_events = pd.read_csv(EVENTS_CSV)
 
 df_picks["time"] = pd.to_datetime(df_picks["time"], format="ISO8601")
-df_events["time_debut"] = pd.to_datetime(df_events["time_debut"], format="ISO8601")
-df_events["time_fin"] = pd.to_datetime(df_events["time_fin"], format="ISO8601")
+df_gold_events["time_debut"] = pd.to_datetime(df_gold_events["time_debut"], format="ISO8601")
+df_gold_events["time_fin"] = pd.to_datetime(df_gold_events["time_fin"], format="ISO8601")
 
-# --- FILTRAGE STRICT (Stations + Probabilité) ---
-masque = (df_events["n_stations"] >= MIN_STATIONS) & (df_events["probabilite_max"] >= MIN_PROBA_EVENT)
-df_gold_events = df_events[masque].reset_index(drop=True)
-
-print(f"Événements Gold trouvés ({MIN_STATIONS}+ stations, proba >= {MIN_PROBA_EVENT}) : {len(df_gold_events)}")
+print(f"{len(df_gold_events)} événements à extraire")
 
 if len(df_gold_events) == 0:
     print("Aucun événement ne correspond à ces critères stricts") #baisser le seuil
     exit()
 
+#extraction des données
 traces_ajoutees = 0
 erreurs_lecture = 0
 
@@ -75,6 +66,7 @@ with sbd.WaveformDataWriter(PATH_METADATA, PATH_HDF5) as writer:
         event_start = event["time_debut"]
         event_end = event["time_fin"]
         
+        # On récupère les picks exacts correspondants à la fenêtre de l'événement
         mask = (df_picks["time"] >= event_start - pd.Timedelta(seconds=2)) & \
                 (df_picks["time"] <= event_end + pd.Timedelta(seconds=2))
         picks_event = df_picks[mask]
