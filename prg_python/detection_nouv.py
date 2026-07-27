@@ -202,7 +202,7 @@ for julian_day in range(START_DAY, END_DAY + 1):
                 st, 
                 P_threshold=THRESHOLD_P, 
                 S_threshold=THRESHOLD_S,
-                batch_size=32
+                batch_size=512
             )
             picks = list(getattr(output, "picks", output)) #recup liste picks
             
