@@ -5,17 +5,13 @@
 /data/phase_magnetude/
 /data/phase_separe/
 /data/phase_snuffler/
-
 /data/phase_vt/
-/data/seisbench
 
-/prg_python/visualiser_res.py
+
 /prg_python/__pycache__/
-
-/prg_python/seisbench/
-/prg_python/eval_model.py
-/prg_python/comparaison_gold_ia.csv
-/prg_python/resultats_validation.csv
 /prg_python/test_IA.py
 
 /prg_bash/scp.sh
+
+
+*.hdf5
