@@ -25,10 +25,10 @@ Bravo, vous avez fini de faire tout vos pointés, nous allons pouvoir passer sur
 Alors si vous avais bien tout les fichiers au bon endroit, il suffit de lancer **format_csv_hdf5.py** et vous aurais (au bout de 2-3 minutes d'attentes) 2 fichiers dans ../data/seisbench_format, metadata.csv et waveform.hdf5
 **gene_noise.py**
 **fusion_data.py**
-**IA_seisbench_Tuning.py** from scratch
+**IA_seisbench_Tuning.py 1**
 **detection_nouv.py**
 **extraire_nouv.py**
-**IA_seisbench_Tuning.py** plus from scratch
-
+**IA_seisbench_Tuning.py 2**
+Mais plus simple avec le runAll.sh
 
 Le reste est en cours de programmation ...
