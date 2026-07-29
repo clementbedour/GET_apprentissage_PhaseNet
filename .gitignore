@@ -17,3 +17,5 @@
 /prg_python/comparaison_gold_ia.csv
 /prg_python/resultats_validation.csv
 /prg_python/test_IA.py
+
+/prg_bash/scp.sh
