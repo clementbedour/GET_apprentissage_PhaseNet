@@ -34,13 +34,13 @@ YEAR = 2014
 NBR_NOISE_PER_STATION = 100
 WINDOW_LENGTH_SEC = 60
 SAFE_MARGIN_SEC = 180 # voir si pointé dans les parages (3 minutes)
-max_attempts = NBR_NOISE_PER_STATION * 20 #nbr de trace total pour trouver le bruit (contrainte de boucle)
+max_attempts = NBR_NOISE_PER_STATION * 50 #nbr de trace total pour trouver le bruit (contrainte de boucle)
 
 
 # Paramètres STA/LTA
 STA_SEC = 1.0
 LTA_SEC = 10.0
-STA_LTA_THRESHOLD = 2 #pas en dessous de 2, trop de pic
+STA_LTA_THRESHOLD = 1.80 #pas en dessous de 2, trop de pic
 
 FREQ_MIN = 3.0
 FREQ_MAX = 15.0

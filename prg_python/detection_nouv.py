@@ -23,14 +23,9 @@ MSEED_DIR = os.path.join(BASE_MSEED, "MQ")
 #BASE_MSEED ="../data"
 #MSEED_DIR = os.path.join(BASE_MSEED, "2014/MQ")
 
-
 #valeurs de détection
 THRESHOLD_P = 0.95
 THRESHOLD_S = 0.95
-
-#filtre
-FREQ_MIN = 3.0
-FREQ_MAX = 15.0
 
 START_DAY = 51
 END_DAY = 151
@@ -41,10 +36,11 @@ MIN_GAP_SECONDS = 1.0
 STATIONS_MONO = {"BAM", "CPM", "GBM", "MLM"}
 
 #params association
-ASSOCIATION_WINDOW_SECONDS = 5.0
+ASSOCIATION_WINDOW_SECONDS = 5.0  #fenetre max entre arrive sur 2 stats
 #filtre pour event
 MIN_STATIONS = 4          #nbr min de stat 
 MIN_PROBA_EVENT = 0.85    #score confiance minimal
+MAX_EVENT_DURATION = 15.0 #tmp max event (pas plus de 15 sec)
 
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -75,27 +71,29 @@ def dedupliquer_picks(df, min_gap_seconds=MIN_GAP_SECONDS):
     df_dedup["time"] = df_dedup["time"].apply(lambda t: t.isoformat())
     return df_dedup
 
+<<<<<<< Updated upstream
 #regroupe les detection individuelle de P pour voir si event sur les autres stations
 def associer_evenements(df, fenetre_secondes=ASSOCIATION_WINDOW_SECONDS,
                         min_stations=MIN_STATIONS, phase_filtre="P",
                         retourner_diagnostic=False):
+=======
+#prend les detection individuelle pour voir si event sur les autres stations
+def associer_evenements(df, fenetre_secondes=ASSOCIATION_WINDOW_SECONDS, min_stations=MIN_STATIONS, phase_filtre="P", duree_max=MAX_EVENT_DURATION):
+>>>>>>> Stashed changes
     df = df.copy()
     df["time"] = pd.to_datetime(df["time"], format="ISO8601")
     if phase_filtre: #si P arrive alors debut event
         df = df[df["phase"] == phase_filtre]
     
     if df.empty: #si pas de P alors return vide
-        vide = pd.DataFrame(columns=["time_debut", "time_fin", "n_stations", "stations", "n_picks", "probabilite_max"])
-        return (vide, {}) if retourner_diagnostic else vide
+        return pd.DataFrame(columns=["time_debut", "time_fin", "n_stations", "stations", "n_picks", "probabilite_max"])
     
     df = df.sort_values("time").reset_index(drop=True) #trie chronologique
     evenements = [] #aura le catalogue events detecté
-    tous_les_clusters = [] #pour savoir cmb de station
     cluster_courant = [df.iloc[0]] #init liste avec le 1er event
     
     def finaliser(cluster):
         stations_impliquees = set(r["station"] for r in cluster) #liste station qui ont detecté l'event
-        tous_les_clusters.append(len(stations_impliquees)) #stocke le nbr de station
         if len(stations_impliquees) >= min_stations: #pour le filtre, on créer le dictionnaire
             evenements.append({
                 "time_debut": cluster[0]["time"],
@@ -109,7 +107,10 @@ def associer_evenements(df, fenetre_secondes=ASSOCIATION_WINDOW_SECONDS,
     
     for _, row in df.iloc[1:].iterrows(): #on regarde tout les events (sauf 1er car déjà ajouté)
         delta = (row["time"] - cluster_courant[-1]["time"]).total_seconds() #calcul delta temps entre les 2 events
-        if delta <= fenetre_secondes: #si delta petit, alors même event
+        delta_start = (row["time"] - cluster_courant[0]["time"]).total_seconds()
+        
+        #fix : Le cluster s'agrandit que si gap court ET event ne dure pas plus de MAX_EVENT_DURATION
+        if delta <= fenetre_secondes and delta_start <= duree_max:
             cluster_courant.append(row)
         else: #alors nouvel event
             finaliser(cluster_courant) #on fini l'event précédent
@@ -123,19 +124,66 @@ def associer_evenements(df, fenetre_secondes=ASSOCIATION_WINDOW_SECONDS,
         df_evenements["time_debut"] = df_evenements["time_debut"].apply(lambda t: t.isoformat())
         df_evenements["time_fin"] = df_evenements["time_fin"].apply(lambda t: t.isoformat())
     
-    
-    #créer un dictionnaire
-    if retourner_diagnostic:
-        from collections import Counter
-        diagnostic = {
-            "n_clusters_total": len(tous_les_clusters), #nbr total de clusters créés
-            "distribution_taille": dict(Counter(tous_les_clusters)), #repartition nbr de stations impliquées par cluster
-            "n_phases_utilisees": len(df), #nbr total de phases analysé
-        }
-        return df_evenements, diagnostic
-    
     return df_evenements
 
+#clean et alignement des traces
+def preparer_stream_station(st, stat, min_duration=30.0):
+    if len(st) == 0:
+        return obspy.Stream()
+    
+    #fusionne dans combler
+    st.merge(-1)
+    
+    st = st.split()
+    st_filtre = obspy.Stream()
+    
+    for tr in st:
+        #rejet des traces mortes
+        if np.all(tr.data == 0) or np.std(tr.data) < 1e-12:
+            continue
+            
+        #rejet fragment trop court
+        duree = tr.stats.npts / tr.stats.sampling_rate
+        if duree < min_duration:
+            continue
+        
+        if tr.stats.sampling_rate != 100.0:
+            try: tr.interpolate(100.0)
+            except Exception: tr.resample(100.0)
+            
+        tr.data = np.nan_to_num(tr.data)
+        tr.detrend("linear")
+        tr.taper(max_percentage=0.01, type="cosine") 
+        
+        #filtre passe-haut à 1Hz
+        tr.filter("highpass", freq=1.0)
+        
+        st_filtre.append(tr)
+        
+    if len(st_filtre) == 0:
+        return obspy.Stream()
+    
+    st_filtre.sort()
+    
+    #gestion compos manquantes
+    existing_comps = set(tr.stats.channel[-1] for tr in st_filtre)
+    
+    if stat in STATIONS_MONO or len(existing_comps) < 3:
+        ref_comp = "Z" if "Z" in existing_comps else list(existing_comps)[0]
+        ref_traces = st_filtre.select(component=ref_comp)
+        
+        for comp in EXPECTED_COMPONENTS:
+            if comp not in existing_comps:
+                #recré compo manquante
+                for tr_ref in ref_traces:
+                    tr_fictive = tr_ref.copy()
+                    tr_fictive.stats.channel = tr_ref.stats.channel[:-1] + comp
+                    #on prend Z*0.05
+                    tr_fictive.data = (tr_ref.data * 0.05).astype(tr_ref.data.dtype)
+                    st_filtre.append(tr_fictive)
+    
+    st_filtre.sort()
+    return st_filtre
 
 #chargement du modele
 print(f"Chargement du modèle local depuis : {MODEL_PATH}")
@@ -160,6 +208,7 @@ for julian_day in range(START_DAY, END_DAY + 1):
         mseed_files = glob.glob(search_pattern)
         
         if not mseed_files: #fichier mseed manquand, donc on passe a une autre
+            print(f"Station {stat} : Aucun fichier .mseed trouvé.")
             continue
             
         st = obspy.Stream()
@@ -170,9 +219,11 @@ for julian_day in range(START_DAY, END_DAY + 1):
                 pass
                 
         if len(st) == 0: 
+            print(f"Station {stat} : Les fichiers n'ont pas pu être lus ou sont vides.")
             continue
         
         try:
+<<<<<<< Updated upstream
             st.merge(method=1, fill_value=0) #comble signal avec 0
             
             #filtrage
@@ -197,6 +248,12 @@ for julian_day in range(START_DAY, END_DAY + 1):
                             
             st.sort() #trie car tout le monde à 3 compos donc homogène
             
+=======
+            st = preparer_stream_station(st, stat, min_duration=30.0)
+            if len(st) == 0:
+                print(f"Station {stat} : Données rejetées (traces mortes, < 30.0s ou mauvais chevauchement).")
+                continue
+>>>>>>> Stashed changes
             
             output = model.classify(
                 st, 
@@ -232,6 +289,8 @@ for julian_day in range(START_DAY, END_DAY + 1):
             
             if picks_valides:
                 print(f"  Station {stat} : {len(picks_valides)} phases VT filtrées.") #affiche nbr de VT gardé pour la station
+            else:
+                print(f"Station {stat} : Aucune phase au-dessus du seuil (P>={THRESHOLD_P}, S>={THRESHOLD_S}).")
                 
         except Exception as e:
             print(f"  Erreur station {stat} : {e}")
@@ -251,21 +310,19 @@ for julian_day in range(START_DAY, END_DAY + 1):
 print("\n--- Sauvegarde des catalogues ---")
 
 #event brutes
-if toutes_les_detections:
-    df_picks_total = pd.DataFrame(toutes_les_detections)
-    df_picks_total.to_csv(OUTPUT_CSV, index=False)
-    print(f"Détections brutes sauvegardées ({len(df_picks_total)} picks) : {OUTPUT_CSV}")
-else:
-    print("Aucune détection brute enregistrée.")
-
-#event avec filtre (MIN_STATIONS et MIN_PROBA_EVENT)
 if tous_les_evenements:
     df_events_total = pd.concat(tous_les_evenements, ignore_index=True)
     
+<<<<<<< Updated upstream
     #application filtre strict pour proba car MIN_STATION déjà appliqué
+=======
+    #application filtre strict
+>>>>>>> Stashed changes
     masque_strict = df_events_total["probabilite_max"] >= MIN_PROBA_EVENT
     df_events_valides = df_events_total[masque_strict].reset_index(drop=True)
     
+    # On sauvegarde les deux catalogues (le brut et le validé)
+    df_events_total.to_csv(OUTPUT_CSV, index=False)
     df_events_valides.to_csv(OUTPUT_EVENTS_CSV, index=False)
     print(f"Événements valides (stricts) sauvegardés ({len(df_events_valides)} événements) : {OUTPUT_EVENTS_CSV}")
 else:

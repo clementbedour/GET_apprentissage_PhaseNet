@@ -7,33 +7,29 @@ from torch.utils.data import DataLoader
 import seisbench.data as sbd
 import seisbench.models as sbm
 import seisbench.generate as sbg
-
+import sys
 
 
 #------------PARAMETRES--------------------
+var = int(sys.argv[1])
 
-# FROM SCRATCH
-#DATASET_DIR = "../data/seisbench/seisbench_dataset"
-#START_FROM_ZERO = True  
-
-# PAS FROM SCRATCH
-DATASET_DIR = "../data/seisbench/seisbench_dataset_ultime"
-START_FROM_ZERO = False  
-
-
-BATCH_SIZE = 32
+BATCH_SIZE = 512
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # Le chemin du modèle local qu'on va sauvegarder ou charger
 LOCAL_MODEL_PATH = "seisbench/phasenet_volcan_v1.pt"
 
-if START_FROM_ZERO:
-    EPOCHS = 30
+if var==1 :
+    START_FROM_ZERO = True
+    DATASET_DIR = "../data/seisbench/seisbench_dataset"
+    EPOCHS = 100
     LEARNING_RATE = 1e-4
     SIGMA=50
     print("Mode : Entraînement DE ZÉRO")
 else:
-    EPOCHS = 15           # Moins d'époques nécessaires car Fine-Tuning
+    DATASET_DIR = "../data/seisbench/seisbench_dataset_ultime"
+    START_FROM_ZERO = False 
+    EPOCHS = 30           # Moins d'époques nécessaires car Fine-Tuning
     LEARNING_RATE = 5e-5
     SIGMA = 30
     print(f"Mode : FINE-TUNING LOCAL depuis {LOCAL_MODEL_PATH}")
