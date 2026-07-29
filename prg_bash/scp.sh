@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-MDP="123456789" #oui oui bien sur, essaye AZERTYUIOP sinon
+MDP="123456789" #oui oui bien sur, essaye AZERTYUIOP
 
 echo "Transfert des fichiers vers le serveur"
 
