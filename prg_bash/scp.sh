@@ -1,7 +1,11 @@
 #!/bin/bash
 set -e
 
+<<<<<<< HEAD
 MDP="AZERTY" #sinon 123456
+=======
+MDP="AZERTY" #essaye 123456 sinon
+>>>>>>> 5f77d33 (Ajout initial de scp.sh)
 
 echo "Transfert des fichiers vers le serveur"
 
