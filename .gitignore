@@ -11,7 +11,7 @@
 /prg_python/__pycache__/
 /prg_python/test_IA.py
 
-/prg_bash/scp.sh
+/prg_bash/scp
 
 
 *.hdf5
