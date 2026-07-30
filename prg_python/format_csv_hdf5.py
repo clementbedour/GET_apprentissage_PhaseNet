@@ -34,8 +34,8 @@ POST_S_MARGIN_SEC = 5
 GAP_ACCEPT = 1.0  # en secondes
 
 # --- PARAMÈTRES FILTRE ---
-FREQ_MIN = 3.0
-FREQ_MAX = 15.0
+FREQ_MIN = 1.0
+FREQ_MAX = 40.0
 
 stations_info = {}
 # construction du dico station grâce au repertoire ../data/csv

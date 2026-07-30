@@ -30,8 +30,9 @@ PATH_HDF5 = os.path.join(OUTPUT_DATASET_DIR, "waveforms.hdf5")
 PRE_PICK_SEC = 30
 POST_PICK_SEC = 30
 EXPECTED_COMPONENTS = ["Z", "N", "E"]
-FREQ_MIN = 3.0
-FREQ_MAX = 15.0
+# --- PARAMÈTRES FILTRE ---
+FREQ_MIN = 1.0
+FREQ_MAX = 40.0
 
 #chargement des catalogues
 print("Chargement des catalogues")
