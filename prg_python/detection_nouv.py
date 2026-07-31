@@ -25,22 +25,22 @@ MSEED_DIR = os.path.join(BASE_MSEED, "MQ")
 #MSEED_DIR = os.path.join(BASE_MSEED, "2014/MQ")
 
 #valeurs de détection
-THRESHOLD_P = 0.85
-THRESHOLD_S = 0.85
+THRESHOLD_P = 0.90
+THRESHOLD_S = 0.90
 
 START_DAY = 51
 END_DAY = 151
 YEAR = 2014
 
 EXPECTED_COMPONENTS = {"Z", "N", "E"}
-MIN_GAP_SECONDS = 1.0
+MIN_GAP_SECONDS = 3.0
 STATIONS_MONO = {"BAM", "CPM", "GBM", "MLM"}
 
 #params association
 ASSOCIATION_WINDOW_SECONDS = 5.0  #fenetre max entre arrive sur 2 stats
 #filtre pour event
 MIN_STATIONS = 5          #nbr min de stat 
-MIN_PROBA_EVENT = 0.85    #score confiance minimal
+MIN_PROBA_EVENT = 0.90    #score confiance minimal
 MAX_EVENT_DURATION = 15.0 #tmp max event (pas plus de 15 sec)
 
 # --- PARAMÈTRES FILTRE ---
