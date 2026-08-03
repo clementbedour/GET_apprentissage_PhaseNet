@@ -1,18 +1,40 @@
 import os
 import seisbench.data as sbd
+import sys
 
 #------------PARAMETRES--------------------
 BASE_DIR = "../data"
 
-#les 3 repertoires à fusionner 
-SOURCES = {
-    "Original": os.path.join(BASE_DIR, "seisbench/seisbench_format"),
-    "Bruit": os.path.join(BASE_DIR, "seisbench/seisbench_format_noise"),
-    "Gold": os.path.join(BASE_DIR, "seisbench/seisbench_format_gold")
-}
+if len(sys.argv) > 1:
+    var = sys.argv[1].lower()
+    if 'a'==var :
+        SOURCES = {
+                "Original": os.path.join(BASE_DIR, "seisbenchA/seisbench_format"),
+                "Bruit": os.path.join(BASE_DIR, "seisbench/seisbench_format_noise"),
+                "Gold": os.path.join(BASE_DIR, "seisbenchA/seisbench_format_gold")
+            }
+        DIR_FINAL = os.path.join(BASE_DIR, "seisbenchA/seisbench_dataset_ultime")
 
-#dossier final
-DIR_FINAL = os.path.join(BASE_DIR, "seisbench/seisbench_dataset_ultime")
+    elif 'b'==var :
+        SOURCES = {
+                "Original": os.path.join(BASE_DIR, "seisbenchB/seisbench_format"),
+                "Bruit": os.path.join(BASE_DIR, "seisbench/seisbench_format_noise"),
+                "Gold": os.path.join(BASE_DIR, "seisbenchB/seisbench_format_gold")
+            }
+        DIR_FINAL = os.path.join(BASE_DIR, "seisbenchB/seisbench_dataset_ultime")
+
+else :
+    var = 'c'
+    #les 3 repertoires à fusionner 
+    SOURCES = {
+        "Original": os.path.join(BASE_DIR, "seisbench/seisbench_format"),
+        "Bruit": os.path.join(BASE_DIR, "seisbench/seisbench_format_noise"),
+        "Gold": os.path.join(BASE_DIR, "seisbench/seisbench_format_gold")
+    }
+    #dossier final
+    DIR_FINAL = os.path.join(BASE_DIR, "seisbench/seisbench_dataset_ultime")
+
+print(f"On veux une qualité minimal de {var}")
 os.makedirs(DIR_FINAL, exist_ok=True)
 
 path_csv = os.path.join(DIR_FINAL, "metadata.csv")

@@ -7,9 +7,25 @@ from obspy import UTCDateTime
 import seisbench.data as sbd
 from seisbench.util import stream_to_array
 import random
-
+import sys
 #------------PARAMETRES--------------------
 BASE_DIR = "../data"
+
+if len(sys.argv) > 1:
+    var = sys.argv[1].lower()
+    if var=='a' :
+        BASE_OUT = "../data/seisbenchA/seisbench_nouv"
+        OUTPUT_DATASET_DIR = os.path.join(BASE_DIR, "seisbenchA/seisbench_format_gold")
+    elif var=='b' :
+        BASE_OUT = "../data/seisbenchB/seisbench_nouv"
+        OUTPUT_DATASET_DIR = os.path.join(BASE_DIR, "seisbenchB/seisbench_format_gold")
+else :
+    var = 'c'
+    BASE_OUT = "../data/seisbench/seisbench_nouv"
+    OUTPUT_DATASET_DIR = os.path.join(BASE_DIR, "seisbench/seisbench_format_gold")
+
+print(f"On veux une qualité minimal de {var}")
+
 
 #BASE_MSEED ="../data"
 #MSEED_DIR = os.path.join(BASE_MSEED, "2014/MQ")
@@ -17,11 +33,9 @@ BASE_DIR = "../data"
 BASE_MSEED ="/get/ggs/clov/mseed_data/martinique"
 MSEED_DIR = os.path.join(BASE_MSEED, "MQ")
 
-BASE_OUT = "../data/seisbench/seisbench_nouv"
 PICKS_CSV = os.path.join(BASE_OUT, "catalogue_vt_detectes.csv")
 EVENTS_CSV = os.path.join(BASE_OUT, "catalogue_vt_detectes_evenements_valides.csv")
 
-OUTPUT_DATASET_DIR = os.path.join(BASE_DIR, "seisbench/seisbench_format_gold")
 os.makedirs(OUTPUT_DATASET_DIR, exist_ok=True)
 PATH_METADATA = os.path.join(OUTPUT_DATASET_DIR, "metadata.csv")
 PATH_HDF5 = os.path.join(OUTPUT_DATASET_DIR, "waveforms.hdf5")
@@ -31,8 +45,8 @@ PRE_PICK_SEC = 30
 POST_PICK_SEC = 30
 EXPECTED_COMPONENTS = ["Z", "N", "E"]
 # --- PARAMÈTRES FILTRE ---
-FREQ_MIN = 1.0
-FREQ_MAX = 40.0
+FREQ_MIN = 3.0
+FREQ_MAX = 20.0
 
 #chargement des catalogues
 print("Chargement des catalogues")

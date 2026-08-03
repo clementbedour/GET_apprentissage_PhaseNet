@@ -43,8 +43,8 @@ LTA_SEC = 10.0
 STA_LTA_THRESHOLD = 1.80 #pas en dessous de 2, trop de pic
 
 # --- PARAMÈTRES FILTRE ---
-FREQ_MIN = 1.0
-FREQ_MAX = 40.0
+FREQ_MIN = 3.0
+FREQ_MAX = 20.0
 
 
 

@@ -1,15 +1,31 @@
 import os
 import seisbench.data as sbd
+import sys
 
 # ------------ PARAMATRES ------------
 BASE_DIR = "../data"
 
-# fichiers à fusionner
-DIR_EVENTS = os.path.join(BASE_DIR, "seisbench/seisbench_format")
+if len(sys.argv) > 1:
+    var = sys.argv[1].lower()
+    if var=='a' :
+        DIR_EVENTS = os.path.join(BASE_DIR, "seisbenchA/seisbench_format")
+        DIR_FINAL = os.path.join(BASE_DIR, "seisbenchA/seisbench_dataset")
+    elif var=='b' :
+        DIR_EVENTS = os.path.join(BASE_DIR, "seisbenchB/seisbench_format")
+        DIR_FINAL = os.path.join(BASE_DIR, "seisbenchB/seisbench_dataset")
+else :
+    var = 'c'
+    #Le fichier Ground Truth
+    DIR_EVENTS = os.path.join(BASE_DIR, "seisbench/seisbench_format")
+    #Le fichier final
+    DIR_FINAL = os.path.join(BASE_DIR, "seisbench/seisbench_dataset")
+
+print(f"On veux une qualité minimal de {var}")
+
+
+# fichiers à fusionner de bruit
 DIR_NOISE = os.path.join(BASE_DIR, "seisbench/seisbench_format_noise")
 
-# Le fichier final
-DIR_FINAL = os.path.join(BASE_DIR, "seisbench/seisbench_dataset")
 os.makedirs(DIR_FINAL, exist_ok=True)
 
 path_csv = os.path.join(DIR_FINAL, "metadata.csv")

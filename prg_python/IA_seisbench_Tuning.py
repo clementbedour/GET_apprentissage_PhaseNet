@@ -10,30 +10,59 @@ import seisbench.generate as sbg
 import sys
 
 
-#------------PARAMETRES--------------------
-var = int(sys.argv[1])
+#------------ARGUMENTS--------------------
 
-BATCH_SIZE = 512
-DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+#val défault
+mode_entrainement = 1 
+qualite = 'c'
 
-# Le chemin du modèle local qu'on va sauvegarder ou charger
-LOCAL_MODEL_PATH = "seisbench/phasenet_volcan_v1.pt"
+#arg 1 : mode learning
+if len(sys.argv) > 1:
+    try:
+        mode_entrainement = int(sys.argv[1])
+    except ValueError:
+        print("Erreur : Le premier argument doit être un entier (1 ou 2).")
+        sys.exit(1)
 
-if var==1 :
+#arg 2 : qualite
+if len(sys.argv) > 2:
+    qualite = sys.argv[2].lower()
+
+BASE_DIR = "../data"
+
+if qualite == 'a':
+    DOSSIER_QUALITE = "seisbenchA"
+elif qualite == 'b':
+    DOSSIER_QUALITE = "seisbenchB"
+else:
+    DOSSIER_QUALITE = "seisbench"
+
+
+LOCAL_MODEL_PATH = os.path.join(DOSSIER_QUALITE, "phasenet_volcan_v1.pt")
+SAVE_MODEL_PATH = os.path.join(DOSSIER_QUALITE, "phasenet_volcan_v2.pt")
+
+if mode_entrainement == 1:
     START_FROM_ZERO = True
-    DATASET_DIR = "../data/seisbench/seisbench_dataset"
-    EPOCHS = 100
+    DATASET_DIR = os.path.join(BASE_DIR, DOSSIER_QUALITE, "seisbench_dataset")
+    EPOCHS = 300
     LEARNING_RATE = 1e-4
-    SIGMA=50
+    SIGMA=35
     print("Mode : Entraînement DE ZÉRO")
 else:
-    DATASET_DIR = "../data/seisbench/seisbench_dataset_ultime"
+    DATASET_DIR = os.path.join(BASE_DIR, DOSSIER_QUALITE, "seisbench_dataset_ultime")
     START_FROM_ZERO = False 
-    EPOCHS = 30           # Moins d'époques nécessaires car Fine-Tuning
+    EPOCHS = 150           # Moins d'époques nécessaires car Fine-Tuning
     LEARNING_RATE = 5e-5
-    SIGMA = 30
+    SIGMA = 20
     print(f"Mode : FINE-TUNING LOCAL depuis {LOCAL_MODEL_PATH}")
 
+print(f"On veux une qualité minimal de {qualite}")
+
+#------------PARAMETRES--------------------
+PATIENCE = 5 #nombre d'epoque sans changement pour arrêt modèle
+
+BATCH_SIZE = 32
+DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 # chargement des données
 dataset = sbd.WaveformDataset(DATASET_DIR, component_order="ZNE", sampling_rate=100)
 train_dataset = dataset.train()
@@ -45,6 +74,37 @@ phase_dict = {
     "trace_s_arrival_sample": "S"
 }
 
+def add_noise_channel(sample):
+    """Calcule le canal bruit en gérant correctement les tuples de SeisBench"""
+    x_data, x_meta = sample["X"]
+    y_data, y_meta = sample["y"]
+    
+    target_len = x_data.shape[-1]
+    
+    y_clean = []
+    
+    #orce la selection de P et S
+    for arr in y_data[:2]: 
+        arr = np.array(arr, dtype=np.float32)
+        if len(arr) < target_len:
+            arr = np.pad(arr, (0, target_len - len(arr)))
+        elif len(arr) > target_len:
+            arr = arr[:target_len]
+        y_clean.append(arr)
+        
+    #empile pour cree une matrice 2D (2, target_len)
+    y = np.vstack(y_clean)
+    
+    #bruit = 1 - (P + S)
+    noise = 1.0 - np.sum(y, axis=0, keepdims=True)
+    noise = np.clip(noise, 0.0, 1.0)
+    
+    # forme (3, target_len) [P, S, Bruit]
+    y_final = np.concatenate([y, noise], axis=0)
+    
+    sample["y"] = (y_final, y_meta)
+    
+    return sample
 # pipeline d'augmentation
 transforms = [
     #recupere une fenêtre de 6000 point (3000 avant le centre) et full 0 si pas de data
@@ -63,7 +123,8 @@ transforms = [
         label_columns=phase_dict, 
         sigma=SIGMA, 
         dim=0
-    )
+    ),
+    add_noise_channel
 ]
 
 train_gen = sbg.GenericGenerator(train_dataset)
@@ -95,18 +156,12 @@ optimizer = torch.optim.Adam(model.parameters(), lr=LEARNING_RATE)
 
 # perte pondéré
 # on donne un poids de 2.0 pour P, 1.0 pour S, et 0.5 pour le Bruit
-poids_canaux = torch.tensor([2.0, 1.0, 0.5]).view(1, 3, 1).to(DEVICE)
-
-
-
-#calcul erreur quasratique moyenne brut
-def weighted_mse_loss(pred, target):
-    loss_brute = (pred - target) ** 2
-    loss_ponderee = loss_brute * poids_canaux
-    return loss_ponderee.mean()
+poids_classes = torch.tensor([2.0, 1.0, 0.5], dtype=torch.float32).to(DEVICE)
+criterion = nn.CrossEntropyLoss(weight=poids_classes)
 
 # entrainement
 best_val_loss = float('inf') #init à l'infini
+patience_counter = 0 #init meilleur modèle ressent
 
 print("\nDébut de l'entraînement")
 for epoch in range(EPOCHS):
@@ -116,7 +171,7 @@ for epoch in range(EPOCHS):
         X, y = batch["X"].to(DEVICE), batch["y"].to(DEVICE) #envoie signaux et cible vers DEVICE
         optimizer.zero_grad() #reset à 0
         output = model(X) #passe avant (passe la trace dans le reseau)
-        loss = weighted_mse_loss(output, y) #calcul erreur globale
+        loss = criterion(output, y) #calcul erreur globale via CrossEntropy
         loss.backward() #regarde quelle point doivent être modifié
         optimizer.step() #on les modifie
         train_loss += loss.item() * X.size(0) #calcule erreur globale
@@ -126,7 +181,7 @@ for epoch in range(EPOCHS):
     with torch.no_grad(): #pas besoin du calcul des gradients
         for batch in val_loader:
             X, y = batch["X"].to(DEVICE), batch["y"].to(DEVICE)
-            val_loss += weighted_mse_loss(model(X), y).item() * X.size(0)
+            val_loss += criterion(model(X), y).item() * X.size(0)
             
     train_loss /= len(train_dataset) #pour pour voir l'amélioration de l'entrainement
     val_loss /= len(val_dataset) # pareil mais pour la validation
@@ -137,8 +192,14 @@ for epoch in range(EPOCHS):
     # On sauvegarde le meilleur model si meilleur
     if val_loss < best_val_loss:
         best_val_loss = val_loss
+        patience_counter = 0 # reset car meilleur modèle ressent
         
-        save_name = "seisbench/phasenet_volcan_v2.pt" if not START_FROM_ZERO else LOCAL_MODEL_PATH
+        if qualite == 'a':
+            save_name = "seisbenchA/phasenet_volcan_v2.pt" if not START_FROM_ZERO else LOCAL_MODEL_PATH
+        elif qualite == 'b':
+            save_name = "seisbenchB/phasenet_volcan_v2.pt" if not START_FROM_ZERO else LOCAL_MODEL_PATH
+        else:
+            save_name = "seisbench/phasenet_volcan_v2.pt" if not START_FROM_ZERO else LOCAL_MODEL_PATH
         
         dossier_parent = os.path.dirname(save_name)
         if dossier_parent != "":
@@ -146,5 +207,9 @@ for epoch in range(EPOCHS):
             
         torch.save(model.state_dict(), save_name)
         print(f"  -> Nouveau meilleur modèle")
+    else:
+        patience_counter += 1
+        if patience_counter >= PATIENCE:
+            print(f"Arrêt car pas d'amélioration depuis {PATIENCE} Epoche \nFin au bout de {epoch} EPOCHE\n")
 
 print("\nEntraînement terminé avec succès.")

@@ -7,26 +7,14 @@ import obspy
 import pandas as pd
 import seisbench.models as sbm
 from obspy import UTCDateTime
+import sys
 
 # ------------ PARAMÈTRES ------------
 BASE_DIR = "../data"
-MODEL_PATH = "seisbench/phasenet_volcan_v1.pt"
-BASE_OUT = "../data/seisbench/seisbench_nouv"
-os.makedirs(BASE_OUT, exist_ok=True)
-
-#fichiers sortie CSV
-OUTPUT_CSV = os.path.join(BASE_OUT, "catalogue_vt_detectes.csv")
-OUTPUT_EVENTS_CSV = os.path.join(BASE_OUT, "catalogue_vt_detectes_evenements_valides.csv")
-
-BASE_MSEED = "/get/ggs/clov/mseed_data/martinique"
-MSEED_DIR = os.path.join(BASE_MSEED, "MQ")
-
-#BASE_MSEED ="../data"
-#MSEED_DIR = os.path.join(BASE_MSEED, "2014/MQ")
 
 #valeurs de détection
-THRESHOLD_P = 0.90
-THRESHOLD_S = 0.90
+THRESHOLD_P = 0.95
+THRESHOLD_S = 0.95
 
 START_DAY = 51
 END_DAY = 151
@@ -40,12 +28,41 @@ STATIONS_MONO = {"BAM", "CPM", "GBM", "MLM"}
 ASSOCIATION_WINDOW_SECONDS = 5.0  #fenetre max entre arrive sur 2 stats
 #filtre pour event
 MIN_STATIONS = 5          #nbr min de stat 
-MIN_PROBA_EVENT = 0.90    #score confiance minimal
+MIN_PROBA_EVENT = 0.99    #score confiance minimal
 MAX_EVENT_DURATION = 15.0 #tmp max event (pas plus de 15 sec)
 
 # --- PARAMÈTRES FILTRE ---
-FREQ_MIN = 1.0
-FREQ_MAX = 40.0
+FREQ_MIN = 3.0
+FREQ_MAX = 20.0
+
+if len(sys.argv) > 1:
+    var = sys.argv[1].lower()
+    if var=='a' :
+        MODEL_PATH = "seisbenchA/phasenet_volcan_v1.pt"
+        BASE_OUT = "../data/seisbenchA/seisbench_nouv"
+    elif var=='b' :
+        MODEL_PATH = "seisbenchB/phasenet_volcan_v1.pt"
+        BASE_OUT = "../data/seisbenchB/seisbench_nouv"
+else :
+    var = 'c'
+    MODEL_PATH = "seisbench/phasenet_volcan_v1.pt"
+    BASE_OUT = "../data/seisbench/seisbench_nouv"
+
+print(f"On veux une qualité minimal de {var}")
+
+
+os.makedirs(BASE_OUT, exist_ok=True)
+
+#fichiers sortie CSV
+OUTPUT_CSV = os.path.join(BASE_OUT, "catalogue_vt_detectes.csv")
+OUTPUT_EVENTS_CSV = os.path.join(BASE_OUT, "catalogue_vt_detectes_evenements_valides.csv")
+
+BASE_MSEED = "/get/ggs/clov/mseed_data/martinique"
+MSEED_DIR = os.path.join(BASE_MSEED, "MQ")
+
+#BASE_MSEED ="../data"
+#MSEED_DIR = os.path.join(BASE_MSEED, "2014/MQ")
+
 
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -128,6 +145,17 @@ def associer_evenements(df, fenetre_secondes=ASSOCIATION_WINDOW_SECONDS, min_sta
 def preparer_stream_station(st, stat, min_duration=35.0):
     if len(st) == 0:
         return obspy.Stream()
+    
+    start_time_brut = min([tr.stats.starttime for tr in st])
+    end_time_brut = max([tr.stats.endtime for tr in st])
+    duree_brute = end_time_brut - start_time_brut
+    
+    #si duree totale > 2 jours (172800 secondes), les dates sont fausses
+    #charge trop en ram et peux crash (Killed)
+    if duree_brute > 172800.0: # Plus de 2 jours d'écart dans les fichiers lus
+        print(f"    [ALERTE RAM] Station {stat} ignorée : écart temporel brut de {duree_brute:.0f}s (> 2 jours). Abandon avant merge.")
+        return obspy.Stream()
+    
     
     #on enleve doublons identiques
     traces_uniques = []
@@ -231,13 +259,14 @@ tous_les_evenements = []
 tous_les_picks_dedup = []
 
 for julian_day in range(START_DAY, END_DAY + 1):
-    print(f"\n--- Traitement du jour {julian_day} ---")
+    julian_day_str = f"{julian_day:03d}"  # Transforme 51 en "051"
+    print(f"\n--- Traitement du jour {julian_day_str} ---")
     
     detections_du_jour = []
     
     for stat_folder in glob.glob(os.path.join(MSEED_DIR, "*")): #parcour tout les sous dossier pour mseed
         stat = os.path.basename(stat_folder) #recup nom dossier (BAM, ...)
-        search_pattern = os.path.join(stat_folder, f"*{YEAR}*{julian_day}*") #construit pattern
+        search_pattern = os.path.join(stat_folder, f"*{YEAR}*{julian_day_str}*") #construit pattern
         mseed_files = glob.glob(search_pattern)
         
         if not mseed_files: #fichier mseed manquand, donc on passe a une autre
@@ -266,7 +295,7 @@ for julian_day in range(START_DAY, END_DAY + 1):
                     st, 
                     P_threshold=THRESHOLD_P, 
                     S_threshold=THRESHOLD_S,
-                    batch_size=512
+                    batch_size=32
                 )
             
             picks = list(getattr(output, "picks", output)) #recup liste picks
@@ -290,7 +319,7 @@ for julian_day in range(START_DAY, END_DAY + 1):
             #on transforme la liste en dictionnaire
             for pick in picks_valides:
                 toutes_les_detections.append({
-                    "day": julian_day, "station": stat, "phase": pick.phase,
+                    "day": julian_day_str, "station": stat, "phase": pick.phase,
                     "time": pick.peak_time.isoformat(), "probability": pick.peak_value
                 })
                 detections_du_jour.append(toutes_les_detections[-1])
@@ -316,7 +345,7 @@ for julian_day in range(START_DAY, END_DAY + 1):
         df_jour_dedup = dedupliquer_picks(df_jour) #on enleve les doublons
         tous_les_picks_dedup.append(df_jour_dedup)
         df_evenements = associer_evenements(df_jour_dedup, min_stations=MIN_STATIONS) #on regroupe toutes les P des même event
-        print(f"=== Bilan Jour {julian_day} : {len(df_jour_dedup)} phases -> {len(df_evenements)} évènements ===") #bilan journalier
+        print(f"=== Bilan Jour {julian_day_str} : {len(df_jour_dedup)} phases -> {len(df_evenements)} évènements ===") #bilan journalier
         
         if not df_evenements.empty:
             tous_les_evenements.append(df_evenements)

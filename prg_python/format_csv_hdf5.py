@@ -9,11 +9,24 @@ from collections import defaultdict
 import numpy as np
 from genericpath import exists
 import random
+import sys
 
 #------------PARAMETRES--------------------
 BASE_DIR = "../data"
+
+if len(sys.argv) > 1:
+    var = sys.argv[1].lower()
+    if var=='a':
+        OUTPUT_DIR = os.path.join(BASE_DIR, "seisbenchA/seisbench_format")
+    elif var=='b' :
+        OUTPUT_DIR = os.path.join(BASE_DIR, "seisbenchB/seisbench_format")
+else :
+    var = 'c'
+    OUTPUT_DIR = os.path.join(BASE_DIR, "seisbench/seisbench_format")
+
+print(f"On veux une qualité minimal de {var}")
+
 STATION_CSV_DIR = os.path.join(BASE_DIR, "csv")
-OUTPUT_DIR = os.path.join(BASE_DIR, "seisbench/seisbench_format")
 PICK_DIR = os.path.join(BASE_DIR, "phase_snuffler")
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
@@ -34,8 +47,8 @@ POST_S_MARGIN_SEC = 5
 GAP_ACCEPT = 1.0  # en secondes
 
 # --- PARAMÈTRES FILTRE ---
-FREQ_MIN = 1.0
-FREQ_MAX = 40.0
+FREQ_MIN = 3.0
+FREQ_MAX = 20.0
 
 stations_info = {}
 # construction du dico station grâce au repertoire ../data/csv
@@ -61,13 +74,30 @@ print("Voici toutes les stations du dictionnaire : ", *stations_info.keys())
 all_pick_files = os.listdir(PICK_DIR)
 pick_files = []
 
-# on enleve les fichiers qui on un 'd'
-for f in all_pick_files:
-    files_without_d = 'd' not in f
-    path_good_files = os.path.join(PICK_DIR, f)
+#on garde en fonction de la qualité que l'on veux 
+if var == 'a' : #que les pointés avec 'a' dans le nom'
+    for f in all_pick_files:
+        has_a = 'a' in f
+        path_good_files = os.path.join(PICK_DIR, f)
+        
+        if has_a and os.path.isfile(path_good_files):
+            pick_files.append(f)
 
-    if files_without_d and os.path.isfile(path_good_files):
-        pick_files.append(f)
+elif var == 'b': #'a' OU 'b' dans le nom
+    for f in all_pick_files:
+        has_a_or_b = ('a' in f) or ('b' in f)
+        path_good_files = os.path.join(PICK_DIR, f)
+        
+        if has_a_or_b and os.path.isfile(path_good_files):
+            pick_files.append(f)
+
+else :# on enleve les fichiers qui on un 'd'
+    for f in all_pick_files:
+        files_without_d = 'd' not in f
+        path_good_files = os.path.join(PICK_DIR, f)
+        
+        if files_without_d and os.path.isfile(path_good_files):
+            pick_files.append(f)
 
 print("Utilisation de", len(pick_files), "fichiers de pointé,", len(all_pick_files), "au total (avec 'd')")
 

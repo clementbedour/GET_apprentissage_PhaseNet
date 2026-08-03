@@ -6,12 +6,19 @@
 /data/phase_separe/
 /data/phase_snuffler/
 /data/phase_vt/
+/data/seisbench
+/data/seisbenchA
+/data/seisbenchB
 
 
 /prg_python/__pycache__/
 /prg_python/test_IA.py
+/prg_python/detection2.py
+/prg_python/seisbench
+/prg_python/seisbenchA
+/prg_python/seisbenchB
 
 /prg_bash/scp.sh
 
-
+*.csv
 *.hdf5
