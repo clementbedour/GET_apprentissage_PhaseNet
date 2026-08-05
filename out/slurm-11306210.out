@@ -1,0 +1,2242 @@
+a+b
+Mon Aug 3 17:12:05 CEST 2026
+/usr/local/miniconda/bin:/usr/local/SINGULARITY/OPENMPI-3.1.4-GNU731/bin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
+Mode : Entraînement DE ZÉRO
+On veux une qualité minimal de b
+Succès ! Dataset chargé. Train: 979 | Val: 123
+Initialisation du modèle avec des poids aléatoires
+
+Début de l'entraînement
+Époque 01/300 | Train Loss: 0.56672 | Val Loss: 0.56987
+  -> Nouveau meilleur modèle
+Époque 02/300 | Train Loss: 0.56027 | Val Loss: 0.56090
+  -> Nouveau meilleur modèle
+Époque 03/300 | Train Loss: 0.55236 | Val Loss: 0.55406
+  -> Nouveau meilleur modèle
+Époque 04/300 | Train Loss: 0.54122 | Val Loss: 0.53351
+  -> Nouveau meilleur modèle
+Époque 05/300 | Train Loss: 0.52880 | Val Loss: 0.52553
+  -> Nouveau meilleur modèle
+Époque 06/300 | Train Loss: 0.52314 | Val Loss: 0.51997
+  -> Nouveau meilleur modèle
+Époque 07/300 | Train Loss: 0.51813 | Val Loss: 0.51574
+  -> Nouveau meilleur modèle
+Époque 08/300 | Train Loss: 0.51423 | Val Loss: 0.51042
+  -> Nouveau meilleur modèle
+Époque 09/300 | Train Loss: 0.51018 | Val Loss: 0.50602
+  -> Nouveau meilleur modèle
+Époque 10/300 | Train Loss: 0.50590 | Val Loss: 0.50157
+  -> Nouveau meilleur modèle
+Époque 11/300 | Train Loss: 0.50190 | Val Loss: 0.49741
+  -> Nouveau meilleur modèle
+Époque 12/300 | Train Loss: 0.49796 | Val Loss: 0.49356
+  -> Nouveau meilleur modèle
+Époque 13/300 | Train Loss: 0.49402 | Val Loss: 0.49061
+  -> Nouveau meilleur modèle
+Époque 14/300 | Train Loss: 0.49037 | Val Loss: 0.48650
+  -> Nouveau meilleur modèle
+Époque 15/300 | Train Loss: 0.48648 | Val Loss: 0.48176
+  -> Nouveau meilleur modèle
+Époque 16/300 | Train Loss: 0.48302 | Val Loss: 0.47957
+  -> Nouveau meilleur modèle
+Époque 17/300 | Train Loss: 0.47917 | Val Loss: 0.47455
+  -> Nouveau meilleur modèle
+Époque 18/300 | Train Loss: 0.47533 | Val Loss: 0.47036
+  -> Nouveau meilleur modèle
+Époque 19/300 | Train Loss: 0.47199 | Val Loss: 0.46651
+  -> Nouveau meilleur modèle
+Époque 20/300 | Train Loss: 0.46822 | Val Loss: 0.46505
+  -> Nouveau meilleur modèle
+Époque 21/300 | Train Loss: 0.46454 | Val Loss: 0.45838
+  -> Nouveau meilleur modèle
+Époque 22/300 | Train Loss: 0.46090 | Val Loss: 0.45555
+  -> Nouveau meilleur modèle
+Époque 23/300 | Train Loss: 0.45728 | Val Loss: 0.45204
+  -> Nouveau meilleur modèle
+Époque 24/300 | Train Loss: 0.45346 | Val Loss: 0.44991
+  -> Nouveau meilleur modèle
+Époque 25/300 | Train Loss: 0.45043 | Val Loss: 0.44682
+  -> Nouveau meilleur modèle
+Époque 26/300 | Train Loss: 0.44711 | Val Loss: 0.44349
+  -> Nouveau meilleur modèle
+Époque 27/300 | Train Loss: 0.44352 | Val Loss: 0.43914
+  -> Nouveau meilleur modèle
+Époque 28/300 | Train Loss: 0.44077 | Val Loss: 0.43451
+  -> Nouveau meilleur modèle
+Époque 29/300 | Train Loss: 0.43735 | Val Loss: 0.43408
+  -> Nouveau meilleur modèle
+Époque 30/300 | Train Loss: 0.43428 | Val Loss: 0.43031
+  -> Nouveau meilleur modèle
+Époque 31/300 | Train Loss: 0.43122 | Val Loss: 0.42668
+  -> Nouveau meilleur modèle
+Époque 32/300 | Train Loss: 0.42808 | Val Loss: 0.42347
+  -> Nouveau meilleur modèle
+Époque 33/300 | Train Loss: 0.42520 | Val Loss: 0.42026
+  -> Nouveau meilleur modèle
+Époque 34/300 | Train Loss: 0.42245 | Val Loss: 0.41877
+  -> Nouveau meilleur modèle
+Époque 35/300 | Train Loss: 0.41922 | Val Loss: 0.41474
+  -> Nouveau meilleur modèle
+Époque 36/300 | Train Loss: 0.41635 | Val Loss: 0.41247
+  -> Nouveau meilleur modèle
+Époque 37/300 | Train Loss: 0.41376 | Val Loss: 0.40946
+  -> Nouveau meilleur modèle
+Époque 38/300 | Train Loss: 0.41121 | Val Loss: 0.40724
+  -> Nouveau meilleur modèle
+Époque 39/300 | Train Loss: 0.40841 | Val Loss: 0.40461
+  -> Nouveau meilleur modèle
+Époque 40/300 | Train Loss: 0.40575 | Val Loss: 0.40051
+  -> Nouveau meilleur modèle
+Époque 41/300 | Train Loss: 0.40317 | Val Loss: 0.39922
+  -> Nouveau meilleur modèle
+Époque 42/300 | Train Loss: 0.40097 | Val Loss: 0.39718
+  -> Nouveau meilleur modèle
+Époque 43/300 | Train Loss: 0.39782 | Val Loss: 0.39532
+  -> Nouveau meilleur modèle
+Époque 44/300 | Train Loss: 0.39515 | Val Loss: 0.39033
+  -> Nouveau meilleur modèle
+Époque 45/300 | Train Loss: 0.39253 | Val Loss: 0.38881
+  -> Nouveau meilleur modèle
+Époque 46/300 | Train Loss: 0.38953 | Val Loss: 0.38495
+  -> Nouveau meilleur modèle
+Époque 47/300 | Train Loss: 0.38662 | Val Loss: 0.38188
+  -> Nouveau meilleur modèle
+Époque 48/300 | Train Loss: 0.38330 | Val Loss: 0.37848
+  -> Nouveau meilleur modèle
+Époque 49/300 | Train Loss: 0.38109 | Val Loss: 0.37686
+  -> Nouveau meilleur modèle
+Époque 50/300 | Train Loss: 0.37867 | Val Loss: 0.37431
+  -> Nouveau meilleur modèle
+Époque 51/300 | Train Loss: 0.37574 | Val Loss: 0.37256
+  -> Nouveau meilleur modèle
+Époque 52/300 | Train Loss: 0.37343 | Val Loss: 0.37036
+  -> Nouveau meilleur modèle
+Époque 53/300 | Train Loss: 0.37151 | Val Loss: 0.36846
+  -> Nouveau meilleur modèle
+Époque 54/300 | Train Loss: 0.36881 | Val Loss: 0.36484
+  -> Nouveau meilleur modèle
+Époque 55/300 | Train Loss: 0.36698 | Val Loss: 0.36426
+  -> Nouveau meilleur modèle
+Époque 56/300 | Train Loss: 0.36502 | Val Loss: 0.36100
+  -> Nouveau meilleur modèle
+Époque 57/300 | Train Loss: 0.36329 | Val Loss: 0.36088
+  -> Nouveau meilleur modèle
+Époque 58/300 | Train Loss: 0.36102 | Val Loss: 0.35737
+  -> Nouveau meilleur modèle
+Époque 59/300 | Train Loss: 0.35946 | Val Loss: 0.35712
+  -> Nouveau meilleur modèle
+Époque 60/300 | Train Loss: 0.35741 | Val Loss: 0.35524
+  -> Nouveau meilleur modèle
+Époque 61/300 | Train Loss: 0.35554 | Val Loss: 0.35244
+  -> Nouveau meilleur modèle
+Époque 62/300 | Train Loss: 0.35413 | Val Loss: 0.35054
+  -> Nouveau meilleur modèle
+Époque 63/300 | Train Loss: 0.35248 | Val Loss: 0.34927
+  -> Nouveau meilleur modèle
+Époque 64/300 | Train Loss: 0.35102 | Val Loss: 0.34927
+Époque 65/300 | Train Loss: 0.34965 | Val Loss: 0.34649
+  -> Nouveau meilleur modèle
+Époque 66/300 | Train Loss: 0.34843 | Val Loss: 0.34492
+  -> Nouveau meilleur modèle
+Époque 67/300 | Train Loss: 0.34697 | Val Loss: 0.34364
+  -> Nouveau meilleur modèle
+Époque 68/300 | Train Loss: 0.34560 | Val Loss: 0.34239
+  -> Nouveau meilleur modèle
+Époque 69/300 | Train Loss: 0.34409 | Val Loss: 0.34181
+  -> Nouveau meilleur modèle
+Époque 70/300 | Train Loss: 0.34297 | Val Loss: 0.33928
+  -> Nouveau meilleur modèle
+Époque 71/300 | Train Loss: 0.34136 | Val Loss: 0.33892
+  -> Nouveau meilleur modèle
+Époque 72/300 | Train Loss: 0.34034 | Val Loss: 0.33903
+Époque 73/300 | Train Loss: 0.33918 | Val Loss: 0.33682
+  -> Nouveau meilleur modèle
+Époque 74/300 | Train Loss: 0.33819 | Val Loss: 0.33677
+  -> Nouveau meilleur modèle
+Époque 75/300 | Train Loss: 0.33679 | Val Loss: 0.33470
+  -> Nouveau meilleur modèle
+Époque 76/300 | Train Loss: 0.33630 | Val Loss: 0.33396
+  -> Nouveau meilleur modèle
+Époque 77/300 | Train Loss: 0.33498 | Val Loss: 0.33301
+  -> Nouveau meilleur modèle
+Époque 78/300 | Train Loss: 0.33402 | Val Loss: 0.33225
+  -> Nouveau meilleur modèle
+Époque 79/300 | Train Loss: 0.33308 | Val Loss: 0.33078
+  -> Nouveau meilleur modèle
+Époque 80/300 | Train Loss: 0.33169 | Val Loss: 0.33044
+  -> Nouveau meilleur modèle
+Époque 81/300 | Train Loss: 0.33138 | Val Loss: 0.32990
+  -> Nouveau meilleur modèle
+Époque 82/300 | Train Loss: 0.33046 | Val Loss: 0.32812
+  -> Nouveau meilleur modèle
+Époque 83/300 | Train Loss: 0.32943 | Val Loss: 0.32796
+  -> Nouveau meilleur modèle
+Époque 84/300 | Train Loss: 0.32859 | Val Loss: 0.32609
+  -> Nouveau meilleur modèle
+Époque 85/300 | Train Loss: 0.32791 | Val Loss: 0.32596
+  -> Nouveau meilleur modèle
+Époque 86/300 | Train Loss: 0.32704 | Val Loss: 0.32631
+Époque 87/300 | Train Loss: 0.32608 | Val Loss: 0.32484
+  -> Nouveau meilleur modèle
+Époque 88/300 | Train Loss: 0.32583 | Val Loss: 0.32524
+Époque 89/300 | Train Loss: 0.32506 | Val Loss: 0.32342
+  -> Nouveau meilleur modèle
+Époque 90/300 | Train Loss: 0.32442 | Val Loss: 0.32314
+  -> Nouveau meilleur modèle
+Époque 91/300 | Train Loss: 0.32342 | Val Loss: 0.32241
+  -> Nouveau meilleur modèle
+Époque 92/300 | Train Loss: 0.32315 | Val Loss: 0.32192
+  -> Nouveau meilleur modèle
+Époque 93/300 | Train Loss: 0.32236 | Val Loss: 0.32092
+  -> Nouveau meilleur modèle
+Époque 94/300 | Train Loss: 0.32175 | Val Loss: 0.31998
+  -> Nouveau meilleur modèle
+Époque 95/300 | Train Loss: 0.32114 | Val Loss: 0.32028
+Époque 96/300 | Train Loss: 0.32065 | Val Loss: 0.31866
+  -> Nouveau meilleur modèle
+Époque 97/300 | Train Loss: 0.31983 | Val Loss: 0.31949
+Époque 98/300 | Train Loss: 0.31955 | Val Loss: 0.31944
+Époque 99/300 | Train Loss: 0.31901 | Val Loss: 0.31845
+  -> Nouveau meilleur modèle
+Époque 100/300 | Train Loss: 0.31876 | Val Loss: 0.31662
+  -> Nouveau meilleur modèle
+Époque 101/300 | Train Loss: 0.31809 | Val Loss: 0.31579
+  -> Nouveau meilleur modèle
+Époque 102/300 | Train Loss: 0.31753 | Val Loss: 0.31659
+Époque 103/300 | Train Loss: 0.31687 | Val Loss: 0.31644
+Époque 104/300 | Train Loss: 0.31674 | Val Loss: 0.31579
+  -> Nouveau meilleur modèle
+Époque 105/300 | Train Loss: 0.31621 | Val Loss: 0.31564
+  -> Nouveau meilleur modèle
+Époque 106/300 | Train Loss: 0.31557 | Val Loss: 0.31428
+  -> Nouveau meilleur modèle
+Époque 107/300 | Train Loss: 0.31510 | Val Loss: 0.31415
+  -> Nouveau meilleur modèle
+Époque 108/300 | Train Loss: 0.31476 | Val Loss: 0.31466
+Époque 109/300 | Train Loss: 0.31449 | Val Loss: 0.31376
+  -> Nouveau meilleur modèle
+Époque 110/300 | Train Loss: 0.31433 | Val Loss: 0.31410
+Époque 111/300 | Train Loss: 0.31381 | Val Loss: 0.31341
+  -> Nouveau meilleur modèle
+Époque 112/300 | Train Loss: 0.31347 | Val Loss: 0.31264
+  -> Nouveau meilleur modèle
+Époque 113/300 | Train Loss: 0.31290 | Val Loss: 0.31215
+  -> Nouveau meilleur modèle
+Époque 114/300 | Train Loss: 0.31246 | Val Loss: 0.31191
+  -> Nouveau meilleur modèle
+Époque 115/300 | Train Loss: 0.31242 | Val Loss: 0.31307
+Époque 116/300 | Train Loss: 0.31194 | Val Loss: 0.31147
+  -> Nouveau meilleur modèle
+Époque 117/300 | Train Loss: 0.31169 | Val Loss: 0.31294
+Époque 118/300 | Train Loss: 0.31127 | Val Loss: 0.31077
+  -> Nouveau meilleur modèle
+Époque 119/300 | Train Loss: 0.31130 | Val Loss: 0.30990
+  -> Nouveau meilleur modèle
+Époque 120/300 | Train Loss: 0.31083 | Val Loss: 0.30988
+  -> Nouveau meilleur modèle
+Époque 121/300 | Train Loss: 0.31050 | Val Loss: 0.31118
+Époque 122/300 | Train Loss: 0.31034 | Val Loss: 0.30946
+  -> Nouveau meilleur modèle
+Époque 123/300 | Train Loss: 0.31006 | Val Loss: 0.30868
+  -> Nouveau meilleur modèle
+Époque 124/300 | Train Loss: 0.30979 | Val Loss: 0.30890
+Époque 125/300 | Train Loss: 0.30973 | Val Loss: 0.30924
+Époque 126/300 | Train Loss: 0.30904 | Val Loss: 0.30893
+Époque 127/300 | Train Loss: 0.30899 | Val Loss: 0.30927
+Époque 128/300 | Train Loss: 0.30846 | Val Loss: 0.30843
+  -> Nouveau meilleur modèle
+Époque 129/300 | Train Loss: 0.30872 | Val Loss: 0.30739
+  -> Nouveau meilleur modèle
+Époque 130/300 | Train Loss: 0.30818 | Val Loss: 0.30875
+Époque 131/300 | Train Loss: 0.30790 | Val Loss: 0.30725
+  -> Nouveau meilleur modèle
+Époque 132/300 | Train Loss: 0.30805 | Val Loss: 0.30647
+  -> Nouveau meilleur modèle
+Époque 133/300 | Train Loss: 0.30731 | Val Loss: 0.30786
+Époque 134/300 | Train Loss: 0.30727 | Val Loss: 0.30598
+  -> Nouveau meilleur modèle
+Époque 135/300 | Train Loss: 0.30695 | Val Loss: 0.30604
+Époque 136/300 | Train Loss: 0.30681 | Val Loss: 0.30610
+Époque 137/300 | Train Loss: 0.30675 | Val Loss: 0.30724
+Époque 138/300 | Train Loss: 0.30644 | Val Loss: 0.30655
+Époque 139/300 | Train Loss: 0.30613 | Val Loss: 0.30597
+  -> Nouveau meilleur modèle
+Époque 140/300 | Train Loss: 0.30598 | Val Loss: 0.30750
+Époque 141/300 | Train Loss: 0.30615 | Val Loss: 0.30571
+  -> Nouveau meilleur modèle
+Époque 142/300 | Train Loss: 0.30626 | Val Loss: 0.30493
+  -> Nouveau meilleur modèle
+Époque 143/300 | Train Loss: 0.30584 | Val Loss: 0.30615
+Époque 144/300 | Train Loss: 0.30576 | Val Loss: 0.30561
+Époque 145/300 | Train Loss: 0.30555 | Val Loss: 0.30473
+  -> Nouveau meilleur modèle
+Époque 146/300 | Train Loss: 0.30511 | Val Loss: 0.30509
+Époque 147/300 | Train Loss: 0.30500 | Val Loss: 0.30509
+Époque 148/300 | Train Loss: 0.30487 | Val Loss: 0.30458
+  -> Nouveau meilleur modèle
+Époque 149/300 | Train Loss: 0.30474 | Val Loss: 0.30474
+Époque 150/300 | Train Loss: 0.30478 | Val Loss: 0.30414
+  -> Nouveau meilleur modèle
+Époque 151/300 | Train Loss: 0.30421 | Val Loss: 0.30410
+  -> Nouveau meilleur modèle
+Époque 152/300 | Train Loss: 0.30414 | Val Loss: 0.30433
+Époque 153/300 | Train Loss: 0.30472 | Val Loss: 0.30425
+Époque 154/300 | Train Loss: 0.30411 | Val Loss: 0.30382
+  -> Nouveau meilleur modèle
+Époque 155/300 | Train Loss: 0.30371 | Val Loss: 0.30448
+Époque 156/300 | Train Loss: 0.30364 | Val Loss: 0.30391
+Époque 157/300 | Train Loss: 0.30347 | Val Loss: 0.30396
+Époque 158/300 | Train Loss: 0.30338 | Val Loss: 0.30427
+Époque 159/300 | Train Loss: 0.30316 | Val Loss: 0.30320
+  -> Nouveau meilleur modèle
+Époque 160/300 | Train Loss: 0.30324 | Val Loss: 0.30426
+Époque 161/300 | Train Loss: 0.30296 | Val Loss: 0.30302
+  -> Nouveau meilleur modèle
+Époque 162/300 | Train Loss: 0.30312 | Val Loss: 0.30315
+Époque 163/300 | Train Loss: 0.30281 | Val Loss: 0.30401
+Époque 164/300 | Train Loss: 0.30250 | Val Loss: 0.30239
+  -> Nouveau meilleur modèle
+Époque 165/300 | Train Loss: 0.30290 | Val Loss: 0.30432
+Époque 166/300 | Train Loss: 0.30272 | Val Loss: 0.30390
+Époque 167/300 | Train Loss: 0.30239 | Val Loss: 0.30365
+Époque 168/300 | Train Loss: 0.30196 | Val Loss: 0.30358
+Époque 169/300 | Train Loss: 0.30208 | Val Loss: 0.30310
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 168 EPOCHE
+
+Époque 170/300 | Train Loss: 0.30174 | Val Loss: 0.30329
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 169 EPOCHE
+
+Époque 171/300 | Train Loss: 0.30169 | Val Loss: 0.30191
+  -> Nouveau meilleur modèle
+Époque 172/300 | Train Loss: 0.30198 | Val Loss: 0.30206
+Époque 173/300 | Train Loss: 0.30210 | Val Loss: 0.30135
+  -> Nouveau meilleur modèle
+Époque 174/300 | Train Loss: 0.30169 | Val Loss: 0.30125
+  -> Nouveau meilleur modèle
+Époque 175/300 | Train Loss: 0.30170 | Val Loss: 0.30252
+Époque 176/300 | Train Loss: 0.30138 | Val Loss: 0.30130
+Époque 177/300 | Train Loss: 0.30138 | Val Loss: 0.30263
+Époque 178/300 | Train Loss: 0.30149 | Val Loss: 0.30122
+  -> Nouveau meilleur modèle
+Époque 179/300 | Train Loss: 0.30104 | Val Loss: 0.30065
+  -> Nouveau meilleur modèle
+Époque 180/300 | Train Loss: 0.30122 | Val Loss: 0.30116
+Époque 181/300 | Train Loss: 0.30109 | Val Loss: 0.30042
+  -> Nouveau meilleur modèle
+Époque 182/300 | Train Loss: 0.30119 | Val Loss: 0.30170
+Époque 183/300 | Train Loss: 0.30108 | Val Loss: 0.29970
+  -> Nouveau meilleur modèle
+Époque 184/300 | Train Loss: 0.30107 | Val Loss: 0.30160
+Époque 185/300 | Train Loss: 0.30062 | Val Loss: 0.30199
+Époque 186/300 | Train Loss: 0.30050 | Val Loss: 0.30057
+Époque 187/300 | Train Loss: 0.30041 | Val Loss: 0.30079
+Époque 188/300 | Train Loss: 0.30048 | Val Loss: 0.30040
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 187 EPOCHE
+
+Époque 189/300 | Train Loss: 0.30015 | Val Loss: 0.30144
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 188 EPOCHE
+
+Époque 190/300 | Train Loss: 0.30014 | Val Loss: 0.30108
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 189 EPOCHE
+
+Époque 191/300 | Train Loss: 0.30024 | Val Loss: 0.30118
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 190 EPOCHE
+
+Époque 192/300 | Train Loss: 0.30023 | Val Loss: 0.30110
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 191 EPOCHE
+
+Époque 193/300 | Train Loss: 0.30019 | Val Loss: 0.30051
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 192 EPOCHE
+
+Époque 194/300 | Train Loss: 0.29986 | Val Loss: 0.30026
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 193 EPOCHE
+
+Époque 195/300 | Train Loss: 0.29990 | Val Loss: 0.30234
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 194 EPOCHE
+
+Époque 196/300 | Train Loss: 0.30029 | Val Loss: 0.30107
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 195 EPOCHE
+
+Époque 197/300 | Train Loss: 0.30037 | Val Loss: 0.29995
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 196 EPOCHE
+
+Époque 198/300 | Train Loss: 0.29967 | Val Loss: 0.29949
+  -> Nouveau meilleur modèle
+Époque 199/300 | Train Loss: 0.29996 | Val Loss: 0.30021
+Époque 200/300 | Train Loss: 0.29968 | Val Loss: 0.30042
+Époque 201/300 | Train Loss: 0.29982 | Val Loss: 0.30054
+Époque 202/300 | Train Loss: 0.29966 | Val Loss: 0.30035
+Époque 203/300 | Train Loss: 0.29964 | Val Loss: 0.30039
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 202 EPOCHE
+
+Époque 204/300 | Train Loss: 0.29946 | Val Loss: 0.30055
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 203 EPOCHE
+
+Époque 205/300 | Train Loss: 0.29948 | Val Loss: 0.29994
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 204 EPOCHE
+
+Époque 206/300 | Train Loss: 0.29931 | Val Loss: 0.30034
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 205 EPOCHE
+
+Époque 207/300 | Train Loss: 0.29921 | Val Loss: 0.30100
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 206 EPOCHE
+
+Époque 208/300 | Train Loss: 0.29929 | Val Loss: 0.29988
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 207 EPOCHE
+
+Époque 209/300 | Train Loss: 0.29912 | Val Loss: 0.30071
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 208 EPOCHE
+
+Époque 210/300 | Train Loss: 0.29924 | Val Loss: 0.30014
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 209 EPOCHE
+
+Époque 211/300 | Train Loss: 0.29909 | Val Loss: 0.30109
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 210 EPOCHE
+
+Époque 212/300 | Train Loss: 0.29884 | Val Loss: 0.30016
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 211 EPOCHE
+
+Époque 213/300 | Train Loss: 0.29890 | Val Loss: 0.29970
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 212 EPOCHE
+
+Époque 214/300 | Train Loss: 0.29888 | Val Loss: 0.29935
+  -> Nouveau meilleur modèle
+Époque 215/300 | Train Loss: 0.29877 | Val Loss: 0.29939
+Époque 216/300 | Train Loss: 0.29901 | Val Loss: 0.29952
+Époque 217/300 | Train Loss: 0.29868 | Val Loss: 0.29983
+Époque 218/300 | Train Loss: 0.29886 | Val Loss: 0.30075
+Époque 219/300 | Train Loss: 0.29876 | Val Loss: 0.29917
+  -> Nouveau meilleur modèle
+Époque 220/300 | Train Loss: 0.29869 | Val Loss: 0.29867
+  -> Nouveau meilleur modèle
+Époque 221/300 | Train Loss: 0.29863 | Val Loss: 0.29947
+Époque 222/300 | Train Loss: 0.29873 | Val Loss: 0.30007
+Époque 223/300 | Train Loss: 0.29867 | Val Loss: 0.29945
+Époque 224/300 | Train Loss: 0.29890 | Val Loss: 0.29991
+Époque 225/300 | Train Loss: 0.29864 | Val Loss: 0.30002
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 224 EPOCHE
+
+Époque 226/300 | Train Loss: 0.29841 | Val Loss: 0.30034
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 225 EPOCHE
+
+Époque 227/300 | Train Loss: 0.29861 | Val Loss: 0.29939
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 226 EPOCHE
+
+Époque 228/300 | Train Loss: 0.29870 | Val Loss: 0.30023
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 227 EPOCHE
+
+Époque 229/300 | Train Loss: 0.29827 | Val Loss: 0.29985
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 228 EPOCHE
+
+Époque 230/300 | Train Loss: 0.29847 | Val Loss: 0.29954
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 229 EPOCHE
+
+Époque 231/300 | Train Loss: 0.29855 | Val Loss: 0.29872
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 230 EPOCHE
+
+Époque 232/300 | Train Loss: 0.29859 | Val Loss: 0.30024
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 231 EPOCHE
+
+Époque 233/300 | Train Loss: 0.29829 | Val Loss: 0.30017
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 232 EPOCHE
+
+Époque 234/300 | Train Loss: 0.29843 | Val Loss: 0.29967
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 233 EPOCHE
+
+Époque 235/300 | Train Loss: 0.29842 | Val Loss: 0.29910
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 234 EPOCHE
+
+Époque 236/300 | Train Loss: 0.29806 | Val Loss: 0.29990
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 235 EPOCHE
+
+Époque 237/300 | Train Loss: 0.29846 | Val Loss: 0.29981
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 236 EPOCHE
+
+Époque 238/300 | Train Loss: 0.29825 | Val Loss: 0.29919
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 237 EPOCHE
+
+Époque 239/300 | Train Loss: 0.29814 | Val Loss: 0.29953
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 238 EPOCHE
+
+Époque 240/300 | Train Loss: 0.29844 | Val Loss: 0.29956
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 239 EPOCHE
+
+Époque 241/300 | Train Loss: 0.29811 | Val Loss: 0.29929
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 240 EPOCHE
+
+Époque 242/300 | Train Loss: 0.29860 | Val Loss: 0.29895
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 241 EPOCHE
+
+Époque 243/300 | Train Loss: 0.29803 | Val Loss: 0.29869
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 242 EPOCHE
+
+Époque 244/300 | Train Loss: 0.29808 | Val Loss: 0.29981
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 243 EPOCHE
+
+Époque 245/300 | Train Loss: 0.29793 | Val Loss: 0.29977
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 244 EPOCHE
+
+Époque 246/300 | Train Loss: 0.29777 | Val Loss: 0.29964
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 245 EPOCHE
+
+Époque 247/300 | Train Loss: 0.29798 | Val Loss: 0.29989
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 246 EPOCHE
+
+Époque 248/300 | Train Loss: 0.29767 | Val Loss: 0.29926
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 247 EPOCHE
+
+Époque 249/300 | Train Loss: 0.29780 | Val Loss: 0.29792
+  -> Nouveau meilleur modèle
+Époque 250/300 | Train Loss: 0.29825 | Val Loss: 0.29869
+Époque 251/300 | Train Loss: 0.29772 | Val Loss: 0.30009
+Époque 252/300 | Train Loss: 0.29749 | Val Loss: 0.29970
+Époque 253/300 | Train Loss: 0.29774 | Val Loss: 0.29903
+Époque 254/300 | Train Loss: 0.29783 | Val Loss: 0.29845
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 253 EPOCHE
+
+Époque 255/300 | Train Loss: 0.29779 | Val Loss: 0.29980
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 254 EPOCHE
+
+Époque 256/300 | Train Loss: 0.29769 | Val Loss: 0.29937
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 255 EPOCHE
+
+Époque 257/300 | Train Loss: 0.29759 | Val Loss: 0.29909
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 256 EPOCHE
+
+Époque 258/300 | Train Loss: 0.29752 | Val Loss: 0.29763
+  -> Nouveau meilleur modèle
+Époque 259/300 | Train Loss: 0.29764 | Val Loss: 0.29873
+Époque 260/300 | Train Loss: 0.29781 | Val Loss: 0.29816
+Époque 261/300 | Train Loss: 0.29778 | Val Loss: 0.29867
+Époque 262/300 | Train Loss: 0.29742 | Val Loss: 0.29866
+Époque 263/300 | Train Loss: 0.29744 | Val Loss: 0.29855
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 262 EPOCHE
+
+Époque 264/300 | Train Loss: 0.29752 | Val Loss: 0.29883
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 263 EPOCHE
+
+Époque 265/300 | Train Loss: 0.29738 | Val Loss: 0.29836
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 264 EPOCHE
+
+Époque 266/300 | Train Loss: 0.29735 | Val Loss: 0.29803
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 265 EPOCHE
+
+Époque 267/300 | Train Loss: 0.29747 | Val Loss: 0.29941
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 266 EPOCHE
+
+Époque 268/300 | Train Loss: 0.29733 | Val Loss: 0.29961
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 267 EPOCHE
+
+Époque 269/300 | Train Loss: 0.29739 | Val Loss: 0.29904
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 268 EPOCHE
+
+Époque 270/300 | Train Loss: 0.29765 | Val Loss: 0.29803
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 269 EPOCHE
+
+Époque 271/300 | Train Loss: 0.29719 | Val Loss: 0.29946
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 270 EPOCHE
+
+Époque 272/300 | Train Loss: 0.29754 | Val Loss: 0.29857
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 271 EPOCHE
+
+Époque 273/300 | Train Loss: 0.29724 | Val Loss: 0.29859
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 272 EPOCHE
+
+Époque 274/300 | Train Loss: 0.29699 | Val Loss: 0.29987
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 273 EPOCHE
+
+Époque 275/300 | Train Loss: 0.29700 | Val Loss: 0.29918
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 274 EPOCHE
+
+Époque 276/300 | Train Loss: 0.29693 | Val Loss: 0.29913
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 275 EPOCHE
+
+Époque 277/300 | Train Loss: 0.29715 | Val Loss: 0.29917
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 276 EPOCHE
+
+Époque 278/300 | Train Loss: 0.29688 | Val Loss: 0.29816
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 277 EPOCHE
+
+Époque 279/300 | Train Loss: 0.29705 | Val Loss: 0.29884
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 278 EPOCHE
+
+Époque 280/300 | Train Loss: 0.29671 | Val Loss: 0.29952
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 279 EPOCHE
+
+Époque 281/300 | Train Loss: 0.29704 | Val Loss: 0.29818
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 280 EPOCHE
+
+Époque 282/300 | Train Loss: 0.29681 | Val Loss: 0.29883
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 281 EPOCHE
+
+Époque 283/300 | Train Loss: 0.29648 | Val Loss: 0.29766
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 282 EPOCHE
+
+Époque 284/300 | Train Loss: 0.29643 | Val Loss: 0.29870
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 283 EPOCHE
+
+Époque 285/300 | Train Loss: 0.29680 | Val Loss: 0.29786
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 284 EPOCHE
+
+Époque 286/300 | Train Loss: 0.29660 | Val Loss: 0.29807
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 285 EPOCHE
+
+Époque 287/300 | Train Loss: 0.29637 | Val Loss: 0.29801
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 286 EPOCHE
+
+Époque 288/300 | Train Loss: 0.29647 | Val Loss: 0.29802
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 287 EPOCHE
+
+Époque 289/300 | Train Loss: 0.29659 | Val Loss: 0.29739
+  -> Nouveau meilleur modèle
+Époque 290/300 | Train Loss: 0.29636 | Val Loss: 0.29728
+  -> Nouveau meilleur modèle
+Époque 291/300 | Train Loss: 0.29649 | Val Loss: 0.29729
+Époque 292/300 | Train Loss: 0.29652 | Val Loss: 0.29829
+Époque 293/300 | Train Loss: 0.29646 | Val Loss: 0.29776
+Époque 294/300 | Train Loss: 0.29667 | Val Loss: 0.29785
+Époque 295/300 | Train Loss: 0.29622 | Val Loss: 0.29688
+  -> Nouveau meilleur modèle
+Époque 296/300 | Train Loss: 0.29626 | Val Loss: 0.29804
+Époque 297/300 | Train Loss: 0.29598 | Val Loss: 0.29831
+Époque 298/300 | Train Loss: 0.29599 | Val Loss: 0.29808
+Époque 299/300 | Train Loss: 0.29611 | Val Loss: 0.29791
+Époque 300/300 | Train Loss: 0.29575 | Val Loss: 0.29848
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 299 EPOCHE
+
+
+Entraînement terminé avec succès.
+On veux une qualité minimal de b
+Chargement du modèle local depuis : seisbenchB/phasenet_volcan_v1.pt
+
+--- Traitement du jour 051 ---
+  Station IA2 : 3094 phases VT filtrées.
+  Station SAM : 36 phases VT filtrées.
+Station MLM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station GBM : 1 phases VT filtrées.
+  Station CPM : 13 phases VT filtrées.
+  Station LAM : 244 phases VT filtrées.
+  Station BAM : 90 phases VT filtrées.
+=== Bilan Jour 051 : 2369 phases -> 0 évènements ===
+
+--- Traitement du jour 052 ---
+  Station IA2 : 963 phases VT filtrées.
+  Station SAM : 68 phases VT filtrées.
+  Station MLM : 1 phases VT filtrées.
+  Station GBM : 4 phases VT filtrées.
+  Station CPM : 27 phases VT filtrées.
+  Station LAM : 193 phases VT filtrées.
+  Station BAM : 54 phases VT filtrées.
+=== Bilan Jour 052 : 782 phases -> 0 évènements ===
+
+--- Traitement du jour 053 ---
+  Station IA2 : 20 phases VT filtrées.
+  Station SAM : 20 phases VT filtrées.
+  Station MLM : 3 phases VT filtrées.
+  Station GBM : 9 phases VT filtrées.
+  Station CPM : 9 phases VT filtrées.
+  Station LAM : 24 phases VT filtrées.
+  Station BAM : 48 phases VT filtrées.
+=== Bilan Jour 053 : 110 phases -> 0 évènements ===
+
+--- Traitement du jour 054 ---
+  Station IA2 : 54 phases VT filtrées.
+  Station SAM : 44 phases VT filtrées.
+  Station MLM : 3 phases VT filtrées.
+  Station GBM : 2 phases VT filtrées.
+  Station CPM : 29 phases VT filtrées.
+  Station LAM : 86 phases VT filtrées.
+  Station BAM : 84 phases VT filtrées.
+=== Bilan Jour 054 : 243 phases -> 1 évènements ===
+
+--- Traitement du jour 055 ---
+  Station IA2 : 168 phases VT filtrées.
+  Station SAM : 46 phases VT filtrées.
+  Station MLM : 292 phases VT filtrées.
+  Station GBM : 686 phases VT filtrées.
+  Station CPM : 828 phases VT filtrées.
+  Station LAM : 47 phases VT filtrées.
+  Station BAM : 722 phases VT filtrées.
+=== Bilan Jour 055 : 1104 phases -> 9 évènements ===
+
+--- Traitement du jour 056 ---
+  Station IA2 : 17 phases VT filtrées.
+  Station SAM : 17 phases VT filtrées.
+Station MLM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station GBM : 3 phases VT filtrées.
+  Station CPM : 30 phases VT filtrées.
+  Station LAM : 95 phases VT filtrées.
+  Station BAM : 21 phases VT filtrées.
+=== Bilan Jour 056 : 153 phases -> 0 évènements ===
+
+--- Traitement du jour 057 ---
+  Station IA2 : 4 phases VT filtrées.
+  Station SAM : 39 phases VT filtrées.
+  Station MLM : 2 phases VT filtrées.
+Station GBM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station CPM : 72 phases VT filtrées.
+  Station LAM : 57 phases VT filtrées.
+  Station BAM : 31 phases VT filtrées.
+=== Bilan Jour 057 : 159 phases -> 0 évènements ===
+
+--- Traitement du jour 058 ---
+  Station IA2 : 2 phases VT filtrées.
+  Station SAM : 20 phases VT filtrées.
+  Station MLM : 1 phases VT filtrées.
+Station GBM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station CPM : 8 phases VT filtrées.
+  Station LAM : 81 phases VT filtrées.
+  Station BAM : 35 phases VT filtrées.
+=== Bilan Jour 058 : 130 phases -> 0 évènements ===
+
+--- Traitement du jour 059 ---
+  Station IA2 : 8 phases VT filtrées.
+  Station SAM : 46 phases VT filtrées.
+  Station MLM : 1 phases VT filtrées.
+  Station GBM : 2 phases VT filtrées.
+  Station CPM : 18 phases VT filtrées.
+  Station LAM : 77 phases VT filtrées.
+  Station BAM : 39 phases VT filtrées.
+=== Bilan Jour 059 : 148 phases -> 0 évènements ===
+
+--- Traitement du jour 060 ---
+  Station IA2 : 31 phases VT filtrées.
+  Station SAM : 46 phases VT filtrées.
+  Station MLM : 1 phases VT filtrées.
+Station GBM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station CPM : 7 phases VT filtrées.
+  Station LAM : 107 phases VT filtrées.
+  Station BAM : 20 phases VT filtrées.
+=== Bilan Jour 060 : 187 phases -> 0 évènements ===
+
+--- Traitement du jour 061 ---
+  Station IA2 : 58 phases VT filtrées.
+  Station SAM : 48 phases VT filtrées.
+Station MLM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station GBM : 2 phases VT filtrées.
+  Station CPM : 25 phases VT filtrées.
+  Station LAM : 33 phases VT filtrées.
+  Station BAM : 30 phases VT filtrées.
+=== Bilan Jour 061 : 155 phases -> 0 évènements ===
+
+--- Traitement du jour 062 ---
+  Station IA2 : 11 phases VT filtrées.
+  Station SAM : 98 phases VT filtrées.
+Station MLM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station GBM : 11 phases VT filtrées.
+  Station CPM : 7 phases VT filtrées.
+  Station LAM : 37 phases VT filtrées.
+  Station BAM : 35 phases VT filtrées.
+=== Bilan Jour 062 : 159 phases -> 0 évènements ===
+
+--- Traitement du jour 063 ---
+  Station IA2 : 11 phases VT filtrées.
+  Station SAM : 79 phases VT filtrées.
+Station MLM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station GBM : 36 phases VT filtrées.
+  Station CPM : 2 phases VT filtrées.
+  Station LAM : 44 phases VT filtrées.
+  Station BAM : 49 phases VT filtrées.
+=== Bilan Jour 063 : 175 phases -> 0 évènements ===
+
+--- Traitement du jour 064 ---
+  Station IA2 : 17 phases VT filtrées.
+  Station SAM : 37 phases VT filtrées.
+  Station MLM : 1 phases VT filtrées.
+  Station GBM : 27 phases VT filtrées.
+  Station CPM : 3 phases VT filtrées.
+  Station LAM : 54 phases VT filtrées.
+  Station BAM : 21 phases VT filtrées.
+=== Bilan Jour 064 : 138 phases -> 0 évènements ===
+
+--- Traitement du jour 065 ---
+  Station IA2 : 9 phases VT filtrées.
+  Station SAM : 44 phases VT filtrées.
+  Station MLM : 3 phases VT filtrées.
+  Station GBM : 6 phases VT filtrées.
+  Station CPM : 11 phases VT filtrées.
+  Station LAM : 54 phases VT filtrées.
+  Station BAM : 22 phases VT filtrées.
+=== Bilan Jour 065 : 121 phases -> 0 évènements ===
+
+--- Traitement du jour 066 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station SAM : 38 phases VT filtrées.
+Station MLM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station GBM : 1 phases VT filtrées.
+  Station CPM : 2 phases VT filtrées.
+  Station LAM : 70 phases VT filtrées.
+  Station BAM : 26 phases VT filtrées.
+=== Bilan Jour 066 : 115 phases -> 0 évènements ===
+
+--- Traitement du jour 067 ---
+  Station IA2 : 6 phases VT filtrées.
+  Station SAM : 376 phases VT filtrées.
+Station MLM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station CPM : 4 phases VT filtrées.
+  Station LAM : 68 phases VT filtrées.
+  Station BAM : 124 phases VT filtrées.
+=== Bilan Jour 067 : 363 phases -> 0 évènements ===
+
+--- Traitement du jour 068 ---
+  Station IA2 : 76 phases VT filtrées.
+  Station SAM : 387 phases VT filtrées.
+  Station MLM : 1 phases VT filtrées.
+Station GBM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station CPM : 21 phases VT filtrées.
+  Station LAM : 35 phases VT filtrées.
+  Station BAM : 244 phases VT filtrées.
+=== Bilan Jour 068 : 482 phases -> 0 évènements ===
+
+--- Traitement du jour 069 ---
+  Station IA2 : 6 phases VT filtrées.
+  Station SAM : 13 phases VT filtrées.
+  Station MLM : 3 phases VT filtrées.
+  Station GBM : 6 phases VT filtrées.
+  Station CPM : 11 phases VT filtrées.
+  Station LAM : 14 phases VT filtrées.
+  Station BAM : 181 phases VT filtrées.
+=== Bilan Jour 069 : 167 phases -> 0 évènements ===
+
+--- Traitement du jour 070 ---
+  Station IA2 : 4 phases VT filtrées.
+  Station SAM : 60 phases VT filtrées.
+  Station MLM : 2 phases VT filtrées.
+  Station GBM : 1 phases VT filtrées.
+  Station CPM : 6 phases VT filtrées.
+  Station LAM : 15 phases VT filtrées.
+  Station BAM : 91 phases VT filtrées.
+=== Bilan Jour 070 : 143 phases -> 1 évènements ===
+
+--- Traitement du jour 071 ---
+  Station IA2 : 5 phases VT filtrées.
+  Station SAM : 54 phases VT filtrées.
+Station MLM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station GBM : 3 phases VT filtrées.
+  Station CPM : 6 phases VT filtrées.
+  Station LAM : 11 phases VT filtrées.
+  Station BAM : 47 phases VT filtrées.
+=== Bilan Jour 071 : 101 phases -> 1 évènements ===
+
+--- Traitement du jour 072 ---
+  Station IA2 : 4 phases VT filtrées.
+  Station SAM : 40 phases VT filtrées.
+Station MLM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station GBM : 6 phases VT filtrées.
+  Station CPM : 6 phases VT filtrées.
+  Station LAM : 57 phases VT filtrées.
+  Station BAM : 25 phases VT filtrées.
+=== Bilan Jour 072 : 113 phases -> 0 évènements ===
+
+--- Traitement du jour 073 ---
+  Station IA2 : 218 phases VT filtrées.
+  Station SAM : 55 phases VT filtrées.
+  Station MLM : 2 phases VT filtrées.
+  Station GBM : 16 phases VT filtrées.
+  Station CPM : 16 phases VT filtrées.
+  Station LAM : 18 phases VT filtrées.
+  Station BAM : 62 phases VT filtrées.
+=== Bilan Jour 073 : 293 phases -> 0 évènements ===
+
+--- Traitement du jour 074 ---
+  Station IA2 : 20 phases VT filtrées.
+  Station SAM : 36 phases VT filtrées.
+Station MLM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station GBM : 44 phases VT filtrées.
+  Station CPM : 10 phases VT filtrées.
+  Station LAM : 35 phases VT filtrées.
+  Station BAM : 136 phases VT filtrées.
+=== Bilan Jour 074 : 218 phases -> 1 évènements ===
+
+--- Traitement du jour 075 ---
+  Station IA2 : 63 phases VT filtrées.
+  Station SAM : 50 phases VT filtrées.
+Station MLM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station GBM : 47 phases VT filtrées.
+  Station CPM : 7 phases VT filtrées.
+  Station LAM : 44 phases VT filtrées.
+  Station BAM : 91 phases VT filtrées.
+=== Bilan Jour 075 : 256 phases -> 2 évènements ===
+
+--- Traitement du jour 076 ---
+  Station IA2 : 8 phases VT filtrées.
+  Station SAM : 37 phases VT filtrées.
+Station MLM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station GBM : 2 phases VT filtrées.
+  Station CPM : 6 phases VT filtrées.
+  Station LAM : 39 phases VT filtrées.
+  Station BAM : 27 phases VT filtrées.
+=== Bilan Jour 076 : 96 phases -> 0 évènements ===
+
+--- Traitement du jour 077 ---
+  Station IA2 : 7 phases VT filtrées.
+  Station SAM : 24 phases VT filtrées.
+  Station MLM : 8 phases VT filtrées.
+  Station GBM : 7 phases VT filtrées.
+  Station CPM : 2 phases VT filtrées.
+  Station LAM : 63 phases VT filtrées.
+  Station BAM : 18 phases VT filtrées.
+=== Bilan Jour 077 : 114 phases -> 1 évènements ===
+
+--- Traitement du jour 078 ---
+  Station IA2 : 7 phases VT filtrées.
+  Station SAM : 97 phases VT filtrées.
+Station MLM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station GBM : 2 phases VT filtrées.
+  Station CPM : 4 phases VT filtrées.
+  Station LAM : 18 phases VT filtrées.
+  Station BAM : 17 phases VT filtrées.
+=== Bilan Jour 078 : 109 phases -> 0 évènements ===
+
+--- Traitement du jour 079 ---
+  Station IA2 : 42 phases VT filtrées.
+  Station SAM : 55 phases VT filtrées.
+Station MLM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station GBM : 3 phases VT filtrées.
+  Station CPM : 4 phases VT filtrées.
+  Station LAM : 61 phases VT filtrées.
+  Station BAM : 30 phases VT filtrées.
+=== Bilan Jour 079 : 149 phases -> 0 évènements ===
+
+--- Traitement du jour 080 ---
+  Station IA2 : 5 phases VT filtrées.
+  Station SAM : 69 phases VT filtrées.
+  Station MLM : 1 phases VT filtrées.
+  Station GBM : 3 phases VT filtrées.
+  Station CPM : 5 phases VT filtrées.
+  Station LAM : 56 phases VT filtrées.
+  Station BAM : 36 phases VT filtrées.
+=== Bilan Jour 080 : 142 phases -> 0 évènements ===
+
+--- Traitement du jour 081 ---
+  Station IA2 : 2 phases VT filtrées.
+  Station SAM : 40 phases VT filtrées.
+  Station MLM : 2 phases VT filtrées.
+  Station GBM : 8 phases VT filtrées.
+  Station CPM : 3 phases VT filtrées.
+  Station LAM : 98 phases VT filtrées.
+  Station BAM : 31 phases VT filtrées.
+=== Bilan Jour 081 : 164 phases -> 0 évènements ===
+
+--- Traitement du jour 082 ---
+  Station IA2 : 5 phases VT filtrées.
+  Station SAM : 15 phases VT filtrées.
+Station MLM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station GBM : 2 phases VT filtrées.
+  Station CPM : 18 phases VT filtrées.
+  Station LAM : 34 phases VT filtrées.
+  Station BAM : 35 phases VT filtrées.
+=== Bilan Jour 082 : 89 phases -> 0 évènements ===
+
+--- Traitement du jour 083 ---
+  Station IA2 : 4 phases VT filtrées.
+  Station SAM : 52 phases VT filtrées.
+Station MLM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station GBM : 2 phases VT filtrées.
+  Station CPM : 2 phases VT filtrées.
+  Station LAM : 32 phases VT filtrées.
+  Station BAM : 15 phases VT filtrées.
+=== Bilan Jour 083 : 81 phases -> 1 évènements ===
+
+--- Traitement du jour 084 ---
+  Station IA2 : 1 phases VT filtrées.
+  Station SAM : 36 phases VT filtrées.
+  Station MLM : 1 phases VT filtrées.
+  Station GBM : 6 phases VT filtrées.
+Station CPM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station LAM : 21 phases VT filtrées.
+  Station BAM : 24 phases VT filtrées.
+=== Bilan Jour 084 : 57 phases -> 0 évènements ===
+
+--- Traitement du jour 085 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station SAM : 140 phases VT filtrées.
+Station MLM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station GBM : 5 phases VT filtrées.
+  Station CPM : 4 phases VT filtrées.
+  Station LAM : 19 phases VT filtrées.
+  Station BAM : 10 phases VT filtrées.
+=== Bilan Jour 085 : 128 phases -> 0 évènements ===
+
+--- Traitement du jour 086 ---
+  Station IA2 : 10 phases VT filtrées.
+  Station SAM : 15 phases VT filtrées.
+Station MLM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station GBM : 5 phases VT filtrées.
+  Station CPM : 1 phases VT filtrées.
+  Station LAM : 79 phases VT filtrées.
+  Station BAM : 40 phases VT filtrées.
+=== Bilan Jour 086 : 127 phases -> 0 évènements ===
+
+--- Traitement du jour 087 ---
+  Station IA2 : 138 phases VT filtrées.
+  Station SAM : 44 phases VT filtrées.
+Station MLM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station GBM : 9 phases VT filtrées.
+  Station CPM : 7 phases VT filtrées.
+  Station LAM : 182 phases VT filtrées.
+  Station BAM : 56 phases VT filtrées.
+=== Bilan Jour 087 : 335 phases -> 0 évènements ===
+
+--- Traitement du jour 088 ---
+  Station IA2 : 12 phases VT filtrées.
+  Station SAM : 68 phases VT filtrées.
+  Station MLM : 2 phases VT filtrées.
+  Station GBM : 2 phases VT filtrées.
+  Station CPM : 2 phases VT filtrées.
+  Station LAM : 72 phases VT filtrées.
+  Station BAM : 48 phases VT filtrées.
+=== Bilan Jour 088 : 168 phases -> 0 évènements ===
+
+--- Traitement du jour 089 ---
+  Station IA2 : 3 phases VT filtrées.
+  Station SAM : 15 phases VT filtrées.
+Station MLM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station GBM : 6 phases VT filtrées.
+  Station CPM : 3 phases VT filtrées.
+  Station LAM : 30 phases VT filtrées.
+  Station BAM : 10 phases VT filtrées.
+=== Bilan Jour 089 : 55 phases -> 1 évènements ===
+
+--- Traitement du jour 090 ---
+  Station IA2 : 7 phases VT filtrées.
+  Station SAM : 45 phases VT filtrées.
+Station MLM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station GBM : 2 phases VT filtrées.
+  Station CPM : 4 phases VT filtrées.
+  Station LAM : 39 phases VT filtrées.
+  Station BAM : 32 phases VT filtrées.
+=== Bilan Jour 090 : 111 phases -> 1 évènements ===
+
+--- Traitement du jour 091 ---
+  Station IA2 : 28 phases VT filtrées.
+  Station SAM : 68 phases VT filtrées.
+  Station MLM : 2 phases VT filtrées.
+  Station GBM : 14 phases VT filtrées.
+  Station CPM : 6 phases VT filtrées.
+  Station LAM : 44 phases VT filtrées.
+  Station BAM : 19 phases VT filtrées.
+=== Bilan Jour 091 : 135 phases -> 0 évènements ===
+
+--- Traitement du jour 092 ---
+  Station IA2 : 13 phases VT filtrées.
+  Station SAM : 56 phases VT filtrées.
+Station MLM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station GBM : 28 phases VT filtrées.
+  Station CPM : 1 phases VT filtrées.
+  Station LAM : 36 phases VT filtrées.
+  Station BAM : 23 phases VT filtrées.
+=== Bilan Jour 092 : 118 phases -> 2 évènements ===
+
+--- Traitement du jour 093 ---
+  Station IA2 : 4 phases VT filtrées.
+  Station SAM : 341 phases VT filtrées.
+  Station MLM : 2 phases VT filtrées.
+  Station GBM : 6 phases VT filtrées.
+  Station CPM : 5 phases VT filtrées.
+  Station LAM : 16 phases VT filtrées.
+  Station BAM : 25 phases VT filtrées.
+=== Bilan Jour 093 : 244 phases -> 1 évènements ===
+
+--- Traitement du jour 094 ---
+  Station IA2 : 7 phases VT filtrées.
+  Station SAM : 26 phases VT filtrées.
+  Station MLM : 3 phases VT filtrées.
+  Station GBM : 4 phases VT filtrées.
+  Station CPM : 4 phases VT filtrées.
+  Station LAM : 29 phases VT filtrées.
+  Station BAM : 23 phases VT filtrées.
+=== Bilan Jour 094 : 78 phases -> 0 évènements ===
+
+--- Traitement du jour 095 ---
+  Station IA2 : 5 phases VT filtrées.
+  Station SAM : 69 phases VT filtrées.
+  Station MLM : 2 phases VT filtrées.
+  Station GBM : 8 phases VT filtrées.
+  Station CPM : 3 phases VT filtrées.
+  Station LAM : 53 phases VT filtrées.
+  Station BAM : 40 phases VT filtrées.
+=== Bilan Jour 095 : 150 phases -> 0 évènements ===
+
+--- Traitement du jour 096 ---
+  Station IA2 : 2 phases VT filtrées.
+  Station SAM : 105 phases VT filtrées.
+  Station MLM : 6 phases VT filtrées.
+  Station GBM : 3 phases VT filtrées.
+  Station CPM : 4 phases VT filtrées.
+  Station LAM : 79 phases VT filtrées.
+  Station BAM : 25 phases VT filtrées.
+=== Bilan Jour 096 : 180 phases -> 0 évènements ===
+
+--- Traitement du jour 097 ---
+  Station IA2 : 10 phases VT filtrées.
+  Station SAM : 28 phases VT filtrées.
+Station MLM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station CPM : 1 phases VT filtrées.
+  Station LAM : 49 phases VT filtrées.
+  Station BAM : 14 phases VT filtrées.
+=== Bilan Jour 097 : 93 phases -> 0 évènements ===
+
+--- Traitement du jour 098 ---
+  Station IA2 : 6 phases VT filtrées.
+  Station SAM : 27 phases VT filtrées.
+  Station MLM : 6 phases VT filtrées.
+  Station GBM : 1 phases VT filtrées.
+  Station CPM : 5 phases VT filtrées.
+  Station LAM : 76 phases VT filtrées.
+  Station BAM : 40 phases VT filtrées.
+=== Bilan Jour 098 : 140 phases -> 1 évènements ===
+
+--- Traitement du jour 099 ---
+  Station IA2 : 4 phases VT filtrées.
+  Station SAM : 100 phases VT filtrées.
+Station MLM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station GBM : 4 phases VT filtrées.
+  Station CPM : 3 phases VT filtrées.
+  Station LAM : 115 phases VT filtrées.
+  Station BAM : 35 phases VT filtrées.
+=== Bilan Jour 099 : 208 phases -> 0 évènements ===
+
+--- Traitement du jour 100 ---
+  Station IA2 : 7 phases VT filtrées.
+  Station SAM : 39 phases VT filtrées.
+Station MLM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station CPM : 5 phases VT filtrées.
+  Station LAM : 45 phases VT filtrées.
+  Station BAM : 20 phases VT filtrées.
+=== Bilan Jour 100 : 99 phases -> 0 évènements ===
+
+--- Traitement du jour 101 ---
+  Station IA2 : 82 phases VT filtrées.
+  Station SAM : 70 phases VT filtrées.
+  Station MLM : 2 phases VT filtrées.
+  Station GBM : 3 phases VT filtrées.
+  Station CPM : 6 phases VT filtrées.
+  Station LAM : 119 phases VT filtrées.
+  Station BAM : 39 phases VT filtrées.
+=== Bilan Jour 101 : 264 phases -> 0 évènements ===
+
+--- Traitement du jour 102 ---
+  Station IA2 : 140 phases VT filtrées.
+  Station SAM : 48 phases VT filtrées.
+  Station MLM : 1 phases VT filtrées.
+  Station GBM : 2 phases VT filtrées.
+  Station CPM : 5 phases VT filtrées.
+  Station LAM : 92 phases VT filtrées.
+  Station BAM : 42 phases VT filtrées.
+=== Bilan Jour 102 : 275 phases -> 0 évènements ===
+
+--- Traitement du jour 103 ---
+  Station IA2 : 5 phases VT filtrées.
+  Station SAM : 111 phases VT filtrées.
+Station MLM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station GBM : 44 phases VT filtrées.
+  Station CPM : 15 phases VT filtrées.
+  Station LAM : 40 phases VT filtrées.
+  Station BAM : 19 phases VT filtrées.
+=== Bilan Jour 103 : 192 phases -> 0 évènements ===
+
+--- Traitement du jour 104 ---
+  Station IA2 : 9 phases VT filtrées.
+  Station SAM : 102 phases VT filtrées.
+  Station MLM : 3 phases VT filtrées.
+  Station GBM : 7 phases VT filtrées.
+  Station CPM : 11 phases VT filtrées.
+  Station LAM : 12 phases VT filtrées.
+  Station BAM : 18 phases VT filtrées.
+=== Bilan Jour 104 : 123 phases -> 0 évènements ===
+
+--- Traitement du jour 105 ---
+  Station IA2 : 4 phases VT filtrées.
+  Station SAM : 122 phases VT filtrées.
+Station MLM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station GBM : 9 phases VT filtrées.
+  Station CPM : 3 phases VT filtrées.
+  Station LAM : 26 phases VT filtrées.
+  Station BAM : 8 phases VT filtrées.
+=== Bilan Jour 105 : 137 phases -> 0 évènements ===
+
+--- Traitement du jour 106 ---
+  Station IA2 : 6 phases VT filtrées.
+  Station SAM : 85 phases VT filtrées.
+Station MLM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station GBM : 4 phases VT filtrées.
+  Station CPM : 19 phases VT filtrées.
+  Station LAM : 27 phases VT filtrées.
+  Station BAM : 20 phases VT filtrées.
+=== Bilan Jour 106 : 130 phases -> 1 évènements ===
+
+--- Traitement du jour 107 ---
+  Station IA2 : 361 phases VT filtrées.
+  Station SAM : 187 phases VT filtrées.
+  Station MLM : 2 phases VT filtrées.
+  Station GBM : 3 phases VT filtrées.
+  Station CPM : 5 phases VT filtrées.
+  Station LAM : 59 phases VT filtrées.
+  Station BAM : 17 phases VT filtrées.
+=== Bilan Jour 107 : 461 phases -> 0 évènements ===
+
+--- Traitement du jour 108 ---
+  Station IA2 : 41 phases VT filtrées.
+  Station SAM : 84 phases VT filtrées.
+  Station MLM : 7 phases VT filtrées.
+  Station GBM : 1 phases VT filtrées.
+  Station CPM : 11 phases VT filtrées.
+  Station LAM : 146 phases VT filtrées.
+  Station BAM : 41 phases VT filtrées.
+=== Bilan Jour 108 : 296 phases -> 0 évènements ===
+
+--- Traitement du jour 109 ---
+  Station IA2 : 178 phases VT filtrées.
+  Station SAM : 91 phases VT filtrées.
+  Station MLM : 14 phases VT filtrées.
+  Station GBM : 5 phases VT filtrées.
+  Station CPM : 27 phases VT filtrées.
+  Station LAM : 175 phases VT filtrées.
+  Station BAM : 56 phases VT filtrées.
+=== Bilan Jour 109 : 440 phases -> 0 évènements ===
+
+--- Traitement du jour 110 ---
+  Station IA2 : 23 phases VT filtrées.
+  Station SAM : 126 phases VT filtrées.
+  Station MLM : 21 phases VT filtrées.
+  Station GBM : 4 phases VT filtrées.
+  Station CPM : 35 phases VT filtrées.
+  Station LAM : 155 phases VT filtrées.
+  Station BAM : 55 phases VT filtrées.
+=== Bilan Jour 110 : 355 phases -> 0 évènements ===
+
+--- Traitement du jour 111 ---
+  Station IA2 : 1675 phases VT filtrées.
+  Station SAM : 447 phases VT filtrées.
+  Station MLM : 2 phases VT filtrées.
+  Station GBM : 17 phases VT filtrées.
+  Station CPM : 24 phases VT filtrées.
+  Station LAM : 55 phases VT filtrées.
+  Station BAM : 25 phases VT filtrées.
+=== Bilan Jour 111 : 1533 phases -> 0 évènements ===
+
+--- Traitement du jour 112 ---
+  Station IA2 : 5 phases VT filtrées.
+  Station SAM : 1233 phases VT filtrées.
+  Station MLM : 1 phases VT filtrées.
+  Station GBM : 19 phases VT filtrées.
+  Station CPM : 5 phases VT filtrées.
+  Station LAM : 149 phases VT filtrées.
+  Station BAM : 9 phases VT filtrées.
+=== Bilan Jour 112 : 894 phases -> 0 évènements ===
+
+--- Traitement du jour 113 ---
+  Station IA2 : 5 phases VT filtrées.
+  Station SAM : 1839 phases VT filtrées.
+Station MLM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station GBM : 15 phases VT filtrées.
+  Station CPM : 2 phases VT filtrées.
+  Station LAM : 47 phases VT filtrées.
+  Station BAM : 11 phases VT filtrées.
+=== Bilan Jour 113 : 1172 phases -> 0 évènements ===
+
+--- Traitement du jour 114 ---
+  Station IA2 : 8 phases VT filtrées.
+  Station SAM : 1580 phases VT filtrées.
+Station MLM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station GBM : 14 phases VT filtrées.
+  Station CPM : 16 phases VT filtrées.
+  Station LAM : 91 phases VT filtrées.
+  Station BAM : 20 phases VT filtrées.
+=== Bilan Jour 114 : 1109 phases -> 0 évènements ===
+
+--- Traitement du jour 115 ---
+  Station IA2 : 7 phases VT filtrées.
+  Station SAM : 2658 phases VT filtrées.
+  Station MLM : 1 phases VT filtrées.
+  Station GBM : 7 phases VT filtrées.
+  Station CPM : 10 phases VT filtrées.
+  Station LAM : 38 phases VT filtrées.
+  Station BAM : 22 phases VT filtrées.
+=== Bilan Jour 115 : 1630 phases -> 2 évènements ===
+
+--- Traitement du jour 116 ---
+  Station IA2 : 7 phases VT filtrées.
+  Station SAM : 966 phases VT filtrées.
+  Station MLM : 1 phases VT filtrées.
+  Station GBM : 5 phases VT filtrées.
+  Station CPM : 10 phases VT filtrées.
+  Station LAM : 25 phases VT filtrées.
+  Station BAM : 110 phases VT filtrées.
+=== Bilan Jour 116 : 792 phases -> 0 évènements ===
+
+--- Traitement du jour 117 ---
+  Station IA2 : 4 phases VT filtrées.
+  Station SAM : 412 phases VT filtrées.
+Station MLM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station GBM : 4 phases VT filtrées.
+  Station CPM : 5 phases VT filtrées.
+  Station LAM : 73 phases VT filtrées.
+  Station BAM : 26 phases VT filtrées.
+=== Bilan Jour 117 : 399 phases -> 0 évènements ===
+
+--- Traitement du jour 118 ---
+  Station IA2 : 12 phases VT filtrées.
+  Station SAM : 370 phases VT filtrées.
+Station MLM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station GBM : 9 phases VT filtrées.
+  Station CPM : 8 phases VT filtrées.
+  Station LAM : 49 phases VT filtrées.
+  Station BAM : 12 phases VT filtrées.
+=== Bilan Jour 118 : 308 phases -> 0 évènements ===
+
+--- Traitement du jour 119 ---
+  Station IA2 : 1 phases VT filtrées.
+  Station SAM : 227 phases VT filtrées.
+Station MLM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station GBM : 3 phases VT filtrées.
+Station CPM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station LAM : 85 phases VT filtrées.
+  Station BAM : 34 phases VT filtrées.
+=== Bilan Jour 119 : 275 phases -> 0 évènements ===
+
+--- Traitement du jour 120 ---
+  Station IA2 : 3 phases VT filtrées.
+  Station SAM : 109 phases VT filtrées.
+Station MLM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station GBM : 3 phases VT filtrées.
+  Station CPM : 4 phases VT filtrées.
+  Station LAM : 35 phases VT filtrées.
+  Station BAM : 17 phases VT filtrées.
+=== Bilan Jour 120 : 141 phases -> 0 évènements ===
+
+--- Traitement du jour 121 ---
+  Station IA2 : 1 phases VT filtrées.
+  Station SAM : 76 phases VT filtrées.
+Station MLM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station GBM : 4 phases VT filtrées.
+  Station CPM : 9 phases VT filtrées.
+  Station LAM : 39 phases VT filtrées.
+  Station BAM : 26 phases VT filtrées.
+=== Bilan Jour 121 : 128 phases -> 0 évènements ===
+
+--- Traitement du jour 122 ---
+  Station IA2 : 21 phases VT filtrées.
+  Station SAM : 26 phases VT filtrées.
+Station MLM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station GBM : 19 phases VT filtrées.
+  Station CPM : 7 phases VT filtrées.
+  Station LAM : 66 phases VT filtrées.
+  Station BAM : 42 phases VT filtrées.
+=== Bilan Jour 122 : 163 phases -> 0 évènements ===
+
+--- Traitement du jour 123 ---
+  Station IA2 : 11 phases VT filtrées.
+  Station SAM : 53 phases VT filtrées.
+Station MLM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station GBM : 7 phases VT filtrées.
+  Station CPM : 1 phases VT filtrées.
+  Station LAM : 89 phases VT filtrées.
+  Station BAM : 33 phases VT filtrées.
+=== Bilan Jour 123 : 163 phases -> 0 évènements ===
+
+--- Traitement du jour 124 ---
+  Station IA2 : 18 phases VT filtrées.
+  Station SAM : 40 phases VT filtrées.
+  Station MLM : 1 phases VT filtrées.
+  Station GBM : 13 phases VT filtrées.
+  Station CPM : 7 phases VT filtrées.
+  Station LAM : 8 phases VT filtrées.
+  Station BAM : 18 phases VT filtrées.
+=== Bilan Jour 124 : 92 phases -> 0 évènements ===
+
+--- Traitement du jour 125 ---
+  Station IA2 : 17 phases VT filtrées.
+  Station SAM : 76 phases VT filtrées.
+  Station MLM : 2 phases VT filtrées.
+  Station GBM : 36 phases VT filtrées.
+  Station CPM : 5 phases VT filtrées.
+  Station LAM : 28 phases VT filtrées.
+  Station BAM : 23 phases VT filtrées.
+=== Bilan Jour 125 : 142 phases -> 4 évènements ===
+
+--- Traitement du jour 126 ---
+  Station IA2 : 16 phases VT filtrées.
+  Station SAM : 25 phases VT filtrées.
+Station MLM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station GBM : 35 phases VT filtrées.
+  Station CPM : 5 phases VT filtrées.
+  Station LAM : 26 phases VT filtrées.
+  Station BAM : 18 phases VT filtrées.
+=== Bilan Jour 126 : 98 phases -> 3 évènements ===
+
+--- Traitement du jour 127 ---
+  Station IA2 : 1 phases VT filtrées.
+  Station SAM : 33 phases VT filtrées.
+Station MLM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station GBM : 21 phases VT filtrées.
+  Station CPM : 1 phases VT filtrées.
+  Station LAM : 28 phases VT filtrées.
+  Station BAM : 15 phases VT filtrées.
+=== Bilan Jour 127 : 76 phases -> 0 évènements ===
+
+--- Traitement du jour 128 ---
+  Station IA2 : 9 phases VT filtrées.
+  Station SAM : 31 phases VT filtrées.
+  Station MLM : 2 phases VT filtrées.
+  Station GBM : 4 phases VT filtrées.
+  Station CPM : 14 phases VT filtrées.
+  Station LAM : 35 phases VT filtrées.
+  Station BAM : 41 phases VT filtrées.
+=== Bilan Jour 128 : 93 phases -> 0 évènements ===
+
+--- Traitement du jour 129 ---
+  Station IA2 : 87 phases VT filtrées.
+  Station SAM : 42 phases VT filtrées.
+Station MLM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station GBM : 6 phases VT filtrées.
+  Station CPM : 34 phases VT filtrées.
+  Station LAM : 37 phases VT filtrées.
+  Station BAM : 31 phases VT filtrées.
+=== Bilan Jour 129 : 178 phases -> 0 évènements ===
+
+--- Traitement du jour 130 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station SAM : 61 phases VT filtrées.
+Station MLM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station GBM : 6 phases VT filtrées.
+  Station CPM : 19 phases VT filtrées.
+  Station LAM : 59 phases VT filtrées.
+  Station BAM : 24 phases VT filtrées.
+=== Bilan Jour 130 : 126 phases -> 0 évènements ===
+
+--- Traitement du jour 131 ---
+  Station IA2 : 11 phases VT filtrées.
+  Station SAM : 66 phases VT filtrées.
+  Station MLM : 4 phases VT filtrées.
+  Station GBM : 5 phases VT filtrées.
+  Station CPM : 5 phases VT filtrées.
+  Station LAM : 86 phases VT filtrées.
+  Station BAM : 17 phases VT filtrées.
+=== Bilan Jour 131 : 170 phases -> 0 évènements ===
+
+--- Traitement du jour 132 ---
+  Station IA2 : 7 phases VT filtrées.
+  Station SAM : 122 phases VT filtrées.
+Station MLM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station GBM : 1 phases VT filtrées.
+  Station CPM : 7 phases VT filtrées.
+  Station LAM : 79 phases VT filtrées.
+  Station BAM : 12 phases VT filtrées.
+=== Bilan Jour 132 : 202 phases -> 0 évènements ===
+
+--- Traitement du jour 133 ---
+  Station IA2 : 6 phases VT filtrées.
+  Station SAM : 97 phases VT filtrées.
+Station MLM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station GBM : 4 phases VT filtrées.
+  Station CPM : 11 phases VT filtrées.
+  Station LAM : 111 phases VT filtrées.
+  Station BAM : 46 phases VT filtrées.
+=== Bilan Jour 133 : 253 phases -> 0 évènements ===
+
+--- Traitement du jour 134 ---
+  Station IA2 : 106 phases VT filtrées.
+  Station SAM : 232 phases VT filtrées.
+Station MLM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station GBM : 4 phases VT filtrées.
+  Station CPM : 11 phases VT filtrées.
+  Station LAM : 144 phases VT filtrées.
+  Station BAM : 38 phases VT filtrées.
+=== Bilan Jour 134 : 460 phases -> 0 évènements ===
+
+--- Traitement du jour 135 ---
+  Station IA2 : 200 phases VT filtrées.
+  Station SAM : 345 phases VT filtrées.
+  Station MLM : 2 phases VT filtrées.
+  Station GBM : 2 phases VT filtrées.
+  Station CPM : 9 phases VT filtrées.
+  Station LAM : 98 phases VT filtrées.
+  Station BAM : 37 phases VT filtrées.
+=== Bilan Jour 135 : 519 phases -> 0 évènements ===
+
+--- Traitement du jour 136 ---
+  Station IA2 : 54 phases VT filtrées.
+  Station SAM : 58 phases VT filtrées.
+  Station MLM : 1 phases VT filtrées.
+  Station GBM : 13 phases VT filtrées.
+  Station CPM : 4 phases VT filtrées.
+  Station LAM : 79 phases VT filtrées.
+  Station BAM : 31 phases VT filtrées.
+=== Bilan Jour 136 : 199 phases -> 0 évènements ===
+
+--- Traitement du jour 137 ---
+  Station IA2 : 177 phases VT filtrées.
+  Station SAM : 98 phases VT filtrées.
+Station MLM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station GBM : 6 phases VT filtrées.
+  Station CPM : 14 phases VT filtrées.
+  Station LAM : 25 phases VT filtrées.
+  Station BAM : 20 phases VT filtrées.
+=== Bilan Jour 137 : 258 phases -> 0 évènements ===
+
+--- Traitement du jour 138 ---
+  Station IA2 : 39 phases VT filtrées.
+  Station SAM : 115 phases VT filtrées.
+  Station MLM : 1 phases VT filtrées.
+  Station GBM : 5 phases VT filtrées.
+  Station CPM : 35 phases VT filtrées.
+  Station LAM : 56 phases VT filtrées.
+  Station BAM : 34 phases VT filtrées.
+=== Bilan Jour 138 : 228 phases -> 0 évènements ===
+
+--- Traitement du jour 139 ---
+  Station IA2 : 11 phases VT filtrées.
+  Station SAM : 127 phases VT filtrées.
+  Station MLM : 1 phases VT filtrées.
+  Station GBM : 10 phases VT filtrées.
+  Station CPM : 21 phases VT filtrées.
+  Station LAM : 58 phases VT filtrées.
+  Station BAM : 24 phases VT filtrées.
+=== Bilan Jour 139 : 211 phases -> 0 évènements ===
+
+--- Traitement du jour 140 ---
+  Station IA2 : 23 phases VT filtrées.
+  Station SAM : 306 phases VT filtrées.
+  Station MLM : 1 phases VT filtrées.
+  Station GBM : 14 phases VT filtrées.
+  Station CPM : 23 phases VT filtrées.
+  Station LAM : 86 phases VT filtrées.
+  Station BAM : 32 phases VT filtrées.
+=== Bilan Jour 140 : 406 phases -> 0 évènements ===
+
+--- Traitement du jour 141 ---
+  Station IA2 : 1 phases VT filtrées.
+  Station SAM : 165 phases VT filtrées.
+Station MLM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station GBM : 3 phases VT filtrées.
+  Station CPM : 11 phases VT filtrées.
+  Station LAM : 101 phases VT filtrées.
+  Station BAM : 50 phases VT filtrées.
+=== Bilan Jour 141 : 299 phases -> 0 évènements ===
+
+--- Traitement du jour 142 ---
+  Station IA2 : 8 phases VT filtrées.
+  Station SAM : 167 phases VT filtrées.
+Station MLM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station CPM : 39 phases VT filtrées.
+  Station LAM : 156 phases VT filtrées.
+  Station BAM : 100 phases VT filtrées.
+=== Bilan Jour 142 : 407 phases -> 0 évènements ===
+
+--- Traitement du jour 143 ---
+  Station IA2 : 77 phases VT filtrées.
+  Station SAM : 136 phases VT filtrées.
+Station MLM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station GBM : 2 phases VT filtrées.
+  Station CPM : 16 phases VT filtrées.
+  Station LAM : 115 phases VT filtrées.
+  Station BAM : 65 phases VT filtrées.
+=== Bilan Jour 143 : 365 phases -> 0 évènements ===
+
+--- Traitement du jour 144 ---
+  Station IA2 : 12 phases VT filtrées.
+  Station SAM : 152 phases VT filtrées.
+  Station MLM : 1 phases VT filtrées.
+  Station GBM : 2 phases VT filtrées.
+  Station CPM : 15 phases VT filtrées.
+  Station LAM : 56 phases VT filtrées.
+  Station BAM : 63 phases VT filtrées.
+=== Bilan Jour 144 : 259 phases -> 0 évènements ===
+
+--- Traitement du jour 145 ---
+  Station IA2 : 1 phases VT filtrées.
+  Station SAM : 236 phases VT filtrées.
+  Station MLM : 32 phases VT filtrées.
+  Station GBM : 3 phases VT filtrées.
+  Station CPM : 22 phases VT filtrées.
+  Station LAM : 213 phases VT filtrées.
+  Station BAM : 60 phases VT filtrées.
+=== Bilan Jour 145 : 393 phases -> 0 évènements ===
+
+--- Traitement du jour 146 ---
+Station IA2 : Aucun fichier .mseed trouvé.
+  Station SAM : 57 phases VT filtrées.
+Station MLM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station GBM : 1 phases VT filtrées.
+  Station CPM : 2 phases VT filtrées.
+  Station LAM : 18 phases VT filtrées.
+  Station BAM : 22 phases VT filtrées.
+=== Bilan Jour 146 : 87 phases -> 0 évènements ===
+
+--- Traitement du jour 147 ---
+Station IA2 : Aucun fichier .mseed trouvé.
+  Station SAM : 112 phases VT filtrées.
+  Station MLM : 2 phases VT filtrées.
+  Station GBM : 4 phases VT filtrées.
+  Station CPM : 10 phases VT filtrées.
+  Station LAM : 45 phases VT filtrées.
+  Station BAM : 25 phases VT filtrées.
+=== Bilan Jour 147 : 165 phases -> 0 évènements ===
+
+--- Traitement du jour 148 ---
+Station IA2 : Aucun fichier .mseed trouvé.
+  Station SAM : 83 phases VT filtrées.
+  Station MLM : 21 phases VT filtrées.
+  Station GBM : 23 phases VT filtrées.
+  Station CPM : 12 phases VT filtrées.
+  Station LAM : 20 phases VT filtrées.
+  Station BAM : 59 phases VT filtrées.
+=== Bilan Jour 148 : 165 phases -> 0 évènements ===
+
+--- Traitement du jour 149 ---
+Station IA2 : Aucun fichier .mseed trouvé.
+  Station SAM : 134 phases VT filtrées.
+Station MLM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station GBM : 3 phases VT filtrées.
+  Station CPM : 1 phases VT filtrées.
+  Station LAM : 43 phases VT filtrées.
+  Station BAM : 16 phases VT filtrées.
+=== Bilan Jour 149 : 162 phases -> 0 évènements ===
+
+--- Traitement du jour 150 ---
+Station IA2 : Aucun fichier .mseed trouvé.
+  Station SAM : 187 phases VT filtrées.
+  Station MLM : 1 phases VT filtrées.
+  Station GBM : 16 phases VT filtrées.
+  Station CPM : 2 phases VT filtrées.
+  Station LAM : 65 phases VT filtrées.
+  Station BAM : 27 phases VT filtrées.
+=== Bilan Jour 150 : 235 phases -> 0 évènements ===
+
+--- Traitement du jour 151 ---
+Station IA2 : Aucun fichier .mseed trouvé.
+  Station SAM : 221 phases VT filtrées.
+Station MLM : Aucune phase au-dessus du seuil (P>=0.95, S>=0.95).
+  Station GBM : 1 phases VT filtrées.
+  Station CPM : 5 phases VT filtrées.
+  Station LAM : 125 phases VT filtrées.
+  Station BAM : 35 phases VT filtrées.
+=== Bilan Jour 151 : 323 phases -> 0 évènements ===
+
+--- Sauvegarde des catalogues ---
+Catalogue des picks sauvegardé : ../data/seisbenchB/seisbench_nouv/catalogue_vt_detectes.csv
+Événements valides (stricts) sauvegardés (32 événements) : ../data/seisbenchB/seisbench_nouv/catalogue_vt_detectes_evenements_valides.csv
+On veux une qualité minimal de b
+Chargement des catalogues
+32 événements à extraire
+
+Début de l'extraction vers ../data/seisbenchB/seisbench_format_gold
+Traces converted: 0it [00:00, ?it/s]Traces converted: 2it [00:00,  5.77it/s]Traces converted: 3it [00:01,  1.91it/s]Traces converted: 4it [00:03,  1.17s/it]Traces converted: 5it [00:04,  1.10it/s]Traces converted: 6it [00:04,  1.19it/s]Traces converted: 7it [00:05,  1.28it/s]Traces converted: 8it [00:05,  1.45it/s]Traces converted: 9it [00:06,  1.57it/s]Traces converted: 10it [00:06,  1.64it/s]Traces converted: 11it [00:07,  1.66it/s]Traces converted: 12it [00:08,  1.73it/s]Traces converted: 13it [00:08,  1.70it/s]Traces converted: 14it [00:09,  1.77it/s]Traces converted: 15it [00:09,  1.64it/s]Traces converted: 18it [00:10,  3.47it/s]Traces converted: 19it [00:10,  2.58it/s]Traces converted: 20it [00:11,  2.21it/s]Traces converted: 21it [00:12,  1.82it/s]Traces converted: 22it [00:12,  1.77it/s]Traces converted: 23it [00:13,  1.65it/s]Traces converted: 24it [00:14,  1.33it/s]Traces converted: 25it [00:15,  1.39it/s]Traces converted: 26it [00:16,  1.39it/s]Traces converted: 27it [00:16,  1.47it/s]Traces converted: 28it [00:17,  1.62it/s]Traces converted: 29it [00:17,  1.53it/s]Traces converted: 32it [00:18,  3.22it/s]Traces converted: 33it [00:18,  2.43it/s]Traces converted: 34it [00:19,  2.33it/s]Traces converted: 35it [00:19,  2.03it/s]Traces converted: 36it [00:20,  1.73it/s]Traces converted: 37it [00:21,  1.40it/s]Traces converted: 38it [00:22,  1.55it/s]Traces converted: 39it [00:23,  1.46it/s]Traces converted: 40it [00:23,  1.44it/s]Traces converted: 41it [00:24,  1.49it/s]Traces converted: 42it [00:24,  1.72it/s]Traces converted: 43it [00:25,  1.65it/s]Traces converted: 44it [00:25,  2.03it/s]Traces converted: 46it [00:25,  3.06it/s]Traces converted: 49it [00:26,  5.43it/s]Traces converted: 52it [00:26,  7.89it/s]Traces converted: 54it [00:27,  3.90it/s]Traces converted: 56it [00:28,  3.59it/s]Traces converted: 58it [00:28,  4.55it/s]Traces converted: 59it [00:28,  2.08it/s]
+
+Création du dataset terminée.
+-> 59 traces ont été sauvegardées dans ../data/seisbenchB/seisbench_format_gold
+On veux une qualité minimal de b
+Chargement des datasets sources
+-> Original : 526 traces chargées.
+-> Bruit : 700 traces chargées.
+-> Gold : 59 traces chargées.
+
+Début de la fusion dans ../data/seisbenchB/seisbench_dataset_ultime
+Copie des traces depuis : Original
+Traces converted: 0it [00:00, ?it/s]Traces converted: 2it [00:00, 15.11it/s]Traces converted: 20it [00:00, 99.38it/s]Traces converted: 44it [00:00, 156.34it/s]Traces converted: 68it [00:00, 187.15it/s]Traces converted: 92it [00:00, 202.82it/s]Traces converted: 113it [00:00, 183.94it/s]Traces converted: 137it [00:00, 198.64it/s]Traces converted: 161it [00:00, 209.90it/s]Traces converted: 185it [00:00, 216.27it/s]Traces converted: 207it [00:01, 207.86it/s]Traces converted: 229it [00:01, 176.23it/s]Traces converted: 248it [00:01, 158.91it/s]Traces converted: 265it [00:01, 150.59it/s]Traces converted: 281it [00:01, 145.01it/s]Traces converted: 296it [00:01, 141.46it/s]Traces converted: 311it [00:01, 136.57it/s]Traces converted: 325it [00:02, 134.09it/s]Traces converted: 339it [00:02, 133.98it/s]Traces converted: 353it [00:02, 131.54it/s]Traces converted: 367it [00:02, 129.76it/s]Traces converted: 380it [00:02, 128.63it/s]Traces converted: 393it [00:02, 127.54it/s]Traces converted: 406it [00:02, 126.64it/s]Traces converted: 419it [00:02, 126.59it/s]Traces converted: 432it [00:02, 108.48it/s]Traces converted: 455it [00:03, 138.85it/s]Traces converted: 471it [00:03, 143.81it/s]Traces converted: 486it [00:03, 138.88it/s]Traces converted: 501it [00:03, 135.58it/s]Traces converted: 520it [00:03, 150.26it/s]Traces converted: 536it [00:03, 137.99it/s]Traces converted: 556it [00:03, 153.91it/s]Traces converted: 579it [00:03, 173.46it/s]Traces converted: 603it [00:03, 190.44it/s]Traces converted: 627it [00:04, 202.75it/s]Traces converted: 648it [00:04, 190.07it/s]Traces converted: 668it [00:04, 167.72it/s]Traces converted: 686it [00:04, 154.64it/s]Traces converted: 703it [00:04, 146.31it/s]Traces converted: 719it [00:04, 136.69it/s]Traces converted: 734it [00:04, 135.88it/s]Traces converted: 757it [00:04, 158.85it/s]Traces converted: 781it [00:05, 178.37it/s]Traces converted: 800it [00:05, 172.31it/s]Traces converted: 818it [00:05, 156.19it/s]Traces converted: 835it [00:05, 137.96it/s]Traces converted: 859it [00:05, 161.44it/s]Traces converted: 877it [00:05, 152.61it/s]Traces converted: 893it [00:05, 145.29it/s]Traces converted: 909it [00:05, 139.81it/s]Traces converted: 924it [00:06, 132.69it/s]Traces converted: 938it [00:06, 131.45it/s]Traces converted: 952it [00:06, 131.00it/s]Traces converted: 966it [00:06, 130.49it/s]Traces converted: 980it [00:06, 130.32it/s]Traces converted: 994it [00:06, 128.97it/s]Traces converted: 1007it [00:06, 128.99it/s]Traces converted: 1020it [00:06, 128.01it/s]Traces converted: 1034it [00:06, 128.72it/s]Traces converted: 1047it [00:07, 129.04it/s]Traces converted: 1063it [00:07, 136.71it/s]Traces converted: 1087it [00:07, 165.10it/s]Traces converted: 1111it [00:07, 186.03it/s]Traces converted: 1135it [00:07, 200.53it/s]Traces converted: 1159it [00:07, 210.63it/s]Traces converted: 1181it [00:07, 182.33it/s]Traces converted: 1200it [00:07, 163.85it/s]Traces converted: 1218it [00:07, 153.42it/s]Traces converted: 1237it [00:08, 159.90it/s]Traces converted: 1255it [00:08, 163.78it/s]Traces converted: 1279it [00:08, 183.38it/s]Traces converted: 1285it [00:10, 122.75it/s]
+Copie des traces depuis : Bruit
+Copie des traces depuis : Gold
+
+Fusion terminée
+Dataset final prêt à l'emploi : ../data/seisbenchB/seisbench_dataset_ultime
+Mode : FINE-TUNING LOCAL depuis seisbenchB/phasenet_volcan_v1.pt
+On veux une qualité minimal de b
+Succès ! Dataset chargé. Train: 1012 | Val: 131
+
+Début de l'entraînement
+Époque 01/150 | Train Loss: 0.29244 | Val Loss: 0.29253
+  -> Nouveau meilleur modèle
+Époque 02/150 | Train Loss: 0.29174 | Val Loss: 0.29230
+  -> Nouveau meilleur modèle
+Époque 03/150 | Train Loss: 0.29159 | Val Loss: 0.29224
+  -> Nouveau meilleur modèle
+Époque 04/150 | Train Loss: 0.29187 | Val Loss: 0.29272
+Époque 05/150 | Train Loss: 0.29153 | Val Loss: 0.29195
+  -> Nouveau meilleur modèle
+Époque 06/150 | Train Loss: 0.29117 | Val Loss: 0.29181
+  -> Nouveau meilleur modèle
+Époque 07/150 | Train Loss: 0.29099 | Val Loss: 0.29286
+Époque 08/150 | Train Loss: 0.29103 | Val Loss: 0.29268
+Époque 09/150 | Train Loss: 0.29132 | Val Loss: 0.29228
+Époque 10/150 | Train Loss: 0.29096 | Val Loss: 0.29150
+  -> Nouveau meilleur modèle
+Époque 11/150 | Train Loss: 0.29082 | Val Loss: 0.29156
+Époque 12/150 | Train Loss: 0.29099 | Val Loss: 0.29211
+Époque 13/150 | Train Loss: 0.29093 | Val Loss: 0.29151
+Époque 14/150 | Train Loss: 0.29098 | Val Loss: 0.29125
+  -> Nouveau meilleur modèle
+Époque 15/150 | Train Loss: 0.29082 | Val Loss: 0.29202
+Époque 16/150 | Train Loss: 0.29066 | Val Loss: 0.29179
+Époque 17/150 | Train Loss: 0.29071 | Val Loss: 0.29192
+Époque 18/150 | Train Loss: 0.29095 | Val Loss: 0.29238
+Époque 19/150 | Train Loss: 0.29050 | Val Loss: 0.29188
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 18 EPOCHE
+
+Époque 20/150 | Train Loss: 0.29078 | Val Loss: 0.29157
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 19 EPOCHE
+
+Époque 21/150 | Train Loss: 0.29054 | Val Loss: 0.29198
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 20 EPOCHE
+
+Époque 22/150 | Train Loss: 0.29044 | Val Loss: 0.29153
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 21 EPOCHE
+
+Époque 23/150 | Train Loss: 0.29029 | Val Loss: 0.29216
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 22 EPOCHE
+
+Époque 24/150 | Train Loss: 0.29040 | Val Loss: 0.29168
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 23 EPOCHE
+
+Époque 25/150 | Train Loss: 0.29050 | Val Loss: 0.29170
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 24 EPOCHE
+
+Époque 26/150 | Train Loss: 0.29060 | Val Loss: 0.29193
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 25 EPOCHE
+
+Époque 27/150 | Train Loss: 0.29031 | Val Loss: 0.29238
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 26 EPOCHE
+
+Époque 28/150 | Train Loss: 0.29022 | Val Loss: 0.29170
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 27 EPOCHE
+
+Époque 29/150 | Train Loss: 0.29019 | Val Loss: 0.29172
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 28 EPOCHE
+
+Époque 30/150 | Train Loss: 0.29024 | Val Loss: 0.29251
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 29 EPOCHE
+
+Époque 31/150 | Train Loss: 0.29044 | Val Loss: 0.29122
+  -> Nouveau meilleur modèle
+Époque 32/150 | Train Loss: 0.29050 | Val Loss: 0.29172
+Époque 33/150 | Train Loss: 0.29029 | Val Loss: 0.29119
+  -> Nouveau meilleur modèle
+Époque 34/150 | Train Loss: 0.29036 | Val Loss: 0.29223
+Époque 35/150 | Train Loss: 0.29048 | Val Loss: 0.29157
+Époque 36/150 | Train Loss: 0.29026 | Val Loss: 0.29193
+Époque 37/150 | Train Loss: 0.29014 | Val Loss: 0.29148
+Époque 38/150 | Train Loss: 0.29043 | Val Loss: 0.29146
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 37 EPOCHE
+
+Époque 39/150 | Train Loss: 0.29039 | Val Loss: 0.29215
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 38 EPOCHE
+
+Époque 40/150 | Train Loss: 0.29011 | Val Loss: 0.29241
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 39 EPOCHE
+
+Époque 41/150 | Train Loss: 0.29011 | Val Loss: 0.29204
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 40 EPOCHE
+
+Époque 42/150 | Train Loss: 0.29015 | Val Loss: 0.29153
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 41 EPOCHE
+
+Époque 43/150 | Train Loss: 0.29002 | Val Loss: 0.29166
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 42 EPOCHE
+
+Époque 44/150 | Train Loss: 0.29002 | Val Loss: 0.29213
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 43 EPOCHE
+
+Époque 45/150 | Train Loss: 0.29009 | Val Loss: 0.29160
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 44 EPOCHE
+
+Époque 46/150 | Train Loss: 0.29024 | Val Loss: 0.29194
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 45 EPOCHE
+
+Époque 47/150 | Train Loss: 0.28988 | Val Loss: 0.29213
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 46 EPOCHE
+
+Époque 48/150 | Train Loss: 0.29001 | Val Loss: 0.29201
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 47 EPOCHE
+
+Époque 49/150 | Train Loss: 0.28968 | Val Loss: 0.29169
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 48 EPOCHE
+
+Époque 50/150 | Train Loss: 0.29011 | Val Loss: 0.29244
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 49 EPOCHE
+
+Époque 51/150 | Train Loss: 0.29006 | Val Loss: 0.29162
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 50 EPOCHE
+
+Époque 52/150 | Train Loss: 0.29015 | Val Loss: 0.29220
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 51 EPOCHE
+
+Époque 53/150 | Train Loss: 0.29004 | Val Loss: 0.29102
+  -> Nouveau meilleur modèle
+Époque 54/150 | Train Loss: 0.28999 | Val Loss: 0.29113
+Époque 55/150 | Train Loss: 0.28972 | Val Loss: 0.29164
+Époque 56/150 | Train Loss: 0.28980 | Val Loss: 0.29173
+Époque 57/150 | Train Loss: 0.28996 | Val Loss: 0.29123
+Époque 58/150 | Train Loss: 0.28997 | Val Loss: 0.29176
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 57 EPOCHE
+
+Époque 59/150 | Train Loss: 0.28987 | Val Loss: 0.29154
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 58 EPOCHE
+
+Époque 60/150 | Train Loss: 0.28981 | Val Loss: 0.29180
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 59 EPOCHE
+
+Époque 61/150 | Train Loss: 0.28995 | Val Loss: 0.29119
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 60 EPOCHE
+
+Époque 62/150 | Train Loss: 0.28976 | Val Loss: 0.29236
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 61 EPOCHE
+
+Époque 63/150 | Train Loss: 0.28977 | Val Loss: 0.29220
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 62 EPOCHE
+
+Époque 64/150 | Train Loss: 0.28986 | Val Loss: 0.29149
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 63 EPOCHE
+
+Époque 65/150 | Train Loss: 0.28992 | Val Loss: 0.29211
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 64 EPOCHE
+
+Époque 66/150 | Train Loss: 0.28998 | Val Loss: 0.29207
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 65 EPOCHE
+
+Époque 67/150 | Train Loss: 0.28972 | Val Loss: 0.29175
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 66 EPOCHE
+
+Époque 68/150 | Train Loss: 0.28960 | Val Loss: 0.29187
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 67 EPOCHE
+
+Époque 69/150 | Train Loss: 0.28962 | Val Loss: 0.29174
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 68 EPOCHE
+
+Époque 70/150 | Train Loss: 0.28973 | Val Loss: 0.29182
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 69 EPOCHE
+
+Époque 71/150 | Train Loss: 0.28986 | Val Loss: 0.29187
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 70 EPOCHE
+
+Époque 72/150 | Train Loss: 0.28965 | Val Loss: 0.29106
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 71 EPOCHE
+
+Époque 73/150 | Train Loss: 0.28956 | Val Loss: 0.29210
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 72 EPOCHE
+
+Époque 74/150 | Train Loss: 0.28974 | Val Loss: 0.29185
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 73 EPOCHE
+
+Époque 75/150 | Train Loss: 0.28973 | Val Loss: 0.29164
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 74 EPOCHE
+
+Époque 76/150 | Train Loss: 0.28970 | Val Loss: 0.29127
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 75 EPOCHE
+
+Époque 77/150 | Train Loss: 0.28961 | Val Loss: 0.29199
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 76 EPOCHE
+
+Époque 78/150 | Train Loss: 0.28962 | Val Loss: 0.29185
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 77 EPOCHE
+
+Époque 79/150 | Train Loss: 0.28944 | Val Loss: 0.29155
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 78 EPOCHE
+
+Époque 80/150 | Train Loss: 0.28952 | Val Loss: 0.29205
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 79 EPOCHE
+
+Époque 81/150 | Train Loss: 0.28977 | Val Loss: 0.29103
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 80 EPOCHE
+
+Époque 82/150 | Train Loss: 0.28974 | Val Loss: 0.29140
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 81 EPOCHE
+
+Époque 83/150 | Train Loss: 0.28943 | Val Loss: 0.29210
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 82 EPOCHE
+
+Époque 84/150 | Train Loss: 0.28948 | Val Loss: 0.29219
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 83 EPOCHE
+
+Époque 85/150 | Train Loss: 0.28972 | Val Loss: 0.29115
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 84 EPOCHE
+
+Époque 86/150 | Train Loss: 0.28963 | Val Loss: 0.29124
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 85 EPOCHE
+
+Époque 87/150 | Train Loss: 0.28959 | Val Loss: 0.29175
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 86 EPOCHE
+
+Époque 88/150 | Train Loss: 0.28955 | Val Loss: 0.29165
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 87 EPOCHE
+
+Époque 89/150 | Train Loss: 0.28951 | Val Loss: 0.29196
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 88 EPOCHE
+
+Époque 90/150 | Train Loss: 0.28942 | Val Loss: 0.29155
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 89 EPOCHE
+
+Époque 91/150 | Train Loss: 0.28978 | Val Loss: 0.29176
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 90 EPOCHE
+
+Époque 92/150 | Train Loss: 0.28951 | Val Loss: 0.29233
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 91 EPOCHE
+
+Époque 93/150 | Train Loss: 0.28934 | Val Loss: 0.29176
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 92 EPOCHE
+
+Époque 94/150 | Train Loss: 0.28969 | Val Loss: 0.29109
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 93 EPOCHE
+
+Époque 95/150 | Train Loss: 0.28952 | Val Loss: 0.29171
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 94 EPOCHE
+
+Époque 96/150 | Train Loss: 0.28935 | Val Loss: 0.29154
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 95 EPOCHE
+
+Époque 97/150 | Train Loss: 0.28944 | Val Loss: 0.29146
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 96 EPOCHE
+
+Époque 98/150 | Train Loss: 0.28967 | Val Loss: 0.29089
+  -> Nouveau meilleur modèle
+Époque 99/150 | Train Loss: 0.28957 | Val Loss: 0.29169
+Époque 100/150 | Train Loss: 0.28944 | Val Loss: 0.29201
+Époque 101/150 | Train Loss: 0.28941 | Val Loss: 0.29200
+Époque 102/150 | Train Loss: 0.28932 | Val Loss: 0.29142
+Époque 103/150 | Train Loss: 0.28950 | Val Loss: 0.29239
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 102 EPOCHE
+
+Époque 104/150 | Train Loss: 0.28926 | Val Loss: 0.29208
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 103 EPOCHE
+
+Époque 105/150 | Train Loss: 0.28947 | Val Loss: 0.29194
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 104 EPOCHE
+
+Époque 106/150 | Train Loss: 0.28940 | Val Loss: 0.29223
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 105 EPOCHE
+
+Époque 107/150 | Train Loss: 0.28927 | Val Loss: 0.29234
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 106 EPOCHE
+
+Époque 108/150 | Train Loss: 0.28945 | Val Loss: 0.29198
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 107 EPOCHE
+
+Époque 109/150 | Train Loss: 0.28940 | Val Loss: 0.29159
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 108 EPOCHE
+
+Époque 110/150 | Train Loss: 0.28954 | Val Loss: 0.29205
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 109 EPOCHE
+
+Époque 111/150 | Train Loss: 0.28915 | Val Loss: 0.29142
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 110 EPOCHE
+
+Époque 112/150 | Train Loss: 0.28930 | Val Loss: 0.29179
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 111 EPOCHE
+
+Époque 113/150 | Train Loss: 0.28935 | Val Loss: 0.29150
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 112 EPOCHE
+
+Époque 114/150 | Train Loss: 0.28919 | Val Loss: 0.29244
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 113 EPOCHE
+
+Époque 115/150 | Train Loss: 0.28928 | Val Loss: 0.29123
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 114 EPOCHE
+
+Époque 116/150 | Train Loss: 0.28944 | Val Loss: 0.29172
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 115 EPOCHE
+
+Époque 117/150 | Train Loss: 0.28920 | Val Loss: 0.29187
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 116 EPOCHE
+
+Époque 118/150 | Train Loss: 0.28935 | Val Loss: 0.29150
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 117 EPOCHE
+
+Époque 119/150 | Train Loss: 0.28944 | Val Loss: 0.29202
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 118 EPOCHE
+
+Époque 120/150 | Train Loss: 0.28936 | Val Loss: 0.29256
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 119 EPOCHE
+
+Époque 121/150 | Train Loss: 0.28925 | Val Loss: 0.29238
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 120 EPOCHE
+
+Époque 122/150 | Train Loss: 0.28956 | Val Loss: 0.29217
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 121 EPOCHE
+
+Époque 123/150 | Train Loss: 0.28930 | Val Loss: 0.29197
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 122 EPOCHE
+
+Époque 124/150 | Train Loss: 0.28927 | Val Loss: 0.29223
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 123 EPOCHE
+
+Époque 125/150 | Train Loss: 0.28943 | Val Loss: 0.29172
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 124 EPOCHE
+
+Époque 126/150 | Train Loss: 0.28937 | Val Loss: 0.29111
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 125 EPOCHE
+
+Époque 127/150 | Train Loss: 0.28923 | Val Loss: 0.29138
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 126 EPOCHE
+
+Époque 128/150 | Train Loss: 0.28938 | Val Loss: 0.29136
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 127 EPOCHE
+
+Époque 129/150 | Train Loss: 0.28943 | Val Loss: 0.29214
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 128 EPOCHE
+
+Époque 130/150 | Train Loss: 0.28916 | Val Loss: 0.29152
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 129 EPOCHE
+
+Époque 131/150 | Train Loss: 0.28904 | Val Loss: 0.29191
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 130 EPOCHE
+
+Époque 132/150 | Train Loss: 0.28921 | Val Loss: 0.29145
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 131 EPOCHE
+
+Époque 133/150 | Train Loss: 0.28917 | Val Loss: 0.29199
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 132 EPOCHE
+
+Époque 134/150 | Train Loss: 0.28927 | Val Loss: 0.29191
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 133 EPOCHE
+
+Époque 135/150 | Train Loss: 0.28924 | Val Loss: 0.29218
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 134 EPOCHE
+
+Époque 136/150 | Train Loss: 0.28930 | Val Loss: 0.29259
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 135 EPOCHE
+
+Époque 137/150 | Train Loss: 0.28950 | Val Loss: 0.29166
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 136 EPOCHE
+
+Époque 138/150 | Train Loss: 0.28920 | Val Loss: 0.29124
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 137 EPOCHE
+
+Époque 139/150 | Train Loss: 0.28913 | Val Loss: 0.29238
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 138 EPOCHE
+
+Époque 140/150 | Train Loss: 0.28929 | Val Loss: 0.29179
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 139 EPOCHE
+
+Époque 141/150 | Train Loss: 0.28917 | Val Loss: 0.29210
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 140 EPOCHE
+
+Époque 142/150 | Train Loss: 0.28906 | Val Loss: 0.29180
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 141 EPOCHE
+
+Époque 143/150 | Train Loss: 0.28897 | Val Loss: 0.29183
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 142 EPOCHE
+
+Époque 144/150 | Train Loss: 0.28922 | Val Loss: 0.29184
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 143 EPOCHE
+
+Époque 145/150 | Train Loss: 0.28904 | Val Loss: 0.29180
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 144 EPOCHE
+
+Époque 146/150 | Train Loss: 0.28914 | Val Loss: 0.29195
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 145 EPOCHE
+
+Époque 147/150 | Train Loss: 0.28925 | Val Loss: 0.29174
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 146 EPOCHE
+
+Époque 148/150 | Train Loss: 0.28915 | Val Loss: 0.29235
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 147 EPOCHE
+
+Époque 149/150 | Train Loss: 0.28905 | Val Loss: 0.29167
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 148 EPOCHE
+
+Époque 150/150 | Train Loss: 0.28884 | Val Loss: 0.29220
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 149 EPOCHE
+
+
+Entraînement terminé avec succès.
+FIN
+
+done
+Mon Aug 3 19:20:07 CEST 2026

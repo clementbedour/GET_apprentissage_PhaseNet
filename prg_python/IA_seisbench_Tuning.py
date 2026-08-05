@@ -53,13 +53,13 @@ else:
     START_FROM_ZERO = False 
     EPOCHS = 150           # Moins d'époques nécessaires car Fine-Tuning
     LEARNING_RATE = 5e-5
-    SIGMA = 20
+    SIGMA = 15
     print(f"Mode : FINE-TUNING LOCAL depuis {LOCAL_MODEL_PATH}")
 
 print(f"On veux une qualité minimal de {qualite}")
 
 #------------PARAMETRES--------------------
-PATIENCE = 5 #nombre d'epoque sans changement pour arrêt modèle
+PATIENCE = 10 #nombre d'epoque sans changement pour arrêt modèle
 
 BATCH_SIZE = 32
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -211,5 +211,6 @@ for epoch in range(EPOCHS):
         patience_counter += 1
         if patience_counter >= PATIENCE:
             print(f"Arrêt car pas d'amélioration depuis {PATIENCE} Epoche \nFin au bout de {epoch} EPOCHE\n")
+            break
 
 print("\nEntraînement terminé avec succès.")

@@ -13,8 +13,8 @@ import sys
 BASE_DIR = "../data"
 
 #valeurs de détection
-THRESHOLD_P = 0.95
-THRESHOLD_S = 0.95
+THRESHOLD_P = 0.90
+THRESHOLD_S = 0.90
 
 START_DAY = 51
 END_DAY = 151
@@ -27,9 +27,10 @@ STATIONS_MONO = {"BAM", "CPM", "GBM", "MLM"}
 #params association
 ASSOCIATION_WINDOW_SECONDS = 5.0  #fenetre max entre arrive sur 2 stats
 #filtre pour event
-MIN_STATIONS = 5          #nbr min de stat 
-MIN_PROBA_EVENT = 0.99    #score confiance minimal
-MAX_EVENT_DURATION = 15.0 #tmp max event (pas plus de 15 sec)
+MIN_STATIONS = 4          #nbr min de stat 
+MIN_PROBA_EVENT = 0.90    #score confiance minimal
+MAX_EVENT_DAY = 200        #nbr d'event max par jour (aprés association)
+MAX_EVENT_DURATION = 10.0 #tmp max event (pas plus de 10 sec)
 
 # --- PARAMÈTRES FILTRE ---
 FREQ_MIN = 3.0
@@ -343,12 +344,15 @@ for julian_day in range(START_DAY, END_DAY + 1):
     if detections_du_jour:
         df_jour = pd.DataFrame(detections_du_jour) #transforme en dataframe 
         df_jour_dedup = dedupliquer_picks(df_jour) #on enleve les doublons
-        tous_les_picks_dedup.append(df_jour_dedup)
         df_evenements = associer_evenements(df_jour_dedup, min_stations=MIN_STATIONS) #on regroupe toutes les P des même event
         print(f"=== Bilan Jour {julian_day_str} : {len(df_jour_dedup)} phases -> {len(df_evenements)} évènements ===") #bilan journalier
-        
-        if not df_evenements.empty:
-            tous_les_evenements.append(df_evenements)
+        if len(df_evenements) > MAX_EVENT_DAY:
+            print(f"  -> Jour {julian_day_str} ignoré : trop d'événements ({len(df_evenements)} > {MAX_EVENT_DAY}).")
+        else:
+            #on ajoute le jour
+            tous_les_picks_dedup.append(df_jour_dedup)
+            if not df_evenements.empty:
+                tous_les_evenements.append(df_evenements)
 
 
 

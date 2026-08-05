@@ -153,6 +153,7 @@ with sbd.WaveformDataWriter(PATH_METADATA, PATH_HDF5) as writer:
             
             trace_metadata = {
                 "trace_name": f"MQ_{stat}_GOLD_{t_p.strftime('%Y%m%d_%H%M%S')}",
+                "trace_start_time": actual_start.isoformat(),
                 "station_network_code": "MQ",
                 "station_code": stat,
                 "trace_p_arrival_sample": p_arrival_sample,

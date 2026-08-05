@@ -1,0 +1,1499 @@
+a
+Mon Aug 3 17:07:59 CEST 2026
+/usr/local/miniconda/bin:/usr/local/SINGULARITY/OPENMPI-3.1.4-GNU731/bin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
+85%
+Mode : Entraînement DE ZÉRO
+On veux une qualité minimal de a
+Succès ! Dataset chargé. Train: 651 | Val: 88
+Initialisation du modèle avec des poids aléatoires
+
+Début de l'entraînement
+Époque 01/300 | Train Loss: 0.58633 | Val Loss: 0.56171
+  -> Nouveau meilleur modèle
+Époque 02/300 | Train Loss: 0.57547 | Val Loss: 0.55787
+  -> Nouveau meilleur modèle
+Époque 03/300 | Train Loss: 0.56517 | Val Loss: 0.56484
+Époque 04/300 | Train Loss: 0.55676 | Val Loss: 0.55326
+  -> Nouveau meilleur modèle
+Époque 05/300 | Train Loss: 0.55077 | Val Loss: 0.54905
+  -> Nouveau meilleur modèle
+Époque 06/300 | Train Loss: 0.54688 | Val Loss: 0.54490
+  -> Nouveau meilleur modèle
+Époque 07/300 | Train Loss: 0.54358 | Val Loss: 0.54122
+  -> Nouveau meilleur modèle
+Époque 08/300 | Train Loss: 0.54149 | Val Loss: 0.54039
+  -> Nouveau meilleur modèle
+Époque 09/300 | Train Loss: 0.53950 | Val Loss: 0.53776
+  -> Nouveau meilleur modèle
+Époque 10/300 | Train Loss: 0.53757 | Val Loss: 0.53660
+  -> Nouveau meilleur modèle
+Époque 11/300 | Train Loss: 0.53586 | Val Loss: 0.53360
+  -> Nouveau meilleur modèle
+Époque 12/300 | Train Loss: 0.53400 | Val Loss: 0.53420
+Époque 13/300 | Train Loss: 0.53223 | Val Loss: 0.53074
+  -> Nouveau meilleur modèle
+Époque 14/300 | Train Loss: 0.53066 | Val Loss: 0.52941
+  -> Nouveau meilleur modèle
+Époque 15/300 | Train Loss: 0.52888 | Val Loss: 0.52800
+  -> Nouveau meilleur modèle
+Époque 16/300 | Train Loss: 0.52801 | Val Loss: 0.52723
+  -> Nouveau meilleur modèle
+Époque 17/300 | Train Loss: 0.52660 | Val Loss: 0.52551
+  -> Nouveau meilleur modèle
+Époque 18/300 | Train Loss: 0.52537 | Val Loss: 0.52371
+  -> Nouveau meilleur modèle
+Époque 19/300 | Train Loss: 0.52509 | Val Loss: 0.52357
+  -> Nouveau meilleur modèle
+Époque 20/300 | Train Loss: 0.52331 | Val Loss: 0.52130
+  -> Nouveau meilleur modèle
+Époque 21/300 | Train Loss: 0.52141 | Val Loss: 0.51988
+  -> Nouveau meilleur modèle
+Époque 22/300 | Train Loss: 0.51971 | Val Loss: 0.51893
+  -> Nouveau meilleur modèle
+Époque 23/300 | Train Loss: 0.51863 | Val Loss: 0.51690
+  -> Nouveau meilleur modèle
+Époque 24/300 | Train Loss: 0.51726 | Val Loss: 0.51638
+  -> Nouveau meilleur modèle
+Époque 25/300 | Train Loss: 0.51624 | Val Loss: 0.51525
+  -> Nouveau meilleur modèle
+Époque 26/300 | Train Loss: 0.51490 | Val Loss: 0.51389
+  -> Nouveau meilleur modèle
+Époque 27/300 | Train Loss: 0.51356 | Val Loss: 0.51312
+  -> Nouveau meilleur modèle
+Époque 28/300 | Train Loss: 0.51222 | Val Loss: 0.51111
+  -> Nouveau meilleur modèle
+Époque 29/300 | Train Loss: 0.51112 | Val Loss: 0.51004
+  -> Nouveau meilleur modèle
+Époque 30/300 | Train Loss: 0.50986 | Val Loss: 0.50933
+  -> Nouveau meilleur modèle
+Époque 31/300 | Train Loss: 0.50845 | Val Loss: 0.50799
+  -> Nouveau meilleur modèle
+Époque 32/300 | Train Loss: 0.50708 | Val Loss: 0.50662
+  -> Nouveau meilleur modèle
+Époque 33/300 | Train Loss: 0.50583 | Val Loss: 0.50655
+  -> Nouveau meilleur modèle
+Époque 34/300 | Train Loss: 0.50477 | Val Loss: 0.50411
+  -> Nouveau meilleur modèle
+Époque 35/300 | Train Loss: 0.50357 | Val Loss: 0.50312
+  -> Nouveau meilleur modèle
+Époque 36/300 | Train Loss: 0.50240 | Val Loss: 0.50203
+  -> Nouveau meilleur modèle
+Époque 37/300 | Train Loss: 0.50097 | Val Loss: 0.49986
+  -> Nouveau meilleur modèle
+Époque 38/300 | Train Loss: 0.50039 | Val Loss: 0.49922
+  -> Nouveau meilleur modèle
+Époque 39/300 | Train Loss: 0.50005 | Val Loss: 0.49895
+  -> Nouveau meilleur modèle
+Époque 40/300 | Train Loss: 0.49794 | Val Loss: 0.49741
+  -> Nouveau meilleur modèle
+Époque 41/300 | Train Loss: 0.49665 | Val Loss: 0.49501
+  -> Nouveau meilleur modèle
+Époque 42/300 | Train Loss: 0.49521 | Val Loss: 0.49512
+Époque 43/300 | Train Loss: 0.49375 | Val Loss: 0.49310
+  -> Nouveau meilleur modèle
+Époque 44/300 | Train Loss: 0.49227 | Val Loss: 0.49303
+  -> Nouveau meilleur modèle
+Époque 45/300 | Train Loss: 0.49115 | Val Loss: 0.49041
+  -> Nouveau meilleur modèle
+Époque 46/300 | Train Loss: 0.48976 | Val Loss: 0.49023
+  -> Nouveau meilleur modèle
+Époque 47/300 | Train Loss: 0.48839 | Val Loss: 0.48885
+  -> Nouveau meilleur modèle
+Époque 48/300 | Train Loss: 0.48725 | Val Loss: 0.48640
+  -> Nouveau meilleur modèle
+Époque 49/300 | Train Loss: 0.48596 | Val Loss: 0.48583
+  -> Nouveau meilleur modèle
+Époque 50/300 | Train Loss: 0.48478 | Val Loss: 0.48504
+  -> Nouveau meilleur modèle
+Époque 51/300 | Train Loss: 0.48346 | Val Loss: 0.48403
+  -> Nouveau meilleur modèle
+Époque 52/300 | Train Loss: 0.48222 | Val Loss: 0.48152
+  -> Nouveau meilleur modèle
+Époque 53/300 | Train Loss: 0.48105 | Val Loss: 0.48123
+  -> Nouveau meilleur modèle
+Époque 54/300 | Train Loss: 0.47963 | Val Loss: 0.48038
+  -> Nouveau meilleur modèle
+Époque 55/300 | Train Loss: 0.47839 | Val Loss: 0.47847
+  -> Nouveau meilleur modèle
+Époque 56/300 | Train Loss: 0.47724 | Val Loss: 0.47846
+  -> Nouveau meilleur modèle
+Époque 57/300 | Train Loss: 0.47613 | Val Loss: 0.47579
+  -> Nouveau meilleur modèle
+Époque 58/300 | Train Loss: 0.47445 | Val Loss: 0.47343
+  -> Nouveau meilleur modèle
+Époque 59/300 | Train Loss: 0.47318 | Val Loss: 0.47352
+Époque 60/300 | Train Loss: 0.47203 | Val Loss: 0.47283
+  -> Nouveau meilleur modèle
+Époque 61/300 | Train Loss: 0.47108 | Val Loss: 0.47067
+  -> Nouveau meilleur modèle
+Époque 62/300 | Train Loss: 0.46981 | Val Loss: 0.46973
+  -> Nouveau meilleur modèle
+Époque 63/300 | Train Loss: 0.46842 | Val Loss: 0.46757
+  -> Nouveau meilleur modèle
+Époque 64/300 | Train Loss: 0.46698 | Val Loss: 0.46613
+  -> Nouveau meilleur modèle
+Époque 65/300 | Train Loss: 0.46578 | Val Loss: 0.46511
+  -> Nouveau meilleur modèle
+Époque 66/300 | Train Loss: 0.46455 | Val Loss: 0.46446
+  -> Nouveau meilleur modèle
+Époque 67/300 | Train Loss: 0.46356 | Val Loss: 0.46340
+  -> Nouveau meilleur modèle
+Époque 68/300 | Train Loss: 0.46233 | Val Loss: 0.46070
+  -> Nouveau meilleur modèle
+Époque 69/300 | Train Loss: 0.46087 | Val Loss: 0.45972
+  -> Nouveau meilleur modèle
+Époque 70/300 | Train Loss: 0.45981 | Val Loss: 0.45913
+  -> Nouveau meilleur modèle
+Époque 71/300 | Train Loss: 0.45832 | Val Loss: 0.45742
+  -> Nouveau meilleur modèle
+Époque 72/300 | Train Loss: 0.45729 | Val Loss: 0.45622
+  -> Nouveau meilleur modèle
+Époque 73/300 | Train Loss: 0.45590 | Val Loss: 0.45477
+  -> Nouveau meilleur modèle
+Époque 74/300 | Train Loss: 0.45465 | Val Loss: 0.45380
+  -> Nouveau meilleur modèle
+Époque 75/300 | Train Loss: 0.45329 | Val Loss: 0.45300
+  -> Nouveau meilleur modèle
+Époque 76/300 | Train Loss: 0.45210 | Val Loss: 0.45197
+  -> Nouveau meilleur modèle
+Époque 77/300 | Train Loss: 0.45099 | Val Loss: 0.45068
+  -> Nouveau meilleur modèle
+Époque 78/300 | Train Loss: 0.44967 | Val Loss: 0.44918
+  -> Nouveau meilleur modèle
+Époque 79/300 | Train Loss: 0.44850 | Val Loss: 0.44818
+  -> Nouveau meilleur modèle
+Époque 80/300 | Train Loss: 0.44736 | Val Loss: 0.44560
+  -> Nouveau meilleur modèle
+Époque 81/300 | Train Loss: 0.44634 | Val Loss: 0.44492
+  -> Nouveau meilleur modèle
+Époque 82/300 | Train Loss: 0.44493 | Val Loss: 0.44378
+  -> Nouveau meilleur modèle
+Époque 83/300 | Train Loss: 0.44345 | Val Loss: 0.44219
+  -> Nouveau meilleur modèle
+Époque 84/300 | Train Loss: 0.44215 | Val Loss: 0.43993
+  -> Nouveau meilleur modèle
+Époque 85/300 | Train Loss: 0.44085 | Val Loss: 0.44084
+Époque 86/300 | Train Loss: 0.43981 | Val Loss: 0.43947
+  -> Nouveau meilleur modèle
+Époque 87/300 | Train Loss: 0.43841 | Val Loss: 0.43828
+  -> Nouveau meilleur modèle
+Époque 88/300 | Train Loss: 0.43657 | Val Loss: 0.43603
+  -> Nouveau meilleur modèle
+Époque 89/300 | Train Loss: 0.43596 | Val Loss: 0.43560
+  -> Nouveau meilleur modèle
+Époque 90/300 | Train Loss: 0.43451 | Val Loss: 0.43277
+  -> Nouveau meilleur modèle
+Époque 91/300 | Train Loss: 0.43338 | Val Loss: 0.43323
+Époque 92/300 | Train Loss: 0.43222 | Val Loss: 0.43138
+  -> Nouveau meilleur modèle
+Époque 93/300 | Train Loss: 0.43085 | Val Loss: 0.43083
+  -> Nouveau meilleur modèle
+Époque 94/300 | Train Loss: 0.42968 | Val Loss: 0.42812
+  -> Nouveau meilleur modèle
+Époque 95/300 | Train Loss: 0.42830 | Val Loss: 0.42817
+Époque 96/300 | Train Loss: 0.42714 | Val Loss: 0.42687
+  -> Nouveau meilleur modèle
+Époque 97/300 | Train Loss: 0.42603 | Val Loss: 0.42492
+  -> Nouveau meilleur modèle
+Époque 98/300 | Train Loss: 0.42476 | Val Loss: 0.42318
+  -> Nouveau meilleur modèle
+Époque 99/300 | Train Loss: 0.42343 | Val Loss: 0.42144
+  -> Nouveau meilleur modèle
+Époque 100/300 | Train Loss: 0.42225 | Val Loss: 0.42170
+Époque 101/300 | Train Loss: 0.42130 | Val Loss: 0.42036
+  -> Nouveau meilleur modèle
+Époque 102/300 | Train Loss: 0.41968 | Val Loss: 0.41942
+  -> Nouveau meilleur modèle
+Époque 103/300 | Train Loss: 0.41894 | Val Loss: 0.41689
+  -> Nouveau meilleur modèle
+Époque 104/300 | Train Loss: 0.41749 | Val Loss: 0.41680
+  -> Nouveau meilleur modèle
+Époque 105/300 | Train Loss: 0.41639 | Val Loss: 0.41500
+  -> Nouveau meilleur modèle
+Époque 106/300 | Train Loss: 0.41498 | Val Loss: 0.41368
+  -> Nouveau meilleur modèle
+Époque 107/300 | Train Loss: 0.41371 | Val Loss: 0.41317
+  -> Nouveau meilleur modèle
+Époque 108/300 | Train Loss: 0.41227 | Val Loss: 0.41286
+  -> Nouveau meilleur modèle
+Époque 109/300 | Train Loss: 0.41174 | Val Loss: 0.41059
+  -> Nouveau meilleur modèle
+Époque 110/300 | Train Loss: 0.41267 | Val Loss: 0.40913
+  -> Nouveau meilleur modèle
+Époque 111/300 | Train Loss: 0.41029 | Val Loss: 0.40807
+  -> Nouveau meilleur modèle
+Époque 112/300 | Train Loss: 0.40861 | Val Loss: 0.40728
+  -> Nouveau meilleur modèle
+Époque 113/300 | Train Loss: 0.40718 | Val Loss: 0.40589
+  -> Nouveau meilleur modèle
+Époque 114/300 | Train Loss: 0.40572 | Val Loss: 0.40405
+  -> Nouveau meilleur modèle
+Époque 115/300 | Train Loss: 0.40450 | Val Loss: 0.40350
+  -> Nouveau meilleur modèle
+Époque 116/300 | Train Loss: 0.40383 | Val Loss: 0.40295
+  -> Nouveau meilleur modèle
+Époque 117/300 | Train Loss: 0.40247 | Val Loss: 0.40144
+  -> Nouveau meilleur modèle
+Époque 118/300 | Train Loss: 0.40122 | Val Loss: 0.39936
+  -> Nouveau meilleur modèle
+Époque 119/300 | Train Loss: 0.40032 | Val Loss: 0.39983
+Époque 120/300 | Train Loss: 0.39922 | Val Loss: 0.39750
+  -> Nouveau meilleur modèle
+Époque 121/300 | Train Loss: 0.39786 | Val Loss: 0.39720
+  -> Nouveau meilleur modèle
+Époque 122/300 | Train Loss: 0.39687 | Val Loss: 0.39531
+  -> Nouveau meilleur modèle
+Époque 123/300 | Train Loss: 0.39576 | Val Loss: 0.39415
+  -> Nouveau meilleur modèle
+Époque 124/300 | Train Loss: 0.39480 | Val Loss: 0.39351
+  -> Nouveau meilleur modèle
+Époque 125/300 | Train Loss: 0.39344 | Val Loss: 0.39217
+  -> Nouveau meilleur modèle
+Époque 126/300 | Train Loss: 0.39293 | Val Loss: 0.39204
+  -> Nouveau meilleur modèle
+Époque 127/300 | Train Loss: 0.39162 | Val Loss: 0.39008
+  -> Nouveau meilleur modèle
+Époque 128/300 | Train Loss: 0.39061 | Val Loss: 0.39064
+Époque 129/300 | Train Loss: 0.38979 | Val Loss: 0.38858
+  -> Nouveau meilleur modèle
+Époque 130/300 | Train Loss: 0.38866 | Val Loss: 0.38823
+  -> Nouveau meilleur modèle
+Époque 131/300 | Train Loss: 0.38798 | Val Loss: 0.38617
+  -> Nouveau meilleur modèle
+Époque 132/300 | Train Loss: 0.38673 | Val Loss: 0.38481
+  -> Nouveau meilleur modèle
+Époque 133/300 | Train Loss: 0.38570 | Val Loss: 0.38490
+Époque 134/300 | Train Loss: 0.38486 | Val Loss: 0.38489
+Époque 135/300 | Train Loss: 0.38388 | Val Loss: 0.38265
+  -> Nouveau meilleur modèle
+Époque 136/300 | Train Loss: 0.38276 | Val Loss: 0.38249
+  -> Nouveau meilleur modèle
+Époque 137/300 | Train Loss: 0.38197 | Val Loss: 0.38129
+  -> Nouveau meilleur modèle
+Époque 138/300 | Train Loss: 0.38119 | Val Loss: 0.38029
+  -> Nouveau meilleur modèle
+Époque 139/300 | Train Loss: 0.37992 | Val Loss: 0.37966
+  -> Nouveau meilleur modèle
+Époque 140/300 | Train Loss: 0.37890 | Val Loss: 0.37855
+  -> Nouveau meilleur modèle
+Époque 141/300 | Train Loss: 0.37802 | Val Loss: 0.37707
+  -> Nouveau meilleur modèle
+Époque 142/300 | Train Loss: 0.37745 | Val Loss: 0.37715
+Époque 143/300 | Train Loss: 0.37662 | Val Loss: 0.37641
+  -> Nouveau meilleur modèle
+Époque 144/300 | Train Loss: 0.37568 | Val Loss: 0.37458
+  -> Nouveau meilleur modèle
+Époque 145/300 | Train Loss: 0.37466 | Val Loss: 0.37406
+  -> Nouveau meilleur modèle
+Époque 146/300 | Train Loss: 0.37372 | Val Loss: 0.37345
+  -> Nouveau meilleur modèle
+Époque 147/300 | Train Loss: 0.37284 | Val Loss: 0.37226
+  -> Nouveau meilleur modèle
+Époque 148/300 | Train Loss: 0.37187 | Val Loss: 0.37073
+  -> Nouveau meilleur modèle
+Époque 149/300 | Train Loss: 0.37114 | Val Loss: 0.36978
+  -> Nouveau meilleur modèle
+Époque 150/300 | Train Loss: 0.37039 | Val Loss: 0.36976
+  -> Nouveau meilleur modèle
+Époque 151/300 | Train Loss: 0.36956 | Val Loss: 0.36890
+  -> Nouveau meilleur modèle
+Époque 152/300 | Train Loss: 0.36884 | Val Loss: 0.36747
+  -> Nouveau meilleur modèle
+Époque 153/300 | Train Loss: 0.36784 | Val Loss: 0.36719
+  -> Nouveau meilleur modèle
+Époque 154/300 | Train Loss: 0.36685 | Val Loss: 0.36623
+  -> Nouveau meilleur modèle
+Époque 155/300 | Train Loss: 0.36609 | Val Loss: 0.36482
+  -> Nouveau meilleur modèle
+Époque 156/300 | Train Loss: 0.36501 | Val Loss: 0.36439
+  -> Nouveau meilleur modèle
+Époque 157/300 | Train Loss: 0.36448 | Val Loss: 0.36356
+  -> Nouveau meilleur modèle
+Époque 158/300 | Train Loss: 0.36306 | Val Loss: 0.36178
+  -> Nouveau meilleur modèle
+Époque 159/300 | Train Loss: 0.36203 | Val Loss: 0.36162
+  -> Nouveau meilleur modèle
+Époque 160/300 | Train Loss: 0.36109 | Val Loss: 0.35963
+  -> Nouveau meilleur modèle
+Époque 161/300 | Train Loss: 0.36004 | Val Loss: 0.35932
+  -> Nouveau meilleur modèle
+Époque 162/300 | Train Loss: 0.35903 | Val Loss: 0.35884
+  -> Nouveau meilleur modèle
+Époque 163/300 | Train Loss: 0.35808 | Val Loss: 0.35723
+  -> Nouveau meilleur modèle
+Époque 164/300 | Train Loss: 0.35715 | Val Loss: 0.35631
+  -> Nouveau meilleur modèle
+Époque 165/300 | Train Loss: 0.35632 | Val Loss: 0.35566
+  -> Nouveau meilleur modèle
+Époque 166/300 | Train Loss: 0.35539 | Val Loss: 0.35512
+  -> Nouveau meilleur modèle
+Époque 167/300 | Train Loss: 0.35471 | Val Loss: 0.35361
+  -> Nouveau meilleur modèle
+Époque 168/300 | Train Loss: 0.35394 | Val Loss: 0.35259
+  -> Nouveau meilleur modèle
+Époque 169/300 | Train Loss: 0.35312 | Val Loss: 0.35241
+  -> Nouveau meilleur modèle
+Époque 170/300 | Train Loss: 0.35275 | Val Loss: 0.35251
+Époque 171/300 | Train Loss: 0.35152 | Val Loss: 0.35034
+  -> Nouveau meilleur modèle
+Époque 172/300 | Train Loss: 0.35089 | Val Loss: 0.34895
+  -> Nouveau meilleur modèle
+Époque 173/300 | Train Loss: 0.34990 | Val Loss: 0.34890
+  -> Nouveau meilleur modèle
+Époque 174/300 | Train Loss: 0.34885 | Val Loss: 0.34882
+  -> Nouveau meilleur modèle
+Époque 175/300 | Train Loss: 0.34806 | Val Loss: 0.34765
+  -> Nouveau meilleur modèle
+Époque 176/300 | Train Loss: 0.34738 | Val Loss: 0.34680
+  -> Nouveau meilleur modèle
+Époque 177/300 | Train Loss: 0.34657 | Val Loss: 0.34631
+  -> Nouveau meilleur modèle
+Époque 178/300 | Train Loss: 0.34558 | Val Loss: 0.34579
+  -> Nouveau meilleur modèle
+Époque 179/300 | Train Loss: 0.34533 | Val Loss: 0.34576
+  -> Nouveau meilleur modèle
+Époque 180/300 | Train Loss: 0.34411 | Val Loss: 0.34441
+  -> Nouveau meilleur modèle
+Époque 181/300 | Train Loss: 0.34339 | Val Loss: 0.34385
+  -> Nouveau meilleur modèle
+Époque 182/300 | Train Loss: 0.34249 | Val Loss: 0.34241
+  -> Nouveau meilleur modèle
+Époque 183/300 | Train Loss: 0.34189 | Val Loss: 0.34252
+Époque 184/300 | Train Loss: 0.34118 | Val Loss: 0.34176
+  -> Nouveau meilleur modèle
+Époque 185/300 | Train Loss: 0.34044 | Val Loss: 0.34109
+  -> Nouveau meilleur modèle
+Époque 186/300 | Train Loss: 0.33976 | Val Loss: 0.34074
+  -> Nouveau meilleur modèle
+Époque 187/300 | Train Loss: 0.33916 | Val Loss: 0.34015
+  -> Nouveau meilleur modèle
+Époque 188/300 | Train Loss: 0.33850 | Val Loss: 0.33822
+  -> Nouveau meilleur modèle
+Époque 189/300 | Train Loss: 0.33777 | Val Loss: 0.33706
+  -> Nouveau meilleur modèle
+Époque 190/300 | Train Loss: 0.33762 | Val Loss: 0.33815
+Époque 191/300 | Train Loss: 0.33672 | Val Loss: 0.33686
+  -> Nouveau meilleur modèle
+Époque 192/300 | Train Loss: 0.33586 | Val Loss: 0.33590
+  -> Nouveau meilleur modèle
+Époque 193/300 | Train Loss: 0.33514 | Val Loss: 0.33618
+Époque 194/300 | Train Loss: 0.33448 | Val Loss: 0.33497
+  -> Nouveau meilleur modèle
+Époque 195/300 | Train Loss: 0.33370 | Val Loss: 0.33415
+  -> Nouveau meilleur modèle
+Époque 196/300 | Train Loss: 0.33325 | Val Loss: 0.33358
+  -> Nouveau meilleur modèle
+Époque 197/300 | Train Loss: 0.33279 | Val Loss: 0.33240
+  -> Nouveau meilleur modèle
+Époque 198/300 | Train Loss: 0.33232 | Val Loss: 0.33259
+Époque 199/300 | Train Loss: 0.33166 | Val Loss: 0.33205
+  -> Nouveau meilleur modèle
+Époque 200/300 | Train Loss: 0.33099 | Val Loss: 0.33106
+  -> Nouveau meilleur modèle
+Époque 201/300 | Train Loss: 0.33026 | Val Loss: 0.33030
+  -> Nouveau meilleur modèle
+Époque 202/300 | Train Loss: 0.32973 | Val Loss: 0.33025
+  -> Nouveau meilleur modèle
+Époque 203/300 | Train Loss: 0.32918 | Val Loss: 0.32938
+  -> Nouveau meilleur modèle
+Époque 204/300 | Train Loss: 0.32839 | Val Loss: 0.32883
+  -> Nouveau meilleur modèle
+Époque 205/300 | Train Loss: 0.32820 | Val Loss: 0.32882
+  -> Nouveau meilleur modèle
+Époque 206/300 | Train Loss: 0.32774 | Val Loss: 0.32771
+  -> Nouveau meilleur modèle
+Époque 207/300 | Train Loss: 0.32686 | Val Loss: 0.32784
+Époque 208/300 | Train Loss: 0.32673 | Val Loss: 0.32760
+  -> Nouveau meilleur modèle
+Époque 209/300 | Train Loss: 0.32604 | Val Loss: 0.32613
+  -> Nouveau meilleur modèle
+Époque 210/300 | Train Loss: 0.32526 | Val Loss: 0.32521
+  -> Nouveau meilleur modèle
+Époque 211/300 | Train Loss: 0.32512 | Val Loss: 0.32524
+Époque 212/300 | Train Loss: 0.32462 | Val Loss: 0.32459
+  -> Nouveau meilleur modèle
+Époque 213/300 | Train Loss: 0.32438 | Val Loss: 0.32418
+  -> Nouveau meilleur modèle
+Époque 214/300 | Train Loss: 0.32345 | Val Loss: 0.32391
+  -> Nouveau meilleur modèle
+Époque 215/300 | Train Loss: 0.32321 | Val Loss: 0.32317
+  -> Nouveau meilleur modèle
+Époque 216/300 | Train Loss: 0.32285 | Val Loss: 0.32277
+  -> Nouveau meilleur modèle
+Époque 217/300 | Train Loss: 0.32198 | Val Loss: 0.32270
+  -> Nouveau meilleur modèle
+Époque 218/300 | Train Loss: 0.32169 | Val Loss: 0.32266
+  -> Nouveau meilleur modèle
+Époque 219/300 | Train Loss: 0.32132 | Val Loss: 0.32199
+  -> Nouveau meilleur modèle
+Époque 220/300 | Train Loss: 0.32088 | Val Loss: 0.32174
+  -> Nouveau meilleur modèle
+Époque 221/300 | Train Loss: 0.32028 | Val Loss: 0.32080
+  -> Nouveau meilleur modèle
+Époque 222/300 | Train Loss: 0.31992 | Val Loss: 0.32071
+  -> Nouveau meilleur modèle
+Époque 223/300 | Train Loss: 0.31964 | Val Loss: 0.31941
+  -> Nouveau meilleur modèle
+Époque 224/300 | Train Loss: 0.31910 | Val Loss: 0.31942
+Époque 225/300 | Train Loss: 0.31874 | Val Loss: 0.31910
+  -> Nouveau meilleur modèle
+Époque 226/300 | Train Loss: 0.31826 | Val Loss: 0.31845
+  -> Nouveau meilleur modèle
+Époque 227/300 | Train Loss: 0.31788 | Val Loss: 0.31843
+  -> Nouveau meilleur modèle
+Époque 228/300 | Train Loss: 0.31732 | Val Loss: 0.31792
+  -> Nouveau meilleur modèle
+Époque 229/300 | Train Loss: 0.31690 | Val Loss: 0.31772
+  -> Nouveau meilleur modèle
+Époque 230/300 | Train Loss: 0.31649 | Val Loss: 0.31771
+  -> Nouveau meilleur modèle
+Époque 231/300 | Train Loss: 0.31612 | Val Loss: 0.31667
+  -> Nouveau meilleur modèle
+Époque 232/300 | Train Loss: 0.31555 | Val Loss: 0.31602
+  -> Nouveau meilleur modèle
+Époque 233/300 | Train Loss: 0.31527 | Val Loss: 0.31527
+  -> Nouveau meilleur modèle
+Époque 234/300 | Train Loss: 0.31517 | Val Loss: 0.31549
+Époque 235/300 | Train Loss: 0.31439 | Val Loss: 0.31492
+  -> Nouveau meilleur modèle
+Époque 236/300 | Train Loss: 0.31390 | Val Loss: 0.31450
+  -> Nouveau meilleur modèle
+Époque 237/300 | Train Loss: 0.31350 | Val Loss: 0.31380
+  -> Nouveau meilleur modèle
+Époque 238/300 | Train Loss: 0.31293 | Val Loss: 0.31321
+  -> Nouveau meilleur modèle
+Époque 239/300 | Train Loss: 0.31234 | Val Loss: 0.31258
+  -> Nouveau meilleur modèle
+Époque 240/300 | Train Loss: 0.31195 | Val Loss: 0.31276
+Époque 241/300 | Train Loss: 0.31255 | Val Loss: 0.31401
+Époque 242/300 | Train Loss: 0.31155 | Val Loss: 0.31197
+  -> Nouveau meilleur modèle
+Époque 243/300 | Train Loss: 0.31090 | Val Loss: 0.31121
+  -> Nouveau meilleur modèle
+Époque 244/300 | Train Loss: 0.31043 | Val Loss: 0.31095
+  -> Nouveau meilleur modèle
+Époque 245/300 | Train Loss: 0.30985 | Val Loss: 0.30968
+  -> Nouveau meilleur modèle
+Époque 246/300 | Train Loss: 0.30944 | Val Loss: 0.30944
+  -> Nouveau meilleur modèle
+Époque 247/300 | Train Loss: 0.30900 | Val Loss: 0.30953
+Époque 248/300 | Train Loss: 0.30849 | Val Loss: 0.30966
+Époque 249/300 | Train Loss: 0.30807 | Val Loss: 0.30973
+Époque 250/300 | Train Loss: 0.30764 | Val Loss: 0.30864
+  -> Nouveau meilleur modèle
+Époque 251/300 | Train Loss: 0.30751 | Val Loss: 0.30700
+  -> Nouveau meilleur modèle
+Époque 252/300 | Train Loss: 0.30728 | Val Loss: 0.30710
+Époque 253/300 | Train Loss: 0.30660 | Val Loss: 0.30801
+Époque 254/300 | Train Loss: 0.30651 | Val Loss: 0.30677
+  -> Nouveau meilleur modèle
+Époque 255/300 | Train Loss: 0.30596 | Val Loss: 0.30641
+  -> Nouveau meilleur modèle
+Époque 256/300 | Train Loss: 0.30557 | Val Loss: 0.30633
+  -> Nouveau meilleur modèle
+Époque 257/300 | Train Loss: 0.30565 | Val Loss: 0.30561
+  -> Nouveau meilleur modèle
+Époque 258/300 | Train Loss: 0.30532 | Val Loss: 0.30596
+Époque 259/300 | Train Loss: 0.30489 | Val Loss: 0.30509
+  -> Nouveau meilleur modèle
+Époque 260/300 | Train Loss: 0.30482 | Val Loss: 0.30511
+Époque 261/300 | Train Loss: 0.30423 | Val Loss: 0.30447
+  -> Nouveau meilleur modèle
+Époque 262/300 | Train Loss: 0.30385 | Val Loss: 0.30490
+Époque 263/300 | Train Loss: 0.30358 | Val Loss: 0.30321
+  -> Nouveau meilleur modèle
+Époque 264/300 | Train Loss: 0.30359 | Val Loss: 0.30394
+Époque 265/300 | Train Loss: 0.30300 | Val Loss: 0.30361
+Époque 266/300 | Train Loss: 0.30298 | Val Loss: 0.30340
+Époque 267/300 | Train Loss: 0.30263 | Val Loss: 0.30302
+  -> Nouveau meilleur modèle
+Époque 268/300 | Train Loss: 0.30236 | Val Loss: 0.30297
+  -> Nouveau meilleur modèle
+Époque 269/300 | Train Loss: 0.30203 | Val Loss: 0.30233
+  -> Nouveau meilleur modèle
+Époque 270/300 | Train Loss: 0.30192 | Val Loss: 0.30203
+  -> Nouveau meilleur modèle
+Époque 271/300 | Train Loss: 0.30142 | Val Loss: 0.30204
+Époque 272/300 | Train Loss: 0.30127 | Val Loss: 0.30191
+  -> Nouveau meilleur modèle
+Époque 273/300 | Train Loss: 0.30109 | Val Loss: 0.30185
+  -> Nouveau meilleur modèle
+Époque 274/300 | Train Loss: 0.30089 | Val Loss: 0.30146
+  -> Nouveau meilleur modèle
+Époque 275/300 | Train Loss: 0.30059 | Val Loss: 0.30173
+Époque 276/300 | Train Loss: 0.30058 | Val Loss: 0.30099
+  -> Nouveau meilleur modèle
+Époque 277/300 | Train Loss: 0.30026 | Val Loss: 0.30091
+  -> Nouveau meilleur modèle
+Époque 278/300 | Train Loss: 0.30029 | Val Loss: 0.30061
+  -> Nouveau meilleur modèle
+Époque 279/300 | Train Loss: 0.29964 | Val Loss: 0.29986
+  -> Nouveau meilleur modèle
+Époque 280/300 | Train Loss: 0.29929 | Val Loss: 0.30052
+Époque 281/300 | Train Loss: 0.29910 | Val Loss: 0.30019
+Époque 282/300 | Train Loss: 0.29881 | Val Loss: 0.30000
+Époque 283/300 | Train Loss: 0.29880 | Val Loss: 0.29968
+  -> Nouveau meilleur modèle
+Époque 284/300 | Train Loss: 0.29886 | Val Loss: 0.29888
+  -> Nouveau meilleur modèle
+Époque 285/300 | Train Loss: 0.29918 | Val Loss: 0.29969
+Époque 286/300 | Train Loss: 0.29851 | Val Loss: 0.29918
+Époque 287/300 | Train Loss: 0.29840 | Val Loss: 0.29849
+  -> Nouveau meilleur modèle
+Époque 288/300 | Train Loss: 0.29788 | Val Loss: 0.29839
+  -> Nouveau meilleur modèle
+Époque 289/300 | Train Loss: 0.29767 | Val Loss: 0.29812
+  -> Nouveau meilleur modèle
+Époque 290/300 | Train Loss: 0.29771 | Val Loss: 0.29775
+  -> Nouveau meilleur modèle
+Époque 291/300 | Train Loss: 0.29731 | Val Loss: 0.29797
+Époque 292/300 | Train Loss: 0.29728 | Val Loss: 0.29718
+  -> Nouveau meilleur modèle
+Époque 293/300 | Train Loss: 0.29701 | Val Loss: 0.29703
+  -> Nouveau meilleur modèle
+Époque 294/300 | Train Loss: 0.29694 | Val Loss: 0.29712
+Époque 295/300 | Train Loss: 0.29681 | Val Loss: 0.29708
+Époque 296/300 | Train Loss: 0.29645 | Val Loss: 0.29818
+Époque 297/300 | Train Loss: 0.29623 | Val Loss: 0.29708
+Époque 298/300 | Train Loss: 0.29602 | Val Loss: 0.29710
+Arrêt car pas d'amélioration depuis 5 Epoche 
+Fin au bout de 297 EPOCHE
+
+Époque 299/300 | Train Loss: 0.29603 | Val Loss: 0.29649
+  -> Nouveau meilleur modèle
+Époque 300/300 | Train Loss: 0.29593 | Val Loss: 0.29675
+
+Entraînement terminé avec succès.
+On veux une qualité minimal de a
+Chargement du modèle local depuis : seisbenchA/phasenet_volcan_v1.pt
+
+--- Traitement du jour 051 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 052 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 053 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 054 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 055 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 056 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 057 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 058 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 059 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 060 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 061 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 062 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 063 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 064 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 065 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 066 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 067 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 068 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 069 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 070 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 071 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 072 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 073 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 074 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 075 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 076 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 077 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 078 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 079 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 080 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 081 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 082 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 083 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 084 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 085 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 086 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 087 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 088 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 089 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 090 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 091 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 092 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 093 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 094 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 095 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 096 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 097 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 098 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 099 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 100 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 101 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 102 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 103 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 104 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 105 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 106 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 107 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 108 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 109 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 110 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 111 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 112 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 113 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 114 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 115 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 116 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 117 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 118 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 119 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 120 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 121 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 122 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 123 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 124 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 125 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 126 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 127 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 128 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 129 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 130 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 131 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 132 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 133 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 134 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 135 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 136 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 137 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 138 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 139 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 140 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 141 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 142 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 143 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 144 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 145 ---
+Station IA2 : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 146 ---
+Station IA2 : Aucun fichier .mseed trouvé.
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 147 ---
+Station IA2 : Aucun fichier .mseed trouvé.
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 148 ---
+Station IA2 : Aucun fichier .mseed trouvé.
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 149 ---
+Station IA2 : Aucun fichier .mseed trouvé.
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 150 ---
+Station IA2 : Aucun fichier .mseed trouvé.
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Traitement du jour 151 ---
+Station IA2 : Aucun fichier .mseed trouvé.
+Station SAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station MLM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station GBM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station CPM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station LAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+Station BAM : Aucune phase au-dessus du seuil (P>=0.85, S>=0.85).
+
+--- Sauvegarde des catalogues ---
+Aucun événement multi-station reconstitué.
+On veux une qualité minimal de a
+Chargement des catalogues
+Traceback (most recent call last):
+  File "/home/clov/seisbench_VT/prg_python/extraire_nouv.py", line 53, in <module>
+    df_picks = pd.read_csv(PICKS_CSV)
+  File "/home/clov/.conda/envs/phasenet/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/clov/.conda/envs/phasenet/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/clov/.conda/envs/phasenet/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/clov/.conda/envs/phasenet/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+  File "/home/clov/.conda/envs/phasenet/lib/python3.10/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/seisbenchA/seisbench_nouv/catalogue_vt_detectes.csv'
+
+done
+Mon Aug 3 22:24:51 CEST 2026
