@@ -16,34 +16,62 @@ os.environ['QT_XCB_GL_INTEGRATION'] = 'none'
 os.environ['LIBGL_ALWAYS_SOFTWARE'] = '1'
 os.environ['QT_QPA_PLATFORM_PLUGIN_PATH'] = '/home/guiga/miniconda3/envs/phasenet/plugins/platforms'
 
-#------------PARAMETRES--------------------
-SEIS_PATH = "seisbenchB"
+#------------ARGUMENTS--------------------
+# Valeurs par défaut
+mode_modele = 1 
+qualite = 'c'
 
-SEUIL_PROB = 0.8                #proba min a afficher
+#version du modele
+if len(sys.argv) > 1:
+    try:
+        mode_modele = int(sys.argv[1])
+    except ValueError:
+        print("Erreur : Le premier argument doit être un entier (1 ou 2).")
+        sys.exit(1)
 
+#qualite
+if len(sys.argv) > 2:
+    qualite = sys.argv[2].lower()
 
-if len(sys.argv) < 2:
-    print("Erreur : Veuillez spécifier le numéro du modèle (1 ou 2) en argument.")
-    sys.exit()
-
-var = int(sys.argv[1])
-
-if var == 1:
-    DATASET_DIR = "../data/seisbenchB/seisbench_dataset"
-    MODEL = "phasenet_volcan_v1.pt"
-elif var == 2:
-    DATASET_DIR = "../data/seisbenchB/seisbench_dataset_ultime"
-    MODEL = "phasenet_volcan_v2.pt"
+if qualite == 'a':
+    DOSSIER_QUALITE = "seisbenchA"
+elif qualite == 'b':
+    DOSSIER_QUALITE = "seisbenchB"
 else:
-    print("Valeur inconnue pour le modèle (utiliser 1 ou 2)")
-    sys.exit()
+    DOSSIER_QUALITE = "seisbench"
+
+BASE_DIR = "../data"
+SEIS_PATH = DOSSIER_QUALITE
+
+
+
+#path celon arguments
+if mode_modele == 1:
+    DATASET_DIR = os.path.join(BASE_DIR, DOSSIER_QUALITE, "seisbench_dataset")
+    MODEL = "phasenet_volcan_v1.pt"
+    print(f"--- Lancement : Modèle V1 | Qualité '{qualite.upper()}' ---")
+    OUTPUT_DIR = os.path.join("../images",DOSSIER_QUALITE,"V1")
+elif mode_modele == 2:
+    DATASET_DIR = os.path.join(BASE_DIR, DOSSIER_QUALITE, "seisbench_dataset_ultime")
+    MODEL = "phasenet_volcan_v2.pt"
+    print(f"--- Lancement : Modèle V2 | Qualité '{qualite.upper()}' ---")
+    OUTPUT_DIR = os.path.join("../images",DOSSIER_QUALITE,"V2")
+else:
+    print("Erreur : Valeur inconnue pour le modèle (utiliser 1 ou 2)")
+    sys.exit(1)
+    
+#dossier destination images
+os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 MODEL_PATH = os.path.join(SEIS_PATH, MODEL)
+
+#------------PARAMETRES--------------------
+SEUIL_PROB = 0.8            #seuil de proba min pour save l'image
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 SAMPLING_RATE = 100
 
-NB_EXEMPLES_A_AFFICHER = 10
+NB_EXEMPLES_SAVE = 20
 SEUIL_AFFICHER_POINTE = 0.3     #on affiche pas si plus petit (pour pas avoir S si petit)
 
 
@@ -132,7 +160,7 @@ def tracer_predictions(index_trace, sample):
 
     #trace graphique
     fig, axs = plt.subplots(4, 1, figsize=(12, 9), sharex=True)
-    fig.suptitle(f"Modèle {var}{label_source} | Trace n°{index_trace} | Station: {station} | Date: {jour}/{mois}")
+    fig.suptitle(f"Modèle {mode_modele}{label_source} | Trace n°{index_trace} | Station: {station} | Date: {jour}/{mois}")
     
     canaux = ["Z", "N", "E"]
     couleurs = ["black", "black", "black"]
@@ -183,10 +211,12 @@ def tracer_predictions(index_trace, sample):
     plt.tight_layout()
     
     print(f"Echantillon n°{index_trace}{label_source} | proba P max : {np.max(prob_P):.3f}")
-    try:
-        plt.show()
-    except Exception:
-        pass
+    
+    #save image
+    output_path = os.path.join(OUTPUT_DIR, f"trace_{index_trace}_modele_{mode_modele}_qualite_{qualite}.png")
+    plt.savefig(output_path, bbox_inches='tight')
+    plt.close(fig) #free memoire
+    #print(f"Image sauvegardée : {output_path}")
 
 #------------RECHERCHE EVENT--------------------
 print(f"Recherche échantillons avec proba P/S >= {SEUIL_PROB}")
@@ -212,8 +242,8 @@ for idx in range(len(test_dataset)):
 print(f"-> {len(indices_valides)} échantillons trouvés")
 
 if len(indices_valides) > 0:
-    nb_a_afficher = min(NB_EXEMPLES_A_AFFICHER, len(indices_valides))
-    indices_aleatoires = np.random.choice(indices_valides, nb_a_afficher, replace=False)
+    nb_save = min(NB_EXEMPLES_SAVE, len(indices_valides))
+    indices_aleatoires = np.random.choice(indices_valides, nb_save, replace=False)
 
     for idx in indices_aleatoires:
         tracer_predictions(idx, echantillons_stockes[idx])
