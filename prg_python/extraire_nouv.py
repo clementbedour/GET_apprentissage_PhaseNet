@@ -40,6 +40,9 @@ os.makedirs(OUTPUT_DATASET_DIR, exist_ok=True)
 PATH_METADATA = os.path.join(OUTPUT_DATASET_DIR, "metadata.csv")
 PATH_HDF5 = os.path.join(OUTPUT_DATASET_DIR, "waveforms.hdf5")
 
+OLD_DATASET_DIR = os.path.join(BASE_DIR, "seisbench/seisbench_format")
+OLD_METADATA_CSV = os.path.join(OLD_DATASET_DIR, "metadata.csv")
+
 # Paramètres d'extraction
 PRE_PICK_SEC = 30
 POST_PICK_SEC = 30
@@ -47,21 +50,48 @@ EXPECTED_COMPONENTS = ["Z", "N", "E"]
 # --- PARAMÈTRES FILTRE ---
 FREQ_MIN = 3.0
 FREQ_MAX = 20.0
+TMP_DUPLICATES = 5.0  # Tolérance temporelle (s)
 
 #chargement des catalogues
 print("Chargement des catalogues")
 df_picks = pd.read_csv(PICKS_CSV)
 df_gold_events = pd.read_csv(EVENTS_CSV)
 
-df_picks["time"] = pd.to_datetime(df_picks["time"], format="ISO8601")
-df_gold_events["time_debut"] = pd.to_datetime(df_gold_events["time_debut"], format="ISO8601")
-df_gold_events["time_fin"] = pd.to_datetime(df_gold_events["time_fin"], format="ISO8601")
+df_picks["time_dt"] = pd.to_datetime(df_picks["time"], format="ISO8601")
+df_gold_events["time_debut_dt"] = pd.to_datetime(df_gold_events["time_debut"], format="ISO8601")
+df_gold_events["time_fin_dt"] = pd.to_datetime(df_gold_events["time_fin"], format="ISO8601")
 
-print(f"{len(df_gold_events)} événements à extraire")
+# --- CHARGEMENT HISTORIQUE ET CONVERSION VECTORIELLE ---
+known_picks_raw = {}
+known_picks_arrays = {}
+total_known_traces = 0
+matched_known_picks = set()
+
+if os.path.exists(OLD_METADATA_CSV):
+    print(f"Chargement de l'historique pour filtrage des doublons : {OLD_METADATA_CSV}")
+    df_old = pd.read_csv(OLD_METADATA_CSV)
+    df_old_p = df_old.dropna(subset=['trace_p_arrival_sample']).copy()
+    
+    df_old_p['start_dt'] = pd.to_datetime(df_old_p['trace_start_time'], format="ISO8601")
+    df_old_p['p_time'] = df_old_p['start_dt'] + pd.to_timedelta(df_old_p['trace_p_arrival_sample'] / df_old_p['trace_sampling_rate_hz'], unit='s')
+    
+    total_known_traces = len(df_old_p)
+    
+    for stat in df_old_p['station_code'].unique():
+        times = df_old_p[df_old_p['station_code'] == stat]['p_time'].tolist()
+        known_picks_raw[stat] = times
+        #conversion en tableaux Numpy de timestamps pour comparaison
+        known_picks_arrays[stat] = np.array([t.timestamp() for t in times])
+        
+    print(f" -> {total_known_traces} pointés existants chargés depuis la base initiale.")
+else:
+    print("Attention : Ancien dataset introuvable. Aucun filtrage des doublons ne sera effectué.")
+
+print(f"{len(df_gold_events)} événements à analyser/extraire")
 
 if len(df_gold_events) == 0:
     print("Aucun événement ne correspond à ces critères stricts") #baisser le seuil
-    exit()
+    sys.exit()
 
 #extraction des données
 traces_ajoutees = 0
@@ -78,12 +108,11 @@ with sbd.WaveformDataWriter(PATH_METADATA, PATH_HDF5) as writer:
     }
     
     for index, event in df_gold_events.iterrows():
-        event_start = event["time_debut"]
-        event_end = event["time_fin"]
-        
+        event_start = event["time_debut_dt"]
+        event_end = event["time_fin_dt"]
         # On récupère les picks exacts correspondants à la fenêtre de l'événement
-        mask = (df_picks["time"] >= event_start - pd.Timedelta(seconds=2)) & \
-                (df_picks["time"] <= event_end + pd.Timedelta(seconds=2))
+        mask = (df_picks["time_dt"] >= event_start - pd.Timedelta(seconds=2)) & \
+            (df_picks["time_dt"] <= event_end + pd.Timedelta(seconds=2))
         picks_event = df_picks[mask]
         
         for stat in picks_event["station"].unique():
@@ -98,6 +127,21 @@ with sbd.WaveformDataWriter(PATH_METADATA, PATH_HDF5) as writer:
             t_p = UTCDateTime(p_picks.iloc[0]["time"])
             t_s = UTCDateTime(s_picks.iloc[0]["time"]) if not s_picks.empty else None
             
+            # --- VERIF ANTI-DOUBLON VECTORIELLE ---
+            is_duplicate = False
+            if stat in known_picks_arrays and len(known_picks_arrays[stat]) > 0:
+                t_p_ts = t_p.timestamp
+                diffs = np.abs(known_picks_arrays[stat] - t_p_ts)
+                
+                if np.any(diffs < TMP_DUPLICATES):
+                    is_duplicate = True
+                    idx_match = np.argmin(diffs)
+                    matched_known_picks.add((stat, known_picks_raw[stat][idx_match]))
+            
+            if is_duplicate:
+                continue
+            # ---------------------------------------
+            
             start_window = t_p - PRE_PICK_SEC
             end_window = t_p + POST_PICK_SEC
             year = t_p.year
@@ -109,13 +153,12 @@ with sbd.WaveformDataWriter(PATH_METADATA, PATH_HDF5) as writer:
             if not mseed_files:
                 continue
                 
-            st = obspy.Stream()
-            for f in mseed_files:
-                try:
-                    st += obspy.read(f, starttime=start_window, endtime=end_window)
-                except Exception:
-                    erreurs_lecture += 1
-                    pass
+            #lecture directe avec masquage temporel au niveau Obspy
+            try:
+                st = obspy.read(search_pattern, starttime=start_window, endtime=end_window)
+            except Exception:
+                erreurs_lecture += 1
+                continue
             
             if len(st) == 0:
                 continue
@@ -125,7 +168,7 @@ with sbd.WaveformDataWriter(PATH_METADATA, PATH_HDF5) as writer:
                 st.detrend("linear")
                 #passe bande
                 st.filter("bandpass", freqmin=FREQ_MIN, freqmax=FREQ_MAX)
-            except:
+            except Exception:
                 continue
                 
             existing_components = [tr.stats.channel[-1] for tr in st]
@@ -168,7 +211,12 @@ with sbd.WaveformDataWriter(PATH_METADATA, PATH_HDF5) as writer:
             writer.add_trace(trace_metadata, data_array)
             traces_ajoutees += 1
 
+nb_retrouves = len(matched_known_picks)
+pct_retrouves = (nb_retrouves / total_known_traces * 100) if total_known_traces > 0 else 0.0
+
 print(f"\nCréation du dataset terminée.")
+print(f"Événements/Traces initialement connus  : {total_known_traces}")
+print(f"Événements/Traces connus RETROUVÉS     : {nb_retrouves} ({pct_retrouves:.1f}%)")
 print(f"-> {traces_ajoutees} traces ont été sauvegardées dans {OUTPUT_DATASET_DIR}")
 if erreurs_lecture > 0:
     print(f"-> {erreurs_lecture} fichiers MiniSEED ont été ignorés erreurs de lecture")
