@@ -40,7 +40,7 @@ max_attempts = NBR_NOISE_PER_STATION * 50 #nbr de trace total pour trouver le br
 # Paramètres STA/LTA
 STA_SEC = 1.0
 LTA_SEC = 10.0
-STA_LTA_THRESHOLD = 1.80 #pas en dessous de 2, trop de pic
+STA_LTA_THRESHOLD = 1.60 #pas en dessous de 1.6
 
 # --- PARAMÈTRES FILTRE ---
 FREQ_MIN = 3.0
@@ -82,54 +82,59 @@ with sbd.WaveformDataWriter(path_csv, path_hdf5) as writer:
             continue
             
         print(f"Traitement de la station {stat}")
-        events_for_stat = known_events_by_station[stat]
+        
+        #extraire metadata
+        stat_info = df_metadata[df_metadata['station_code'] == stat].iloc[0]
+        
+        #conversion en timestamps
+        events_timestamps = np.array([ev.timestamp for ev in known_events_by_station[stat]])
+        
+        search_pattern = os.path.join(stat_folder, f"*{YEAR}*")
+        mseed_files_available = glob.glob(search_pattern)
+        
+        if not mseed_files_available:
+            rejections["pas_de_fichier"] += 1
+            continue
+
         noise_extracted = 0
         attempts = 0
         #augmenter si on a pas récupéré assez de bruit (dépend des params STA/LTA)
         
-        # on récupérer 3 000 événements aléatoire
         while noise_extracted < NBR_NOISE_PER_STATION and attempts < max_attempts:
             attempts += 1
-            random_day = random.randint(START_DAY, END_DAY)
-            search_pattern = os.path.join(stat_folder, f"*{YEAR}*{random_day:03d}*")
-            mseed_files = glob.glob(search_pattern)
+            random_file = random.choice(mseed_files_available)
             
-            #fichier mseed pas trouvé avec un jour aléatoire
-            if not mseed_files:
-                rejections["pas_de_fichier"] += 1
-                continue
-                
-            random_hour = random.randint(0, 23)
-            random_minute = random.randint(0, 59)
-            
-            #temps du fichier mseed pas trouvé (trou)
             try:
-                t_start = UTCDateTime(year=YEAR, julday=random_day, hour=random_hour, minute=random_minute)
-            except:
+                st_head = obspy.read(random_file, headonly=True)
+                file_start = st_head[0].stats.starttime
+                file_end = st_head[-1].stats.endtime
+            except Exception:
+                rejections["erreur_lecture_header"] += 1
+                continue
+            
+            if (file_end - file_start) < WINDOW_LENGTH_SEC:
+                rejections["fichier_trop_court"] += 1
                 continue
                 
+            max_start = file_end - WINDOW_LENGTH_SEC
+            random_offset = random.uniform(0, max_start - file_start)
+            t_start = file_start + random_offset
             t_end = t_start + WINDOW_LENGTH_SEC
             
-            is_safe = True
             #on verifie que l'événement est pas à 300 sec d'un pointé (pour la sécu)
-            for ev_time in events_for_stat:
-                if abs(t_start - ev_time) < SAFE_MARGIN_SEC:
-                    is_safe = False
-                    break
-            
-            #fenêtre aléatoire pas loin d'un pointé donc on sort
-            if not is_safe:
-                rejections["proche_evenement_connu"] += 1
-                continue
+            if len(events_timestamps) > 0:
+                time_diffs = np.abs(events_timestamps - t_start.timestamp)
+                #fenêtre aléatoire pas loin d'un pointé donc on sort
+                if np.any(time_diffs < SAFE_MARGIN_SEC):
+                    rejections["proche_evenement_connu"] += 1
+                    continue
                 
-            #on lis notre fichier mseed
-            st = obspy.Stream()
-            for f in mseed_files:
-                try:
-                    st_temp = obspy.read(f, starttime=t_start, endtime=t_end)
-                    st += st_temp
-                except:
-                    pass
+            try:
+                #on lis notre fichier mseed
+                st = obspy.read(random_file, starttime=t_start, endtime=t_end)
+            except Exception:
+                rejections["erreur_lecture_donnees"] += 1
+                continue
             
             if len(st) == 0:
                 rejections["lecture_vide"] += 1
@@ -137,22 +142,14 @@ with sbd.WaveformDataWriter(path_csv, path_hdf5) as writer:
                 
             try:
                 st.merge(method=1)
-                
-                has_gaps = False
-                #si on a un trou alors on sort
-                #on a tellement de data qu'on peux se permettre
-                for tr in st:
-                    if np.ma.is_masked(tr.data):
-                        has_gaps = True
-                        break
-                
-                if has_gaps:
+                if any(np.ma.is_masked(tr.data) for tr in st):
                     rejections["gaps"] += 1
                     continue
                     
                 st.detrend("linear")
                 
             except Exception:
+                rejections["erreur_traitement"] += 1
                 continue
 
             #on verif que la taille est correcte
@@ -160,13 +157,29 @@ with sbd.WaveformDataWriter(path_csv, path_hdf5) as writer:
                 rejections["duree_insuffisante"] += 1
                 continue
 
+            #filtre bande passante
+            filter_error = False
+            for tr in st:
+                #TH de Shannon Nyquist
+                nyquist = tr.stats.sampling_rate / 2.0
+                safe_freq_max = min(FREQ_MAX, nyquist - 0.1)
+                if safe_freq_max <= FREQ_MIN or safe_freq_max < FREQ_MAX:
+                    filter_error = True
+                    break
+                else:
+                    tr.filter("bandpass", freqmin=FREQ_MIN, freqmax=FREQ_MAX)
+                    
+            if filter_error:
+                rejections["filtre_nyquist"] += 1
+                continue
+
             # --- VÉRIFICATION STA/LTA ---
-            st_test = st.copy()
-            st_test.filter("bandpass", freqmin=FREQ_MIN, freqmax=FREQ_MAX)
-            
             is_pure_noise = True
-            for tr in st_test:
-                #on converti en nbr d'echantillon
+            for tr in st:
+                if np.std(tr.data) < 1e-12:
+                    is_pure_noise = False
+                    break
+
                 df_rate = tr.stats.sampling_rate
                 sta_len = int(STA_SEC * df_rate)
                 lta_len = int(LTA_SEC * df_rate)
@@ -187,26 +200,7 @@ with sbd.WaveformDataWriter(path_csv, path_hdf5) as writer:
                 rejections["sta_lta"] += 1
                 continue
             
-            
-            
-            # --- FILTRAGE FINAL SUR LA DONNÉE ORIGINALE ---
-            filter_error = False
-            for tr in st:
-                #TH de Shannon Nyquist
-                nyquist = tr.stats.sampling_rate / 2.0
-                safe_freq_max = min(FREQ_MAX, nyquist - 0.1)
-                if safe_freq_max <= FREQ_MIN or safe_freq_max < FREQ_MAX:
-                    print(f"[{stat}] Filtre non standard, fenêtre rejetée.")
-                    filter_error = True
-                    break
-                else:
-                    tr.filter("bandpass", freqmin=FREQ_MIN, freqmax=FREQ_MAX)
-                
-            if filter_error:
-                rejections["filtre_nyquist"] += 1
-                continue
-            
-            
+            # --- FINALISATION ---
             expected_components = ["Z", "N", "E"]
             existing_components = [tr.stats.component for tr in st]
             trace_modele = st[0] #on prend Z car on l'a "toujours"
@@ -225,15 +219,14 @@ with sbd.WaveformDataWriter(path_csv, path_hdf5) as writer:
                 #convertion du Stream obspy en tableau numpy
                 #on ne s'occupe pas du premier et dernier argument return, inutile
                 _, data_array, _ = stream_to_array(st, component_order=expected_components)
-            except:
+            except Exception:
+                rejections["erreur_stream_array"] += 1
                 continue
             
             rand = random.random()
             if rand < 0.8: split = "train"
             elif rand < 0.9: split = "dev"
             else: split = "test"
-            
-            stat_info = df_metadata[df_metadata['station_code'] == stat].iloc[0]
             
             #construction du dico metadonnée
             trace_metadata = {
