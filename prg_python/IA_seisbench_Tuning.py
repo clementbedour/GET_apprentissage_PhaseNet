@@ -30,6 +30,7 @@ if len(sys.argv) > 2:
 
 BASE_DIR = "../data"
 
+#dossier en fonction de la qualité
 if qualite == 'a':
     DOSSIER_QUALITE = "seisbenchA"
 elif qualite == 'b':
@@ -40,6 +41,7 @@ else:
 
 LOCAL_MODEL_PATH = os.path.join(DOSSIER_QUALITE, "phasenet_volcan_v1.pt")
 SAVE_MODEL_PATH = os.path.join(DOSSIER_QUALITE, "phasenet_volcan_v2.pt")
+DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 if mode_entrainement == 1:
     START_FROM_ZERO = True
@@ -48,6 +50,10 @@ if mode_entrainement == 1:
     LEARNING_RATE = 1e-4
     SIGMA=35
     print("Mode : Entraînement DE ZÉRO")
+    
+    # on donne un poids de 2.0 pour P, 1.0 pour S, et 0.5 pour le Bruit
+    #on veux qu'il se concentre surtout sur P et un peu S
+    poids_classes = torch.tensor([2.0, 1.0, 0.8], dtype=torch.float32).to(DEVICE)
 else:
     DATASET_DIR = os.path.join(BASE_DIR, DOSSIER_QUALITE, "seisbench_dataset_ultime")
     START_FROM_ZERO = False 
@@ -55,6 +61,9 @@ else:
     LEARNING_RATE = 5e-5
     SIGMA = 15
     print(f"Mode : FINE-TUNING LOCAL depuis {LOCAL_MODEL_PATH}")
+    
+    #on durcit et on veux qu'il fasse attention à ne pas détecter du bruit
+    poids_classes = torch.tensor([1.5, 1.0, 1.2], dtype=torch.float32).to(DEVICE)
 
 print(f"On veux une qualité minimal de {qualite}")
 
@@ -62,7 +71,6 @@ print(f"On veux une qualité minimal de {qualite}")
 PATIENCE = 10 #nombre d'epoque sans changement pour arrêt modèle
 
 BATCH_SIZE = 32
-DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 # chargement des données
 dataset = sbd.WaveformDataset(DATASET_DIR, component_order="ZNE", sampling_rate=100)
 train_dataset = dataset.train()
@@ -155,13 +163,18 @@ model.to(DEVICE)
 optimizer = torch.optim.Adam(model.parameters(), lr=LEARNING_RATE)
 
 # perte pondéré
-# on donne un poids de 2.0 pour P, 1.0 pour S, et 0.5 pour le Bruit
-poids_classes = torch.tensor([2.0, 1.0, 0.5], dtype=torch.float32).to(DEVICE)
 criterion = nn.CrossEntropyLoss(weight=poids_classes)
 
 # entrainement
 best_val_loss = float('inf') #init à l'infini
 patience_counter = 0 #init meilleur modèle ressent
+
+
+# --- save pour affichage graphique ---
+mode_str_file = "scratch" if START_FROM_ZERO else "finetuning"
+history_file = os.path.join(BASE_DIR, DOSSIER_QUALITE, f"loss_history_{mode_str_file}.csv")
+training_history = []
+# -------------------------------------------------------------
 
 print("\nDébut de l'entraînement")
 for epoch in range(EPOCHS):
@@ -188,6 +201,14 @@ for epoch in range(EPOCHS):
     
     print(f"Époque {epoch+1:02d}/{EPOCHS} | Train Loss: {train_loss:.5f} | Val Loss: {val_loss:.5f}")
     
+    #sauvegarde pour affichage graphique
+    training_history.append({
+        "epoch": epoch + 1,
+        "train_loss": train_loss,
+        "val_loss": val_loss
+    })
+    pd.DataFrame(training_history).to_csv(history_file, index=False)
+    
     
     # On sauvegarde le meilleur model si meilleur
     if val_loss < best_val_loss:
@@ -212,5 +233,10 @@ for epoch in range(EPOCHS):
         if patience_counter >= PATIENCE:
             print(f"Arrêt car pas d'amélioration depuis {PATIENCE} Epoche \nFin au bout de {epoch} EPOCHE\n")
             break
+
+#sauvegarde pour affichage graphique
+df_history = pd.DataFrame(training_history)
+df_history.to_csv(history_file, index=False)
+print(f"Historique d'entraînement sauvegardé sous : {history_file}")
 
 print("\nEntraînement terminé avec succès.")
