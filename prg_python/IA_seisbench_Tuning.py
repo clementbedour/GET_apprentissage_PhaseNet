@@ -53,7 +53,7 @@ if mode_entrainement == 1:
     
     # on donne un poids de 2.0 pour P, 1.0 pour S, et 0.5 pour le Bruit
     #on veux qu'il se concentre surtout sur P et un peu S
-    poids_classes = torch.tensor([2.0, 1.0, 0.8], dtype=torch.float32).to(DEVICE)
+    poids_classes = torch.tensor([2.0, 1.0, 0.5], dtype=torch.float32).to(DEVICE)
 else:
     DATASET_DIR = os.path.join(BASE_DIR, DOSSIER_QUALITE, "seisbench_dataset_ultime")
     START_FROM_ZERO = False 
@@ -62,8 +62,8 @@ else:
     SIGMA = 15
     print(f"Mode : FINE-TUNING LOCAL depuis {LOCAL_MODEL_PATH}")
     
-    #on durcit et on veux qu'il fasse attention à ne pas détecter du bruit
-    poids_classes = torch.tensor([1.5, 1.0, 1.2], dtype=torch.float32).to(DEVICE)
+    # on donne un poids de 2.0 pour P, 1.0 pour S, et 0.5 pour le Bruit
+    poids_classes = torch.tensor([2.0, 1.0, 0.5], dtype=torch.float32).to(DEVICE)
 
 print(f"On veux une qualité minimal de {qualite}")
 
