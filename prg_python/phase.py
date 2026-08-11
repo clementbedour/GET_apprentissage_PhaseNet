@@ -162,6 +162,6 @@ def trier_magnitude(nom_repertoire):
     #print("m2 =",m2)
     #print("m =",m)
 
-#split_phase()
+split_phase()
 evenement_particulie()
 #trier_magnitude("../data/phase_vt/")
