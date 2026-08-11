@@ -109,17 +109,17 @@ def trier_magnitude(nom_repertoire):
     contenu = os.listdir(chemin)
     
     #repertoire ou tout sera rangé
-    if not exists("../data/phase_magnetude"):
-            os.mkdir("../data/phase_magnetude")
+    if not exists("../data/phase_magnitude"):
+            os.mkdir("../data/phase_magnitude")
     
     #faire changer la range si magnétude plus grande
-    #vous pouver verifier ça dans le repertoire ../data/phase_magnetude/M=?
+    #vous pouver verifier ça dans le repertoire ../data/phase_magnitude/M=?
     for i in range(3) :
-        if not exists("../data/phase_magnetude/M="+str(i)):
-            os.mkdir("../data/phase_magnetude/M="+str(i))
+        if not exists("../data/phase_magnitude/M="+str(i)):
+            os.mkdir("../data/phase_magnitude/M="+str(i))
     
-    if not exists("../data/phase_magnetude/M=autre"):
-        os.mkdir("../data/phase_magnetude/M=autre")
+    if not exists("../data/phase_magnitude/M=autre"):
+        os.mkdir("../data/phase_magnitude/M=autre")
     
     #element est l'ensemble des fichiers que nous allons regarder
     #m=m0=m1=m2=0
@@ -130,30 +130,30 @@ def trier_magnitude(nom_repertoire):
             #magnétude [0.0 ; 0.9]
             if "M=0" in content:
                 #m0=m0+1
-                fichier_ecrit_i = "../data/phase_magnetude/M=0/" + element
+                fichier_ecrit_i = "../data/phase_magnitude/M=0/" + element
                 with open(fichier_ecrit_i, 'w') as f:
                     f.write(str(content))
             
             
-            #magnetude [1.0 ; 1.9]
+            #magnitude [1.0 ; 1.9]
             elif "M=1." in content:
                 #m1=m1+1
-                fichier_ecrit_i = "../data/phase_magnetude/M=1/" + element
+                fichier_ecrit_i = "../data/phase_magnitude/M=1/" + element
                 with open(fichier_ecrit_i, 'w') as f:
                     f.write(str(content))
                     
             
-            #magnetude [2.0 ; 2.9]
+            #magnitude [2.0 ; 2.9]
             elif "M=2" in content:
                 #m2=m2+1
-                fichier_ecrit_i = "../data/phase_magnetude/M=2/" + element
+                fichier_ecrit_i = "../data/phase_magnitude/M=2/" + element
                 with open(fichier_ecrit_i, 'w') as f:
                     f.write(str(content))
 
             #tout les autres
             else :
                 #m=m+1
-                fichier_ecrit_i = "../data/phase_magnetude/M=autre/" + element
+                fichier_ecrit_i = "../data/phase_magnitude/M=autre/" + element
                 with open(fichier_ecrit_i, 'w') as f:
                     f.write(str(content))
                     
