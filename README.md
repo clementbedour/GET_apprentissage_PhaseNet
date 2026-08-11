@@ -64,13 +64,25 @@ Pour les utilisateurs opérant sur le serveur SSH, l'intégralité du pipeline d
 
 Le pipeline génère des graphiques de performance sans nécessiter d'affichage interactif. Toutes les images produites sont directement sauvegardées dans le répertoire `images/`.
 
-*   **Visualisation des pointés de l'IA :** Lancez `test_IA.py 1 <qualite>` (pour le modèle 1) ou `test_IA.py 2 <qualite>` (pour le modèle 2) pour vérifier les distributions gaussiennes générées. La base de test est tirée aléatoirement à 10% du dataset global et reste invisible pour l'IA durant l'entraînement. La constante que vous pouvez changer est `SEUIL_PROB` à la ligne 69 pour afficher la probabilité minimale à enregistrer (conseil : rester à 0.8). Vous pouvez aussi modifier `NB_EXEMPLES_SAVE` ligne 74.
+*   **Visualisation des pointés de l'IA :** Lancez `test_IA.py 1 <qualite>` (pour le modèle 1) ou `test_IA.py 2 <qualite>` (pour le modèle 2) pour vérifier les distributions gaussiennes générées. La base de test est tirée aléatoirement à 10% du dataset global et reste invisible pour l'IA durant l'entraînement. La constante que vous pouvez changer est `SEUIL_PROB` à la ligne 69 pour afficher la probabilité minimale à enregistrer (conseil : rester à 0.8). Vous pouvez aussi modifier `NB_EXEMPLES_SAVE` ligne 74. Pour le modèle 1, les pointés manuels sont en magenta / cyan, les pointés de la V1 sont bleu et rouge (s'ils dépassent 0.3). Pour le modèle 2, les pointés magenta et cyan sont les pointés trouvés par la V1 pour détecter l'événement. Les pointés rouges et bleus sont ceux de la V2. Pour les images de la V2, si vous avez [Manuels] alors l'événement fait partie de votre base de données Ground Truth et si [Trouvé par l'IA] alors l'événement et tous les pointés ont été faits par l'IA.
+<div align="center">
+    <img src="https://github.com/clementbedour/GET_apprentissage_PhaseNet/blob/main/images/seisbenchB/V2/trace_182_modele_2_qualite_b.png" alt="Picture Modele 2" width="50%">
+</div>
 
 *   **Affichage fonction de perte :** Lancez `compare_trust.py 1 <qualite>` ou `compare_trust.py 1 <qualite>` pour vérifier l'évolution des courbes des pertes (courbes d'apprentissage) au fur et à mesure des epochs.
+<div align="center">
+    <img src="https://github.com/clementbedour/GET_apprentissage_PhaseNet/blob/main/images/seisbenchB/loss_curve_b_scratch.png" alt="Picture Loss Curve" width="50%">
+</div>
 
 *   **Scores de confiance :** Lancez `metrics.py 1 <qualite>` ou `metrics.py 2 <qualite>` pour constater le score de confiance sur tous les événements détectés.
+<div align="center">
+    <img src="https://github.com/clementbedour/GET_apprentissage_PhaseNet/blob/main/images/seisbenchB/confiance_V1_b.png" alt="Picture Score Confidence" width="50%">
+</div>
 
 *   **Répartition temporelle :** Lancez `image_event_day.py <qualite>` pour visualiser la répartition du nombre de nouveaux événements découverts.
+<div align="center">
+    <img src="https://github.com/clementbedour/GET_apprentissage_PhaseNet/blob/main/images/distribution_journaliere_vtB.png" alt="Picture Event Day" width="50%">
+</div>
 
 ---
 
