@@ -253,6 +253,12 @@ with sbd.WaveformDataWriter(path_csv, path_hdf5) as writer:
 
         # --- APPLICATION DU FILTRE PASSE-BANDE HOMOGÈNE ---
         for tr in st:
+            if tr.stats.sampling_rate != 100.0:
+                try:
+                    tr.interpolate(100.0)
+                except Exception:
+                    tr.resample(100.0)
+                    print("resmple de la trace")
             nyquist = tr.stats.sampling_rate / 2.0
             safe_freq_max = min(FREQ_MAX, nyquist - 0.1)  # S'assure de rester sous Nyquist
 
