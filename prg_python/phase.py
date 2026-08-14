@@ -42,15 +42,21 @@ def evenement_particulie():
                     
             #Ici tout les fichiers avec TA1, TE1, TB, ...
             elif " T" in texte :
+                #Si on veux que les TE alors on décommente les lignes suivantes
+                #te = te+1
+                if not exists("../data/phase_te"):
+                    os.mkdir("../data/phase_te")
+                with open("../data/phase_te"+ "/"+element, 'w') as f:
+                    f.write(str(texte))
+                    
+            elif " L" in texte :
                 #Si on veux que les LP alors on décommente les lignes suivantes
                 #lp = lp+1
                 if not exists("../data/phase_lp"):
                     os.mkdir("../data/phase_lp")
                 with open("../data/phase_lp"+ "/"+element, 'w') as f:
                     f.write(str(texte))
-                    
-            
-            #Si on veux tout les autres événements (LP + non classé ou juste non classé)
+            #Si on veux tout les autres événements (LP + TE + non classé ou juste non classé)
             #alors on décommande les lignes suivantes
             #else :
                 #pas_classe = pas_classe +1
@@ -98,7 +104,7 @@ def split_phase():
                 fichier_ecrit_i = fichier_ecrit + '-' + str(i+1) +'.txt'
                 with open(fichier_ecrit_i, 'w') as f:
                     f.write(str(lines[i])+'\n')
-                print(i)
+                #print(i)
 
 def trier_magnitude(nom_repertoire):
     #Il faut, au moins avoir fait obligatoirement split_phase()
