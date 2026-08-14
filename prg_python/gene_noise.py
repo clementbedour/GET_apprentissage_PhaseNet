@@ -160,15 +160,23 @@ with sbd.WaveformDataWriter(path_csv, path_hdf5) as writer:
             #filtre bande passante
             filter_error = False
             for tr in st:
-                #TH de Shannon Nyquist
+                #force 100 Hz si pas ok
+                if tr.stats.sampling_rate != 100.0:
+                    try:
+                        tr.interpolate(100.0)
+                    except Exception:
+                        tr.resample(100.0)
+
                 nyquist = tr.stats.sampling_rate / 2.0
                 safe_freq_max = min(FREQ_MAX, nyquist - 0.1)
-                if safe_freq_max <= FREQ_MIN or safe_freq_max < FREQ_MAX:
+
+                #rejette si pas bon
+                if safe_freq_max <= FREQ_MIN:
                     filter_error = True
                     break
                 else:
-                    tr.filter("bandpass", freqmin=FREQ_MIN, freqmax=FREQ_MAX)
-                    
+                    tr.filter("bandpass", freqmin=FREQ_MIN, freqmax=safe_freq_max)
+
             if filter_error:
                 rejections["filtre_nyquist"] += 1
                 continue
