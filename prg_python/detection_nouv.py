@@ -72,46 +72,41 @@ def dedupliquer_picks(df, min_gap_seconds=MIN_GAP_SECONDS):
     if df.empty:
         return df
     df = df.copy()
-    df["dt"] = pd.to_datetime(df["time"], format="ISO8601")
-    df["ts"] = df["dt"].astype("int64") / 1e9  # Conversion en secondes (float)
-    
+    df["time"] = pd.to_datetime(df["time"], format="ISO8601")
     resultats = []
     
     for (station, phase), groupe in df.groupby(["station", "phase"]):
-        groupe = groupe.sort_values("ts").reset_index(drop=True)
+        groupe = groupe.sort_values("time").reset_index(drop=True)
         garde = []
-        dernier_ts_garde = None
+        dernier_temps_garde = None
         
-        for row in groupe.to_dict("records"):
-            if dernier_ts_garde is None or (row["ts"] - dernier_ts_garde) > min_gap_seconds:
+        for _, row in groupe.iterrows():
+            if dernier_temps_garde is None or (row["time"] - dernier_temps_garde).total_seconds() > min_gap_seconds:
                 garde.append(row)
-                dernier_ts_garde = row["ts"]
+                dernier_temps_garde = row["time"]
             else:
                 if row["probability"] > garde[-1]["probability"]:
                     garde[-1] = row
-                    dernier_ts_garde = row["ts"]
+                    dernier_temps_garde = row["time"]
         resultats.extend(garde)
     
-    df_dedup = pd.DataFrame(resultats).sort_values(["station", "ts"]).reset_index(drop=True)
-    df_dedup = df_dedup.drop(columns=["dt", "ts"])
+    df_dedup = pd.DataFrame(resultats).sort_values(["station", "time"]).reset_index(drop=True)
+    df_dedup["time"] = df_dedup["time"].apply(lambda t: t.isoformat())
     return df_dedup
 
 #regroupe les detection individuelle de P pour voir si event sur les autres stations
 def associer_evenements(df, fenetre_secondes=ASSOCIATION_WINDOW_SECONDS, min_stations=MIN_STATIONS, phase_filtre="P", duree_max=MAX_EVENT_DURATION):
+    df = df.copy()
+    df["time"] = pd.to_datetime(df["time"], format="ISO8601")
+    if phase_filtre: #si P arrive alors debut event
+        df = df[df["phase"] == phase_filtre]
+    
     if df.empty: #si pas de P alors return vide
         return pd.DataFrame(columns=["time_debut", "time_fin", "n_stations", "stations", "n_picks", "probabilite_max"])
     
-    df_f = df[df["phase"] == phase_filtre] if phase_filtre else df.copy()
-    if df_f.empty:
-        return pd.DataFrame(columns=["time_debut", "time_fin", "n_stations", "stations", "n_picks", "probabilite_max"])
-    
-    df_f = df_f.copy()
-    df_f["ts"] = pd.to_datetime(df_f["time"], format="ISO8601").astype("int64") / 1e9
-    df_f = df_f.sort_values("ts").reset_index(drop=True) #trie chronologique
-    
-    records = df_f.to_dict("records")
+    df = df.sort_values("time").reset_index(drop=True) #trie chronologique
     evenements = [] #aura le catalogue events detecté
-    cluster_courant = [records[0]] #init liste avec le 1er event
+    cluster_courant = [df.iloc[0]] #init liste avec le 1er event
     
     def finaliser(cluster):
         stations_impliquees = set(r["station"] for r in cluster) #liste station qui ont detecté l'event
@@ -126,9 +121,9 @@ def associer_evenements(df, fenetre_secondes=ASSOCIATION_WINDOW_SECONDS, min_sta
             })
     
     
-    for row in records[1:]: #on regarde tout les events (sauf 1er car déjà ajouté)
-        delta = row["ts"] - cluster_courant[-1]["ts"] #calcul delta temps entre les 2 events
-        delta_start = row["ts"] - cluster_courant[0]["ts"]
+    for _, row in df.iloc[1:].iterrows(): #on regarde tout les events (sauf 1er car déjà ajouté)
+        delta = (row["time"] - cluster_courant[-1]["time"]).total_seconds() #calcul delta temps entre les 2 events
+        delta_start = (row["time"] - cluster_courant[0]["time"]).total_seconds()
         
         #fix : Le cluster s'agrandit que si gap court ET event ne dure pas plus de MAX_EVENT_DURATION
         if delta <= fenetre_secondes and delta_start <= duree_max:
@@ -138,12 +133,43 @@ def associer_evenements(df, fenetre_secondes=ASSOCIATION_WINDOW_SECONDS, min_sta
             cluster_courant = [row] #on réinit pour entamer un nv groupe
     finaliser(cluster_courant) #on ferme le dernier groupe
     
-    return pd.DataFrame(evenements)
+    
+    #convertit liste event en data frame structuré
+    df_evenements = pd.DataFrame(evenements)
+    if not df_evenements.empty: #pour format csv
+        df_evenements["time_debut"] = df_evenements["time_debut"].apply(lambda t: t.isoformat())
+        df_evenements["time_fin"] = df_evenements["time_fin"].apply(lambda t: t.isoformat())
+    
+    return df_evenements
 
-
+#clean et alignement des traces
 def preparer_stream_station(st, stat, min_duration=35.0):
     if len(st) == 0:
         return obspy.Stream()
+    
+    start_time_brut = min([tr.stats.starttime for tr in st])
+    end_time_brut = max([tr.stats.endtime for tr in st])
+    duree_brute = end_time_brut - start_time_brut
+    
+    #si duree totale > 2 jours (172800 secondes), les dates sont fausses
+    #charge trop en ram et peux crash (Killed)
+    if duree_brute > 172800.0: # Plus de 2 jours d'écart dans les fichiers lus
+        print(f"    [ALERTE RAM] Station {stat} ignorée : écart temporel brut de {duree_brute:.0f}s (> 2 jours). Abandon avant merge.")
+        return obspy.Stream()
+    
+    
+    #on enleve doublons identiques
+    traces_uniques = []
+    vus = set()
+    for tr in st:
+        #rend chaque trace unique
+        identifiant = (tr.id, str(tr.stats.starttime), str(tr.stats.endtime))
+        if identifiant not in vus:
+            vus.add(identifiant)
+            traces_uniques.append(tr)
+            
+    #remplace par la bonne
+    st.traces = traces_uniques
     
     #fusion
     try:
@@ -167,10 +193,8 @@ def preparer_stream_station(st, stat, min_duration=35.0):
             continue
         
         if tr.stats.sampling_rate != 100.0:
-            try: 
-                tr.interpolate(100.0)
-            except Exception: 
-                tr.resample(100.0)
+            try: tr.interpolate(100.0)
+            except Exception: tr.resample(100.0)
             
         tr.data = np.nan_to_num(tr.data)
         tr.detrend("linear")
@@ -180,9 +204,9 @@ def preparer_stream_station(st, stat, min_duration=35.0):
         nyquist = tr.stats.sampling_rate / 2.0
         safe_freq_max = min(FREQ_MAX, nyquist - 0.1)  # S'assure de rester sous Nyquist
         
-        # Si le signal est trop pauvre pour le passe-bande, on fait un simple passe-haut
+        # Si le signal est trop pauvre pour le passe-bande, on ignore
         if safe_freq_max <= FREQ_MIN :
-            tr.filter("highpass", freq=FREQ_MIN)
+            continue
         else:
             tr.filter("bandpass", freqmin=FREQ_MIN, freqmax=safe_freq_max)
         
@@ -192,9 +216,14 @@ def preparer_stream_station(st, stat, min_duration=35.0):
         return obspy.Stream()
     
     #force alignement temp
-    start_time = min([tr.stats.starttime for tr in st_filtre])
-    end_time = max([tr.stats.endtime for tr in st_filtre])
-    st_filtre.trim(starttime=start_time, endtime=end_time, pad=True, fill_value=0.0)
+    if len(st_filtre) > 0:
+        #debut et fin min max
+        start_time = min([tr.stats.starttime for tr in st_filtre])
+        end_time = max([tr.stats.endtime for tr in st_filtre])
+        
+        #full 0 pour remplir
+        st_filtre.trim(starttime=start_time, endtime=end_time, pad=True, fill_value=0.0)
+    
     st_filtre.sort()
     
     #gestion compos manquantes
@@ -245,22 +274,13 @@ for julian_day in range(START_DAY, END_DAY + 1):
             print(f"Station {stat} : Aucun fichier .mseed trouvé.")
             continue
             
-        #verif des en tetes
-        try:
-            st_head = obspy.read(search_pattern, headonly=True)
-            span_sec = max(tr.stats.endtime for tr in st_head) - min(tr.stats.starttime for tr in st_head)
-            if span_sec > 172800.0:
-                print(f"    [ALERTE RAM] Station {stat} ignorée : écart temporel brut de {span_sec:.0f}s (> 2 jours).")
-                continue
-        except Exception:
-            pass
-            
-        #lecture groupee directe native sous Obspy
-        try:
-            st = obspy.read(search_pattern)
-        except Exception:
-            continue
-            
+        st = obspy.Stream()
+        for f in mseed_files:
+            try: 
+                st += obspy.read(f) #empile toutes les composantes et toutes les stations
+            except Exception: 
+                pass
+                
         if len(st) == 0: 
             print(f"Station {stat} : Les fichiers n'ont pas pu être lus ou sont vides.")
             continue
@@ -300,12 +320,11 @@ for julian_day in range(START_DAY, END_DAY + 1):
             
             #on transforme la liste en dictionnaire
             for pick in picks_valides:
-                item = {
+                toutes_les_detections.append({
                     "day": julian_day_str, "station": stat, "phase": pick.phase,
                     "time": pick.peak_time.isoformat(), "probability": pick.peak_value
-                }
-                toutes_les_detections.append(item)
-                detections_du_jour.append(item)
+                })
+                detections_du_jour.append(toutes_les_detections[-1])
             
             if picks_valides:
                 print(f"  Station {stat} : {len(picks_valides)} phases VT filtrées.") #affiche nbr de VT gardé pour la station

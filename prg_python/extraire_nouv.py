@@ -57,9 +57,9 @@ print("Chargement des catalogues")
 df_picks = pd.read_csv(PICKS_CSV)
 df_gold_events = pd.read_csv(EVENTS_CSV)
 
-df_picks["time_dt"] = pd.to_datetime(df_picks["time"], format="ISO8601")
-df_gold_events["time_debut_dt"] = pd.to_datetime(df_gold_events["time_debut"], format="ISO8601")
-df_gold_events["time_fin_dt"] = pd.to_datetime(df_gold_events["time_fin"], format="ISO8601")
+df_picks["time"] = pd.to_datetime(df_picks["time"], format="ISO8601")
+df_gold_events["time_debut"] = pd.to_datetime(df_gold_events["time_debut"], format="ISO8601")
+df_gold_events["time_fin"] = pd.to_datetime(df_gold_events["time_fin"], format="ISO8601")
 
 # --- CHARGEMENT HISTORIQUE ET CONVERSION VECTORIELLE ---
 known_picks_raw = {}
@@ -76,12 +76,6 @@ if os.path.exists(OLD_METADATA_CSV):
     df_old_p['p_time'] = df_old_p['start_dt'] + pd.to_timedelta(df_old_p['trace_p_arrival_sample'] / df_old_p['trace_sampling_rate_hz'], unit='s')
     
     total_known_traces = len(df_old_p)
-    
-    for stat in df_old_p['station_code'].unique():
-        times = df_old_p[df_old_p['station_code'] == stat]['p_time'].tolist()
-        known_picks_raw[stat] = times
-        #conversion en tableaux Numpy de timestamps pour comparaison
-        known_picks_arrays[stat] = np.array([t.timestamp() for t in times])
         
     print(f" -> {total_known_traces} pointés existants chargés depuis la base initiale.")
 else:
@@ -108,11 +102,11 @@ with sbd.WaveformDataWriter(PATH_METADATA, PATH_HDF5) as writer:
     }
     
     for index, event in df_gold_events.iterrows():
-        event_start = event["time_debut_dt"]
-        event_end = event["time_fin_dt"]
+        event_start = event["time_debut"]
+        event_end = event["time_fin"]
         # On récupère les picks exacts correspondants à la fenêtre de l'événement
-        mask = (df_picks["time_dt"] >= event_start - pd.Timedelta(seconds=2)) & \
-            (df_picks["time_dt"] <= event_end + pd.Timedelta(seconds=2))
+        mask = (df_picks["time"] >= event_start - pd.Timedelta(seconds=2)) & \
+            (df_picks["time"] <= event_end + pd.Timedelta(seconds=2))
         picks_event = df_picks[mask]
         
         for stat in picks_event["station"].unique():
@@ -153,12 +147,13 @@ with sbd.WaveformDataWriter(PATH_METADATA, PATH_HDF5) as writer:
             if not mseed_files:
                 continue
                 
-            #lecture directe avec masquage temporel au niveau Obspy
-            try:
-                st = obspy.read(search_pattern, starttime=start_window, endtime=end_window)
-            except Exception:
-                erreurs_lecture += 1
-                continue
+            st = obspy.Stream()
+            for f in mseed_files:
+                try:
+                    st += obspy.read(f, starttime=start_window, endtime=end_window)
+                except Exception:
+                    erreurs_lecture += 1
+                    pass
             
             if len(st) == 0:
                 continue
@@ -171,10 +166,25 @@ with sbd.WaveformDataWriter(PATH_METADATA, PATH_HDF5) as writer:
             except Exception:
                 continue
                 
+            #force la freq a 100 Hz
+            for tr in st:
+                if tr.stats.sampling_rate != 100.0:
+                    try:
+                        tr.interpolate(100.0)
+                    except Exception:
+                        tr.resample(100.0)
+
+            # 2. Complète les composantes manquantes avec du zéro au lieu de tout jeter
             existing_components = [tr.stats.channel[-1] for tr in st]
-            if not all(c in existing_components for c in EXPECTED_COMPONENTS):
-                continue
-                
+            trace_modele = st[0]
+
+            for comp in EXPECTED_COMPONENTS:
+                if comp not in existing_components:
+                    tr_vide = trace_modele.copy()
+                    tr_vide.stats.channel = trace_modele.stats.channel[:-1] + comp
+                    tr_vide.data = np.zeros_like(trace_modele.data)
+                    st.append(tr_vide)
+
             st.sort()
             
             try:
