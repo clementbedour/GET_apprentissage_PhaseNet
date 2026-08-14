@@ -47,8 +47,8 @@ plt.plot(df["epoch"], df["val_loss"], label="Validation Loss", color="red", line
 
 mode_str = "Fine-Tuning" if mode_entrainement == 2 else "Depuis Zéro"
 plt.title(f"Évolution de la perte - Qualité {qualite.upper()} ({mode_str})", fontsize=14, fontweight="bold")
-plt.xlabel("Époque", fontsize=12)
-plt.ylabel("Loss (Cross Entropy)", fontsize=12)
+plt.xlabel("Épochs", fontsize=12)
+plt.ylabel("Loss", fontsize=12)
 plt.grid(True, linestyle=":", alpha=0.7)
 plt.legend(fontsize=12)
 
