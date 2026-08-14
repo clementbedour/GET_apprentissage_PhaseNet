@@ -53,7 +53,7 @@ if mode_entrainement == 1:
     
     # on donne un poids de 2.0 pour P, 1.0 pour S, et 0.5 pour le Bruit
     #on veux qu'il se concentre surtout sur P et un peu S
-    poids_classes = torch.tensor([2.0, 1.0, 0.5], dtype=torch.float32).to(DEVICE)
+    poids_classes = torch.tensor([5.0, 5.0, 0.1], dtype=torch.float32).to(DEVICE)
 else:
     DATASET_DIR = os.path.join(BASE_DIR, DOSSIER_QUALITE, "seisbench_dataset_ultime")
     START_FROM_ZERO = False 
@@ -62,8 +62,8 @@ else:
     SIGMA = 15
     print(f"Mode : FINE-TUNING LOCAL depuis {LOCAL_MODEL_PATH}")
     
-    # on donne un poids de 2.0 pour P, 1.0 pour S, et 0.5 pour le Bruit
-    poids_classes = torch.tensor([2.0, 1.0, 0.5], dtype=torch.float32).to(DEVICE)
+    # on donne un poids de 5.0 pour P, 5.0 pour S, et 0.1 pour le Bruit
+    poids_classes = torch.tensor([5.0, 5.0, 0.1], dtype=torch.float32).to(DEVICE)
 
 print(f"On veux une qualité minimal de {qualite}")
 
@@ -163,7 +163,10 @@ model.to(DEVICE)
 optimizer = torch.optim.Adam(model.parameters(), lr=LEARNING_RATE)
 
 # perte pondéré
-criterion = nn.CrossEntropyLoss(weight=poids_classes)
+# .view(1, -1, 1) transforme le tenseur de taille [3] en [1, 3, 1]
+poids_reshaped = poids_classes.view(1, -1, 1)
+# 3. Initialiser la BCELoss native avec ces poids
+criterion = nn.BCELoss(weight=poids_reshaped)
 
 # entrainement
 best_val_loss = float('inf') #init à l'infini
