@@ -16,7 +16,7 @@
 /prg_python/seisbenchA
 /prg_python/seisbenchB
 
-
+/prg_python/*volpick*
 
 *.csv
 *.hdf5
