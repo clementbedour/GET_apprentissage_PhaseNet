@@ -1,7 +1,8 @@
 # Explication du projet
 
 ## Description
-Ce répertoire a pour but d'automatiser et d'utiliser **SeisBench** et **PhaseNet** pour le traitement de signaux sismologiques. Il propose un pipeline complet allant de la préparation des données brutes et des pointages manuels, jusqu'à l'entraînement de modèles d'Intelligence Artificielle (from scratch puis par Fine-Tuning) et la génération de métriques d'évaluation.
+Ce répertoire a pour but d'automatiser et d'utiliser **SeisBench** et **PhaseNet** pour le traitement de signaux sismologiques. Il propose un pipeline complet allant de la préparation des données brutes et des pointages manuels, jusqu'à l'entraînement de modèles d'Intelligence Artificielle (from scratch puis par Fine-Tuning) et la génération de métriques d'évaluation. Pour lancer tous les codes, il faudra être dans prg_python.<br>
+Si vous avez des questions sur le fonctionnement ou autres, vous pouvez me contacter sur clementbedour@gmail.com
 
 ---
 
@@ -11,9 +12,9 @@ Cette première phase permet de formater les données brutes et de valider visue
 
 *   **Découpage des événements :** Exécutez `phase.py` pour découper les fichiers d'événements mensuels (il devra être situés dans `data/phase`) en sous-fichiers individuels (générés dans `data/phase_separe`). Le script trie également les événements (par défaut, seuls les événements VT sont conservés dans `data/phase_vt`). Pour garder d'autres types d'événements, décommentez les lignes correspondantes dans la fonction `evenement_particulie()`. Il est aussi possible de les trier par magnitude avec la fonction  `trier_magnitude()` qui seront triés dans  `../data/phase_magnitude/M=0`, `../data/phase_magnitude/M=1`, ... 
 
-*   **Formatage pour Snuffler :** Lancez `phase_to_evenement.py` pour créer des fichiers lisibles par l'outil de visualisation. Le script utilise la date d'origine présente dans `data/phase_evenement_doc/2014.CATALOG.txt`. Si un événement est introuvable ou non identifiable, la ligne `event:` sera vide et l'événement sera listé dans le fichier `NL.txt`. A la fin de ce script, vous aurez 1 fichier par événement présent dans le catalogue. Cette étape nécessite une configuration manuelle (les données `.mseed` doivent être dans `/data/2014/MQ`). Le chemin peut être changé à la ligne 8.
+*   **Formatage pour Snuffler :** Cette étape nécessite une configuration manuelle (les données `.mseed` doivent être dans `/data/2014/MQ`). Le chemin peut être changé à la ligne 8. Lancez `phase_to_evenement.py` pour créer des fichiers au bon format. Le script utilise la date d'origine présente dans `data/phase_evenement_doc/2014.CATALOG.txt`. Si un événement est introuvable ou non identifiable, la ligne `event:` ne sera pas présente et l'événement sera listé dans le fichier `NL.txt`. A la fin de ce script, vous aurez 1 fichier par événement présent dans `data/phase_vt` et la sortie sera dans le répertoire `data/phase_evenement/`.
 
-*   **Préparation des stations :** Assurez-vous d'avoir placé le fichier de configuration des stations (ex : `all_station_2`) dans le répertoire `data/station`. Puis, vous pouvez lancer `recup_csv.py` pour créer un fichier par station au bon format pour Snuffler.
+*   **Préparation des stations :** Assurez-vous d'avoir placé le fichier de configuration des stations (ex : `all_station_2`) dans le répertoire `data/station`. Puis, vous pouvez lancer `recup_csv.py` pour créer un fichier par station au bon format pour Snuffler. Les fichiers seront créés dans `data/csv`.
 
 *   **Affichage et correction :** Lancez `affichage_snuffler.py` pour visualiser les événements à la chaîne (-40s et +30s autour de la création de l'événement, changeable à la ligne 74 et 75). Vous pouvez spécifier un fichier précis pour commencer, ou appuyer sur Entrée pour démarrer au début.
 
@@ -23,26 +24,27 @@ Cette première phase permet de formater les données brutes et de valider visue
 
 *   **Reprise de session :** En quittant Snuffler, le terminal vous propose de continuer. Entrez `1` pour arrêter le programme (le dernier fichier traité s'affichera pour faciliter la reprise), ou laissez continuer jusqu'à la fin. Pour reprendre là où vous en étiez, relancer simplement `affichage_snuffler.py` en indiquant le dernier document traité.
 
-*   **Bravo :** Félicitations !!! Vous avez fini de vérifier tous les pointés, ça peut être long mais c'est terminé.
+*   **Bravo :** Félicitations !!! Vous avez fini de vérifier tous les pointés, c'était long mais c'est terminé.
 
 ---
 
 ## Étape 2 : Machine Learning (IA)
 
-Tous les fichiers générés à cette étape seront stockés dans `data/seisbench`. Les poids des modèles entraînés seront sauvegardés dans `prg_python/seisbench`. En fonction des qualités choisies, la localisation des sauvegardes pourra légèrement différer (seisbenchB ou seisbenchA au lieu de seisbench).<br>
-Pour tous les programmes suivants, nous devons rentrer comme paramètres le minimum de qualité voulu `a` (que les qualités a), `b` (les qualités a et b) ou `c`(les qualités a, b et c). Si aucun argument n'est donné, il prendra par défaut la qualité `c`.
+Tous les fichiers générés à cette étape seront stockés dans `data/seisbench<qualite>`. Les poids des modèles entraînés seront sauvegardés dans `prg_python/seisbench<qualite>`. En fonction des qualités choisies, la localisation des sauvegardes pourra légèrement différer (mais tout sera semblable à l'intérieur).<br>
+Pour tous les programmes suivants, nous devons rentrer comme paramètres le minimum de qualité voulu `a` (que les qualités a), `b` (les qualités a et b) ou `c`(les qualités a, b et c). Si aucun argument n'est donné, il prendra par défaut la qualité `c`.<br>
+Pour l'emplacement des miniseed, le chemin d'accés va probablement différé. La constante est toujours vers le début des programmes `BASE_MSEED`. Il faudra modifier les programmes format_csv_hdf5, gene_noise, detection_nouv.py et extraire_nouv.py
 
-*   **Création de la base "Ground Truth" :** Lancez `format_csv_hdf5.py <qualite>`. Cela génère `metadata.csv` et `waveform.hdf5` dans le répertoire `seisbench_format` à partir de vos pointés validés. Ce programme crée juste 2 fichiers pour être au bon format pour SeisBench.
+*   **Création de la base "Ground Truth" :** Lancez `format_csv_hdf5.py <qualite>`. Cela génère `phase_ground.csv` et `waveform.hdf5` dans le répertoire `seisbench_format` à partir de vos pointés validés. Ce programme crée juste 2 fichiers pour être au bon format pour SeisBench.
 
-*   **Génération du bruit :** Exécutez `gene_noise.py` pour créer la base de données de bruit dans `seisbench_format_noise`. L'ajustement des fenêtres STA/LTA se fait via la variable `STA_LTA_THRESHOLD`, valeur du rapport signal sur bruit (une valeur inférieure à 1.6 est déconseillée). La création du fichier sera forcément générée dans `data/seisbench`.
+*   **Génération du bruit :** Exécutez `gene_noise.py` pour créer la base de données de bruit dans `seisbench_format_noise`. L'ajustement des fenêtres STA/LTA se fait via la variable `STA_LTA_THRESHOLD`, valeur du rapport signal sur bruit (une valeur inférieure à 1.6 est déconseillée). La création du fichier sera forcément générée dans `data/seisbench` (peu importe la qualité).
 
 *   **Fusion pour l'entraînement initial :** Lancez `fusion_data.py <qualite>` pour combiner le Ground Truth et le bruit dans `seisbench_dataset`.
 
-*   **Entraînement *From Scratch* (Modèle 1) :** Exécutez `IA_seisbench_Tuning.py 1 <qualite>`. Le modèle généré sera sauvegardé sous `prg_python/seisbench<qualite>/phasenet_volcan_v1.pt`. Les paramètres modifiables sont `SIGMA`, `EPOCHS`, `LEARNING_RATE` et `poids_classes` (de la ligne 47 à 56). Je trouve que seule la modification de `SIGMA` est nécessaire. Sauf si nous arrivons à la fin de l'exécution avec `EPOCHS`=300. Je n'ai pas trop modifié `poids_classes`, il peut être intéressant d'augmenter le bruit pour éviter les fausses détections.
+*   **Entraînement *From Scratch* (Modèle 1) :** Exécutez `IA_seisbench_Tuning.py 1 <qualite>`. Le modèle généré sera sauvegardé sous `prg_python/seisbench<qualite>/phasenet_volcan_v1.pt`. Les paramètres modifiables sont `SIGMA`, `EPOCHS`, `LEARNING_RATE` et `poids_classes` (de la ligne 47 à 56). Je trouve que seule la modification de `SIGMA` est nécessaire. Sauf si nous arrivons à la fin de l'exécution avec `EPOCHS`= 300. Je n'ai pas trop modifié `poids_classes`, il peut être intéressant d'augmenter le bruit pour éviter les fausses détections.
 
-*   **Détection de nouveaux événements :** Lancez `detection_nouv.py <qualite>` (processus le plus long). Il génère deux catalogues dans `seisbench_nouv` : un catalogue complet des VT détectés, et un catalogue filtré des VT valides. Vous pouvez ajuster les filtres `MIN_STATIONS` ligne 30, nombre de stations minimal pour le filtre multi-association (conseil : environ la moitié du nombre total des stations), `MIN_PROBA_EVENT` ligne 31, probabilités minimales pour l'enregistrement de l'événement (conseil : minimum 0.8). Ainsi que `THRESHOLD_P`,`THRESHOLD_S` ligne 16/17 pour la détection du pick (conseil : minimum 0.8).
+*   **Détection de nouveaux événements :** Lancez `detection_nouv.py <qualite>` (processus le plus long). Si vous avez des stations avec une seule composante, il faudra les renseigner à la ligne 25 `STATIONS_MONO`. Il génère deux catalogues dans `seisbench_nouv` : un catalogue complet des VT détectés, et un catalogue filtré des VT valides. Vous pouvez ajuster les filtres `MIN_STATIONS` ligne 30, nombre de stations minimal pour le filtre multi-association (conseil : environ la moitié du nombre total des stations), `MIN_PROBA_EVENT` ligne 31, probabilités minimales pour l'enregistrement de l'événement (conseil : minimum 0.8). Ainsi que `THRESHOLD_P`,`THRESHOLD_S` ligne 16/17 pour la détection du pick (conseil : minimum 0.8 pour P et 0.3 pour S).
 
-*   **Extraction de la base "Gold" :** Exécutez `extraire_nouv.py <qualite>` pour formater les nouvelles détections validées dans `seisbench_format_gold`. A partir de ce moment, nous avons la base de données "Gold-Standar" qui ne contient que les meilleurs événements.
+*   **Extraction de la base "Gold" :** Exécutez `extraire_nouv.py <qualite>` pour formater les nouvelles détections validées dans `seisbench_format_gold`. A partir de ce moment, nous avons la base de données "Gold-Standard" qui ne contient que les meilleurs événements.
 
 *   **Base de données ultime :** Lancez `fusion_dataset.py <qualite>` pour regrouper le Ground Truth, le Bruit et la base Gold dans `seisbench_dataset_ultime`.
 
@@ -54,7 +56,7 @@ Pour tous les programmes suivants, nous devons rentrer comme paramètres le mini
 
 Pour les utilisateurs opérant sur le serveur SSH, l'intégralité du pipeline d'apprentissage (de la création de la base Ground Truth jusqu'au Fine-Tuning final) peut être exécutée via des scripts Bash.
 
-*   **Pré-requis :** Lancez le script `scp.sh` qui permet de copier tous les fichiers du répertoire pour l'IA. Vous allez devoir modifier votre mot de passe et le chemin d'accès vers votre session.
+*   **Pré-requis :** Lancez le script `scp.sh` qui permet de copier tous les fichiers du répertoire pour l'IA. Vous allez devoir modifier votre **mot de passe** et le **chemin d'accès** vers votre session.
 *   **Commande :** Exécutez `sbatch batch_Singb` (il lancera tout pour la qualité `b` ), vous allez sûrement devoir modifier quelques lignes comme le nom et le nombre de coeurs que vous voulez réserver.
 *   **Fonctionnement :** Le script prend en charge toute la chaîne et génère un fichier de type `output_classiqueb.out` pour suivre l'avancement. Que ce soit la réservation de ressources, et le lancement de toutes les fonctions. 
 
@@ -64,12 +66,12 @@ Pour les utilisateurs opérant sur le serveur SSH, l'intégralité du pipeline d
 
 Le pipeline génère des graphiques de performance sans nécessiter d'affichage interactif. Toutes les images produites sont directement sauvegardées dans le répertoire `images/`.
 
-*   **Visualisation des pointés de l'IA :** Lancez `test_IA.py 1 <qualite>` (pour le modèle 1) ou `test_IA.py 2 <qualite>` (pour le modèle 2) pour vérifier les distributions gaussiennes générées. La base de test est tirée aléatoirement à 10% du dataset global et reste invisible pour l'IA durant l'entraînement. La constante que vous pouvez changer est `SEUIL_PROB` à la ligne 69 pour afficher la probabilité minimale à enregistrer (conseil : rester à 0.8). Vous pouvez aussi modifier `NB_EXEMPLES_SAVE` ligne 74. Pour le modèle 1, les pointés manuels sont en magenta / cyan, les pointés de la V1 sont bleu et rouge (s'ils dépassent 0.3). Pour le modèle 2, les pointés magenta et cyan sont les pointés trouvés par la V1 pour détecter l'événement. Les pointés rouges et bleus sont ceux de la V2. Pour les images de la V2, si vous avez [Manuels] alors l'événement fait partie de votre base de données Ground Truth et si [Trouvé par l'IA] alors l'événement et tous les pointés ont été faits par l'IA.
+*   **Visualisation des pointés de l'IA :** Lancez `test_IA.py 1 <qualite>` (pour le modèle 1) ou `test_IA.py 2 <qualite>` (pour le modèle 2) pour vérifier les distributions gaussiennes générées. La base de test est tirée aléatoirement à 10% du dataset global et reste invisible pour l'IA durant l'entraînement. La constante que vous pouvez changer est `SEUIL_PROB` à la ligne 69 pour afficher la probabilité minimale à enregistrer (conseil : rester à 0.8). Vous pouvez aussi modifier `NB_EXEMPLES_SAVE` ligne 74. Pour le modèle 1, les pointés manuels sont en magenta / cyan, les pointés de la V1 sont bleu et rouge (s'ils dépassent 0.3 surtout pour la S). Pour le modèle 2, les pointés magenta et cyan sont les pointés trouvés par la V1 pour détecter l'événement. Les pointés rouges et bleus sont ceux de la V2. Pour les images de la V2, si vous avez [Manuels] alors l'événement fait partie de votre base de données Ground Truth et si [Trouvé par l'IA] alors l'événement et tous les pointés ont été faits par l'IA.
 <div align="center">
     <img src="https://github.com/clementbedour/GET_apprentissage_PhaseNet/blob/main/images/seisbenchB/V2/trace_182_modele_2_qualite_b.png" alt="Picture Modele 2" width="50%">
 </div>
 
-*   **Affichage fonction de perte :** Lancez `compare_trust.py 1 <qualite>` ou `compare_trust.py 1 <qualite>` pour vérifier l'évolution des courbes des pertes (courbes d'apprentissage) au fur et à mesure des epochs.
+*   **Affichage fonction de perte :** Lancez `compare_trust.py 1 <qualite>` ou `compare_trust.py 2 <qualite>` pour vérifier l'évolution des courbes des pertes (courbes d'apprentissage) au fur et à mesure des epochs.
 <div align="center">
     <img src="https://github.com/clementbedour/GET_apprentissage_PhaseNet/blob/main/images/seisbenchB/loss_curve_b_scratch.png" alt="Picture Loss Curve" width="50%">
 </div>
@@ -81,7 +83,7 @@ Le pipeline génère des graphiques de performance sans nécessiter d'affichage 
 
 *   **Répartition temporelle :** Lancez `image_event_day.py <qualite>` pour visualiser la répartition du nombre de nouveaux événements découverts.
 <div align="center">
-    <img src="https://github.com/clementbedour/GET_apprentissage_PhaseNet/blob/main/images/distribution_journaliere_vtB.png" alt="Picture Event Day" width="50%">
+    <img src="https://github.com/clementbedour/GET_apprentissage_PhaseNet/blob/main/images//seisbenchB/distribution_journaliere_vt.png" alt="Picture Event Day" width="50%">
 </div>
 
 ---
@@ -90,4 +92,19 @@ Le pipeline génère des graphiques de performance sans nécessiter d'affichage 
 
 Maintenant je vais essayer de faire la même chose mais en partant d'une base bien plus grande.<br>
 Etude scientifique de référence **Volpick** ([https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2024GL108438](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2024GL108438)).<br>
+
+ça marche plus ou moins, je n'ai pas eu le temps de le finaliser et de bien tester. Mais sinon tout marche quasiment pareil, il faut juste remplacer la qualité par `LPVT` si on veut les LP et les VT dans la base d'apprentissage. Sinon on met `VT` si on veut que les VT dans cette base.
 En cours de programmation...
+
+
+# Les tags
+
+## Tag 1 : v1
+
+Ce tag est juste une version antérieure. Si vous avez des problèmes avec la dernière version, vous pouvez essayer de la prendre. Mais elle est moins optimisée, moins performante et moins protégée contre les problèmes.
+
+---
+
+## Tag 2 : version final
+
+Tous les codes liés à l'utilisation d'une base manuelle sont correctes et marchent. Pour Volpick, ça reste à voir.
