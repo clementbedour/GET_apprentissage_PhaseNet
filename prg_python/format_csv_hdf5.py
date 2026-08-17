@@ -20,6 +20,9 @@ if len(sys.argv) > 1:
         OUTPUT_DIR = os.path.join(BASE_DIR, "seisbenchA/seisbench_format")
     elif var=='b' :
         OUTPUT_DIR = os.path.join(BASE_DIR, "seisbenchB/seisbench_format")
+    else :
+        var = 'c'
+        OUTPUT_DIR = os.path.join(BASE_DIR, "seisbench/seisbench_format")
 else :
     var = 'c'
     OUTPUT_DIR = os.path.join(BASE_DIR, "seisbench/seisbench_format")
