@@ -172,7 +172,8 @@ if __name__ == "__main__":
                     pattern(picks, g)
 
                 if matched:
-                    print(f" -> Réussi : {title}")
+                    1=1;
+                    #print(f" -> Réussi : {title}")
                 else:
                     unmatched.append((fname, title, event_id))
                     print(f" -> Sans correspondance catalogue (phases écrites) : {title}")
