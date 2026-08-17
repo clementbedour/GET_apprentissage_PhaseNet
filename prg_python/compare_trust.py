@@ -35,8 +35,8 @@ else:
     DOSSIER_QUALITE = "seisbench"
 
 #path modele
-MODEL_V1_PATH = os.path.join(DOSSIER_QUALITE, "phasenet_volcan_v1.pt")
-MODEL_V2_PATH = os.path.join(DOSSIER_QUALITE, "phasenet_volcan_v2.pt")
+MODEL_V1_PATH = os.path.join(DOSSIER_QUALITE, "ml_model_v1.pt")
+MODEL_V2_PATH = os.path.join(DOSSIER_QUALITE, "ml_model_v2.pt")
 
 if mode_modele == 1:
     DATASET_DIR = os.path.join(BASE_DIR, DOSSIER_QUALITE, "seisbench_dataset")

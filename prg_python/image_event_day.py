@@ -18,15 +18,15 @@ if len(sys.argv) > 1:
     if var == 'a':
         BASE_OUT = "../data/seisbenchA/seisbench_nouv"
         os.makedirs("../images/seisbenchA", exist_ok=True)
-        OUTPUT_PLOT = os.path.join("../images", "distribution_journaliere_vtA.png")
+        OUTPUT_PLOT = os.path.join("../images/seisbenchA", "distribution_journaliere_vt.png")
     elif var == 'b':
         BASE_OUT = "../data/seisbenchB/seisbench_nouv"
         os.makedirs("../images/seisbenchB", exist_ok=True)
-        OUTPUT_PLOT = os.path.join("../images", "distribution_journaliere_vtB.png")
+        OUTPUT_PLOT = os.path.join("../images/seisbenchB", "distribution_journaliere_vt.png")
     else:
         BASE_OUT = "../data/seisbench/seisbench_nouv"
         os.makedirs("../images/seisbench", exist_ok=True)
-        OUTPUT_PLOT = os.path.join("../images", "distribution_journaliere_vt.png")
+        OUTPUT_PLOT = os.path.join("../images/seisbench", "distribution_journaliere_vt.png")
 else:
     var = 'c'
     BASE_OUT = "../data/seisbench/seisbench_nouv"
@@ -52,11 +52,15 @@ counts_daily = df.resample("D").size()
 #style graph (agrandrir 10 et 4.5 si trop de donnees)
 fig, ax = plt.subplots(figsize=(10, 4.5), dpi=300)
 
-#barre rouge
-ax.bar(counts_daily.index, counts_daily.values, color="red", width=1.0, align="center")
+#barres
+ax.bar(counts_daily.index, counts_daily.values, color="indianred", edgecolor="white", linewidth=0.5, width=1.0, align="center")
 
 ax.set_xlim(counts_daily.index.min(), counts_daily.index.max())
 ax.set_ylim(0, max(counts_daily.values.max() * 1.05, 10))
+
+#titres + labels
+ax.set_title("Distribution journalière des événements VT", fontsize=14, fontweight='bold', pad=15, color='#333333')
+ax.set_ylabel("Nombre d'événements", fontsize=11, color='#333333')
 
 #format des mois
 month_initials = ["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"]
@@ -68,16 +72,21 @@ ax.xaxis.set_minor_locator(mdates.DayLocator(bymonthday=[10, 20]))
 #annee
 for yr in counts_daily.index.year.unique():
     sub_df = counts_daily[counts_daily.index.year == yr]
-    mid_date = sub_df.index[len(sub_df) // 2]
-    
-    ax.text(mid_date, -0.08, str(yr), 
-            transform=ax.get_xaxis_transform(),
-            ha="center", va="top", fontsize=12, fontweight="bold")
+    if not sub_df.empty:
+        mid_date = sub_df.index[len(sub_df) // 2]
+        #decalage texte
+        ax.text(mid_date, -0.12, str(yr), 
+                transform=ax.get_xaxis_transform(),
+                ha="center", va="top", fontsize=12, fontweight="bold", color='#333333')
 
 #cadre
-ax.tick_params(top=True, right=True, which='both', direction='in', length=5)
-ax.tick_params(which='minor', length=2.5)
-ax.grid(False)
+ax.spines['top'].set_visible(False)
+ax.spines['right'].set_visible(False)
+ax.spines['left'].set_color('#cccccc')
+ax.spines['bottom'].set_color('#333333')
+
+#grille horizontale
+ax.grid(axis='y', linestyle='--', alpha=0.5, color='#cccccc')
 
 plt.tight_layout()
 plt.savefig(OUTPUT_PLOT, bbox_inches='tight')

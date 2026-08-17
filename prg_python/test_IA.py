@@ -48,12 +48,12 @@ SEIS_PATH = DOSSIER_QUALITE
 #path celon arguments
 if mode_modele == 1:
     DATASET_DIR = os.path.join(BASE_DIR, DOSSIER_QUALITE, "seisbench_dataset")
-    MODEL = "phasenet_volcan_v1.pt"
+    MODEL = "ml_model_v1.pt"
     print(f"--- Lancement : Modèle V1 | Qualité '{qualite.upper()}' ---")
     OUTPUT_DIR = os.path.join("../images",DOSSIER_QUALITE,"V1")
 elif mode_modele == 2:
     DATASET_DIR = os.path.join(BASE_DIR, DOSSIER_QUALITE, "seisbench_dataset_ultime")
-    MODEL = "phasenet_volcan_v2.pt"
+    MODEL = "ml_model_v2.pt"
     print(f"--- Lancement : Modèle V2 | Qualité '{qualite.upper()}' ---")
     OUTPUT_DIR = os.path.join("../images",DOSSIER_QUALITE,"V2")
 else:
