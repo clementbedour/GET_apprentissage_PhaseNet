@@ -108,3 +108,6 @@ Ce tag est juste une version antérieure. Si vous avez des problèmes avec la de
 ## Tag 2 : version final
 
 Tous les codes liés à l'utilisation d'une base manuelle sont correctes et marchent. Pour Volpick, ça reste à voir.
+
+
+enlever truc affichage wsl (compliqué affichage)
