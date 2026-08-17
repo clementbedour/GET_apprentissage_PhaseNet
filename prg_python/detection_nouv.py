@@ -39,14 +39,14 @@ FREQ_MAX = 20.0
 if len(sys.argv) > 1:
     var = sys.argv[1].lower()
     if var=='a' :
-        MODEL_PATH = "seisbenchA/phasenet_volcan_v1.pt"
+        MODEL_PATH = "seisbenchA/ml_model_v1.pt"
         BASE_OUT = "../data/seisbenchA/seisbench_nouv"
     elif var=='b' :
-        MODEL_PATH = "seisbenchB/phasenet_volcan_v1.pt"
+        MODEL_PATH = "seisbenchB/ml_model_v1.pt"
         BASE_OUT = "../data/seisbenchB/seisbench_nouv"
 else :
     var = 'c'
-    MODEL_PATH = "seisbench/phasenet_volcan_v1.pt"
+    MODEL_PATH = "seisbench/ml_model_v1.pt"
     BASE_OUT = "../data/seisbench/seisbench_nouv"
 
 print(f"On veux une qualité minimal de {var}")

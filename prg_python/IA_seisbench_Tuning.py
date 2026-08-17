@@ -39,8 +39,8 @@ else:
     DOSSIER_QUALITE = "seisbench"
 
 
-LOCAL_MODEL_PATH = os.path.join(DOSSIER_QUALITE, "phasenet_volcan_v1.pt")
-SAVE_MODEL_PATH = os.path.join(DOSSIER_QUALITE, "phasenet_volcan_v2.pt")
+LOCAL_MODEL_PATH = os.path.join(DOSSIER_QUALITE, "ml_model_v1.pt")
+SAVE_MODEL_PATH = os.path.join(DOSSIER_QUALITE, "ml_model_v2.pt")
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 if mode_entrainement == 1:
