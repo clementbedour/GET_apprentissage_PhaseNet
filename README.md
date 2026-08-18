@@ -105,17 +105,19 @@ Le pipeline génère des graphiques de performance sans nécessiter d'affichage 
 
 *   **Affichage fonction de perte :** Lancez `compare_trust.py 1 <qualite>` ou `compare_trust.py 2 <qualite>` pour vérifier l'évolution des courbes des pertes (courbes d'apprentissage) au fur et à mesure des epochs.
 <div align="center">
-    <img src="https://github.com/clementbedour/GET_apprentissage_PhaseNet/blob/main/images/seisbenchB/loss_curve_b_scratch.png" alt="Picture Loss Curve" width="50%">
+    <img src="https://github.com/clementbedour/GET_apprentissage_PhaseNet/blob/main/images/seisbenchB/loss_curve_b_scratch.png" alt="Picture Loss Curve scratch" width="49%">
+    <img src="https://github.com/clementbedour/GET_apprentissage_PhaseNet/blob/main/images/seisbenchB/loss_curve_b_finetuning.png" alt="Picture Loss Curve finetuning" width="49%">
 </div>
 
 *   **Scores de confiance :** Lancez `metrics.py 1 <qualite>` ou `metrics.py 2 <qualite>` pour constater le score de confiance sur tous les événements détectés.
 <div align="center">
-    <img src="https://github.com/clementbedour/GET_apprentissage_PhaseNet/blob/main/images/seisbenchB/confiance_V1_b.png" alt="Picture Score Confidence" width="50%">
+    <img src="https://github.com/clementbedour/GET_apprentissage_PhaseNet/blob/main/images/seisbenchB/confiance_V1_b.png" alt="Picture Score Confidence scratch" width="49%">
+    <img src="https://github.com/clementbedour/GET_apprentissage_PhaseNet/blob/main/images/seisbenchB/confiance_V2_b.png" alt="Picture Score Confidence detection" width="49%">
 </div>
 
 *   **Répartition temporelle :** Lancez `image_event_day.py <qualite>` pour visualiser la répartition du nombre de nouveaux événements découverts.
 <div align="center">
-    <img src="https://github.com/clementbedour/GET_apprentissage_PhaseNet/blob/main/images//seisbenchB/distribution_journaliere_vt.png" alt="Picture Event Day" width="50%">
+    <img src="https://github.com/clementbedour/GET_apprentissage_PhaseNet/blob/main/images//seisbenchB/distribution_journaliere_vt.png" alt="Picture Event Day" width="75%">
 </div>
 
 ---
