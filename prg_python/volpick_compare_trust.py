@@ -21,8 +21,8 @@ IMAGE_DIR = "../images"
 DOSSIER_QUALITE = "volpick"
 
 #path modele
-MODEL_V1_PATH = os.path.join(DOSSIER_QUALITE, qualite, "phasenet_volpick_v1.pt")
-MODEL_V2_PATH = os.path.join(DOSSIER_QUALITE, qualite, "phasenet_volpick_v2.pt")
+MODEL_V1_PATH = os.path.join(DOSSIER_QUALITE, qualite, "ml_model_v1.pt")
+MODEL_V2_PATH = os.path.join(DOSSIER_QUALITE, qualite, "ml_model_v2.pt")
 
 DATASET_DIR = os.path.join(BASE_DIR, DOSSIER_QUALITE, f"volpick_dataset_{qualite}")
 
