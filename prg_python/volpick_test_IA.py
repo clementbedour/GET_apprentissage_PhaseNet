@@ -30,12 +30,12 @@ BASE_DIR = "../data"
 #path celon arguments
 if mode_modele == 1:
     DATASET_DIR = os.path.join(BASE_DIR, DOSSIER_QUALITE, f"volpick_dataset_{qualite}")
-    MODEL = "phasenet_volpick_v1.pt"
+    MODEL = "ml_model_v1.pt"
     OUTPUT_DIR = os.path.join("../images", DOSSIER_QUALITE, qualite, "V1")
     print(f"--- Lancement : Modèle V1 | Qualité '{qualite}' ---")
 elif mode_modele == 2:
     DATASET_DIR = os.path.join(BASE_DIR, DOSSIER_QUALITE, f"volpick_dataset_{qualite}")
-    MODEL = "phasenet_volpick_v2.pt"
+    MODEL = "ml_model_v2.pt"
     OUTPUT_DIR = os.path.join("../images", DOSSIER_QUALITE, qualite, "V2")
     print(f"--- Lancement : Modèle V2 | Qualité '{qualite}' ---")
 else:
@@ -80,8 +80,9 @@ dataset = sbd.WaveformDataset(DATASET_DIR, component_order="ZNE", sampling_rate=
 test_dataset = dataset.test()
 print(f"{len(test_dataset)} traces disponibles dans test")
 
+#utilisation de 'trace_p_arrival_sample' à la place de 'center_sample'
 transforms = [
-    sbg.WindowAroundSample("center_sample", samples_before=1500, windowlen=3001, strategy="pad"),
+    sbg.WindowAroundSample("trace_p_arrival_sample", samples_before=1500, windowlen=3001, strategy="pad"),
     sbg.Normalize(detrend_axis=-1, amp_norm_axis=-1),
     sbg.ChangeDtype(np.float32),
 ]
@@ -110,8 +111,14 @@ def tracer_predictions(index_trace, sample):
     
     #metadata
     meta = test_dataset.metadata.iloc[index_trace]
-    center_sample = meta['center_sample']
-    start_sample_window = center_sample - 1500
+    
+    #gestion debut fenetre d'echantillon
+    if 'center_sample' in meta and pd.notna(meta['center_sample']):
+        start_sample_window = meta['center_sample'] - 1500
+    elif 'trace_p_arrival_sample' in meta and pd.notna(meta['trace_p_arrival_sample']):
+        start_sample_window = meta['trace_p_arrival_sample'] - 1500
+    else:
+        start_sample_window = 0
     
     p_arrival_abs = meta.get('trace_p_arrival_sample', np.nan)
     s_arrival_abs = meta.get('trace_s_arrival_sample', np.nan)
