@@ -13,8 +13,8 @@ import sys
 BASE_DIR = "../data"
 
 #valeurs de détection
-THRESHOLD_P = 0.80
-THRESHOLD_S = 0.80
+THRESHOLD_P = 0.90
+THRESHOLD_S = 0.40
 
 START_DAY = 51
 END_DAY = 151
@@ -28,7 +28,7 @@ STATIONS_MONO = {"BAM", "CPM", "GBM", "MLM"}
 ASSOCIATION_WINDOW_SECONDS = 5.0  #fenetre max entre arrive sur 2 stats
 #filtre pour event
 MIN_STATIONS = 4          #nbr min de stat 
-MIN_PROBA_EVENT = 0.80    #score confiance minimal
+MIN_PROBA_EVENT = 0.90    #score confiance minimal
 MAX_EVENT_DAY = 200        #nbr d'event max par jour (aprés association)
 MAX_EVENT_DURATION = 10.0 #tmp max event (pas plus de 10 sec)
 
@@ -44,6 +44,10 @@ if len(sys.argv) > 1:
     elif var=='b' :
         MODEL_PATH = "seisbenchB/ml_model_v1.pt"
         BASE_OUT = "../data/seisbenchB/seisbench_nouv"
+    else :
+        var = 'c'
+        MODEL_PATH = "seisbench/ml_model_v1.pt"
+        BASE_OUT = "../data/seisbench/seisbench_nouv"
 else :
     var = 'c'
     MODEL_PATH = "seisbench/ml_model_v1.pt"

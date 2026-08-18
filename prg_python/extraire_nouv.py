@@ -19,6 +19,10 @@ if len(sys.argv) > 1:
     elif var=='b' :
         BASE_OUT = "../data/seisbenchB/seisbench_nouv"
         OUTPUT_DATASET_DIR = os.path.join(BASE_DIR, "seisbenchB/seisbench_format_gold")
+    else :
+        var = 'c'
+        BASE_OUT = "../data/seisbench/seisbench_nouv"
+        OUTPUT_DATASET_DIR = os.path.join(BASE_DIR, "seisbench/seisbench_format_gold")
 else :
     var = 'c'
     BASE_OUT = "../data/seisbench/seisbench_nouv"
@@ -75,7 +79,6 @@ if os.path.exists(OLD_METADATA_CSV):
     df_old_p['start_dt'] = pd.to_datetime(df_old_p['trace_start_time'], format="ISO8601")
     df_old_p['p_time'] = df_old_p['start_dt'] + pd.to_timedelta(df_old_p['trace_p_arrival_sample'] / df_old_p['trace_sampling_rate_hz'], unit='s')
     
-    total_known_traces = len(df_old_p)
     total_known_traces = len(df_old_p)
     
     #groupe par station pour remplir les dictionaires

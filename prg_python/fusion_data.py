@@ -13,6 +13,10 @@ if len(sys.argv) > 1:
     elif var=='b' :
         DIR_EVENTS = os.path.join(BASE_DIR, "seisbenchB/seisbench_format")
         DIR_FINAL = os.path.join(BASE_DIR, "seisbenchB/seisbench_dataset")
+    else :
+        var = 'c'
+        DIR_EVENTS = os.path.join(BASE_DIR, "seisbench/seisbench_format")
+        DIR_FINAL = os.path.join(BASE_DIR, "seisbench/seisbench_dataset")
 else :
     var = 'c'
     #Le fichier Ground Truth

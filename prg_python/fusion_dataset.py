@@ -23,6 +23,14 @@ if len(sys.argv) > 1:
             }
         DIR_FINAL = os.path.join(BASE_DIR, "seisbenchB/seisbench_dataset_ultime")
 
+    elif 'c'==var :
+        var = 'c'
+        SOURCES = {
+            "Original": os.path.join(BASE_DIR, "seisbench/seisbench_format"),                "Bruit": os.path.join(BASE_DIR, "seisbench/seisbench_format_noise"),
+            "Gold": os.path.join(BASE_DIR, "seisbench/seisbench_format_gold")
+        }
+        DIR_FINAL = os.path.join(BASE_DIR, "seisbench/seisbench_dataset_ultime")
+
 else :
     var = 'c'
     #les 3 repertoires à fusionner 
