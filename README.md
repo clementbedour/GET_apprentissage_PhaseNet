@@ -1,8 +1,40 @@
-# Explication du projet
+# Description du projet
+Ce répertoire a pour but d'automatiser et d'utiliser **SeisBench** et **PhaseNet** pour le traitement de signaux sismologiques. Il propose un pipeline complet allant de la préparation des données brutes et des pointages manuels, jusqu'à l'entraînement de modèles d'Intelligence Artificielle (from scratch puis par Fine-Tuning) et la génération de métriques d'évaluation.<br>
+**Contact :** Si vous avez des questions, vous pouvez me contacter sur [clementbedour@gmail.com](mailto:clementbedour@gmail.com).
 
-## Description
-Ce répertoire a pour but d'automatiser et d'utiliser **SeisBench** et **PhaseNet** pour le traitement de signaux sismologiques. Il propose un pipeline complet allant de la préparation des données brutes et des pointages manuels, jusqu'à l'entraînement de modèles d'Intelligence Artificielle (from scratch puis par Fine-Tuning) et la génération de métriques d'évaluation. Pour lancer tous les codes, il faudra être dans prg_python.<br>
-Si vous avez des questions sur le fonctionnement ou autres, vous pouvez me contacter sur clementbedour@gmail.com
+
+## Table des matières
+1. [Architecture du Projet](#architecture-du-projet)
+2. [Étape 1 : Préparation des données et pointages (SeisBench / Snuffler)](#étape-1--préparation-des-données-et-pointages-seisbench--snuffler)
+3. [Étape 2 : Machine Learning (IA)](#étape-2--machine-learning-ia)
+4. [Étape 2 bis : Machine Learning automatisé sur Serveur SSH](#étape-2-bis--machine-learning-automatisé-sur-serveur-ssh)
+5. [Étape 3 : Affichage des résultats](#étape-3--affichage-des-résultats)
+6. [Étape 4 : Base de données Volpick](#étape-4--base-de-données-volpick)
+7. [Tags](#les-tags)
+
+
+## Architecture du Projet
+
+Pour le bon fonctionnement des scripts, il est impératif de respecter cette structure. **Tous les codes doivent être lancés depuis le dossier `prg_python/`.**
+```text
+📦 GET_apprentissage_PhaseNet
+ ┣ 📂 prg_python/             # Contient tous les scripts Python (à exécuter d'ici)
+ ┃ ┣ 📜 phase.py
+ ┃ ┣ 📜 IA_seisbench_Tuning.py
+ ┃ ┣ ...
+ ┃ ┣ 📂 seisbench<qualite>/   # Poids des modèles entraînés (.pt)
+ ┃ ┗ 📂 volpick/              # Poids des modèles entraînés (.pt)
+ ┣ 📂 data/                   # Dossier à créer par l'utilisateur :
+ ┃ ┣ 📂 2014/MQ/              # Données brutes .mseed
+ ┃ ┣ 📂 phase/                # Fichiers d'événements (journaliers, mensuels, annuels)
+ ┃ ┣ 📂 phase_snuffler/       # Pointés corrigés manuellement (code pour l'affichage automatique disponible)
+ ┃ ┣ 📂 station/              # Fichiers de configuration des stations
+ ┃ ┗ 📂 seisbench<qualite>/   # Données générées par les scripts pour l'IA (HDF5, CSV)
+ ┣ 📂 images/                 # Graphiques générés par l'Étape 3
+ ┣ 📂 SSH/                    # Scripts Bash pour exécution sur serveur distant
+ ┣ 📂 out/                    # Exemple de sortie du terminal
+ ┗ 📜 README.md
+```
 
 ---
 
@@ -93,21 +125,20 @@ Le pipeline génère des graphiques de performance sans nécessiter d'affichage 
 Maintenant je vais essayer de faire la même chose mais en partant d'une base bien plus grande.<br>
 Etude scientifique de référence **Volpick** ([https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2024GL108438](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2024GL108438)).<br>
 
-ça marche plus ou moins, je n'ai pas eu le temps de le finaliser et de bien tester. Mais sinon tout marche quasiment pareil, il faut juste remplacer la qualité par `LPVT` si on veut les LP et les VT dans la base d'apprentissage. Sinon on met `VT` si on veut que les VT dans cette base.
-En cours de programmation...
-
+Les codes marchent plus ou moins, je n'ai pas eu le temps de les finaliser et de bien tester. Mais sinon tout marche quasiment pareil, il faut juste remplacer la qualité par `LPVT` si on veut les LP et les VT dans la base d'apprentissage. Sinon on met `VT` si on veut que les VT dans cette base.<br>
+Pour voir l'ordre d'exécution, vous pouvez regarder dans `SSH/runAllvolpick.sh` pour les LP et VT dans la base ou `SSH/runAllvolpick2.sh` pour seulement les VT (on retire les pointés des LP pour les ajouter dans le bruit).
 
 # Les tags
 
 ## Tag 1 : v1
 
-Ce tag est juste une version antérieure. Si vous avez des problèmes avec la dernière version, vous pouvez essayer de la prendre. Mais elle est moins optimisée, moins performante et moins protégée contre les problèmes.
+Ce tag est juste une version antérieure. Si vous avez des problèmes avec la dernière version, vous pouvez l'essayer. Mais elle est moins optimisée, moins performante et moins protégée contre les problèmes.
 
 ---
 
 ## Tag 2 : version final
 
-Tous les codes liés à l'utilisation d'une base manuelle sont correctes et marchent. Pour Volpick, ça reste à voir.
+Tous les codes liés à l'utilisation d'une base manuelle sont corrects et marchent.<br> Pour Volpick, je n'ai malheureusement pas eu le temps de bien tester. Les codes sont présents mais je pense qu'il existe des problèmes après le second entraînement (via Fine-Tuning sur toutes nos données). L'affichage de `test_IA` n'est pas complet.
 
 
 enlever truc affichage wsl (compliqué affichage)
