@@ -76,6 +76,14 @@ if os.path.exists(OLD_METADATA_CSV):
     df_old_p['p_time'] = df_old_p['start_dt'] + pd.to_timedelta(df_old_p['trace_p_arrival_sample'] / df_old_p['trace_sampling_rate_hz'], unit='s')
     
     total_known_traces = len(df_old_p)
+    total_known_traces = len(df_old_p)
+    
+    #groupe par station pour remplir les dictionaires
+    for stat, group in df_old_p.groupby('station_code'):
+        #sauvegarde les temp brut
+        known_picks_raw[stat] = group['p_time'].tolist()
+        #sauvegarde timestamps sous forme de tableau Numpy pour la comp vectorielle
+        known_picks_arrays[stat] = group['p_time'].apply(lambda x: x.timestamp()).values
         
     print(f" -> {total_known_traces} pointés existants chargés depuis la base initiale.")
 else:
