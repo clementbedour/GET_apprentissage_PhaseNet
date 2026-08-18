@@ -219,11 +219,11 @@ for epoch in range(EPOCHS):
         patience_counter = 0 # reset car meilleur modèle ressent
         
         if qualite == 'a':
-            save_name = "seisbenchA/phasenet_volcan_v2.pt" if not START_FROM_ZERO else LOCAL_MODEL_PATH
+            save_name = "seisbenchA/ml_model_v2.pt" if not START_FROM_ZERO else LOCAL_MODEL_PATH
         elif qualite == 'b':
-            save_name = "seisbenchB/phasenet_volcan_v2.pt" if not START_FROM_ZERO else LOCAL_MODEL_PATH
+            save_name = "seisbenchB/ml_model_v2.pt" if not START_FROM_ZERO else LOCAL_MODEL_PATH
         else:
-            save_name = "seisbench/phasenet_volcan_v2.pt" if not START_FROM_ZERO else LOCAL_MODEL_PATH
+            save_name = "seisbench/ml_model_v2.pt" if not START_FROM_ZERO else LOCAL_MODEL_PATH
         
         dossier_parent = os.path.dirname(save_name)
         if dossier_parent != "":
