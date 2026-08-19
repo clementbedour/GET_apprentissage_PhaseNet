@@ -1,0 +1,23 @@
+#!/bin/bash
+#SBATCH --time=014:00:00 
+#SBATCH -n 16
+#SBATCH -p gpus
+
+#SBATCH --output=output_image.out
+
+
+# Usage : sbatch -n 32 -p get_h100 batch_Sing
+
+module load singularity/2.6.1
+module load cuda/12.6.1
+
+echo `date`
+
+singularity exec --bind /home/sila/dir_NVIDIA --bind /get:/get --nv /home/clov/seisbench_VT/Container_rapid.simg ./runAllimage.sh
+
+echo
+echo "done"
+echo `date`
+
+
+# That's all, folks !!!
