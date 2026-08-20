@@ -38,7 +38,7 @@ if qualite == 'a':
 elif qualite == 'b':
     DOSSIER_QUALITE = "seisbenchB"
 else:
-    DOSSIER_QUALITE = "seisbench"
+    DOSSIER_QUALITE = "seisbenchC"
 
 BASE_DIR = "../data"
 SEIS_PATH = DOSSIER_QUALITE
@@ -66,7 +66,10 @@ os.makedirs(OUTPUT_DIR, exist_ok=True)
 MODEL_PATH = os.path.join(SEIS_PATH, MODEL)
 
 #------------PARAMETRES--------------------
-SEUIL_PROB = 0.8            #seuil de proba min pour save l'image
+SEUIL_MIN_P = 0.8  #proba min de P
+SEUIL_MAX = 1  #proba max
+
+SEUIL_MIN_S = 1  #proba min de S comme ça baleck des S
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 SAMPLING_RATE = 100
@@ -154,9 +157,8 @@ def tracer_predictions(index_trace, sample):
     p_ai_sec = temps[np.argmax(prob_P)] if np.max(prob_P) >= SEUIL_AFFICHER_POINTE else None
     s_ai_sec = temps[np.argmax(prob_S)] if np.max(prob_S) >= SEUIL_AFFICHER_POINTE else None
 
-    #manuel ou IA
-    is_ai = 'gold_standard' in meta and pd.notna(meta['gold_standard']) and meta['gold_standard'] == True
-    label_source = " | [Trouvé par IA]" if is_ai else " | [Manuel]"
+    #manuel, IA, ou Bruit
+    label_source = meta['name']
 
     #trace graphique
     fig, axs = plt.subplots(4, 1, figsize=(12, 9), sharex=True)
@@ -187,8 +189,9 @@ def tracer_predictions(index_trace, sample):
     axs[3].plot(temps, prob_S, color="red", label="Probabilité S (IA)", linewidth=1.5)
     axs[3].plot(temps, prob_Noise, color="green", label="Probabilité Bruit (IA)", linewidth=1.5, alpha=0.7)
     
-    axs[3].axhline(SEUIL_PROB, color="orange", linestyle="--", alpha=0.8, label=f"Seuil P/S {SEUIL_PROB}")
-    
+    axs[3].axhline(SEUIL_MAX, color="orange", linestyle="--", alpha=0.8, label=f"Seuil max P/S {SEUIL_MAX}")
+    axs[3].axhline(SEUIL_MIN_P, color="orange", linestyle="--", alpha=0.8, label=f"Seuil min P {SEUIL_MIN_P}")
+
     if p_sec is not None and 0 <= p_sec <= temps[-1]:
         axs[3].axvline(x=p_sec, color="cyan", linestyle=":", linewidth=1.8, label="Pointé P (Réf/CSV)")
     if s_sec is not None and 0 <= s_sec <= temps[-1]:
@@ -219,7 +222,7 @@ def tracer_predictions(index_trace, sample):
     #print(f"Image sauvegardée : {output_path}")
 
 #------------RECHERCHE EVENT--------------------
-print(f"Recherche échantillons avec proba P/S >= {SEUIL_PROB}")
+print(f"Recherche échantillons avec proba P/S comprises entre {SEUIL_MIN_P} et {SEUIL_MAX}")
 indices_valides = []
 echantillons_stockes = {}
 
@@ -235,7 +238,9 @@ for idx in range(len(test_dataset)):
     prob_P = predictions[0]
     prob_S = predictions[1]
     
-    if np.max(prob_P) >= SEUIL_PROB or np.max(prob_S) >= SEUIL_PROB:
+    max_p = np.max(prob_P)
+    max_s = np.max(prob_S)
+    if (SEUIL_MIN_P <= max_p <= SEUIL_MAX) or (SEUIL_MIN_S <= max_s <= SEUIL_MAX):
         indices_valides.append(idx)
         echantillons_stockes[idx] = sample
 
@@ -248,4 +253,4 @@ if len(indices_valides) > 0:
     for idx in indices_aleatoires:
         tracer_predictions(idx, echantillons_stockes[idx])
 else:
-    print(f"Aucun échantillon ne dépasse le seuil de {SEUIL_PROB} dans le jeu de test.")
+    print(f"Aucun échantillon ne dépasse le seuil de {SEUIL_MIN_P} dans le jeu de test.")
