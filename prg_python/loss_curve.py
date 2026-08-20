@@ -25,7 +25,7 @@ if qualite == 'a':
 elif qualite == 'b':
     DOSSIER_QUALITE = "seisbenchB"
 else:
-    DOSSIER_QUALITE = "seisbench"
+    DOSSIER_QUALITE = "seisbenchC"
 
 #path pour lire les data
 path_folder_data = os.path.join(BASE_DIR, DOSSIER_QUALITE)
