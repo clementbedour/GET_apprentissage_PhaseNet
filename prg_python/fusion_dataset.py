@@ -10,7 +10,7 @@ if len(sys.argv) > 1:
     if 'a'==var :
         SOURCES = {
                 "Original": os.path.join(BASE_DIR, "seisbenchA/seisbench_format"),
-                "Bruit": os.path.join(BASE_DIR, "seisbench/seisbench_format_noise"),
+                "Bruit": os.path.join(BASE_DIR, "seisbenchD/seisbench_format_noise"),
                 "Gold": os.path.join(BASE_DIR, "seisbenchA/seisbench_format_gold")
             }
         DIR_FINAL = os.path.join(BASE_DIR, "seisbenchA/seisbench_dataset_ultime")
@@ -18,7 +18,7 @@ if len(sys.argv) > 1:
     elif 'b'==var :
         SOURCES = {
                 "Original": os.path.join(BASE_DIR, "seisbenchB/seisbench_format"),
-                "Bruit": os.path.join(BASE_DIR, "seisbench/seisbench_format_noise"),
+                "Bruit": os.path.join(BASE_DIR, "seisbenchD/seisbench_format_noise"),
                 "Gold": os.path.join(BASE_DIR, "seisbenchB/seisbench_format_gold")
             }
         DIR_FINAL = os.path.join(BASE_DIR, "seisbenchB/seisbench_dataset_ultime")
@@ -26,21 +26,22 @@ if len(sys.argv) > 1:
     elif 'c'==var :
         var = 'c'
         SOURCES = {
-            "Original": os.path.join(BASE_DIR, "seisbench/seisbench_format"),                "Bruit": os.path.join(BASE_DIR, "seisbench/seisbench_format_noise"),
-            "Gold": os.path.join(BASE_DIR, "seisbench/seisbench_format_gold")
+            "Original": os.path.join(BASE_DIR, "seisbenchC/seisbench_format"),
+            "Bruit": os.path.join(BASE_DIR, "seisbenchD/seisbench_format_noise"),
+            "Gold": os.path.join(BASE_DIR, "seisbenchC/seisbench_format_gold")
         }
-        DIR_FINAL = os.path.join(BASE_DIR, "seisbench/seisbench_dataset_ultime")
+        DIR_FINAL = os.path.join(BASE_DIR, "seisbenchC/seisbench_dataset_ultime")
 
 else :
     var = 'c'
     #les 3 repertoires à fusionner 
     SOURCES = {
-        "Original": os.path.join(BASE_DIR, "seisbench/seisbench_format"),
-        "Bruit": os.path.join(BASE_DIR, "seisbench/seisbench_format_noise"),
-        "Gold": os.path.join(BASE_DIR, "seisbench/seisbench_format_gold")
+        "Original": os.path.join(BASE_DIR, "seisbenchC/seisbench_format"),
+        "Bruit": os.path.join(BASE_DIR, "seisbenchD/seisbench_format_noise"),
+        "Gold": os.path.join(BASE_DIR, "seisbenchC/seisbench_format_gold")
     }
     #dossier final
-    DIR_FINAL = os.path.join(BASE_DIR, "seisbench/seisbench_dataset_ultime")
+    DIR_FINAL = os.path.join(BASE_DIR, "seisbenchC/seisbench_dataset_ultime")
 
 print(f"On veux une qualité minimal de {var}")
 os.makedirs(DIR_FINAL, exist_ok=True)

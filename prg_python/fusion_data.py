@@ -15,20 +15,20 @@ if len(sys.argv) > 1:
         DIR_FINAL = os.path.join(BASE_DIR, "seisbenchB/seisbench_dataset")
     else :
         var = 'c'
-        DIR_EVENTS = os.path.join(BASE_DIR, "seisbench/seisbench_format")
-        DIR_FINAL = os.path.join(BASE_DIR, "seisbench/seisbench_dataset")
+        DIR_EVENTS = os.path.join(BASE_DIR, "seisbenchC/seisbench_format")
+        DIR_FINAL = os.path.join(BASE_DIR, "seisbenchC/seisbench_dataset")
 else :
     var = 'c'
     #Le fichier Ground Truth
-    DIR_EVENTS = os.path.join(BASE_DIR, "seisbench/seisbench_format")
+    DIR_EVENTS = os.path.join(BASE_DIR, "seisbenchC/seisbench_format")
     #Le fichier final
-    DIR_FINAL = os.path.join(BASE_DIR, "seisbench/seisbench_dataset")
+    DIR_FINAL = os.path.join(BASE_DIR, "seisbenchC/seisbench_dataset")
 
 print(f"On veux une qualité minimal de {var}")
 
 
 # fichiers à fusionner de bruit
-DIR_NOISE = os.path.join(BASE_DIR, "seisbench/seisbench_format_noise")
+DIR_NOISE = os.path.join(BASE_DIR, "seisbenchD/seisbench_format_noise")
 
 os.makedirs(DIR_FINAL, exist_ok=True)
 
