@@ -12,7 +12,7 @@ from collections import Counter
 
 #------------PARAMETRES--------------------
 BASE_DIR = "../data"
-EXISTING_METADATA_CSV = os.path.join(BASE_DIR, "seisbench/seisbench_format/metadata.csv") 
+EXISTING_METADATA_CSV = os.path.join(BASE_DIR, "seisbenchD/seisbench_format/metadata.csv") 
 
 
 BASE_MSEED ="/get/ggs/clov/mseed_data/martinique"
@@ -21,7 +21,7 @@ MSEED_DIR = os.path.join(BASE_MSEED, "MQ")
 #BASE_MSEED ="../data"
 #MSEED_DIR = os.path.join(BASE_MSEED, "2014/MQ")
 
-OUTPUT_DIR = os.path.join(BASE_DIR, "seisbench/seisbench_format_noise")
+OUTPUT_DIR = os.path.join(BASE_DIR, "seisbenchD/seisbench_format_noise")
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 path_csv = os.path.join(OUTPUT_DIR, "metadata.csv")
 path_hdf5 = os.path.join(OUTPUT_DIR, "waveforms.hdf5")
@@ -45,6 +45,7 @@ STA_LTA_THRESHOLD = 1.60 #pas en dessous de 1.6
 # --- PARAMÈTRES FILTRE ---
 FREQ_MIN = 3.0
 FREQ_MAX = 20.0
+FILTER_MARGIN_SEC = 10.0  #marge ajoute pour effet de bord
 
 
 
@@ -130,8 +131,10 @@ with sbd.WaveformDataWriter(path_csv, path_hdf5) as writer:
                     continue
                 
             try:
-                #on lis notre fichier mseed
-                st = obspy.read(random_file, starttime=t_start, endtime=t_end)
+                #ajout et soustrait marge lors de la lecture
+                read_start = t_start - FILTER_MARGIN_SEC
+                read_end = t_end + FILTER_MARGIN_SEC
+                st = obspy.read(random_file, starttime=read_start, endtime=read_end)
             except Exception:
                 rejections["erreur_lecture_donnees"] += 1
                 continue
@@ -181,6 +184,8 @@ with sbd.WaveformDataWriter(path_csv, path_hdf5) as writer:
                 rejections["filtre_nyquist"] += 1
                 continue
 
+            #troncature AVANT analyse STA/LTA
+            st.trim(starttime=t_start, endtime=t_end)
             # --- VÉRIFICATION STA/LTA ---
             is_pure_noise = True
             for tr in st:
@@ -249,7 +254,8 @@ with sbd.WaveformDataWriter(path_csv, path_hdf5) as writer:
                 "center_sample": int((WINDOW_LENGTH_SEC / 2) * st[0].stats.sampling_rate),
                 "trace_sampling_rate_hz": st[0].stats.sampling_rate,
                 "trace_component_order": "ZNE",
-                "split": split
+                "split": split,
+                "name": "noise"
             }
             
             #on ajoute la trace et +1 car enfin fini
