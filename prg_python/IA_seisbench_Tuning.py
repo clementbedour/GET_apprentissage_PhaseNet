@@ -53,7 +53,7 @@ if mode_entrainement == 1:
     
     # on donne un poids de 2.0 pour P, 1.0 pour S, et 0.5 pour le Bruit
     #on veux qu'il se concentre surtout sur P et un peu S
-    poids_classes = torch.tensor([3.0, 1.5, 0.5], dtype=torch.float32).to(DEVICE)
+    poids_classes = torch.tensor([2, 1.5, 0.5], dtype=torch.float32).to(DEVICE)
     #voici différente valeur que j'ai pu tester
     # 2.0 1.0 0.5   
     # 5.0, 5.0, 0.1 pas mal pas à tendance à pointés à tout va car pas assez punitif sur le bruit
