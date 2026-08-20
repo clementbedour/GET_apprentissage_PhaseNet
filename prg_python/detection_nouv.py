@@ -46,12 +46,12 @@ if len(sys.argv) > 1:
         BASE_OUT = "../data/seisbenchB/seisbench_nouv"
     else :
         var = 'c'
-        MODEL_PATH = "seisbench/ml_model_v1.pt"
-        BASE_OUT = "../data/seisbench/seisbench_nouv"
+        MODEL_PATH = "seisbenchC/ml_model_v1.pt"
+        BASE_OUT = "../data/seisbenchC/seisbench_nouv"
 else :
     var = 'c'
-    MODEL_PATH = "seisbench/ml_model_v1.pt"
-    BASE_OUT = "../data/seisbench/seisbench_nouv"
+    MODEL_PATH = "seisbenchC/ml_model_v1.pt"
+    BASE_OUT = "../data/seisbenchC/seisbench_nouv"
 
 print(f"On veux une qualité minimal de {var}")
 

@@ -36,11 +36,11 @@ if qualite == 'a':
 elif qualite == 'b':
     DOSSIER_QUALITE = "seisbenchB"
 else:
-    DOSSIER_QUALITE = "seisbench"
+    DOSSIER_QUALITE = "seisbenchC"
 
 
 LOCAL_MODEL_PATH = os.path.join(DOSSIER_QUALITE, "ml_model_v1.pt")
-SAVE_MODEL_PATH = os.path.join(DOSSIER_QUALITE, "ml_model_v2.pt")
+#SAVE_MODEL_PATH = os.path.join(DOSSIER_QUALITE, "ml_model_v2.pt")
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 if mode_entrainement == 1:
@@ -53,7 +53,10 @@ if mode_entrainement == 1:
     
     # on donne un poids de 2.0 pour P, 1.0 pour S, et 0.5 pour le Bruit
     #on veux qu'il se concentre surtout sur P et un peu S
-    poids_classes = torch.tensor([5.0, 5.0, 0.1], dtype=torch.float32).to(DEVICE)
+    poids_classes = torch.tensor([3.0, 1.5, 0.5], dtype=torch.float32).to(DEVICE)
+    #voici différente valeur que j'ai pu tester
+    # 2.0 1.0 0.5   
+    # 5.0, 5.0, 0.1 pas mal pas à tendance à pointés à tout va car pas assez punitif sur le bruit
 else:
     DATASET_DIR = os.path.join(BASE_DIR, DOSSIER_QUALITE, "seisbench_dataset_ultime")
     START_FROM_ZERO = False 
@@ -63,7 +66,7 @@ else:
     print(f"Mode : FINE-TUNING LOCAL depuis {LOCAL_MODEL_PATH}")
     
     # on donne un poids de 5.0 pour P, 5.0 pour S, et 0.1 pour le Bruit
-    poids_classes = torch.tensor([5.0, 5.0, 0.1], dtype=torch.float32).to(DEVICE)
+    poids_classes = torch.tensor([5.0, 2.5, 0.5], dtype=torch.float32).to(DEVICE)
 
 print(f"On veux une qualité minimal de {qualite}")
 
@@ -165,7 +168,7 @@ optimizer = torch.optim.Adam(model.parameters(), lr=LEARNING_RATE)
 # perte pondéré
 # .view(1, -1, 1) transforme le tenseur de taille [3] en [1, 3, 1]
 poids_reshaped = poids_classes.view(1, -1, 1)
-# 3. Initialiser la BCELoss native avec ces poids
+#Init la BCELoss native avec ces poids
 criterion = nn.BCELoss(weight=poids_reshaped)
 
 # entrainement
@@ -223,7 +226,7 @@ for epoch in range(EPOCHS):
         elif qualite == 'b':
             save_name = "seisbenchB/ml_model_v2.pt" if not START_FROM_ZERO else LOCAL_MODEL_PATH
         else:
-            save_name = "seisbench/ml_model_v2.pt" if not START_FROM_ZERO else LOCAL_MODEL_PATH
+            save_name = "seisbenchC/ml_model_v2.pt" if not START_FROM_ZERO else LOCAL_MODEL_PATH
         
         dossier_parent = os.path.dirname(save_name)
         if dossier_parent != "":

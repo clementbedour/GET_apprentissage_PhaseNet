@@ -24,12 +24,12 @@ if len(sys.argv) > 1:
         os.makedirs("../images/seisbenchB", exist_ok=True)
         OUTPUT_PLOT = os.path.join("../images/seisbenchB", "distribution_journaliere_vt.png")
     else:
-        BASE_OUT = "../data/seisbench/seisbench_nouv"
-        os.makedirs("../images/seisbench", exist_ok=True)
-        OUTPUT_PLOT = os.path.join("../images/seisbench", "distribution_journaliere_vt.png")
+        BASE_OUT = "../data/seisbenchC/seisbench_nouv"
+        os.makedirs("../images/seisbenchC", exist_ok=True)
+        OUTPUT_PLOT = os.path.join("../images/seisbenchC", "distribution_journaliere_vt.png")
 else:
     var = 'c'
-    BASE_OUT = "../data/seisbench/seisbench_nouv"
+    BASE_OUT = "../data/seisbenchC/seisbench_nouv"
 
 # ------------ PARAMÈTRES ------------
 EVENTS_CSV = os.path.join(BASE_OUT, "catalogue_vt_detectes_evenements_valides.csv")

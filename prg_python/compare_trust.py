@@ -32,7 +32,7 @@ if qualite == 'a':
 elif qualite == 'b':
     DOSSIER_QUALITE = "seisbenchB"
 else:
-    DOSSIER_QUALITE = "seisbench"
+    DOSSIER_QUALITE = "seisbenchC"
 
 #path modele
 MODEL_V1_PATH = os.path.join(DOSSIER_QUALITE, "ml_model_v1.pt")
@@ -66,6 +66,9 @@ def evaluer_modele(path_modele, dataset_path):
     model.eval()
 
     dataset = sbd.WaveformDataset(dataset_path, component_order="ZNE", sampling_rate=SAMPLING_RATE)
+    
+    #on exclu le bruit (pb barre O.O)
+    dataset.filter(dataset.metadata['name'] != 'noise')
     test_dataset = dataset.test()
 
     transforms = [
