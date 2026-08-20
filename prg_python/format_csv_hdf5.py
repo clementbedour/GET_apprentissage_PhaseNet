@@ -20,12 +20,14 @@ if len(sys.argv) > 1:
         OUTPUT_DIR = os.path.join(BASE_DIR, "seisbenchA/seisbench_format")
     elif var=='b' :
         OUTPUT_DIR = os.path.join(BASE_DIR, "seisbenchB/seisbench_format")
+    elif var=='d' :
+            OUTPUT_DIR = os.path.join(BASE_DIR, "seisbenchD/seisbench_format")
     else :
         var = 'c'
-        OUTPUT_DIR = os.path.join(BASE_DIR, "seisbench/seisbench_format")
+        OUTPUT_DIR = os.path.join(BASE_DIR, "seisbenchC/seisbench_format")
 else :
     var = 'c'
-    OUTPUT_DIR = os.path.join(BASE_DIR, "seisbench/seisbench_format")
+    OUTPUT_DIR = os.path.join(BASE_DIR, "seisbenchC/seisbench_format")
 
 print(f"On veux une qualité minimal de {var}")
 
@@ -52,6 +54,7 @@ GAP_ACCEPT = 1.0  # en secondes
 # --- PARAMÈTRES FILTRE ---
 FREQ_MIN = 3.0
 FREQ_MAX = 20.0
+FILTER_MARGIN_SEC = 10.0  #marge ajoute pour effet de bord
 
 stations_info = {}
 # construction du dico station grâce au repertoire ../data/csv
@@ -78,28 +81,25 @@ all_pick_files = os.listdir(PICK_DIR)
 pick_files = []
 
 #on garde en fonction de la qualité que l'on veux 
-if var == 'a' : #que les pointés avec 'a' dans le nom'
-    for f in all_pick_files:
-        has_a = 'a' in f
-        path_good_files = os.path.join(PICK_DIR, f)
+for f in all_pick_files:
+    path_good_files = os.path.join(PICK_DIR, f)
+    
+    # On vérifie d'abord si c'est bien un fichier valide
+    if os.path.isfile(path_good_files):
+        keep_file = False
         
-        if has_a and os.path.isfile(path_good_files):
-            pick_files.append(f)
-
-elif var == 'b': #'a' OU 'b' dans le nom
-    for f in all_pick_files:
-        has_a_or_b = ('a' in f) or ('b' in f)
-        path_good_files = os.path.join(PICK_DIR, f)
-        
-        if has_a_or_b and os.path.isfile(path_good_files):
-            pick_files.append(f)
-
-else :# on enleve les fichiers qui on un 'd'
-    for f in all_pick_files:
-        files_without_d = 'd' not in f
-        path_good_files = os.path.join(PICK_DIR, f)
-        
-        if files_without_d and os.path.isfile(path_good_files):
+        # On définit la condition de tri en fonction de la variable
+        if var == 'a': #que les pointés avec 'a' dans le nom
+            keep_file = 'a' in f
+        elif var == 'b': #'a' OU 'b' dans le nom
+            keep_file = ('a' in f) or ('b' in f)
+        elif var == 'd': #
+            keep_file = ('a' in f) or ('b' in f) or ('c' in f) or ('d' in f)
+        else: # on enleve les fichiers qui on un 'd'
+            keep_file = 'd' not in f
+            
+        #on ajoute le fichier s'il passe le filtre
+        if keep_file:
             pick_files.append(f)
 
 print("Utilisation de", len(pick_files), "fichiers de pointé,", len(all_pick_files), "au total (avec 'd')")
@@ -213,6 +213,10 @@ with sbd.WaveformDataWriter(path_csv, path_hdf5) as writer:
         if window is None:
             continue
         start_window, end_window, year, julian_day = window
+        
+        #application marge pour lecture brute
+        read_start = start_window - FILTER_MARGIN_SEC
+        read_end = end_window + FILTER_MARGIN_SEC
 
         folder_mseed = os.path.join(MSEED_DIR, stat)
         if not os.path.exists(folder_mseed):
@@ -232,7 +236,8 @@ with sbd.WaveformDataWriter(path_csv, path_hdf5) as writer:
         st = obspy.Stream()
         for f in mseed_files:
             try:
-                st_temp = obspy.read(f, starttime=start_window, endtime=end_window)
+                #lecture avec fenetre large
+                st_temp = obspy.read(f, starttime=read_start, endtime=read_end)
                 st += st_temp
             except Exception as e:
                 nbr_read_fail = 1 + nbr_read_fail
@@ -270,6 +275,9 @@ with sbd.WaveformDataWriter(path_csv, path_hdf5) as writer:
                 tr.filter("highpass", freq=FREQ_MIN)
             else:
                 tr.filter("bandpass", freqmin=FREQ_MIN, freqmax=safe_freq_max)
+        
+        #troncature pour sup marges et avoir la bonne taille
+        st.trim(starttime=start_window, endtime=end_window)
 
         expected_components = ["Z", "N", "E"]
         existing_components = []
@@ -338,7 +346,8 @@ with sbd.WaveformDataWriter(path_csv, path_hdf5) as writer:
             "center_sample": center_sample,
             "trace_sampling_rate_hz": sampling_rate,
             "trace_component_order": "ZNE",
-            "split": split
+            "split": split,
+            "name": "manuel"
         }
 
         writer.add_trace(trace_metadata, data_array)
