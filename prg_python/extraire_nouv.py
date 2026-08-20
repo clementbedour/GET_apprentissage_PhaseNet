@@ -21,12 +21,12 @@ if len(sys.argv) > 1:
         OUTPUT_DATASET_DIR = os.path.join(BASE_DIR, "seisbenchB/seisbench_format_gold")
     else :
         var = 'c'
-        BASE_OUT = "../data/seisbench/seisbench_nouv"
-        OUTPUT_DATASET_DIR = os.path.join(BASE_DIR, "seisbench/seisbench_format_gold")
+        BASE_OUT = "../data/seisbenchC/seisbench_nouv"
+        OUTPUT_DATASET_DIR = os.path.join(BASE_DIR, "seisbenchC/seisbench_format_gold")
 else :
     var = 'c'
-    BASE_OUT = "../data/seisbench/seisbench_nouv"
-    OUTPUT_DATASET_DIR = os.path.join(BASE_DIR, "seisbench/seisbench_format_gold")
+    BASE_OUT = "../data/seisbenchC/seisbench_nouv"
+    OUTPUT_DATASET_DIR = os.path.join(BASE_DIR, "seisbenchC/seisbench_format_gold")
 
 print(f"On veux une qualité minimal de {var}")
 
@@ -44,7 +44,7 @@ os.makedirs(OUTPUT_DATASET_DIR, exist_ok=True)
 PATH_METADATA = os.path.join(OUTPUT_DATASET_DIR, "metadata.csv")
 PATH_HDF5 = os.path.join(OUTPUT_DATASET_DIR, "waveforms.hdf5")
 
-OLD_DATASET_DIR = os.path.join(BASE_DIR, "seisbench/seisbench_format")
+OLD_DATASET_DIR = os.path.join(BASE_DIR, "seisbenchD/seisbench_format")
 OLD_METADATA_CSV = os.path.join(OLD_DATASET_DIR, "metadata.csv")
 
 # Paramètres d'extraction
@@ -54,6 +54,7 @@ EXPECTED_COMPONENTS = ["Z", "N", "E"]
 # --- PARAMÈTRES FILTRE ---
 FREQ_MIN = 3.0
 FREQ_MAX = 20.0
+FILTER_MARGIN_SEC = 10.0  #marge ajoute pour effet de bord
 TMP_DUPLICATES = 5.0  # Tolérance temporelle (s)
 
 #chargement des catalogues
@@ -149,6 +150,11 @@ with sbd.WaveformDataWriter(PATH_METADATA, PATH_HDF5) as writer:
             
             start_window = t_p - PRE_PICK_SEC
             end_window = t_p + POST_PICK_SEC
+            
+            #fenetre large pour lecture
+            read_start = start_window - FILTER_MARGIN_SEC
+            read_end = end_window + FILTER_MARGIN_SEC
+            
             year = t_p.year
             julian_day = t_p.julday
             
@@ -161,31 +167,38 @@ with sbd.WaveformDataWriter(PATH_METADATA, PATH_HDF5) as writer:
             st = obspy.Stream()
             for f in mseed_files:
                 try:
-                    st += obspy.read(f, starttime=start_window, endtime=end_window)
+                    #lecture avec fenetre large
+                    st += obspy.read(f, starttime=read_start, endtime=read_end)
                 except Exception:
                     erreurs_lecture += 1
                     pass
             
             if len(st) == 0:
                 continue
-                
-            try:
-                st.merge(method=1, fill_value=0)
-                st.detrend("linear")
-                #passe bande
-                st.filter("bandpass", freqmin=FREQ_MIN, freqmax=FREQ_MAX)
-            except Exception:
-                continue
-                
-            #force la freq a 100 Hz
+            
             for tr in st:
                 if tr.stats.sampling_rate != 100.0:
                     try:
                         tr.interpolate(100.0)
                     except Exception:
                         tr.resample(100.0)
+                
+                #TH de Shannon-Nyquist
+                nyquist = tr.stats.sampling_rate / 2.0
+                safe_freq_max = min(FREQ_MAX, nyquist - 0.1)
 
-            # 2. Complète les composantes manquantes avec du zéro au lieu de tout jeter
+                #filtre
+                if safe_freq_max <= FREQ_MIN:
+                    tr.filter("highpass", freq=FREQ_MIN)
+                else:
+                    #passe bande
+                    tr.filter("bandpass", freqmin=FREQ_MIN, freqmax=safe_freq_max)
+            
+
+            #troncature pour supp marge
+            st.trim(starttime=start_window, endtime=end_window)
+
+            #complète les composantes manquantes avec du zéro au lieu de tout jeter
             existing_components = [tr.stats.channel[-1] for tr in st]
             trace_modele = st[0]
 
@@ -226,7 +239,7 @@ with sbd.WaveformDataWriter(PATH_METADATA, PATH_HDF5) as writer:
                 "trace_sampling_rate_hz": sampling_rate,
                 "trace_component_order": "ZNE",
                 "split": split,
-                "gold_standard": True
+                "name":"gold"
             }
             
             writer.add_trace(trace_metadata, data_array)
