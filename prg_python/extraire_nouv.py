@@ -197,6 +197,9 @@ with sbd.WaveformDataWriter(PATH_METADATA, PATH_HDF5) as writer:
 
             #troncature pour supp marge
             st.trim(starttime=start_window, endtime=end_window)
+            
+            if len(st) == 0:
+                continue
 
             #complète les composantes manquantes avec du zéro au lieu de tout jeter
             existing_components = [tr.stats.channel[-1] for tr in st]
