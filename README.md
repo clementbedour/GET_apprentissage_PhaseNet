@@ -11,6 +11,7 @@ Ce répertoire a pour but d'automatiser et d'utiliser **SeisBench** et **PhaseNe
 5. [Étape 3 : Affichage des résultats](#étape-3--affichage-des-résultats)
 6. [Étape 4 : Base de données Volpick](#étape-4--base-de-données-volpick)
 7. [Tags](#les-tags)
+7. [Améliorations possibles](#améliorations-possibles)
 
 
 ## Architecture du Projet
@@ -64,12 +65,13 @@ Cette première phase permet de formater les données brutes et de valider visue
 
 Tous les fichiers générés à cette étape seront stockés dans `data/seisbench<qualite>`. Les poids des modèles entraînés seront sauvegardés dans `prg_python/seisbench<qualite>`. En fonction des qualités choisies, la localisation des sauvegardes pourra légèrement différer (mais tout sera semblable à l'intérieur).<br>
 Pour tous les programmes suivants, nous devons rentrer comme paramètres le minimum de qualité voulu `a` (que les qualités a), `b` (les qualités a et b) ou `c`(les qualités a, b et c). Si aucun argument n'est donné, il prendra par défaut la qualité `c`.<br>
-Pour l'emplacement des miniseed, le chemin d'accés va probablement différé. La constante est toujours vers le début des programmes `BASE_MSEED`. Il faudra modifier les programmes format_csv_hdf5, gene_noise, detection_nouv.py et extraire_nouv.py.<br>
-Tous les codes vont générer un fichier `metadata.csv` et `waveform.hdf5` (les noms ne sont malheureusement pas changeables, obligation SeisBench), je préciserais donc seulement le dossier où ils seront créés.
+Pour l'emplacement des miniseed, le chemin d'accès peut probablement différer. La constante est toujours vers le début des programmes `BASE_MSEED`. Il faudra modifier les programmes format_csv_hdf5, gene_noise, detection_nouv.py et extraire_nouv.py.<br>
+Tous les codes vont générer un fichier `metadata.csv` et `waveform.hdf5` (les noms ne sont malheureusement pas changeables, obligation SeisBench), je préciserais donc seulement le dossier où ils seront créés.<br>
+Pour un exemple des sorties que le terminal peut vous afficher, vous pouvez regarder dans /out.
 
 *   **Création de la base "Ground Truth" :** Lancez `format_csv_hdf5.py <qualite>`. Cela génère le répertoire `seisbench_format` à partir de vos pointés validés. Ce programme met au bon format nos pointés modifiés grâce à Snuffler pour utiliser SeisBench.
 
-*   **Génération du bruit :** Il faut lancer `format_csv_hdf5.py c` avant si ça n'a pas été fait, c'est **obligatoire** pour ne pas trouver du bruit sur un événement, même avec une mauvaise qualité. Maintenant, exécutez `gene_noise.py`, pour créer la base de données de bruit dans `seisbench_format_noise`. L'ajustement des fenêtres STA/LTA se fait via la variable `STA_LTA_THRESHOLD`, valeur du rapport signal sur bruit (une valeur inférieure à 1.6 est déconseillée). La création du fichier sera forcément générée dans `data/seisbench` (peu importe la qualité).
+*   **Génération du bruit :** Il faut lancer `format_csv_hdf5.py d` avant, c'est **obligatoire** pour ne pas trouver du bruit trop proche d'un événement, même avec une mauvaise qualité. Maintenant, exécutez `gene_noise.py`, pour créer la base de données de bruit dans `seisbench_format_noise`. L'ajustement des fenêtres STA/LTA se fait via la variable `STA_LTA_THRESHOLD`, valeur du rapport signal sur bruit (une valeur inférieure à 1.6 est déconseillée). La création du fichier sera forcément générée dans `data/seisbenchD` (peu importe la qualité en argument).
 
 *   **Fusion pour l'entraînement initial :** Lancez `fusion_data.py <qualite>` pour combiner le Ground Truth et le bruit dans `seisbench_dataset`. C'est notre première base de données (dataset) pour l'entraînement de notre modèle.
 
@@ -80,9 +82,17 @@ Vous pouvez ajuster les filtres `MIN_STATIONS` ligne 30, nombre de stations mini
 Un autre paramètre pouvant être changé est `MAX_EVENT_DAY`. Il supprime entièrement la journée si, après les filtres et la multi-association, il y a plus de `MAX_EVENT_DAY` événements. J'ai choisi 200 assez arbitrairement.
 
 *   **Extraction de la base "Gold" :** Exécutez `extraire_nouv.py <qualite>` pour mettre au bon format les nouvelles détections valides dans `seisbench_format_gold`. A partir de ce moment, nous avons la base de données "Gold-Standard" qui ne contient que les meilleurs événements.<br>
-Vous avez la ligne `Événements/Traces connus RETROUVÉS :` qui sera affichée à la fin. Le nombre d'événements retrouvés est cherché parmi la base avec comme qualité minimum `c`, donc le maximum d'événements connus.
+Vous avez la ligne `Événements/Traces connus RETROUVÉS :` qui sera affichée à la fin. Le nombre d'événements retrouvés est cherché parmi la base `d`, donc le maximum d'événements connus.
 
-*   **Base de données ultime :** Lancez `fusion_dataset.py <qualite>` pour regrouper le Ground Truth, le Bruit et la base Gold dans `seisbench_dataset_ultime`. Nous avons donc maintenant la base de données pour le second entraînement prête. Nous allons pouvoir faire du transfert pour affiner nos poids.
+
+*   **Association des événements avec PyOcto :** C'est la seule étape qui n'est pas nécessaire au bon fonctionnement du code, mais le résultat sera plus correct. Le code va lire le fichier `metadata.csv` dans `seisbench_format_gold`.<br>
+Si vous voulez utiliser l'associateur avec un maximum d'événements, lors de l'utilisation de `detection_nouv.py` vous devez réduire `THRESHOLD_P, THRESHOLD_S, MIN_STATIONS` mais augmenter fortement `MAX_EVENT_DAY` pour ne pas supprimer la journée.<br>
+En faisant ça, vous laissez PyOcto faire toute l'association, mais en conservant les bons formats pour SeisBench.<br>
+Vous pouvez donc lancer `association_pyocto.py <qualite>` pour associer les arrivées de P et S. Tout les résultats seront dans `results_pyocto`.
+
+
+*   **Base de données ultime :** Lancez `fusion_dataset.py <qualite>` pour regrouper le Ground Truth, le Bruit et la base Gold dans `seisbench_dataset_ultime`. Nous avons donc maintenant la base de données pour le second entraînement prête. Nous allons pouvoir faire du transfert pour affiner nos poids.<br>
+Attention, si vous avez lancé `association_pyocto.py`, lors de la fusion des bases de données, il va regarder l'existence de `results_pyocto`. Si le répertoire existe, alors il ne va pas fusionner avec la base Gold, mais avec la base de PyOcto. Donc, si vous voulez tout relancer pour tester, vous devez supprimer le répertoire.
 
 *   **Affinement par Fine-Tuning (Modèle 2) :** Exécutez `IA_seisbench_Tuning.py 2 <qualite>`. Les paramètres `EPOCHS`, `LEARNING_RATE` et `SIGMA` sont réduits pour cette étape de précision (ligne 60 à 62). Je trouve que les paramètres choisis sont optimaux pour ma base de données. Seulement le paramètre `poids_classes` n'est pas changé, je n'ai pas réussi à trouver une certaine logique pour lui indiquer la marche à suivre.
 
@@ -105,27 +115,29 @@ Le pipeline génère des graphiques de performance sans nécessiter d'affichage 
 *   **Visualisation des pointés de l'IA :** Lancez `test_IA.py 1 <qualite>` (pour le modèle 1) ou `test_IA.py 2 <qualite>` (pour le modèle 2) pour vérifier les distributions gaussiennes générées. La base de test est tirée aléatoirement à 10% du dataset global et reste invisible pour l'IA durant l'entraînement. La constante que vous pouvez changer est `SEUIL_PROB` à la ligne 69 pour afficher la probabilité minimale à enregistrer (conseil : rester à 0.8). Vous pouvez aussi modifier `NB_EXEMPLES_SAVE` ligne 74.<br>
 Pour le modèle 1, les pointés manuels sont en magenta et cyan, les pointés de la V1 sont bleu et rouge (s'ils dépassent 0.3 surtout pour la S).<br>
 Pour le modèle 2, les pointés magenta et cyan sont les pointés trouvés par la V1 pour détecter l'événement. Les pointés rouges et bleus sont ceux de la V2.<br
-Pour les images de la V2, si vous avez [Manuels] alors l'événement fait partie de votre base de données Ground Truth et si [Trouvé par l'IA] alors l'événement et tous les pointés ont été faits par l'IA.
+Pour les images de la V2, si vous avez [MANUEL] alors l'événement fait partie de votre base de données Ground Truth et si [GOLD] alors l'événement et tous les pointés ont été faits par l'IA.<br>
+Que ce soit pour la V1 ou la V2, il peut aussi y avoir [NOISE]. Il s'agit donc d'une donnée qui vient de la génération du bruit. Durant mes différentes utilisations, les probabilités de P et S étaient toujours à 0.0, si elles changent, vous allez avoir un problème.
 <div align="center">
     <img src="https://github.com/clementbedour/GET_apprentissage_PhaseNet/blob/main/images/seisbenchB/V2/trace_182_modele_2_qualite_b.png" alt="Picture Modele 2" width="50%">
 </div>
 
-*   **Affichage fonction de perte :** Lancez `compare_trust.py 1 <qualite>` ou `compare_trust.py 2 <qualite>` pour vérifier l'évolution des courbes des pertes (courbes d'apprentissage) au fur et à mesure des epochs.
+*   **Affichage fonction de perte :** Lancez `loss_curve.py 1 <qualite>` ou `loss_curve.py 2 <qualite>` pour vérifier l'évolution des courbes des pertes (courbes d'apprentissage) au fur et à mesure des epochs.
 <div align="center">
     <img src="https://github.com/clementbedour/GET_apprentissage_PhaseNet/blob/main/images/seisbenchB/loss_curve_b_scratch.png" alt="Picture Loss Curve scratch" width="49%">
     <img src="https://github.com/clementbedour/GET_apprentissage_PhaseNet/blob/main/images/seisbenchB/loss_curve_b_finetuning.png" alt="Picture Loss Curve finetuning" width="49%">
 </div>
 
-*   **Scores de confiance :** Lancez `metrics.py 1 <qualite>` ou `metrics.py 2 <qualite>` pour constater la répartition du score de confiance sur tous les événements détectés.
+*   **Scores de confiance :** Lancez `compare_trust.py 1 <qualite>` ou `compare_trust.py 2 <qualite>` pour constater la répartition du score de confiance sur tous les événements détectés.
 <div align="center">
     <img src="https://github.com/clementbedour/GET_apprentissage_PhaseNet/blob/main/images/seisbenchB/confiance_V1_b.png" alt="Picture Score Confidence scratch" width="49%">
     <img src="https://github.com/clementbedour/GET_apprentissage_PhaseNet/blob/main/images/seisbenchB/confiance_V2_b.png" alt="Picture Score Confidence detection" width="49%">
 </div>
 
-*   **Répartition temporelle :** Lancez `image_event_day.py <qualite>` pour visualiser la répartition du nombre de nouveaux événements découverts.
+*   **Répartition temporelle :** Lancez `image_event_day.py <qualite>` pour visualiser la répartition du nombre de nouveaux événements découverts. Si vous avez utilisé l'associateur PyOcto, il va utiliser ce répertoire s'il existe.
 <div align="center">
     <img src="https://github.com/clementbedour/GET_apprentissage_PhaseNet/blob/main/images//seisbenchB/distribution_journaliere_vt.png" alt="Picture Event Day" width="75%">
 </div>
+Nous voyons que le jour 5ème jour a beaucoup d'événements détectés. Nous avons pu remarquer que c'est à cause d'un événement sismique de forte intensité sur la Martinique. Nous avons donc beaucoup de détections, il a pu arriver que ça dépasse les 200 détections en fonction des modèles, donc le jour peut être supprimé en fonction de vos paramètres.
 
 ---
 
@@ -148,7 +160,12 @@ Ce tag est juste une version antérieure. Si vous avez des problèmes avec la de
 ## Tag 2 : version final
 
 Tous les codes liés à l'utilisation d'une base manuelle sont corrects et marchent.<br>
-Pour Volpick, je n'ai malheureusement pas eu le temps de finir. Les codes sont présents mais je pense qu'il existe des problèmes après le second entraînement (via Fine-Tuning sur toutes nos données). L'affichage de `test_IA` n'est pas complet.
+Pour Volpick, je n'ai malheureusement pas eu le temps de finir. Les codes sont présents mais je pense qu'il existe des problèmes après le second entraînement (via Fine-Tuning sur toutes nos données). L'affichage de `volpick_test_IA` n'est pas complet. Plusieurs fonctionnalités présentes dans le traitement classique n'ont pas été reportées pour Volpick. Il serait intéressant de faire une harmonisation des versions. La version la plus récente sera toujours la version qui commence from scratch.
 
+mettre le bon nom pour les images
 
-enlever truc affichage wsl (compliqué affichage)
+# Améliorations possibles
+
+J'ai pensé à quelques améliorations que je n'ai pas pu faire et/ou vraiment tester : <br>
+`    - `Il faudrait potentiellement revoir les pointés, ils ne sont pas mauvais, mais certains pourraient être améliorés, surtout la qualité c.<br>
+`    - `Vous pouvez aussi changer le filtre que j'applique. Il est choisi arbitrairement entre 3 et 20 Hz mais il serait sûrement plus pertinent de le mettre entre 1 et 40 Hz. A ce moment il faudrait juste remettre le filtre pour l'affichage dans `test_IA`.
