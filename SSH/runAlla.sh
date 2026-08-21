@@ -9,7 +9,7 @@ cd /home/clov/seisbench_VT/prg_python
 
 echo "a"
 
-#python format_csv_hdf5.py c
+#python format_csv_hdf5.py d
 #python gene_noise.py
 
 python format_csv_hdf5.py a
@@ -23,9 +23,9 @@ cd /home/clov/seisbench_VT/prg_python
 
 
 python test_IA.py 1 a
-python metrics.py 1 a
+python loss_curve.py 1 a
 python compare_trust.py 1 a
-
+python compare_noise.py 1 a
 
 python detection_nouv.py a
 python extraire_nouv.py a
@@ -35,9 +35,9 @@ python IA_seisbench_Tuning.py 2 a
 
 python test_IA.py 2 a
 python image_event_day.py a
-python metrics.py 2 a
+python loss_curve.py 2 a
 python compare_trust.py 2 a
-
+python compare_noise.py 2 a
 
 echo "FIN"
 conda deactivate
