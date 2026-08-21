@@ -1,0 +1,195 @@
+Fri Aug 21 13:07:26 CEST 2026
+/usr/local/miniconda/bin:/usr/local/SINGULARITY/OPENMPI-3.1.4-GNU731/bin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
+b
+The required number of picks per event (4) is lower than twice the number of stations with both P and S pick (3). The effective number of picks required will be 6.
+The required number of P picks per event (1) is lower than the number of stations with both P and S pick (3). The effective number of P picks required will be 3.
+The required number of S picks per event (1) is lower than the number of stations with both P and S pick (3). The effective number of S picks required will be 3.
+Lancement de PyOcto pour la qualité : b
+Chargement des stations
+Chargement et formatage des données
+Création du modèle de vitesse
+Configuration de PyOcto
+Association en cours
+Terminé ! 118 événements trouvés.
+
+Aperçu des événements :
+   idx          time         x  ...   latitude  longitude      depth
+0    0  1.393114e+09 -0.431128  ...  14.837388 -61.179216   8.203125
+1    1  1.393246e+09  2.155639  ...  14.837387 -61.155182   7.421875
+2    2  1.393330e+09 -0.431128  ...  14.797193 -61.179215   5.078125
+3    3  1.393401e+09  0.431128  ...  14.813271 -61.171205   3.515625
+4    4  1.393592e+09 -2.155639  ...  14.813270 -61.195236  10.546875
+
+[5 rows x 9 columns]
+
+Aperçu des assignations (picks rattachés aux événements) :
+   event_idx  pick_idx  residual  ... phase           trace_name raw_idx
+0          0        46  0.233899  ...     P  bucket0$31,:3,:6001      36
+1          0        47 -0.476340  ...     P  bucket0$32,:3,:6001      37
+2          0        48 -0.335182  ...     P  bucket0$33,:3,:6001      38
+3          0        49 -0.215198  ...     P  bucket0$34,:3,:6001      39
+4          0        50  0.479205  ...     S  bucket0$34,:3,:6001      39
+
+[5 rows x 8 columns]
+Les événements ont été sauvegardés dans : ../data/seisbenchB/results_pyocto/catalogue_evenements.csv
+Les assignations ont été sauvegardées dans : ../data/seisbenchB/results_pyocto/picks_associes.csv
+Mise à jour du fichier metadata au format SeisBench
+Fichier SeisBench mis à jour sauvegardé ici : ../data/seisbenchB/results_pyocto/metadata_associated_seisbench.csv
+On veux une qualité minimal de b
+Chargement des datasets sources
+   -> Métadonnées PyOcto trouvées pour la qualité Gold !
+-> Original : 459 traces chargées.
+-> Bruit : 657 traces chargées.
+-> Gold : 3530 traces chargées.
+
+Début de la fusion dans ../data/seisbenchB/seisbench_dataset_ultime
+Copie des traces depuis : Original
+Traces converted: 0it [00:00, ?it/s]Traces converted: 16it [00:00, 157.37it/s]Traces converted: 35it [00:00, 171.90it/s]Traces converted: 53it [00:00, 161.63it/s]Traces converted: 70it [00:00, 136.49it/s]Traces converted: 85it [00:00, 127.55it/s]Traces converted: 99it [00:00, 122.28it/s]Traces converted: 112it [00:00, 118.39it/s]Traces converted: 124it [00:00, 116.48it/s]Traces converted: 136it [00:01, 114.07it/s]Traces converted: 148it [00:01, 111.86it/s]Traces converted: 160it [00:01, 110.85it/s]Traces converted: 172it [00:01, 110.94it/s]Traces converted: 184it [00:01, 110.74it/s]Traces converted: 196it [00:01, 110.11it/s]Traces converted: 208it [00:01, 109.58it/s]Traces converted: 220it [00:01, 109.95it/s]Traces converted: 232it [00:01, 110.71it/s]Traces converted: 244it [00:02, 109.49it/s]Traces converted: 255it [00:02, 109.49it/s]Traces converted: 267it [00:02, 109.91it/s]Traces converted: 279it [00:02, 110.04it/s]Traces converted: 291it [00:02, 106.58it/s]Traces converted: 302it [00:02, 107.17it/s]Traces converted: 313it [00:02, 106.93it/s]Traces converted: 325it [00:02, 108.48it/s]Traces converted: 337it [00:02, 109.77it/s]Traces converted: 349it [00:03, 110.44it/s]Traces converted: 361it [00:03, 111.00it/s]Traces converted: 377it [00:03, 124.47it/s]Traces converted: 391it [00:03, 128.70it/s]Traces converted: 404it [00:03, 123.12it/s]Traces converted: 417it [00:03, 120.01it/s]Traces converted: 430it [00:03, 116.93it/s]Traces converted: 442it [00:03, 112.80it/s]Traces converted: 454it [00:03, 110.85it/s]Traces converted: 466it [00:04, 110.61it/s]Traces converted: 484it [00:04, 128.61it/s]Traces converted: 502it [00:04, 141.80it/s]Traces converted: 517it [00:04, 139.75it/s]Traces converted: 532it [00:04, 130.62it/s]Traces converted: 546it [00:04, 125.10it/s]Traces converted: 559it [00:04, 120.81it/s]Traces converted: 572it [00:04, 117.74it/s]Traces converted: 584it [00:04, 116.14it/s]Traces converted: 596it [00:05, 114.54it/s]Traces converted: 608it [00:05, 112.72it/s]Traces converted: 620it [00:05, 111.31it/s]Traces converted: 632it [00:05, 110.58it/s]Traces converted: 644it [00:05, 110.39it/s]Traces converted: 656it [00:05, 108.24it/s]Traces converted: 674it [00:05, 127.29it/s]Traces converted: 689it [00:05, 132.41it/s]Traces converted: 703it [00:05, 123.10it/s]Traces converted: 716it [00:06, 117.98it/s]Traces converted: 728it [00:06, 115.08it/s]Traces converted: 740it [00:06, 112.72it/s]Traces converted: 752it [00:06, 111.95it/s]Traces converted: 764it [00:06, 109.68it/s]Traces converted: 776it [00:06, 109.47it/s]Traces converted: 787it [00:06, 107.97it/s]Traces converted: 798it [00:06, 107.98it/s]Traces converted: 809it [00:06, 107.15it/s]Traces converted: 820it [00:07, 107.54it/s]Traces converted: 831it [00:07, 107.37it/s]Traces converted: 843it [00:07, 108.66it/s]Traces converted: 855it [00:07, 109.17it/s]Traces converted: 866it [00:07, 109.35it/s]Traces converted: 877it [00:07, 108.20it/s]Traces converted: 889it [00:07, 109.60it/s]Traces converted: 901it [00:07, 110.17it/s]Traces converted: 913it [00:07, 111.17it/s]Traces converted: 925it [00:07, 111.69it/s]Traces converted: 937it [00:08, 112.16it/s]Traces converted: 949it [00:08, 112.32it/s]Traces converted: 961it [00:08, 113.17it/s]Traces converted: 973it [00:08, 114.10it/s]Traces converted: 985it [00:08, 114.77it/s]Traces converted: 997it [00:08, 116.26it/s]Traces converted: 1016it [00:08, 137.14it/s]Traces converted: 1032it [00:08, 142.93it/s]Traces converted: 1047it [00:08, 133.09it/s]Traces converted: 1061it [00:09, 128.02it/s]Traces converted: 1074it [00:09, 124.30it/s]Traces converted: 1087it [00:09, 120.16it/s]Traces converted: 1100it [00:09, 117.74it/s]Traces converted: 1112it [00:09, 116.54it/s]Traces converted: 1124it [00:09, 114.50it/s]Traces converted: 1142it [00:09, 131.30it/s]Traces converted: 1157it [00:09, 134.97it/s]Traces converted: 1171it [00:09, 122.40it/s]Traces converted: 1184it [00:10, 116.17it/s]Traces converted: 1196it [00:10, 114.08it/s]Traces converted: 1208it [00:10, 110.48it/s]Traces converted: 1220it [00:10, 108.17it/s]Traces converted: 1232it [00:10, 109.11it/s]Traces converted: 1243it [00:10, 109.02it/s]Traces converted: 1254it [00:10, 108.14it/s]Traces converted: 1265it [00:10, 107.65it/s]Traces converted: 1276it [00:10, 100.79it/s]Traces converted: 1287it [00:11, 55.82it/s] Traces converted: 1304it [00:11, 75.01it/s]Traces converted: 1320it [00:11, 91.27it/s]Traces converted: 1332it [00:11, 96.99it/s]Traces converted: 1344it [00:11, 101.71it/s]Traces converted: 1356it [00:11, 98.68it/s] Traces converted: 1370it [00:12, 107.64it/s]Traces converted: 1387it [00:12, 123.60it/s]Traces converted: 1405it [00:12, 138.15it/s]Traces converted: 1420it [00:12, 134.47it/s]Traces converted: 1438it [00:12, 145.25it/s]Traces converted: 1456it [00:12, 153.32it/s]Traces converted: 1472it [00:12, 151.45it/s]Traces converted: 1489it [00:12, 155.35it/s]Traces converted: 1505it [00:12, 138.65it/s]Traces converted: 1520it [00:13, 128.22it/s]Traces converted: 1534it [00:13, 121.91it/s]Traces converted: 1547it [00:13, 117.51it/s]Traces converted: 1559it [00:13, 114.60it/s]Traces converted: 1571it [00:13, 112.23it/s]Traces converted: 1583it [00:13, 112.40it/s]Traces converted: 1595it [00:13, 111.10it/s]Traces converted: 1607it [00:13, 109.92it/s]Traces converted: 1619it [00:13, 109.35it/s]Traces converted: 1630it [00:14, 107.32it/s]Traces converted: 1641it [00:14, 107.44it/s]Traces converted: 1653it [00:14, 108.50it/s]Traces converted: 1665it [00:14, 109.31it/s]Traces converted: 1677it [00:14, 110.52it/s]Traces converted: 1689it [00:14, 110.81it/s]Traces converted: 1701it [00:14, 110.83it/s]Traces converted: 1713it [00:14, 111.65it/s]Traces converted: 1725it [00:14, 112.01it/s]Traces converted: 1737it [00:15, 112.35it/s]Traces converted: 1749it [00:15, 113.11it/s]Traces converted: 1761it [00:15, 114.38it/s]Traces converted: 1773it [00:15, 114.40it/s]Traces converted: 1785it [00:15, 114.22it/s]Traces converted: 1797it [00:15, 109.70it/s]Traces converted: 1810it [00:15, 114.87it/s]Traces converted: 1826it [00:15, 125.75it/s]Traces converted: 1839it [00:15, 121.18it/s]Traces converted: 1852it [00:16, 118.93it/s]Traces converted: 1864it [00:16, 116.24it/s]Traces converted: 1876it [00:16, 113.78it/s]Traces converted: 1888it [00:16, 113.07it/s]Traces converted: 1900it [00:16, 112.21it/s]Traces converted: 1912it [00:16, 111.72it/s]Traces converted: 1924it [00:16, 110.49it/s]Traces converted: 1936it [00:16, 109.96it/s]Traces converted: 1948it [00:16, 109.54it/s]Traces converted: 1959it [00:17, 109.27it/s]Traces converted: 1970it [00:17, 108.65it/s]Traces converted: 1982it [00:17, 109.38it/s]Traces converted: 1994it [00:17, 110.08it/s]Traces converted: 2006it [00:17, 108.69it/s]Traces converted: 2017it [00:17, 108.22it/s]Traces converted: 2028it [00:17, 108.52it/s]Traces converted: 2040it [00:17, 109.72it/s]Traces converted: 2052it [00:17, 110.89it/s]Traces converted: 2064it [00:17, 110.43it/s]Traces converted: 2076it [00:18, 109.91it/s]Traces converted: 2087it [00:18, 109.78it/s]Traces converted: 2099it [00:18, 110.90it/s]Traces converted: 2111it [00:18, 110.93it/s]Traces converted: 2123it [00:18, 109.66it/s]Traces converted: 2134it [00:18, 107.63it/s]Traces converted: 2145it [00:18, 107.76it/s]Traces converted: 2156it [00:18, 107.03it/s]Traces converted: 2167it [00:18, 107.63it/s]Traces converted: 2178it [00:19, 107.63it/s]Traces converted: 2190it [00:19, 108.40it/s]Traces converted: 2202it [00:19, 109.27it/s]Traces converted: 2213it [00:19, 108.97it/s]Traces converted: 2224it [00:19, 107.93it/s]Traces converted: 2235it [00:19, 108.06it/s]Traces converted: 2246it [00:19, 107.39it/s]Traces converted: 2258it [00:19, 108.63it/s]Traces converted: 2270it [00:19, 109.20it/s]Traces converted: 2281it [00:19, 108.61it/s]Traces converted: 2293it [00:20, 110.37it/s]Traces converted: 2305it [00:20, 110.42it/s]Traces converted: 2317it [00:20, 110.28it/s]Traces converted: 2329it [00:20, 111.24it/s]Traces converted: 2341it [00:20, 111.90it/s]Traces converted: 2353it [00:20, 111.95it/s]Traces converted: 2365it [00:20, 111.50it/s]Traces converted: 2377it [00:20, 109.78it/s]Traces converted: 2388it [00:20, 108.07it/s]Traces converted: 2401it [00:21, 113.66it/s]Traces converted: 2418it [00:21, 129.33it/s]Traces converted: 2435it [00:21, 141.00it/s]Traces converted: 2450it [00:21, 137.22it/s]Traces converted: 2464it [00:21, 128.43it/s]Traces converted: 2477it [00:21, 124.46it/s]Traces converted: 2490it [00:21, 120.75it/s]Traces converted: 2503it [00:21, 115.47it/s]Traces converted: 2515it [00:21, 113.81it/s]Traces converted: 2527it [00:22, 113.28it/s]Traces converted: 2539it [00:22, 111.92it/s]Traces converted: 2551it [00:22, 111.92it/s]Traces converted: 2563it [00:22, 47.47it/s] Traces converted: 2576it [00:22, 58.95it/s]Traces converted: 2589it [00:23, 70.41it/s]Traces converted: 2602it [00:23, 81.09it/s]Traces converted: 2614it [00:23, 89.15it/s]Traces converted: 2626it [00:23, 94.70it/s]Traces converted: 2638it [00:23, 99.88it/s]Traces converted: 2650it [00:23, 103.25it/s]Traces converted: 2662it [00:23, 105.41it/s]Traces converted: 2674it [00:23, 107.35it/s]Traces converted: 2686it [00:23, 108.34it/s]Traces converted: 2699it [00:24, 113.45it/s]Traces converted: 2716it [00:24, 129.36it/s]Traces converted: 2732it [00:24, 138.14it/s]Traces converted: 2747it [00:24, 133.64it/s]Traces converted: 2761it [00:24, 123.42it/s]Traces converted: 2774it [00:24, 116.35it/s]Traces converted: 2786it [00:24, 113.13it/s]Traces converted: 2798it [00:24, 110.03it/s]Traces converted: 2810it [00:24, 109.78it/s]Traces converted: 2822it [00:25, 109.47it/s]Traces converted: 2834it [00:25, 110.29it/s]Traces converted: 2851it [00:25, 123.76it/s]Traces converted: 2864it [00:25, 117.26it/s]Traces converted: 2876it [00:25, 110.73it/s]Traces converted: 2888it [00:25, 108.53it/s]Traces converted: 2899it [00:25, 108.65it/s]Traces converted: 2910it [00:25, 108.53it/s]Traces converted: 2921it [00:25, 107.78it/s]Traces converted: 2932it [00:26, 107.41it/s]Traces converted: 2944it [00:26, 108.54it/s]Traces converted: 2956it [00:26, 108.23it/s]Traces converted: 2967it [00:26, 106.80it/s]Traces converted: 2979it [00:26, 107.95it/s]Traces converted: 2990it [00:26, 107.63it/s]Traces converted: 3001it [00:26, 106.89it/s]Traces converted: 3013it [00:26, 108.35it/s]Traces converted: 3025it [00:26, 109.03it/s]Traces converted: 3037it [00:27, 110.14it/s]Traces converted: 3049it [00:27, 64.69it/s] Traces converted: 3058it [00:27, 56.44it/s]Traces converted: 3074it [00:27, 74.51it/s]Traces converted: 3089it [00:27, 89.43it/s]Traces converted: 3101it [00:27, 93.24it/s]Traces converted: 3112it [00:28, 96.94it/s]Traces converted: 3124it [00:28, 100.71it/s]Traces converted: 3136it [00:28, 104.44it/s]Traces converted: 3148it [00:28, 106.80it/s]Traces converted: 3160it [00:28, 108.32it/s]Traces converted: 3172it [00:28, 109.69it/s]Traces converted: 3184it [00:28, 108.48it/s]Traces converted: 3196it [00:28, 110.91it/s]Traces converted: 3208it [00:28, 110.29it/s]Traces converted: 3220it [00:29, 108.27it/s]Traces converted: 3232it [00:29, 109.23it/s]Traces converted: 3244it [00:29, 110.01it/s]Traces converted: 3256it [00:29, 109.89it/s]Traces converted: 3268it [00:29, 110.09it/s]Traces converted: 3280it [00:29, 110.64it/s]Traces converted: 3292it [00:29, 111.03it/s]Traces converted: 3304it [00:29, 109.83it/s]Traces converted: 3315it [00:29, 109.68it/s]Traces converted: 3327it [00:29, 110.21it/s]Traces converted: 3339it [00:30, 109.26it/s]Traces converted: 3350it [00:30, 108.85it/s]Traces converted: 3361it [00:30, 108.89it/s]Traces converted: 3373it [00:30, 109.62it/s]Traces converted: 3385it [00:30, 110.68it/s]Traces converted: 3397it [00:30, 112.27it/s]Traces converted: 3409it [00:30, 113.18it/s]Traces converted: 3421it [00:30, 113.50it/s]Traces converted: 3433it [00:30, 112.41it/s]Traces converted: 3445it [00:31, 109.77it/s]Traces converted: 3456it [00:31, 109.80it/s]Traces converted: 3467it [00:31, 106.78it/s]Traces converted: 3478it [00:31, 107.63it/s]Traces converted: 3489it [00:31, 107.55it/s]Traces converted: 3500it [00:31, 107.80it/s]Traces converted: 3511it [00:31, 108.04it/s]Traces converted: 3522it [00:31, 107.73it/s]Traces converted: 3533it [00:31, 107.20it/s]Traces converted: 3544it [00:31, 107.24it/s]Traces converted: 3555it [00:32, 106.96it/s]Traces converted: 3566it [00:32, 104.32it/s]Traces converted: 3577it [00:32, 102.94it/s]Traces converted: 3588it [00:32, 103.66it/s]Traces converted: 3599it [00:32, 104.46it/s]Traces converted: 3610it [00:32, 104.96it/s]Traces converted: 3621it [00:32, 104.70it/s]Traces converted: 3632it [00:32, 103.10it/s]Traces converted: 3643it [00:32, 103.23it/s]Traces converted: 3654it [00:33, 103.38it/s]Traces converted: 3665it [00:33, 103.41it/s]Traces converted: 3676it [00:33, 102.89it/s]Traces converted: 3687it [00:33, 103.60it/s]Traces converted: 3698it [00:33, 101.78it/s]Traces converted: 3713it [00:33, 113.60it/s]Traces converted: 3730it [00:33, 127.90it/s]Traces converted: 3748it [00:33, 140.68it/s]Traces converted: 3763it [00:33, 127.22it/s]Traces converted: 3776it [00:34, 120.35it/s]Traces converted: 3789it [00:34, 122.75it/s]Traces converted: 3805it [00:34, 132.43it/s]Traces converted: 3819it [00:34, 130.22it/s]Traces converted: 3833it [00:34, 123.07it/s]Traces converted: 3846it [00:35, 50.48it/s] Traces converted: 3862it [00:35, 64.90it/s]Traces converted: 3875it [00:35, 74.68it/s]Traces converted: 3887it [00:35, 81.11it/s]Traces converted: 3899it [00:35, 86.47it/s]Traces converted: 3911it [00:35, 89.79it/s]Traces converted: 3922it [00:35, 92.40it/s]Traces converted: 3933it [00:35, 94.79it/s]Traces converted: 3945it [00:36, 100.07it/s]Traces converted: 3962it [00:36, 116.63it/s]Traces converted: 3978it [00:36, 128.17it/s]Traces converted: 3992it [00:36, 129.30it/s]Traces converted: 4006it [00:36, 120.41it/s]Traces converted: 4019it [00:36, 115.94it/s]Traces converted: 4035it [00:36, 125.97it/s]Traces converted: 4049it [00:36, 129.37it/s]Traces converted: 4063it [00:36, 119.49it/s]Traces converted: 4076it [00:37, 109.08it/s]Traces converted: 4091it [00:37, 119.16it/s]Traces converted: 4108it [00:37, 131.27it/s]Traces converted: 4122it [00:37, 121.77it/s]Traces converted: 4135it [00:37, 117.27it/s]Traces converted: 4148it [00:37, 113.23it/s]Traces converted: 4160it [00:37, 112.05it/s]Traces converted: 4172it [00:37, 111.73it/s]Traces converted: 4184it [00:37, 110.29it/s]Traces converted: 4196it [00:38, 107.88it/s]Traces converted: 4208it [00:38, 108.75it/s]Traces converted: 4220it [00:38, 111.00it/s]Traces converted: 4236it [00:38, 124.62it/s]Traces converted: 4254it [00:38, 138.93it/s]Traces converted: 4271it [00:38, 147.00it/s]Traces converted: 4288it [00:38, 151.17it/s]Traces converted: 4304it [00:38, 127.34it/s]Traces converted: 4318it [00:39, 124.82it/s]Traces converted: 4331it [00:39, 123.82it/s]Traces converted: 4345it [00:39, 127.70it/s]Traces converted: 4359it [00:39, 128.74it/s]Traces converted: 4373it [00:39, 120.28it/s]Traces converted: 4386it [00:39, 115.55it/s]Traces converted: 4398it [00:39, 111.22it/s]Traces converted: 4410it [00:39, 110.02it/s]Traces converted: 4427it [00:39, 125.84it/s]Traces converted: 4445it [00:40, 139.21it/s]Traces converted: 4461it [00:40, 144.39it/s]Traces converted: 4478it [00:40, 151.22it/s]Traces converted: 4494it [00:40, 141.00it/s]Traces converted: 4509it [00:40, 126.82it/s]Traces converted: 4523it [00:40, 119.60it/s]Traces converted: 4536it [00:40, 116.17it/s]Traces converted: 4550it [00:40, 120.80it/s]Traces converted: 4566it [00:40, 131.16it/s]Traces converted: 4584it [00:41, 144.56it/s]Traces converted: 4602it [00:41, 152.66it/s]Traces converted: 4620it [00:41, 159.24it/s]Traces converted: 4637it [00:41, 138.02it/s]Traces converted: 4646it [00:48, 95.29it/s] 
+Copie des traces depuis : Bruit
+Copie des traces depuis : Gold
+
+Fusion terminée
+Dataset final prêt à l'emploi : ../data/seisbenchB/seisbench_dataset_ultime
+Mode : FINE-TUNING LOCAL depuis seisbenchB/ml_model_v1.pt
+On veux une qualité minimal de b
+Succès ! Dataset chargé. Train: 3730 | Val: 438
+
+Début de l'entraînement
+Époque 01/150 | Train Loss: 0.08281 | Val Loss: 0.07565
+  -> Nouveau meilleur modèle
+Époque 02/150 | Train Loss: 0.07509 | Val Loss: 0.07260
+  -> Nouveau meilleur modèle
+Époque 03/150 | Train Loss: 0.07240 | Val Loss: 0.07044
+  -> Nouveau meilleur modèle
+Époque 04/150 | Train Loss: 0.07023 | Val Loss: 0.06941
+  -> Nouveau meilleur modèle
+Époque 05/150 | Train Loss: 0.06854 | Val Loss: 0.06734
+  -> Nouveau meilleur modèle
+Époque 06/150 | Train Loss: 0.06738 | Val Loss: 0.06637
+  -> Nouveau meilleur modèle
+Époque 07/150 | Train Loss: 0.06591 | Val Loss: 0.06436
+  -> Nouveau meilleur modèle
+Époque 08/150 | Train Loss: 0.06503 | Val Loss: 0.06471
+Époque 09/150 | Train Loss: 0.06404 | Val Loss: 0.06435
+  -> Nouveau meilleur modèle
+Époque 10/150 | Train Loss: 0.06375 | Val Loss: 0.06321
+  -> Nouveau meilleur modèle
+Époque 11/150 | Train Loss: 0.06288 | Val Loss: 0.06058
+  -> Nouveau meilleur modèle
+Époque 12/150 | Train Loss: 0.06216 | Val Loss: 0.06237
+Époque 13/150 | Train Loss: 0.06143 | Val Loss: 0.06172
+Époque 14/150 | Train Loss: 0.06103 | Val Loss: 0.06102
+Époque 15/150 | Train Loss: 0.06051 | Val Loss: 0.06114
+Époque 16/150 | Train Loss: 0.06017 | Val Loss: 0.06040
+  -> Nouveau meilleur modèle
+Époque 17/150 | Train Loss: 0.05982 | Val Loss: 0.06078
+Époque 18/150 | Train Loss: 0.05958 | Val Loss: 0.05949
+  -> Nouveau meilleur modèle
+Époque 19/150 | Train Loss: 0.05885 | Val Loss: 0.05961
+Époque 20/150 | Train Loss: 0.05864 | Val Loss: 0.05892
+  -> Nouveau meilleur modèle
+Époque 21/150 | Train Loss: 0.05874 | Val Loss: 0.05916
+Époque 22/150 | Train Loss: 0.05829 | Val Loss: 0.05746
+  -> Nouveau meilleur modèle
+Époque 23/150 | Train Loss: 0.05804 | Val Loss: 0.05761
+Époque 24/150 | Train Loss: 0.05749 | Val Loss: 0.05690
+  -> Nouveau meilleur modèle
+Époque 25/150 | Train Loss: 0.05731 | Val Loss: 0.05634
+  -> Nouveau meilleur modèle
+Époque 26/150 | Train Loss: 0.05737 | Val Loss: 0.05725
+Époque 27/150 | Train Loss: 0.05691 | Val Loss: 0.05727
+Époque 28/150 | Train Loss: 0.05688 | Val Loss: 0.05635
+Époque 29/150 | Train Loss: 0.05670 | Val Loss: 0.05630
+  -> Nouveau meilleur modèle
+Époque 30/150 | Train Loss: 0.05580 | Val Loss: 0.05772
+Époque 31/150 | Train Loss: 0.05543 | Val Loss: 0.05719
+Époque 32/150 | Train Loss: 0.05548 | Val Loss: 0.05589
+  -> Nouveau meilleur modèle
+Époque 33/150 | Train Loss: 0.05557 | Val Loss: 0.05671
+Époque 34/150 | Train Loss: 0.05504 | Val Loss: 0.05726
+Époque 35/150 | Train Loss: 0.05523 | Val Loss: 0.05620
+Époque 36/150 | Train Loss: 0.05508 | Val Loss: 0.05793
+Époque 37/150 | Train Loss: 0.05500 | Val Loss: 0.05576
+  -> Nouveau meilleur modèle
+Époque 38/150 | Train Loss: 0.05470 | Val Loss: 0.05590
+Époque 39/150 | Train Loss: 0.05471 | Val Loss: 0.05632
+Époque 40/150 | Train Loss: 0.05426 | Val Loss: 0.05703
+Époque 41/150 | Train Loss: 0.05428 | Val Loss: 0.05650
+Époque 42/150 | Train Loss: 0.05436 | Val Loss: 0.05698
+Époque 43/150 | Train Loss: 0.05440 | Val Loss: 0.05626
+Époque 44/150 | Train Loss: 0.05358 | Val Loss: 0.05619
+Époque 45/150 | Train Loss: 0.05378 | Val Loss: 0.05665
+Époque 46/150 | Train Loss: 0.05368 | Val Loss: 0.05486
+  -> Nouveau meilleur modèle
+Époque 47/150 | Train Loss: 0.05363 | Val Loss: 0.05602
+Époque 48/150 | Train Loss: 0.05338 | Val Loss: 0.05500
+Époque 49/150 | Train Loss: 0.05327 | Val Loss: 0.05517
+Époque 50/150 | Train Loss: 0.05306 | Val Loss: 0.05455
+  -> Nouveau meilleur modèle
+Époque 51/150 | Train Loss: 0.05312 | Val Loss: 0.05470
+Époque 52/150 | Train Loss: 0.05286 | Val Loss: 0.05467
+Époque 53/150 | Train Loss: 0.05310 | Val Loss: 0.05548
+Époque 54/150 | Train Loss: 0.05274 | Val Loss: 0.05423
+  -> Nouveau meilleur modèle
+Époque 55/150 | Train Loss: 0.05289 | Val Loss: 0.05471
+Époque 56/150 | Train Loss: 0.05268 | Val Loss: 0.05526
+Époque 57/150 | Train Loss: 0.05249 | Val Loss: 0.05486
+Époque 58/150 | Train Loss: 0.05258 | Val Loss: 0.05586
+Époque 59/150 | Train Loss: 0.05235 | Val Loss: 0.05565
+Époque 60/150 | Train Loss: 0.05255 | Val Loss: 0.05512
+Époque 61/150 | Train Loss: 0.05245 | Val Loss: 0.05465
+Époque 62/150 | Train Loss: 0.05242 | Val Loss: 0.05353
+  -> Nouveau meilleur modèle
+Époque 63/150 | Train Loss: 0.05209 | Val Loss: 0.05522
+Époque 64/150 | Train Loss: 0.05150 | Val Loss: 0.05467
+Époque 65/150 | Train Loss: 0.05206 | Val Loss: 0.05533
+Époque 66/150 | Train Loss: 0.05170 | Val Loss: 0.05536
+Époque 67/150 | Train Loss: 0.05164 | Val Loss: 0.05573
+Époque 68/150 | Train Loss: 0.05136 | Val Loss: 0.05584
+Époque 69/150 | Train Loss: 0.05173 | Val Loss: 0.05445
+Époque 70/150 | Train Loss: 0.05088 | Val Loss: 0.05469
+Époque 71/150 | Train Loss: 0.05150 | Val Loss: 0.05402
+Époque 72/150 | Train Loss: 0.05110 | Val Loss: 0.05642
+Arrêt car pas d'amélioration depuis 10 Epoche 
+Fin au bout de 71 EPOCHE
+
+Historique d'entraînement sauvegardé sous : ../data/seisbenchB/loss_history_finetuning.csv
+
+Entraînement terminé avec succès.
+[W821 12:16:43.375637736 NNPACK.cpp:62] Could not initialize NNPACK! Reason: Unsupported hardware.
+--- Lancement : Modèle V2 | Qualité 'B' ---
+Chargement du modèle depuis : seisbenchB/ml_model_v2.pt
+478 traces disponibles dans test
+Recherche échantillons avec proba P/S comprises entre 0.8 et 1
+-> 11 échantillons trouvés
+Echantillon n°152GOLD | proba P max : 0.891
+Echantillon n°122GOLD | proba P max : 0.812
+Echantillon n°406GOLD | proba P max : 0.851
+Echantillon n°274GOLD | proba P max : 0.811
+Echantillon n°136GOLD | proba P max : 0.809
+Echantillon n°174GOLD | proba P max : 0.820
+Echantillon n°469GOLD | proba P max : 0.853
+Echantillon n°243GOLD | proba P max : 0.809
+Echantillon n°402GOLD | proba P max : 0.802
+Echantillon n°398GOLD | proba P max : 0.900
+Echantillon n°330GOLD | proba P max : 0.807
+Graphique mis à jour sauvegardé : ../images/seisbenchB/distribution_journaliere_vt.png
+Le catalogue PyOcto n'est pas encore généré (../data/seisbenchC/results_pyocto/catalogue_evenements.csv)
+
+-> Graphique Train et Val loss sauvegardé avec succès sous : ../images/seisbenchB/loss_curve_b_finetuning.png
+[W821 12:17:17.506430874 NNPACK.cpp:62] Could not initialize NNPACK! Reason: Unsupported hardware.
+
+--- Modèle V2 ---
+Évaluation sur 417 traces dans ../data/seisbenchB/seisbench_dataset_ultime...
+-> Graphique V2 seule sauvegardé sous : ../images/seisbenchB/confiance_V2_b.png
+Graphique score de confiance terminé avec succès.
+[W821 12:17:32.600232255 NNPACK.cpp:62] Could not initialize NNPACK! Reason: Unsupported hardware.
+
+--- Modèle V2 ---
+Évaluation sur 61 traces dans ../data/seisbenchB/seisbench_dataset_ultime...
+-> Graphique V2 seule sauvegardé sous : ../images/seisbenchB/noise_V2_b.png
+Graphique score de confiance terminé avec succès.
+FIN
+
+done
+Fri Aug 21 14:17:36 CEST 2026

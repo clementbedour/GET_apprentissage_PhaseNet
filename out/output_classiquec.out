@@ -1,0 +1,1666 @@
+Fri Aug 21 11:55:39 CEST 2026
+/usr/local/miniconda/bin:/usr/local/SINGULARITY/OPENMPI-3.1.4-GNU731/bin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
+c
+On veux une qualité minimal de c
+Voici toutes les stations du dictionnaire :  BAM CPM FDF GBM IA2 LAM MLM SAM
+Utilisation de 199 fichiers de pointé, 317 au total (avec 'd')
+Nombre de P trouvé : 787
+Nombre de S solo trouvé : 24
+Traces converted: 0it [00:00, ?it/s]Traces converted: 2it [00:00,  9.75it/s]Traces converted: 3it [00:01,  1.28it/s]Traces converted: 4it [00:02,  1.78it/s]Traces converted: 5it [00:03,  1.20it/s]Traces converted: 6it [00:04,  1.28it/s]Traces converted: 7it [00:04,  1.68it/s]Traces converted: 8it [00:04,  2.03it/s]Traces converted: 11it [00:05,  3.20it/s]Traces converted: 20it [00:05, 10.17it/s]Traces converted: 29it [00:05, 18.24it/s]Traces converted: 40it [00:05, 29.44it/s]Traces converted: 47it [00:07,  9.91it/s]Traces converted: 55it [00:07, 10.56it/s]Traces converted: 59it [00:09,  6.74it/s]Traces converted: 62it [00:10,  6.04it/s]Traces converted: 64it [00:11,  4.82it/s]Traces converted: 66it [00:11,  4.34it/s]Traces converted: 68it [00:12,  4.80it/s]Traces converted: 73it [00:12,  5.33it/s]Traces converted: 74it [00:13,  4.89it/s]Traces converted: 75it [00:13,  4.92it/s]Traces converted: 76it [00:13,  4.98it/s]Traces converted: 77it [00:13,  4.40it/s]Traces converted: 87it [00:14, 14.18it/s]Traces converted: 92it [00:14, 13.99it/s]Traces converted: 95it [00:15,  7.46it/s]Traces converted: 105it [00:15, 14.26it/s]Traces converted: 116it [00:15, 23.17it/s]Traces converted: 128it [00:15, 34.09it/s]Traces converted: 138it [00:15, 43.51it/s]Traces converted: 149it [00:16, 20.84it/s]Traces converted: 156it [00:17, 21.86it/s]Traces converted: 161it [00:18, 12.50it/s]Traces converted: 165it [00:19,  7.22it/s]Traces converted: 175it [00:20, 11.34it/s]Traces converted: 186it [00:20, 17.10it/s]Traces converted: 197it [00:20, 24.34it/s]Traces converted: 207it [00:20, 31.84it/s]Traces converted: 217it [00:20, 39.85it/s]Traces converted: 228it [00:20, 49.41it/s]Traces converted: 238it [00:20, 58.11it/s]Traces converted: 250it [00:20, 68.96it/s]Traces converted: 260it [00:24,  8.83it/s]Traces converted: 267it [00:26,  6.23it/s]Traces converted: 272it [00:28,  5.40it/s]Traces converted: 276it [00:29,  4.61it/s]Traces converted: 279it [00:30,  4.73it/s]Traces converted: 283it [00:31,  4.55it/s]Traces converted: 292it [00:31,  6.30it/s]Traces converted: 294it [00:32,  5.97it/s]Traces converted: 296it [00:33,  4.67it/s]Traces converted: 297it [00:33,  4.70it/s]Traces converted: 300it [00:33,  5.93it/s]Traces converted: 303it [00:34,  6.29it/s]Traces converted: 304it [00:34,  6.01it/s]Traces converted: 311it [00:34,  7.55it/s]Traces converted: 312it [00:35,  7.03it/s]Traces converted: 313it [00:35,  6.57it/s]Traces converted: 314it [00:35,  5.44it/s]Traces converted: 325it [00:35, 16.37it/s]Traces converted: 336it [00:36, 28.33it/s]Traces converted: 347it [00:37, 17.12it/s]Traces converted: 358it [00:37, 24.92it/s]Traces converted: 365it [00:38, 11.73it/s]Traces converted: 370it [00:40,  6.46it/s]Traces converted: 374it [00:41,  6.13it/s]Traces converted: 377it [00:42,  5.56it/s]Traces converted: 379it [00:42,  5.47it/s]Traces converted: 384it [00:43,  5.79it/s]Traces converted: 386it [00:44,  4.21it/s]Traces converted: 387it [00:45,  4.00it/s]Traces converted: 388it [00:45,  3.73it/s]Traces converted: 390it [00:45,  4.42it/s]Traces converted: 392it [00:46,  4.65it/s]Traces converted: 393it [00:46,  3.09it/s]Traces converted: 394it [00:47,  2.94it/s]Traces converted: 395it [00:47,  3.25it/s]Traces converted: 399it [00:47,  5.85it/s]Traces converted: 409it [00:47, 15.52it/s]Traces converted: 419it [00:48, 12.31it/s]Traces converted: 424it [00:49, 13.79it/s]Traces converted: 427it [00:50,  6.92it/s]Traces converted: 429it [00:51,  5.45it/s]Traces converted: 431it [00:51,  5.13it/s]Traces converted: 433it [00:52,  5.25it/s]Traces converted: 437it [00:52,  6.58it/s]Traces converted: 439it [00:53,  5.64it/s]Traces converted: 442it [00:53,  6.15it/s]Traces converted: 447it [00:53,  8.74it/s]Traces converted: 449it [00:54,  5.26it/s]Traces converted: 450it [00:54,  5.27it/s]Traces converted: 451it [00:56,  2.74it/s]Traces converted: 461it [00:56,  6.90it/s]Traces converted: 465it [00:56,  8.17it/s]Traces converted: 476it [00:57,  9.97it/s]Traces converted: 478it [00:58,  9.05it/s]Traces converted: 482it [00:58,  9.82it/s]Traces converted: 484it [00:58,  8.73it/s]Traces converted: 495it [00:59, 15.23it/s]Traces converted: 498it [00:59, 14.67it/s]Traces converted: 500it [01:00,  5.83it/s]Traces converted: 502it [01:01,  6.31it/s]Traces converted: 504it [01:01,  6.58it/s]Traces converted: 509it [01:02,  6.04it/s]Traces converted: 513it [01:02,  7.63it/s]Traces converted: 515it [01:02,  6.48it/s]Traces converted: 516it [01:03,  6.20it/s]Traces converted: 517it [01:03,  5.56it/s]Traces converted: 518it [01:03,  5.35it/s]Traces converted: 519it [01:03,  5.23it/s]Traces converted: 520it [01:04,  4.66it/s]Traces converted: 521it [01:05,  2.38it/s]Traces converted: 528it [01:05,  6.59it/s]Traces converted: 530it [01:05,  7.03it/s]Traces converted: 531it [01:06,  4.10it/s]Traces converted: 532it [01:06,  4.12it/s]Traces converted: 533it [01:07,  3.67it/s]Traces converted: 536it [01:07,  5.48it/s]Traces converted: 538it [01:07,  6.41it/s]Traces converted: 549it [01:07, 18.84it/s]Traces converted: 556it [01:08, 18.90it/s]Traces converted: 567it [01:08, 30.61it/s]Traces converted: 574it [01:09, 15.15it/s]Traces converted: 579it [01:10, 11.28it/s]Traces converted: 582it [01:10, 10.63it/s]Traces converted: 588it [01:11,  8.35it/s]Traces converted: 590it [01:11,  8.59it/s]Traces converted: 592it [01:12,  6.50it/s]Traces converted: 594it [01:13,  5.10it/s]Traces converted: 599it [01:13,  7.43it/s]Traces converted: 605it [01:13, 10.01it/s]Traces converted: 607it [01:14,  6.25it/s]Traces converted: 609it [01:14,  6.81it/s]Traces converted: 613it [01:15,  8.75it/s]Traces converted: 615it [01:16,  5.15it/s]Traces converted: 625it [01:16, 10.28it/s]Traces converted: 635it [01:17, 10.88it/s]Traces converted: 637it [01:17,  9.48it/s]Traces converted: 639it [01:18,  8.28it/s]Traces converted: 641it [01:19,  4.74it/s]Traces converted: 652it [01:19, 10.37it/s]Traces converted: 661it [01:19, 13.56it/s]Traces converted: 665it [01:20,  8.56it/s]Traces converted: 669it [01:21,  9.74it/s]Traces converted: 672it [01:22,  5.66it/s]Traces converted: 674it [01:23,  4.29it/s]Traces converted: 676it [01:24,  3.88it/s]Traces converted: 677it [01:25,  3.03it/s]Traces converted: 681it [01:25,  4.13it/s]Traces converted: 682it [01:26,  3.19it/s]Traces converted: 683it [01:26,  3.36it/s]Traces converted: 684it [01:27,  3.53it/s]Traces converted: 685it [01:27,  3.73it/s]Traces converted: 686it [01:27,  3.02it/s]Traces converted: 687it [01:27,  3.39it/s]Traces converted: 690it [01:28,  5.61it/s]Traces converted: 692it [01:28,  6.23it/s]Traces converted: 693it [01:29,  3.87it/s]Traces converted: 694it [01:29,  4.17it/s]Traces converted: 698it [01:29,  6.22it/s]Traces converted: 702it [01:29,  8.31it/s]Traces converted: 703it [01:30,  5.07it/s]Traces converted: 704it [01:30,  5.31it/s]Traces converted: 705it [01:31,  4.45it/s]Traces converted: 706it [01:31,  2.90it/s]Traces converted: 707it [01:32,  3.23it/s]Traces converted: 708it [01:32,  3.55it/s]Traces converted: 709it [01:32,  3.39it/s]Traces converted: 710it [01:32,  3.97it/s]Traces converted: 715it [01:33,  4.43it/s]Traces converted: 719it [01:34,  6.06it/s]Traces converted: 727it [01:35,  7.39it/s]Traces converted: 728it [01:35,  7.15it/s]Traces converted: 729it [01:35,  6.85it/s]Traces converted: 730it [01:35,  6.36it/s]Traces converted: 731it [01:36,  5.13it/s]Traces converted: 732it [01:36,  4.43it/s]Traces converted: 741it [01:36, 13.65it/s]Traces converted: 749it [01:37, 10.09it/s]Traces converted: 752it [01:38,  6.70it/s]Traces converted: 754it [01:40,  3.91it/s]Traces converted: 756it [01:40,  3.63it/s]Traces converted: 757it [01:41,  3.71it/s]Traces converted: 758it [01:41,  2.94it/s]Traces converted: 759it [01:42,  3.15it/s]Traces converted: 760it [01:42,  3.18it/s]Traces converted: 761it [01:43,  2.16it/s]Traces converted: 762it [01:43,  2.23it/s]Traces converted: 763it [01:44,  2.02it/s]Traces converted: 764it [01:44,  2.38it/s]Traces converted: 765it [01:44,  2.79it/s]Traces converted: 766it [01:45,  3.27it/s]Traces converted: 767it [01:45,  3.58it/s]Traces converted: 770it [01:45,  5.57it/s]Traces converted: 772it [01:46,  3.75it/s]Traces converted: 782it [01:46, 11.84it/s]Traces converted: 792it [01:46, 21.20it/s]Traces converted: 797it [01:48,  7.38it/s]
+ Anomalie physique ignorée (S avant P) pour la station GBM
+ Anomalie physique ignorée (S avant P) pour la station BAM
+ Anomalie physique ignorée (S avant P) pour la station GBM
+ Anomalie physique ignorée (S avant P) pour la station BAM
+ Anomalie physique ignorée (S avant P) pour la station BAM
+ Anomalie physique ignorée (S avant P) pour la station LAM
+Attention: Dossier introuvable -> /get/ggs/clov/mseed_data/martinique/MQ/PCM
+Attention: Dossier introuvable -> /get/ggs/clov/mseed_data/martinique/MQ/PCM
+Attention: Dossier introuvable -> /get/ggs/clov/mseed_data/martinique/MQ/FDF
+Attention: Dossier introuvable -> /get/ggs/clov/mseed_data/martinique/MQ/PBO
+Attention: Dossier introuvable -> /get/ggs/clov/mseed_data/martinique/MQ/PBO
+Attention: Dossier introuvable -> /get/ggs/clov/mseed_data/martinique/MQ/PBO
+Attention: Dossier introuvable -> /get/ggs/clov/mseed_data/martinique/MQ/PBO
+Attention: Dossier introuvable -> /get/ggs/clov/mseed_data/martinique/MQ/PBO
+Attention: Dossier introuvable -> /get/ggs/clov/mseed_data/martinique/MQ/PBO
+Attention: Dossier introuvable -> /get/ggs/clov/mseed_data/martinique/MQ/PBO
+Attention: Dossier introuvable -> /get/ggs/clov/mseed_data/martinique/MQ/PBO
+Attention: Dossier introuvable -> /get/ggs/clov/mseed_data/martinique/MQ/PBO
+Attention: Dossier introuvable -> /get/ggs/clov/mseed_data/martinique/MQ/PBO
+0 pointés ignorés faute de fichier MiniSEED correspondant.
+0 fichiers MiniSEED n'ont pas pu être lus (erreur ObsPy).
+
+ Conversion terminée !
+On veux une qualité minimal de c
+Chargement des datasets sources
+-> 797 vrais événements trouvés.
+-> 657 traces de bruit trouvées.
+
+Début de la fusion
+Copie des événements
+Traces converted: 0it [00:00, ?it/s]Traces converted: 27it [00:00, 267.43it/s]Traces converted: 54it [00:00, 260.96it/s]Traces converted: 82it [00:00, 265.64it/s]Traces converted: 110it [00:00, 267.91it/s]Traces converted: 138it [00:00, 270.59it/s]Traces converted: 166it [00:00, 271.73it/s]Traces converted: 194it [00:00, 271.83it/s]Traces converted: 222it [00:00, 272.61it/s]Traces converted: 251it [00:00, 276.03it/s]Traces converted: 279it [00:01, 268.94it/s]Traces converted: 306it [00:01, 262.21it/s]Traces converted: 333it [00:01, 253.47it/s]Traces converted: 359it [00:01, 250.39it/s]Traces converted: 385it [00:01, 246.80it/s]Traces converted: 412it [00:01, 251.86it/s]Traces converted: 440it [00:01, 257.26it/s]Traces converted: 466it [00:01, 255.87it/s]Traces converted: 494it [00:01, 261.74it/s]Traces converted: 522it [00:01, 266.06it/s]Traces converted: 550it [00:02, 268.32it/s]Traces converted: 578it [00:02, 271.19it/s]Traces converted: 606it [00:02, 265.68it/s]Traces converted: 633it [00:02, 265.24it/s]Traces converted: 661it [00:02, 269.17it/s]Traces converted: 688it [00:02, 268.75it/s]Traces converted: 715it [00:02, 268.80it/s]Traces converted: 743it [00:02, 269.70it/s]Traces converted: 770it [00:02, 269.36it/s]Traces converted: 797it [00:03, 263.95it/s]Traces converted: 824it [00:03, 185.00it/s]Traces converted: 851it [00:03, 203.18it/s]Traces converted: 877it [00:03, 216.67it/s]Traces converted: 901it [00:03, 210.12it/s]Traces converted: 926it [00:03, 219.31it/s]Traces converted: 952it [00:03, 227.53it/s]Traces converted: 976it [00:03, 228.04it/s]Traces converted: 1000it [00:04, 216.86it/s]Traces converted: 1025it [00:04, 223.92it/s]Traces converted: 1051it [00:04, 232.82it/s]Traces converted: 1075it [00:04, 225.01it/s]Traces converted: 1098it [00:04, 225.76it/s]Traces converted: 1121it [00:04, 224.07it/s]Traces converted: 1146it [00:04, 230.94it/s]Traces converted: 1171it [00:04, 236.45it/s]Traces converted: 1197it [00:04, 242.72it/s]Traces converted: 1222it [00:04, 244.44it/s]Traces converted: 1247it [00:05, 242.58it/s]Traces converted: 1273it [00:05, 246.33it/s]Traces converted: 1298it [00:05, 180.39it/s]Traces converted: 1323it [00:05, 196.10it/s]Traces converted: 1350it [00:05, 214.52it/s]Traces converted: 1375it [00:05, 220.01it/s]Traces converted: 1401it [00:05, 229.25it/s]Traces converted: 1426it [00:05, 232.65it/s]Traces converted: 1451it [00:05, 237.50it/s]Traces converted: 1454it [00:08, 181.62it/s]
+Copie des traces de bruit
+
+Fusion terminée avec succès !
+Total : 1454 traces prêtes pour l'entraînement.
+Mode : Entraînement DE ZÉRO
+On veux une qualité minimal de c
+Succès ! Dataset chargé. Train: 1165 | Val: 147
+Initialisation du modèle avec des poids aléatoires
+
+Début de l'entraînement
+Époque 01/300 | Train Loss: 0.75832 | Val Loss: 0.68517
+  -> Nouveau meilleur modèle
+Époque 02/300 | Train Loss: 0.71917 | Val Loss: 0.70231
+Époque 03/300 | Train Loss: 0.68027 | Val Loss: 0.66523
+  -> Nouveau meilleur modèle
+Époque 04/300 | Train Loss: 0.65559 | Val Loss: 0.64590
+  -> Nouveau meilleur modèle
+Époque 05/300 | Train Loss: 0.64011 | Val Loss: 0.63340
+  -> Nouveau meilleur modèle
+Époque 06/300 | Train Loss: 0.62792 | Val Loss: 0.62236
+  -> Nouveau meilleur modèle
+Époque 07/300 | Train Loss: 0.61763 | Val Loss: 0.60730
+  -> Nouveau meilleur modèle
+Époque 08/300 | Train Loss: 0.60870 | Val Loss: 0.60239
+  -> Nouveau meilleur modèle
+Époque 09/300 | Train Loss: 0.60069 | Val Loss: 0.60095
+  -> Nouveau meilleur modèle
+Époque 10/300 | Train Loss: 0.59313 | Val Loss: 0.58999
+  -> Nouveau meilleur modèle
+Époque 11/300 | Train Loss: 0.58603 | Val Loss: 0.58411
+  -> Nouveau meilleur modèle
+Époque 12/300 | Train Loss: 0.57879 | Val Loss: 0.57742
+  -> Nouveau meilleur modèle
+Époque 13/300 | Train Loss: 0.57180 | Val Loss: 0.56824
+  -> Nouveau meilleur modèle
+Époque 14/300 | Train Loss: 0.56560 | Val Loss: 0.56400
+  -> Nouveau meilleur modèle
+Époque 15/300 | Train Loss: 0.55929 | Val Loss: 0.55674
+  -> Nouveau meilleur modèle
+Époque 16/300 | Train Loss: 0.55289 | Val Loss: 0.55209
+  -> Nouveau meilleur modèle
+Époque 17/300 | Train Loss: 0.54654 | Val Loss: 0.54412
+  -> Nouveau meilleur modèle
+Époque 18/300 | Train Loss: 0.53994 | Val Loss: 0.53812
+  -> Nouveau meilleur modèle
+Époque 19/300 | Train Loss: 0.53366 | Val Loss: 0.52822
+  -> Nouveau meilleur modèle
+Époque 20/300 | Train Loss: 0.52730 | Val Loss: 0.52796
+  -> Nouveau meilleur modèle
+Époque 21/300 | Train Loss: 0.51961 | Val Loss: 0.51620
+  -> Nouveau meilleur modèle
+Époque 22/300 | Train Loss: 0.51283 | Val Loss: 0.50884
+  -> Nouveau meilleur modèle
+Époque 23/300 | Train Loss: 0.50554 | Val Loss: 0.50026
+  -> Nouveau meilleur modèle
+Époque 24/300 | Train Loss: 0.49824 | Val Loss: 0.49491
+  -> Nouveau meilleur modèle
+Époque 25/300 | Train Loss: 0.49153 | Val Loss: 0.48722
+  -> Nouveau meilleur modèle
+Époque 26/300 | Train Loss: 0.48459 | Val Loss: 0.47827
+  -> Nouveau meilleur modèle
+Époque 27/300 | Train Loss: 0.47761 | Val Loss: 0.47177
+  -> Nouveau meilleur modèle
+Époque 28/300 | Train Loss: 0.47076 | Val Loss: 0.46559
+  -> Nouveau meilleur modèle
+Époque 29/300 | Train Loss: 0.46421 | Val Loss: 0.46080
+  -> Nouveau meilleur modèle
+Époque 30/300 | Train Loss: 0.45737 | Val Loss: 0.45036
+  -> Nouveau meilleur modèle
+Époque 31/300 | Train Loss: 0.45096 | Val Loss: 0.44453
+  -> Nouveau meilleur modèle
+Époque 32/300 | Train Loss: 0.44424 | Val Loss: 0.43842
+  -> Nouveau meilleur modèle
+Époque 33/300 | Train Loss: 0.43784 | Val Loss: 0.43189
+  -> Nouveau meilleur modèle
+Époque 34/300 | Train Loss: 0.43126 | Val Loss: 0.42956
+  -> Nouveau meilleur modèle
+Époque 35/300 | Train Loss: 0.42505 | Val Loss: 0.41701
+  -> Nouveau meilleur modèle
+Époque 36/300 | Train Loss: 0.41903 | Val Loss: 0.41619
+  -> Nouveau meilleur modèle
+Époque 37/300 | Train Loss: 0.41325 | Val Loss: 0.41080
+  -> Nouveau meilleur modèle
+Époque 38/300 | Train Loss: 0.40686 | Val Loss: 0.40540
+  -> Nouveau meilleur modèle
+Époque 39/300 | Train Loss: 0.40114 | Val Loss: 0.39820
+  -> Nouveau meilleur modèle
+Époque 40/300 | Train Loss: 0.39496 | Val Loss: 0.39440
+  -> Nouveau meilleur modèle
+Époque 41/300 | Train Loss: 0.38922 | Val Loss: 0.38560
+  -> Nouveau meilleur modèle
+Époque 42/300 | Train Loss: 0.38377 | Val Loss: 0.37892
+  -> Nouveau meilleur modèle
+Époque 43/300 | Train Loss: 0.37787 | Val Loss: 0.37451
+  -> Nouveau meilleur modèle
+Époque 44/300 | Train Loss: 0.37207 | Val Loss: 0.37194
+  -> Nouveau meilleur modèle
+Époque 45/300 | Train Loss: 0.36607 | Val Loss: 0.36387
+  -> Nouveau meilleur modèle
+Époque 46/300 | Train Loss: 0.36008 | Val Loss: 0.35663
+  -> Nouveau meilleur modèle
+Époque 47/300 | Train Loss: 0.35423 | Val Loss: 0.35072
+  -> Nouveau meilleur modèle
+Époque 48/300 | Train Loss: 0.34772 | Val Loss: 0.34547
+  -> Nouveau meilleur modèle
+Époque 49/300 | Train Loss: 0.33956 | Val Loss: 0.33758
+  -> Nouveau meilleur modèle
+Époque 50/300 | Train Loss: 0.33113 | Val Loss: 0.32921
+  -> Nouveau meilleur modèle
+Époque 51/300 | Train Loss: 0.32238 | Val Loss: 0.31845
+  -> Nouveau meilleur modèle
+Époque 52/300 | Train Loss: 0.31485 | Val Loss: 0.31483
+  -> Nouveau meilleur modèle
+Époque 53/300 | Train Loss: 0.30747 | Val Loss: 0.30193
+  -> Nouveau meilleur modèle
+Époque 54/300 | Train Loss: 0.30011 | Val Loss: 0.29898
+  -> Nouveau meilleur modèle
+Époque 55/300 | Train Loss: 0.29314 | Val Loss: 0.29128
+  -> Nouveau meilleur modèle
+Époque 56/300 | Train Loss: 0.28642 | Val Loss: 0.28402
+  -> Nouveau meilleur modèle
+Époque 57/300 | Train Loss: 0.27987 | Val Loss: 0.27620
+  -> Nouveau meilleur modèle
+Époque 58/300 | Train Loss: 0.27353 | Val Loss: 0.27070
+  -> Nouveau meilleur modèle
+Époque 59/300 | Train Loss: 0.26713 | Val Loss: 0.26304
+  -> Nouveau meilleur modèle
+Époque 60/300 | Train Loss: 0.26152 | Val Loss: 0.25841
+  -> Nouveau meilleur modèle
+Époque 61/300 | Train Loss: 0.25569 | Val Loss: 0.25233
+  -> Nouveau meilleur modèle
+Époque 62/300 | Train Loss: 0.24992 | Val Loss: 0.24507
+  -> Nouveau meilleur modèle
+Époque 63/300 | Train Loss: 0.24442 | Val Loss: 0.24156
+  -> Nouveau meilleur modèle
+Époque 64/300 | Train Loss: 0.23919 | Val Loss: 0.23682
+  -> Nouveau meilleur modèle
+Époque 65/300 | Train Loss: 0.23375 | Val Loss: 0.23194
+  -> Nouveau meilleur modèle
+Époque 66/300 | Train Loss: 0.22789 | Val Loss: 0.22668
+  -> Nouveau meilleur modèle
+Époque 67/300 | Train Loss: 0.22197 | Val Loss: 0.22023
+  -> Nouveau meilleur modèle
+Époque 68/300 | Train Loss: 0.21625 | Val Loss: 0.21414
+  -> Nouveau meilleur modèle
+Époque 69/300 | Train Loss: 0.21056 | Val Loss: 0.21015
+  -> Nouveau meilleur modèle
+Époque 70/300 | Train Loss: 0.20496 | Val Loss: 0.20410
+  -> Nouveau meilleur modèle
+Époque 71/300 | Train Loss: 0.20025 | Val Loss: 0.19762
+  -> Nouveau meilleur modèle
+Époque 72/300 | Train Loss: 0.19495 | Val Loss: 0.19422
+  -> Nouveau meilleur modèle
+Époque 73/300 | Train Loss: 0.18959 | Val Loss: 0.18887
+  -> Nouveau meilleur modèle
+Époque 74/300 | Train Loss: 0.18486 | Val Loss: 0.18513
+  -> Nouveau meilleur modèle
+Époque 75/300 | Train Loss: 0.18023 | Val Loss: 0.17897
+  -> Nouveau meilleur modèle
+Époque 76/300 | Train Loss: 0.17582 | Val Loss: 0.17455
+  -> Nouveau meilleur modèle
+Époque 77/300 | Train Loss: 0.17148 | Val Loss: 0.17174
+  -> Nouveau meilleur modèle
+Époque 78/300 | Train Loss: 0.16735 | Val Loss: 0.16610
+  -> Nouveau meilleur modèle
+Époque 79/300 | Train Loss: 0.16304 | Val Loss: 0.16469
+  -> Nouveau meilleur modèle
+Époque 80/300 | Train Loss: 0.15958 | Val Loss: 0.15993
+  -> Nouveau meilleur modèle
+Époque 81/300 | Train Loss: 0.15512 | Val Loss: 0.15337
+  -> Nouveau meilleur modèle
+Époque 82/300 | Train Loss: 0.15144 | Val Loss: 0.15138
+  -> Nouveau meilleur modèle
+Époque 83/300 | Train Loss: 0.14750 | Val Loss: 0.14810
+  -> Nouveau meilleur modèle
+Époque 84/300 | Train Loss: 0.14380 | Val Loss: 0.14367
+  -> Nouveau meilleur modèle
+Époque 85/300 | Train Loss: 0.13982 | Val Loss: 0.14010
+  -> Nouveau meilleur modèle
+Époque 86/300 | Train Loss: 0.13574 | Val Loss: 0.13738
+  -> Nouveau meilleur modèle
+Époque 87/300 | Train Loss: 0.13187 | Val Loss: 0.13336
+  -> Nouveau meilleur modèle
+Époque 88/300 | Train Loss: 0.12835 | Val Loss: 0.12890
+  -> Nouveau meilleur modèle
+Époque 89/300 | Train Loss: 0.12468 | Val Loss: 0.12669
+  -> Nouveau meilleur modèle
+Époque 90/300 | Train Loss: 0.12168 | Val Loss: 0.12221
+  -> Nouveau meilleur modèle
+Époque 91/300 | Train Loss: 0.11831 | Val Loss: 0.11950
+  -> Nouveau meilleur modèle
+Époque 92/300 | Train Loss: 0.11511 | Val Loss: 0.11675
+  -> Nouveau meilleur modèle
+Époque 93/300 | Train Loss: 0.11168 | Val Loss: 0.11254
+  -> Nouveau meilleur modèle
+Époque 94/300 | Train Loss: 0.10873 | Val Loss: 0.10978
+  -> Nouveau meilleur modèle
+Époque 95/300 | Train Loss: 0.10547 | Val Loss: 0.10741
+  -> Nouveau meilleur modèle
+Époque 96/300 | Train Loss: 0.10313 | Val Loss: 0.10356
+  -> Nouveau meilleur modèle
+Époque 97/300 | Train Loss: 0.10001 | Val Loss: 0.10336
+  -> Nouveau meilleur modèle
+Époque 98/300 | Train Loss: 0.09746 | Val Loss: 0.10117
+  -> Nouveau meilleur modèle
+Époque 99/300 | Train Loss: 0.09465 | Val Loss: 0.09733
+  -> Nouveau meilleur modèle
+Époque 100/300 | Train Loss: 0.09243 | Val Loss: 0.09460
+  -> Nouveau meilleur modèle
+Époque 101/300 | Train Loss: 0.09032 | Val Loss: 0.09322
+  -> Nouveau meilleur modèle
+Époque 102/300 | Train Loss: 0.08787 | Val Loss: 0.09058
+  -> Nouveau meilleur modèle
+Époque 103/300 | Train Loss: 0.08613 | Val Loss: 0.08786
+  -> Nouveau meilleur modèle
+Époque 104/300 | Train Loss: 0.08472 | Val Loss: 0.08609
+  -> Nouveau meilleur modèle
+Époque 105/300 | Train Loss: 0.08294 | Val Loss: 0.08520
+  -> Nouveau meilleur modèle
+Époque 106/300 | Train Loss: 0.08058 | Val Loss: 0.08492
+  -> Nouveau meilleur modèle
+Époque 107/300 | Train Loss: 0.07903 | Val Loss: 0.08219
+  -> Nouveau meilleur modèle
+Époque 108/300 | Train Loss: 0.07705 | Val Loss: 0.08165
+  -> Nouveau meilleur modèle
+Époque 109/300 | Train Loss: 0.07576 | Val Loss: 0.07907
+  -> Nouveau meilleur modèle
+Époque 110/300 | Train Loss: 0.07469 | Val Loss: 0.07737
+  -> Nouveau meilleur modèle
+Époque 111/300 | Train Loss: 0.07305 | Val Loss: 0.07698
+  -> Nouveau meilleur modèle
+Époque 112/300 | Train Loss: 0.07148 | Val Loss: 0.07426
+  -> Nouveau meilleur modèle
+Époque 113/300 | Train Loss: 0.07014 | Val Loss: 0.07340
+  -> Nouveau meilleur modèle
+Époque 114/300 | Train Loss: 0.06884 | Val Loss: 0.07275
+  -> Nouveau meilleur modèle
+Époque 115/300 | Train Loss: 0.06755 | Val Loss: 0.07246
+  -> Nouveau meilleur modèle
+Époque 116/300 | Train Loss: 0.06624 | Val Loss: 0.07159
+  -> Nouveau meilleur modèle
+Époque 117/300 | Train Loss: 0.06507 | Val Loss: 0.06857
+  -> Nouveau meilleur modèle
+Époque 118/300 | Train Loss: 0.06443 | Val Loss: 0.06947
+Époque 119/300 | Train Loss: 0.06340 | Val Loss: 0.06658
+  -> Nouveau meilleur modèle
+Époque 120/300 | Train Loss: 0.06247 | Val Loss: 0.06541
+  -> Nouveau meilleur modèle
+Époque 121/300 | Train Loss: 0.06128 | Val Loss: 0.06645
+Époque 122/300 | Train Loss: 0.06021 | Val Loss: 0.06466
+  -> Nouveau meilleur modèle
+Époque 123/300 | Train Loss: 0.05947 | Val Loss: 0.06392
+  -> Nouveau meilleur modèle
+Époque 124/300 | Train Loss: 0.05823 | Val Loss: 0.06136
+  -> Nouveau meilleur modèle
+Époque 125/300 | Train Loss: 0.05794 | Val Loss: 0.06244
+Époque 126/300 | Train Loss: 0.05690 | Val Loss: 0.06226
+Époque 127/300 | Train Loss: 0.05630 | Val Loss: 0.05987
+  -> Nouveau meilleur modèle
+Époque 128/300 | Train Loss: 0.05517 | Val Loss: 0.05898
+  -> Nouveau meilleur modèle
+Époque 129/300 | Train Loss: 0.05479 | Val Loss: 0.06018
+Époque 130/300 | Train Loss: 0.05369 | Val Loss: 0.05892
+  -> Nouveau meilleur modèle
+Époque 131/300 | Train Loss: 0.05267 | Val Loss: 0.05839
+  -> Nouveau meilleur modèle
+Époque 132/300 | Train Loss: 0.05235 | Val Loss: 0.05748
+  -> Nouveau meilleur modèle
+Époque 133/300 | Train Loss: 0.05171 | Val Loss: 0.05812
+Époque 134/300 | Train Loss: 0.05078 | Val Loss: 0.05729
+  -> Nouveau meilleur modèle
+Époque 135/300 | Train Loss: 0.05012 | Val Loss: 0.05678
+  -> Nouveau meilleur modèle
+Époque 136/300 | Train Loss: 0.04974 | Val Loss: 0.05581
+  -> Nouveau meilleur modèle
+Époque 137/300 | Train Loss: 0.04887 | Val Loss: 0.05524
+  -> Nouveau meilleur modèle
+Époque 138/300 | Train Loss: 0.04833 | Val Loss: 0.05481
+  -> Nouveau meilleur modèle
+Époque 139/300 | Train Loss: 0.04820 | Val Loss: 0.05385
+  -> Nouveau meilleur modèle
+Époque 140/300 | Train Loss: 0.04794 | Val Loss: 0.05430
+Époque 141/300 | Train Loss: 0.04720 | Val Loss: 0.05263
+  -> Nouveau meilleur modèle
+Époque 142/300 | Train Loss: 0.04683 | Val Loss: 0.05324
+Époque 143/300 | Train Loss: 0.04602 | Val Loss: 0.05249
+  -> Nouveau meilleur modèle
+Époque 144/300 | Train Loss: 0.04513 | Val Loss: 0.05198
+  -> Nouveau meilleur modèle
+Époque 145/300 | Train Loss: 0.04494 | Val Loss: 0.04988
+  -> Nouveau meilleur modèle
+Époque 146/300 | Train Loss: 0.04451 | Val Loss: 0.05146
+Époque 147/300 | Train Loss: 0.04437 | Val Loss: 0.05110
+Époque 148/300 | Train Loss: 0.04405 | Val Loss: 0.05176
+Époque 149/300 | Train Loss: 0.04320 | Val Loss: 0.04880
+  -> Nouveau meilleur modèle
+Époque 150/300 | Train Loss: 0.04233 | Val Loss: 0.04880
+  -> Nouveau meilleur modèle
+Époque 151/300 | Train Loss: 0.04272 | Val Loss: 0.04954
+Époque 152/300 | Train Loss: 0.04263 | Val Loss: 0.04952
+Époque 153/300 | Train Loss: 0.04194 | Val Loss: 0.04844
+  -> Nouveau meilleur modèle
+Époque 154/300 | Train Loss: 0.04100 | Val Loss: 0.04810
+  -> Nouveau meilleur modèle
+Époque 155/300 | Train Loss: 0.04079 | Val Loss: 0.04686
+  -> Nouveau meilleur modèle
+Époque 156/300 | Train Loss: 0.04043 | Val Loss: 0.04743
+Époque 157/300 | Train Loss: 0.03991 | Val Loss: 0.04779
+Époque 158/300 | Train Loss: 0.03979 | Val Loss: 0.04901
+Époque 159/300 | Train Loss: 0.03987 | Val Loss: 0.04616
+  -> Nouveau meilleur modèle
+Époque 160/300 | Train Loss: 0.03962 | Val Loss: 0.04627
+Époque 161/300 | Train Loss: 0.03937 | Val Loss: 0.04755
+Époque 162/300 | Train Loss: 0.03872 | Val Loss: 0.04562
+  -> Nouveau meilleur modèle
+Époque 163/300 | Train Loss: 0.03806 | Val Loss: 0.04560
+  -> Nouveau meilleur modèle
+Époque 164/300 | Train Loss: 0.03832 | Val Loss: 0.04656
+Époque 165/300 | Train Loss: 0.03744 | Val Loss: 0.04456
+  -> Nouveau meilleur modèle
+Époque 166/300 | Train Loss: 0.03785 | Val Loss: 0.04411
+  -> Nouveau meilleur modèle
+Époque 167/300 | Train Loss: 0.03747 | Val Loss: 0.04549
+Époque 168/300 | Train Loss: 0.03707 | Val Loss: 0.04542
+Époque 169/300 | Train Loss: 0.03663 | Val Loss: 0.04677
+Époque 170/300 | Train Loss: 0.03637 | Val Loss: 0.04547
+Époque 171/300 | Train Loss: 0.03610 | Val Loss: 0.04487
+Époque 172/300 | Train Loss: 0.03596 | Val Loss: 0.04466
+Époque 173/300 | Train Loss: 0.03578 | Val Loss: 0.04355
+  -> Nouveau meilleur modèle
+Époque 174/300 | Train Loss: 0.03539 | Val Loss: 0.04335
+  -> Nouveau meilleur modèle
+Époque 175/300 | Train Loss: 0.03451 | Val Loss: 0.04561
+Époque 176/300 | Train Loss: 0.03557 | Val Loss: 0.04479
+Époque 177/300 | Train Loss: 0.03463 | Val Loss: 0.04431
+Époque 178/300 | Train Loss: 0.03459 | Val Loss: 0.04238
+  -> Nouveau meilleur modèle
+Époque 179/300 | Train Loss: 0.03479 | Val Loss: 0.04206
+  -> Nouveau meilleur modèle
+Époque 180/300 | Train Loss: 0.03428 | Val Loss: 0.04216
+Époque 181/300 | Train Loss: 0.03353 | Val Loss: 0.04380
+Époque 182/300 | Train Loss: 0.03437 | Val Loss: 0.04278
+Époque 183/300 | Train Loss: 0.03418 | Val Loss: 0.04275
+Époque 184/300 | Train Loss: 0.03299 | Val Loss: 0.04473
+Époque 185/300 | Train Loss: 0.03318 | Val Loss: 0.04364
+Époque 186/300 | Train Loss: 0.03302 | Val Loss: 0.04203
+  -> Nouveau meilleur modèle
+Époque 187/300 | Train Loss: 0.03291 | Val Loss: 0.04408
+Époque 188/300 | Train Loss: 0.03226 | Val Loss: 0.04254
+Époque 189/300 | Train Loss: 0.03281 | Val Loss: 0.04195
+  -> Nouveau meilleur modèle
+Époque 190/300 | Train Loss: 0.03282 | Val Loss: 0.04262
+Époque 191/300 | Train Loss: 0.03217 | Val Loss: 0.04214
+Époque 192/300 | Train Loss: 0.03177 | Val Loss: 0.04185
+  -> Nouveau meilleur modèle
+Époque 193/300 | Train Loss: 0.03158 | Val Loss: 0.04222
+Époque 194/300 | Train Loss: 0.03191 | Val Loss: 0.04207
+Époque 195/300 | Train Loss: 0.03147 | Val Loss: 0.04266
+Époque 196/300 | Train Loss: 0.03077 | Val Loss: 0.04255
+Époque 197/300 | Train Loss: 0.03086 | Val Loss: 0.04029
+  -> Nouveau meilleur modèle
+Époque 198/300 | Train Loss: 0.03076 | Val Loss: 0.04096
+Époque 199/300 | Train Loss: 0.03067 | Val Loss: 0.04088
+Époque 200/300 | Train Loss: 0.03072 | Val Loss: 0.04192
+Époque 201/300 | Train Loss: 0.03044 | Val Loss: 0.04009
+  -> Nouveau meilleur modèle
+Époque 202/300 | Train Loss: 0.03049 | Val Loss: 0.04081
+Époque 203/300 | Train Loss: 0.03011 | Val Loss: 0.04163
+Époque 204/300 | Train Loss: 0.03021 | Val Loss: 0.04188
+Époque 205/300 | Train Loss: 0.02994 | Val Loss: 0.03926
+  -> Nouveau meilleur modèle
+Époque 206/300 | Train Loss: 0.02966 | Val Loss: 0.04280
+Époque 207/300 | Train Loss: 0.02975 | Val Loss: 0.03920
+  -> Nouveau meilleur modèle
+Époque 208/300 | Train Loss: 0.02942 | Val Loss: 0.04150
+Époque 209/300 | Train Loss: 0.02916 | Val Loss: 0.04253
+Époque 210/300 | Train Loss: 0.02931 | Val Loss: 0.04197
+Époque 211/300 | Train Loss: 0.02952 | Val Loss: 0.04251
+Époque 212/300 | Train Loss: 0.02921 | Val Loss: 0.04138
+Époque 213/300 | Train Loss: 0.02908 | Val Loss: 0.04093
+Époque 214/300 | Train Loss: 0.02877 | Val Loss: 0.04147
+Époque 215/300 | Train Loss: 0.02891 | Val Loss: 0.04074
+Époque 216/300 | Train Loss: 0.02904 | Val Loss: 0.03963
+Époque 217/300 | Train Loss: 0.02858 | Val Loss: 0.04379
+Arrêt car pas d'amélioration depuis 10 Epoche 
+Fin au bout de 216 EPOCHE
+
+Historique d'entraînement sauvegardé sous : ../data/seisbenchC/loss_history_scratch.csv
+
+Entraînement terminé avec succès.
+--- Lancement : Modèle V1 | Qualité 'C' ---
+Chargement du modèle depuis : seisbenchC/ml_model_v1.pt
+142 traces disponibles dans test
+Recherche échantillons avec proba P/S comprises entre 0.8 et 1
+-> 26 échantillons trouvés
+Echantillon n°49MANUEL | proba P max : 0.876
+Echantillon n°7MANUEL | proba P max : 0.862
+Echantillon n°51MANUEL | proba P max : 0.821
+Echantillon n°10MANUEL | proba P max : 0.918
+Echantillon n°43MANUEL | proba P max : 0.960
+Echantillon n°46MANUEL | proba P max : 0.910
+Echantillon n°74MANUEL | proba P max : 0.819
+Echantillon n°28MANUEL | proba P max : 0.818
+Echantillon n°76MANUEL | proba P max : 0.902
+Echantillon n°5MANUEL | proba P max : 0.890
+Echantillon n°0MANUEL | proba P max : 0.821
+Echantillon n°37MANUEL | proba P max : 0.807
+Echantillon n°25MANUEL | proba P max : 0.845
+Echantillon n°34MANUEL | proba P max : 0.847
+Echantillon n°75MANUEL | proba P max : 0.900
+Echantillon n°24MANUEL | proba P max : 0.830
+Echantillon n°61MANUEL | proba P max : 0.803
+Echantillon n°70MANUEL | proba P max : 0.941
+Echantillon n°11MANUEL | proba P max : 0.861
+Echantillon n°78MANUEL | proba P max : 0.841
+
+-> Graphique Train et Val loss sauvegardé avec succès sous : ../images/seisbenchC/loss_curve_c_scratch.png
+
+--- Repartition du Score de confiance V1 (Qualité C) ---
+Évaluation sur 81 traces dans ../data/seisbenchC/seisbench_dataset...
+-> Graphique V1 sauvegardé sous : ../images/seisbenchC/confiance_V1_c.png
+Graphique score de confiance terminé avec succès.
+
+--- Repartition du Score de confiance V1 (Qualité C) ---
+Évaluation sur 61 traces dans ../data/seisbenchC/seisbench_dataset...
+-> Graphique V1 sauvegardé sous : ../images/seisbenchC/noise_V1_c.png
+Graphique score de confiance terminé avec succès.
+On veux une qualité minimal de c
+Chargement du modèle local depuis : seisbenchC/ml_model_v1.pt
+
+--- Traitement du jour 051 ---
+  Station IA2 : 7679 phases VT filtrées.
+  Station SAM : 1093 phases VT filtrées.
+  Station MLM : 622 phases VT filtrées.
+  Station GBM : 285 phases VT filtrées.
+  Station CPM : 316 phases VT filtrées.
+  Station LAM : 335 phases VT filtrées.
+  Station BAM : 2313 phases VT filtrées.
+=== Bilan Jour 051 : 9359 phases -> 38 évènements ===
+
+--- Traitement du jour 052 ---
+  Station IA2 : 1725 phases VT filtrées.
+  Station SAM : 932 phases VT filtrées.
+  Station MLM : 551 phases VT filtrées.
+  Station GBM : 314 phases VT filtrées.
+  Station CPM : 353 phases VT filtrées.
+  Station LAM : 225 phases VT filtrées.
+  Station BAM : 2006 phases VT filtrées.
+=== Bilan Jour 052 : 5317 phases -> 28 évènements ===
+
+--- Traitement du jour 053 ---
+  Station IA2 : 403 phases VT filtrées.
+  Station SAM : 864 phases VT filtrées.
+  Station MLM : 52 phases VT filtrées.
+  Station GBM : 104 phases VT filtrées.
+  Station CPM : 173 phases VT filtrées.
+  Station LAM : 55 phases VT filtrées.
+  Station BAM : 1976 phases VT filtrées.
+=== Bilan Jour 053 : 3416 phases -> 3 évènements ===
+
+--- Traitement du jour 054 ---
+  Station IA2 : 355 phases VT filtrées.
+  Station SAM : 1148 phases VT filtrées.
+  Station MLM : 42 phases VT filtrées.
+  Station GBM : 78 phases VT filtrées.
+  Station CPM : 344 phases VT filtrées.
+  Station LAM : 112 phases VT filtrées.
+  Station BAM : 2011 phases VT filtrées.
+=== Bilan Jour 054 : 3873 phases -> 4 évènements ===
+
+--- Traitement du jour 055 ---
+  Station IA2 : 763 phases VT filtrées.
+  Station SAM : 1202 phases VT filtrées.
+  Station MLM : 1092 phases VT filtrées.
+  Station GBM : 589 phases VT filtrées.
+  Station CPM : 703 phases VT filtrées.
+  Station LAM : 346 phases VT filtrées.
+  Station BAM : 2157 phases VT filtrées.
+=== Bilan Jour 055 : 6317 phases -> 196 évènements ===
+
+--- Traitement du jour 056 ---
+  Station IA2 : 384 phases VT filtrées.
+  Station SAM : 1239 phases VT filtrées.
+  Station MLM : 812 phases VT filtrées.
+  Station GBM : 495 phases VT filtrées.
+  Station CPM : 401 phases VT filtrées.
+  Station LAM : 84 phases VT filtrées.
+  Station BAM : 1969 phases VT filtrées.
+=== Bilan Jour 056 : 5104 phases -> 23 évènements ===
+
+--- Traitement du jour 057 ---
+  Station IA2 : 270 phases VT filtrées.
+  Station SAM : 1305 phases VT filtrées.
+  Station MLM : 822 phases VT filtrées.
+  Station GBM : 594 phases VT filtrées.
+  Station CPM : 666 phases VT filtrées.
+  Station LAM : 75 phases VT filtrées.
+  Station BAM : 1912 phases VT filtrées.
+=== Bilan Jour 057 : 5387 phases -> 27 évènements ===
+
+--- Traitement du jour 058 ---
+  Station IA2 : 233 phases VT filtrées.
+  Station SAM : 1094 phases VT filtrées.
+  Station MLM : 686 phases VT filtrées.
+  Station GBM : 414 phases VT filtrées.
+  Station CPM : 510 phases VT filtrées.
+  Station LAM : 108 phases VT filtrées.
+  Station BAM : 1742 phases VT filtrées.
+=== Bilan Jour 058 : 4620 phases -> 25 évènements ===
+
+--- Traitement du jour 059 ---
+  Station IA2 : 343 phases VT filtrées.
+  Station SAM : 1018 phases VT filtrées.
+  Station MLM : 653 phases VT filtrées.
+  Station GBM : 347 phases VT filtrées.
+  Station CPM : 641 phases VT filtrées.
+  Station LAM : 98 phases VT filtrées.
+  Station BAM : 1515 phases VT filtrées.
+=== Bilan Jour 059 : 4439 phases -> 22 évènements ===
+
+--- Traitement du jour 060 ---
+  Station IA2 : 246 phases VT filtrées.
+  Station SAM : 915 phases VT filtrées.
+  Station MLM : 29 phases VT filtrées.
+  Station GBM : 82 phases VT filtrées.
+  Station CPM : 208 phases VT filtrées.
+  Station LAM : 143 phases VT filtrées.
+  Station BAM : 1523 phases VT filtrées.
+=== Bilan Jour 060 : 2978 phases -> 0 évènements ===
+
+--- Traitement du jour 061 ---
+  Station IA2 : 366 phases VT filtrées.
+  Station SAM : 830 phases VT filtrées.
+  Station MLM : 16 phases VT filtrées.
+  Station GBM : 68 phases VT filtrées.
+  Station CPM : 395 phases VT filtrées.
+  Station LAM : 107 phases VT filtrées.
+  Station BAM : 1672 phases VT filtrées.
+=== Bilan Jour 061 : 3234 phases -> 9 évènements ===
+
+--- Traitement du jour 062 ---
+  Station IA2 : 279 phases VT filtrées.
+  Station SAM : 966 phases VT filtrées.
+  Station MLM : 420 phases VT filtrées.
+  Station GBM : 384 phases VT filtrées.
+  Station CPM : 497 phases VT filtrées.
+  Station LAM : 312 phases VT filtrées.
+  Station BAM : 1860 phases VT filtrées.
+=== Bilan Jour 062 : 4478 phases -> 19 évènements ===
+
+--- Traitement du jour 063 ---
+  Station IA2 : 465 phases VT filtrées.
+  Station SAM : 802 phases VT filtrées.
+  Station MLM : 371 phases VT filtrées.
+  Station GBM : 472 phases VT filtrées.
+  Station CPM : 626 phases VT filtrées.
+  Station LAM : 256 phases VT filtrées.
+  Station BAM : 2084 phases VT filtrées.
+=== Bilan Jour 063 : 4884 phases -> 44 évènements ===
+
+--- Traitement du jour 064 ---
+  Station IA2 : 317 phases VT filtrées.
+  Station SAM : 835 phases VT filtrées.
+  Station MLM : 89 phases VT filtrées.
+  Station GBM : 123 phases VT filtrées.
+  Station CPM : 566 phases VT filtrées.
+  Station LAM : 98 phases VT filtrées.
+  Station BAM : 1411 phases VT filtrées.
+=== Bilan Jour 064 : 3317 phases -> 14 évènements ===
+
+--- Traitement du jour 065 ---
+  Station IA2 : 126 phases VT filtrées.
+  Station SAM : 1213 phases VT filtrées.
+  Station MLM : 569 phases VT filtrées.
+  Station GBM : 397 phases VT filtrées.
+  Station CPM : 354 phases VT filtrées.
+  Station LAM : 76 phases VT filtrées.
+  Station BAM : 1936 phases VT filtrées.
+=== Bilan Jour 065 : 4492 phases -> 11 évènements ===
+
+--- Traitement du jour 066 ---
+  Station IA2 : 177 phases VT filtrées.
+  Station SAM : 1029 phases VT filtrées.
+  Station MLM : 485 phases VT filtrées.
+  Station GBM : 394 phases VT filtrées.
+  Station CPM : 501 phases VT filtrées.
+  Station LAM : 90 phases VT filtrées.
+  Station BAM : 1763 phases VT filtrées.
+=== Bilan Jour 066 : 4277 phases -> 14 évènements ===
+
+--- Traitement du jour 067 ---
+  Station IA2 : 208 phases VT filtrées.
+  Station SAM : 1502 phases VT filtrées.
+  Station MLM : 46 phases VT filtrées.
+  Station GBM : 85 phases VT filtrées.
+  Station CPM : 394 phases VT filtrées.
+  Station LAM : 120 phases VT filtrées.
+  Station BAM : 1431 phases VT filtrées.
+=== Bilan Jour 067 : 3477 phases -> 0 évènements ===
+
+--- Traitement du jour 068 ---
+  Station IA2 : 397 phases VT filtrées.
+  Station SAM : 1279 phases VT filtrées.
+  Station MLM : 10 phases VT filtrées.
+  Station GBM : 42 phases VT filtrées.
+  Station CPM : 517 phases VT filtrées.
+  Station LAM : 41 phases VT filtrées.
+  Station BAM : 1848 phases VT filtrées.
+=== Bilan Jour 068 : 3799 phases -> 3 évènements ===
+
+--- Traitement du jour 069 ---
+  Station IA2 : 264 phases VT filtrées.
+  Station SAM : 773 phases VT filtrées.
+  Station MLM : 635 phases VT filtrées.
+  Station GBM : 514 phases VT filtrées.
+  Station CPM : 427 phases VT filtrées.
+  Station LAM : 345 phases VT filtrées.
+  Station BAM : 2324 phases VT filtrées.
+=== Bilan Jour 069 : 5027 phases -> 34 évènements ===
+
+--- Traitement du jour 070 ---
+  Station IA2 : 293 phases VT filtrées.
+  Station SAM : 796 phases VT filtrées.
+  Station MLM : 613 phases VT filtrées.
+  Station GBM : 483 phases VT filtrées.
+  Station CPM : 449 phases VT filtrées.
+  Station LAM : 148 phases VT filtrées.
+  Station BAM : 2180 phases VT filtrées.
+=== Bilan Jour 070 : 4781 phases -> 25 évènements ===
+
+--- Traitement du jour 071 ---
+  Station IA2 : 335 phases VT filtrées.
+  Station SAM : 507 phases VT filtrées.
+  Station MLM : 625 phases VT filtrées.
+  Station GBM : 481 phases VT filtrées.
+  Station CPM : 588 phases VT filtrées.
+  Station LAM : 49 phases VT filtrées.
+  Station BAM : 1740 phases VT filtrées.
+=== Bilan Jour 071 : 4234 phases -> 20 évènements ===
+
+--- Traitement du jour 072 ---
+  Station IA2 : 205 phases VT filtrées.
+  Station SAM : 784 phases VT filtrées.
+  Station MLM : 386 phases VT filtrées.
+  Station GBM : 399 phases VT filtrées.
+  Station CPM : 496 phases VT filtrées.
+  Station LAM : 234 phases VT filtrées.
+  Station BAM : 1795 phases VT filtrées.
+=== Bilan Jour 072 : 4121 phases -> 23 évènements ===
+
+--- Traitement du jour 073 ---
+  Station IA2 : 642 phases VT filtrées.
+  Station SAM : 519 phases VT filtrées.
+  Station MLM : 668 phases VT filtrées.
+  Station GBM : 556 phases VT filtrées.
+  Station CPM : 654 phases VT filtrées.
+  Station LAM : 153 phases VT filtrées.
+  Station BAM : 2082 phases VT filtrées.
+=== Bilan Jour 073 : 5012 phases -> 63 évènements ===
+
+--- Traitement du jour 074 ---
+  Station IA2 : 265 phases VT filtrées.
+  Station SAM : 473 phases VT filtrées.
+  Station MLM : 33 phases VT filtrées.
+  Station GBM : 276 phases VT filtrées.
+  Station CPM : 247 phases VT filtrées.
+  Station LAM : 215 phases VT filtrées.
+  Station BAM : 2055 phases VT filtrées.
+=== Bilan Jour 074 : 3393 phases -> 48 évènements ===
+
+--- Traitement du jour 075 ---
+  Station IA2 : 394 phases VT filtrées.
+  Station SAM : 722 phases VT filtrées.
+  Station MLM : 17 phases VT filtrées.
+  Station GBM : 194 phases VT filtrées.
+  Station CPM : 274 phases VT filtrées.
+  Station LAM : 167 phases VT filtrées.
+  Station BAM : 1536 phases VT filtrées.
+=== Bilan Jour 075 : 3051 phases -> 51 évènements ===
+
+--- Traitement du jour 076 ---
+  Station IA2 : 394 phases VT filtrées.
+  Station SAM : 924 phases VT filtrées.
+  Station MLM : 591 phases VT filtrées.
+  Station GBM : 507 phases VT filtrées.
+  Station CPM : 436 phases VT filtrées.
+  Station LAM : 54 phases VT filtrées.
+  Station BAM : 1807 phases VT filtrées.
+=== Bilan Jour 076 : 4510 phases -> 13 évènements ===
+
+--- Traitement du jour 077 ---
+  Station IA2 : 404 phases VT filtrées.
+  Station SAM : 901 phases VT filtrées.
+  Station MLM : 645 phases VT filtrées.
+  Station GBM : 267 phases VT filtrées.
+  Station CPM : 333 phases VT filtrées.
+  Station LAM : 91 phases VT filtrées.
+  Station BAM : 1822 phases VT filtrées.
+=== Bilan Jour 077 : 4275 phases -> 12 évènements ===
+
+--- Traitement du jour 078 ---
+  Station IA2 : 2686 phases VT filtrées.
+  Station SAM : 1116 phases VT filtrées.
+  Station MLM : 569 phases VT filtrées.
+  Station GBM : 456 phases VT filtrées.
+  Station CPM : 432 phases VT filtrées.
+  Station LAM : 10851 phases VT filtrées.
+  Station BAM : 1613 phases VT filtrées.
+=== Bilan Jour 078 : 9823 phases -> 118 évènements ===
+
+--- Traitement du jour 079 ---
+  Station IA2 : 420 phases VT filtrées.
+  Station SAM : 1115 phases VT filtrées.
+  Station MLM : 486 phases VT filtrées.
+  Station GBM : 401 phases VT filtrées.
+  Station CPM : 381 phases VT filtrées.
+  Station LAM : 61 phases VT filtrées.
+  Station BAM : 1486 phases VT filtrées.
+=== Bilan Jour 079 : 4132 phases -> 15 évènements ===
+
+--- Traitement du jour 080 ---
+  Station IA2 : 201 phases VT filtrées.
+  Station SAM : 1019 phases VT filtrées.
+  Station MLM : 406 phases VT filtrées.
+  Station GBM : 246 phases VT filtrées.
+  Station CPM : 561 phases VT filtrées.
+  Station LAM : 124 phases VT filtrées.
+  Station BAM : 1787 phases VT filtrées.
+=== Bilan Jour 080 : 4175 phases -> 13 évènements ===
+
+--- Traitement du jour 081 ---
+  Station IA2 : 211 phases VT filtrées.
+  Station SAM : 764 phases VT filtrées.
+  Station MLM : 105 phases VT filtrées.
+  Station GBM : 93 phases VT filtrées.
+  Station CPM : 633 phases VT filtrées.
+  Station LAM : 163 phases VT filtrées.
+  Station BAM : 1681 phases VT filtrées.
+=== Bilan Jour 081 : 3536 phases -> 3 évènements ===
+
+--- Traitement du jour 082 ---
+  Station IA2 : 131 phases VT filtrées.
+  Station SAM : 712 phases VT filtrées.
+  Station MLM : 11 phases VT filtrées.
+  Station GBM : 48 phases VT filtrées.
+  Station CPM : 440 phases VT filtrées.
+  Station LAM : 58 phases VT filtrées.
+  Station BAM : 1736 phases VT filtrées.
+=== Bilan Jour 082 : 3056 phases -> 1 évènements ===
+
+--- Traitement du jour 083 ---
+  Station IA2 : 335 phases VT filtrées.
+  Station SAM : 671 phases VT filtrées.
+  Station MLM : 505 phases VT filtrées.
+  Station GBM : 628 phases VT filtrées.
+  Station CPM : 613 phases VT filtrées.
+  Station LAM : 130 phases VT filtrées.
+  Station BAM : 2416 phases VT filtrées.
+=== Bilan Jour 083 : 5112 phases -> 16 évènements ===
+
+--- Traitement du jour 084 ---
+  Station IA2 : 121 phases VT filtrées.
+  Station SAM : 627 phases VT filtrées.
+  Station MLM : 421 phases VT filtrées.
+  Station GBM : 454 phases VT filtrées.
+  Station CPM : 407 phases VT filtrées.
+  Station LAM : 53 phases VT filtrées.
+  Station BAM : 1922 phases VT filtrées.
+=== Bilan Jour 084 : 3899 phases -> 15 évènements ===
+
+--- Traitement du jour 085 ---
+  Station IA2 : 410 phases VT filtrées.
+  Station SAM : 1196 phases VT filtrées.
+  Station MLM : 477 phases VT filtrées.
+  Station GBM : 582 phases VT filtrées.
+  Station CPM : 492 phases VT filtrées.
+  Station LAM : 109 phases VT filtrées.
+  Station BAM : 1567 phases VT filtrées.
+=== Bilan Jour 085 : 4514 phases -> 22 évènements ===
+
+--- Traitement du jour 086 ---
+  Station IA2 : 379 phases VT filtrées.
+  Station SAM : 507 phases VT filtrées.
+  Station MLM : 451 phases VT filtrées.
+  Station GBM : 385 phases VT filtrées.
+  Station CPM : 476 phases VT filtrées.
+  Station LAM : 49 phases VT filtrées.
+  Station BAM : 1827 phases VT filtrées.
+=== Bilan Jour 086 : 3950 phases -> 12 évènements ===
+
+--- Traitement du jour 087 ---
+  Station IA2 : 469 phases VT filtrées.
+  Station SAM : 575 phases VT filtrées.
+  Station MLM : 421 phases VT filtrées.
+  Station GBM : 249 phases VT filtrées.
+  Station CPM : 359 phases VT filtrées.
+  Station LAM : 207 phases VT filtrées.
+  Station BAM : 2126 phases VT filtrées.
+=== Bilan Jour 087 : 4195 phases -> 14 évènements ===
+
+--- Traitement du jour 088 ---
+  Station IA2 : 311 phases VT filtrées.
+  Station SAM : 780 phases VT filtrées.
+  Station MLM : 10 phases VT filtrées.
+  Station GBM : 79 phases VT filtrées.
+  Station CPM : 467 phases VT filtrées.
+  Station LAM : 79 phases VT filtrées.
+  Station BAM : 2002 phases VT filtrées.
+=== Bilan Jour 088 : 3595 phases -> 3 évènements ===
+
+--- Traitement du jour 089 ---
+  Station IA2 : 370 phases VT filtrées.
+  Station SAM : 1278 phases VT filtrées.
+  Station MLM : 6 phases VT filtrées.
+  Station GBM : 99 phases VT filtrées.
+  Station CPM : 552 phases VT filtrées.
+  Station LAM : 145 phases VT filtrées.
+  Station BAM : 2063 phases VT filtrées.
+=== Bilan Jour 089 : 4252 phases -> 9 évènements ===
+
+--- Traitement du jour 090 ---
+  Station IA2 : 423 phases VT filtrées.
+  Station SAM : 869 phases VT filtrées.
+  Station MLM : 600 phases VT filtrées.
+  Station GBM : 638 phases VT filtrées.
+  Station CPM : 766 phases VT filtrées.
+  Station LAM : 56 phases VT filtrées.
+  Station BAM : 1749 phases VT filtrées.
+=== Bilan Jour 090 : 4947 phases -> 27 évènements ===
+
+--- Traitement du jour 091 ---
+  Station IA2 : 390 phases VT filtrées.
+  Station SAM : 1156 phases VT filtrées.
+  Station MLM : 624 phases VT filtrées.
+  Station GBM : 667 phases VT filtrées.
+  Station CPM : 663 phases VT filtrées.
+  Station LAM : 127 phases VT filtrées.
+  Station BAM : 1674 phases VT filtrées.
+=== Bilan Jour 091 : 5048 phases -> 24 évènements ===
+
+--- Traitement du jour 092 ---
+  Station IA2 : 373 phases VT filtrées.
+  Station SAM : 888 phases VT filtrées.
+  Station MLM : 495 phases VT filtrées.
+  Station GBM : 583 phases VT filtrées.
+  Station CPM : 662 phases VT filtrées.
+  Station LAM : 402 phases VT filtrées.
+  Station BAM : 2096 phases VT filtrées.
+=== Bilan Jour 092 : 5222 phases -> 47 évènements ===
+
+--- Traitement du jour 093 ---
+  Station IA2 : 190 phases VT filtrées.
+  Station SAM : 1324 phases VT filtrées.
+  Station MLM : 485 phases VT filtrées.
+  Station GBM : 522 phases VT filtrées.
+  Station CPM : 525 phases VT filtrées.
+  Station LAM : 384 phases VT filtrées.
+  Station BAM : 1808 phases VT filtrées.
+=== Bilan Jour 093 : 4835 phases -> 26 évènements ===
+
+--- Traitement du jour 094 ---
+  Station IA2 : 395 phases VT filtrées.
+  Station SAM : 365 phases VT filtrées.
+  Station MLM : 464 phases VT filtrées.
+  Station GBM : 368 phases VT filtrées.
+  Station CPM : 616 phases VT filtrées.
+  Station LAM : 31 phases VT filtrées.
+  Station BAM : 1742 phases VT filtrées.
+=== Bilan Jour 094 : 3878 phases -> 18 évènements ===
+
+--- Traitement du jour 095 ---
+  Station IA2 : 261 phases VT filtrées.
+  Station SAM : 782 phases VT filtrées.
+  Station MLM : 111 phases VT filtrées.
+  Station GBM : 228 phases VT filtrées.
+  Station CPM : 405 phases VT filtrées.
+  Station LAM : 59 phases VT filtrées.
+  Station BAM : 1834 phases VT filtrées.
+=== Bilan Jour 095 : 3519 phases -> 7 évènements ===
+
+--- Traitement du jour 096 ---
+  Station IA2 : 360 phases VT filtrées.
+  Station SAM : 768 phases VT filtrées.
+  Station MLM : 11 phases VT filtrées.
+  Station GBM : 76 phases VT filtrées.
+  Station CPM : 325 phases VT filtrées.
+  Station LAM : 80 phases VT filtrées.
+  Station BAM : 1773 phases VT filtrées.
+=== Bilan Jour 096 : 3233 phases -> 4 évènements ===
+
+--- Traitement du jour 097 ---
+  Station IA2 : 1080 phases VT filtrées.
+  Station SAM : 425 phases VT filtrées.
+  Station MLM : 482 phases VT filtrées.
+  Station GBM : 290 phases VT filtrées.
+  Station CPM : 506 phases VT filtrées.
+  Station LAM : 73 phases VT filtrées.
+  Station BAM : 1849 phases VT filtrées.
+=== Bilan Jour 097 : 4485 phases -> 17 évènements ===
+
+--- Traitement du jour 098 ---
+  Station IA2 : 473 phases VT filtrées.
+  Station SAM : 418 phases VT filtrées.
+  Station MLM : 302 phases VT filtrées.
+  Station GBM : 280 phases VT filtrées.
+  Station CPM : 356 phases VT filtrées.
+  Station LAM : 164 phases VT filtrées.
+  Station BAM : 1929 phases VT filtrées.
+=== Bilan Jour 098 : 3742 phases -> 11 évènements ===
+
+--- Traitement du jour 099 ---
+  Station IA2 : 347 phases VT filtrées.
+  Station SAM : 649 phases VT filtrées.
+  Station MLM : 460 phases VT filtrées.
+  Station GBM : 396 phases VT filtrées.
+  Station CPM : 576 phases VT filtrées.
+  Station LAM : 132 phases VT filtrées.
+  Station BAM : 1866 phases VT filtrées.
+=== Bilan Jour 099 : 4284 phases -> 13 évènements ===
+
+--- Traitement du jour 100 ---
+  Station IA2 : 308 phases VT filtrées.
+  Station SAM : 638 phases VT filtrées.
+  Station MLM : 453 phases VT filtrées.
+  Station GBM : 411 phases VT filtrées.
+  Station CPM : 515 phases VT filtrées.
+  Station LAM : 41 phases VT filtrées.
+  Station BAM : 2023 phases VT filtrées.
+=== Bilan Jour 100 : 4238 phases -> 18 évènements ===
+
+--- Traitement du jour 101 ---
+  Station IA2 : 459 phases VT filtrées.
+  Station SAM : 790 phases VT filtrées.
+  Station MLM : 511 phases VT filtrées.
+  Station GBM : 314 phases VT filtrées.
+  Station CPM : 381 phases VT filtrées.
+  Station LAM : 104 phases VT filtrées.
+  Station BAM : 2058 phases VT filtrées.
+=== Bilan Jour 101 : 4361 phases -> 12 évènements ===
+
+--- Traitement du jour 102 ---
+  Station IA2 : 543 phases VT filtrées.
+  Station SAM : 675 phases VT filtrées.
+  Station MLM : 283 phases VT filtrées.
+  Station GBM : 230 phases VT filtrées.
+  Station CPM : 281 phases VT filtrées.
+  Station LAM : 72 phases VT filtrées.
+  Station BAM : 1672 phases VT filtrées.
+=== Bilan Jour 102 : 3552 phases -> 1 évènements ===
+
+--- Traitement du jour 103 ---
+  Station IA2 : 99 phases VT filtrées.
+  Station SAM : 843 phases VT filtrées.
+  Station MLM : 9 phases VT filtrées.
+  Station GBM : 189 phases VT filtrées.
+  Station CPM : 217 phases VT filtrées.
+  Station LAM : 100 phases VT filtrées.
+  Station BAM : 1201 phases VT filtrées.
+=== Bilan Jour 103 : 2542 phases -> 12 évènements ===
+
+--- Traitement du jour 104 ---
+  Station IA2 : 217 phases VT filtrées.
+  Station SAM : 843 phases VT filtrées.
+  Station MLM : 322 phases VT filtrées.
+  Station GBM : 479 phases VT filtrées.
+  Station CPM : 256 phases VT filtrées.
+  Station LAM : 51 phases VT filtrées.
+  Station BAM : 1546 phases VT filtrées.
+=== Bilan Jour 104 : 3569 phases -> 10 évènements ===
+
+--- Traitement du jour 105 ---
+  Station IA2 : 250 phases VT filtrées.
+  Station SAM : 1144 phases VT filtrées.
+  Station MLM : 492 phases VT filtrées.
+  Station GBM : 467 phases VT filtrées.
+  Station CPM : 450 phases VT filtrées.
+  Station LAM : 101 phases VT filtrées.
+  Station BAM : 1607 phases VT filtrées.
+=== Bilan Jour 105 : 4308 phases -> 16 évènements ===
+
+--- Traitement du jour 106 ---
+  Station IA2 : 87 phases VT filtrées.
+  Station SAM : 1035 phases VT filtrées.
+  Station MLM : 470 phases VT filtrées.
+  Station GBM : 441 phases VT filtrées.
+  Station CPM : 491 phases VT filtrées.
+  Station LAM : 109 phases VT filtrées.
+  Station BAM : 1740 phases VT filtrées.
+=== Bilan Jour 106 : 4229 phases -> 22 évènements ===
+
+--- Traitement du jour 107 ---
+  Station IA2 : 748 phases VT filtrées.
+  Station SAM : 989 phases VT filtrées.
+  Station MLM : 395 phases VT filtrées.
+  Station GBM : 314 phases VT filtrées.
+  Station CPM : 359 phases VT filtrées.
+  Station LAM : 55 phases VT filtrées.
+  Station BAM : 1687 phases VT filtrées.
+=== Bilan Jour 107 : 4219 phases -> 7 évènements ===
+
+--- Traitement du jour 108 ---
+  Station IA2 : 390 phases VT filtrées.
+  Station SAM : 696 phases VT filtrées.
+  Station MLM : 9 phases VT filtrées.
+  Station GBM : 80 phases VT filtrées.
+  Station CPM : 338 phases VT filtrées.
+  Station LAM : 205 phases VT filtrées.
+  Station BAM : 1911 phases VT filtrées.
+=== Bilan Jour 108 : 3468 phases -> 3 évènements ===
+
+--- Traitement du jour 109 ---
+  Station IA2 : 730 phases VT filtrées.
+  Station SAM : 656 phases VT filtrées.
+  Station MLM : 158 phases VT filtrées.
+  Station GBM : 171 phases VT filtrées.
+  Station CPM : 507 phases VT filtrées.
+  Station LAM : 373 phases VT filtrées.
+  Station BAM : 2103 phases VT filtrées.
+=== Bilan Jour 109 : 4359 phases -> 14 évènements ===
+
+--- Traitement du jour 110 ---
+  Station IA2 : 160 phases VT filtrées.
+  Station SAM : 810 phases VT filtrées.
+  Station MLM : 26 phases VT filtrées.
+  Station GBM : 142 phases VT filtrées.
+  Station CPM : 372 phases VT filtrées.
+  Station LAM : 277 phases VT filtrées.
+  Station BAM : 2042 phases VT filtrées.
+=== Bilan Jour 110 : 3692 phases -> 7 évènements ===
+
+--- Traitement du jour 111 ---
+  Station IA2 : 3515 phases VT filtrées.
+  Station SAM : 2099 phases VT filtrées.
+  Station MLM : 23 phases VT filtrées.
+  Station GBM : 104 phases VT filtrées.
+  Station CPM : 292 phases VT filtrées.
+  Station LAM : 71 phases VT filtrées.
+  Station BAM : 1064 phases VT filtrées.
+=== Bilan Jour 111 : 5403 phases -> 10 évènements ===
+
+--- Traitement du jour 112 ---
+  Station IA2 : 368 phases VT filtrées.
+  Station SAM : 3666 phases VT filtrées.
+  Station MLM : 443 phases VT filtrées.
+  Station GBM : 669 phases VT filtrées.
+  Station CPM : 467 phases VT filtrées.
+  Station LAM : 176 phases VT filtrées.
+  Station BAM : 1158 phases VT filtrées.
+=== Bilan Jour 112 : 6015 phases -> 42 évènements ===
+
+--- Traitement du jour 113 ---
+  Station IA2 : 240 phases VT filtrées.
+  Station SAM : 4578 phases VT filtrées.
+  Station MLM : 389 phases VT filtrées.
+  Station GBM : 561 phases VT filtrées.
+  Station CPM : 575 phases VT filtrées.
+  Station LAM : 89 phases VT filtrées.
+  Station BAM : 1349 phases VT filtrées.
+=== Bilan Jour 113 : 6601 phases -> 33 évènements ===
+
+--- Traitement du jour 114 ---
+  Station IA2 : 276 phases VT filtrées.
+  Station SAM : 3935 phases VT filtrées.
+  Station MLM : 516 phases VT filtrées.
+  Station GBM : 459 phases VT filtrées.
+  Station CPM : 428 phases VT filtrées.
+  Station LAM : 125 phases VT filtrées.
+  Station BAM : 1626 phases VT filtrées.
+=== Bilan Jour 114 : 6368 phases -> 22 évènements ===
+
+--- Traitement du jour 115 ---
+  Station IA2 : 259 phases VT filtrées.
+  Station SAM : 5309 phases VT filtrées.
+  Station MLM : 402 phases VT filtrées.
+  Station GBM : 466 phases VT filtrées.
+  Station CPM : 632 phases VT filtrées.
+  Station LAM : 70 phases VT filtrées.
+  Station BAM : 1764 phases VT filtrées.
+=== Bilan Jour 115 : 7297 phases -> 37 évènements ===
+
+--- Traitement du jour 116 ---
+  Station IA2 : 143 phases VT filtrées.
+  Station SAM : 3313 phases VT filtrées.
+  Station MLM : 69 phases VT filtrées.
+  Station GBM : 158 phases VT filtrées.
+  Station CPM : 593 phases VT filtrées.
+  Station LAM : 51 phases VT filtrées.
+  Station BAM : 2337 phases VT filtrées.
+=== Bilan Jour 116 : 5897 phases -> 11 évènements ===
+
+--- Traitement du jour 117 ---
+  Station IA2 : 139 phases VT filtrées.
+  Station SAM : 2161 phases VT filtrées.
+  Station MLM : 4 phases VT filtrées.
+  Station GBM : 48 phases VT filtrées.
+  Station CPM : 628 phases VT filtrées.
+  Station LAM : 67 phases VT filtrées.
+  Station BAM : 1729 phases VT filtrées.
+=== Bilan Jour 117 : 4288 phases -> 5 évènements ===
+
+--- Traitement du jour 118 ---
+  Station IA2 : 345 phases VT filtrées.
+  Station SAM : 1976 phases VT filtrées.
+  Station MLM : 443 phases VT filtrées.
+  Station GBM : 365 phases VT filtrées.
+  Station CPM : 581 phases VT filtrées.
+  Station LAM : 63 phases VT filtrées.
+  Station BAM : 2030 phases VT filtrées.
+=== Bilan Jour 118 : 5327 phases -> 22 évènements ===
+
+--- Traitement du jour 119 ---
+  Station IA2 : 255 phases VT filtrées.
+  Station SAM : 1526 phases VT filtrées.
+  Station MLM : 437 phases VT filtrées.
+  Station GBM : 350 phases VT filtrées.
+  Station CPM : 443 phases VT filtrées.
+  Station LAM : 81 phases VT filtrées.
+  Station BAM : 1804 phases VT filtrées.
+=== Bilan Jour 119 : 4585 phases -> 13 évènements ===
+
+--- Traitement du jour 120 ---
+  Station IA2 : 456 phases VT filtrées.
+  Station SAM : 720 phases VT filtrées.
+  Station MLM : 479 phases VT filtrées.
+  Station GBM : 147 phases VT filtrées.
+  Station CPM : 294 phases VT filtrées.
+  Station LAM : 38 phases VT filtrées.
+  Station BAM : 1823 phases VT filtrées.
+=== Bilan Jour 120 : 3771 phases -> 5 évènements ===
+
+--- Traitement du jour 121 ---
+  Station IA2 : 161 phases VT filtrées.
+  Station SAM : 767 phases VT filtrées.
+  Station MLM : 7 phases VT filtrées.
+  Station GBM : 40 phases VT filtrées.
+  Station CPM : 301 phases VT filtrées.
+  Station LAM : 57 phases VT filtrées.
+  Station BAM : 1599 phases VT filtrées.
+=== Bilan Jour 121 : 2784 phases -> 2 évènements ===
+
+--- Traitement du jour 122 ---
+  Station IA2 : 286 phases VT filtrées.
+  Station SAM : 530 phases VT filtrées.
+  Station MLM : 223 phases VT filtrées.
+  Station GBM : 174 phases VT filtrées.
+  Station CPM : 451 phases VT filtrées.
+  Station LAM : 137 phases VT filtrées.
+  Station BAM : 1968 phases VT filtrées.
+=== Bilan Jour 122 : 3627 phases -> 23 évènements ===
+
+--- Traitement du jour 123 ---
+  Station IA2 : 460 phases VT filtrées.
+  Station SAM : 424 phases VT filtrées.
+  Station MLM : 154 phases VT filtrées.
+  Station GBM : 238 phases VT filtrées.
+  Station CPM : 853 phases VT filtrées.
+  Station LAM : 174 phases VT filtrées.
+  Station BAM : 2115 phases VT filtrées.
+=== Bilan Jour 123 : 4223 phases -> 17 évènements ===
+
+--- Traitement du jour 124 ---
+  Station IA2 : 316 phases VT filtrées.
+  Station SAM : 562 phases VT filtrées.
+  Station MLM : 10 phases VT filtrées.
+  Station GBM : 69 phases VT filtrées.
+  Station CPM : 671 phases VT filtrées.
+  Station LAM : 50 phases VT filtrées.
+  Station BAM : 2112 phases VT filtrées.
+=== Bilan Jour 124 : 3657 phases -> 17 évènements ===
+
+--- Traitement du jour 125 ---
+  Station IA2 : 311 phases VT filtrées.
+  Station SAM : 586 phases VT filtrées.
+  Station MLM : 501 phases VT filtrées.
+  Station GBM : 773 phases VT filtrées.
+  Station CPM : 615 phases VT filtrées.
+  Station LAM : 263 phases VT filtrées.
+  Station BAM : 2266 phases VT filtrées.
+=== Bilan Jour 125 : 5146 phases -> 39 évènements ===
+
+--- Traitement du jour 126 ---
+  Station IA2 : 323 phases VT filtrées.
+  Station SAM : 718 phases VT filtrées.
+  Station MLM : 534 phases VT filtrées.
+  Station GBM : 599 phases VT filtrées.
+  Station CPM : 455 phases VT filtrées.
+  Station LAM : 109 phases VT filtrées.
+  Station BAM : 1278 phases VT filtrées.
+=== Bilan Jour 126 : 3894 phases -> 26 évènements ===
+
+--- Traitement du jour 127 ---
+  Station IA2 : 273 phases VT filtrées.
+  Station SAM : 657 phases VT filtrées.
+  Station MLM : 492 phases VT filtrées.
+  Station GBM : 487 phases VT filtrées.
+  Station CPM : 528 phases VT filtrées.
+  Station LAM : 94 phases VT filtrées.
+  Station BAM : 1469 phases VT filtrées.
+=== Bilan Jour 127 : 3868 phases -> 14 évènements ===
+
+--- Traitement du jour 128 ---
+  Station IA2 : 378 phases VT filtrées.
+  Station SAM : 423 phases VT filtrées.
+  Station MLM : 15 phases VT filtrées.
+  Station GBM : 55 phases VT filtrées.
+  Station CPM : 403 phases VT filtrées.
+  Station LAM : 95 phases VT filtrées.
+  Station BAM : 1613 phases VT filtrées.
+=== Bilan Jour 128 : 2832 phases -> 7 évènements ===
+
+--- Traitement du jour 129 ---
+  Station IA2 : 462 phases VT filtrées.
+  Station SAM : 464 phases VT filtrées.
+  Station MLM : 365 phases VT filtrées.
+  Station GBM : 242 phases VT filtrées.
+  Station CPM : 305 phases VT filtrées.
+  Station LAM : 40 phases VT filtrées.
+  Station BAM : 1665 phases VT filtrées.
+=== Bilan Jour 129 : 3360 phases -> 10 évènements ===
+
+--- Traitement du jour 130 ---
+  Station IA2 : 166 phases VT filtrées.
+  Station SAM : 1118 phases VT filtrées.
+  Station MLM : 126 phases VT filtrées.
+  Station GBM : 293 phases VT filtrées.
+  Station CPM : 447 phases VT filtrées.
+  Station LAM : 317 phases VT filtrées.
+  Station BAM : 1675 phases VT filtrées.
+=== Bilan Jour 130 : 3907 phases -> 27 évènements ===
+
+--- Traitement du jour 131 ---
+  Station IA2 : 136 phases VT filtrées.
+  Station SAM : 452 phases VT filtrées.
+  Station MLM : 99 phases VT filtrées.
+  Station GBM : 74 phases VT filtrées.
+  Station CPM : 299 phases VT filtrées.
+  Station LAM : 105 phases VT filtrées.
+  Station BAM : 1197 phases VT filtrées.
+=== Bilan Jour 131 : 2292 phases -> 3 évènements ===
+
+--- Traitement du jour 132 ---
+  Station IA2 : 296 phases VT filtrées.
+  Station SAM : 562 phases VT filtrées.
+  Station MLM : 445 phases VT filtrées.
+  Station GBM : 314 phases VT filtrées.
+  Station CPM : 336 phases VT filtrées.
+  Station LAM : 159 phases VT filtrées.
+  Station BAM : 1401 phases VT filtrées.
+=== Bilan Jour 132 : 3406 phases -> 7 évènements ===
+
+--- Traitement du jour 133 ---
+  Station IA2 : 334 phases VT filtrées.
+  Station SAM : 512 phases VT filtrées.
+  Station MLM : 472 phases VT filtrées.
+  Station GBM : 376 phases VT filtrées.
+  Station CPM : 437 phases VT filtrées.
+  Station LAM : 178 phases VT filtrées.
+  Station BAM : 2046 phases VT filtrées.
+=== Bilan Jour 133 : 4240 phases -> 10 évènements ===
+
+--- Traitement du jour 134 ---
+  Station IA2 : 625 phases VT filtrées.
+  Station SAM : 775 phases VT filtrées.
+  Station MLM : 625 phases VT filtrées.
+  Station GBM : 583 phases VT filtrées.
+  Station CPM : 428 phases VT filtrées.
+  Station LAM : 193 phases VT filtrées.
+  Station BAM : 1904 phases VT filtrées.
+=== Bilan Jour 134 : 4896 phases -> 28 évènements ===
+
+--- Traitement du jour 135 ---
+  Station IA2 : 832 phases VT filtrées.
+  Station SAM : 1098 phases VT filtrées.
+  Station MLM : 562 phases VT filtrées.
+  Station GBM : 619 phases VT filtrées.
+  Station CPM : 497 phases VT filtrées.
+  Station LAM : 75 phases VT filtrées.
+  Station BAM : 2088 phases VT filtrées.
+=== Bilan Jour 135 : 5453 phases -> 22 évènements ===
+
+--- Traitement du jour 136 ---
+  Station IA2 : 546 phases VT filtrées.
+  Station SAM : 506 phases VT filtrées.
+  Station MLM : 364 phases VT filtrées.
+  Station GBM : 417 phases VT filtrées.
+  Station CPM : 457 phases VT filtrées.
+  Station LAM : 184 phases VT filtrées.
+  Station BAM : 1774 phases VT filtrées.
+=== Bilan Jour 136 : 4046 phases -> 37 évènements ===
+
+--- Traitement du jour 137 ---
+  Station IA2 : 994 phases VT filtrées.
+  Station SAM : 622 phases VT filtrées.
+  Station MLM : 146 phases VT filtrées.
+  Station GBM : 244 phases VT filtrées.
+  Station CPM : 386 phases VT filtrées.
+  Station LAM : 231 phases VT filtrées.
+  Station BAM : 1453 phases VT filtrées.
+=== Bilan Jour 137 : 3712 phases -> 25 évènements ===
+
+--- Traitement du jour 138 ---
+  Station IA2 : 707 phases VT filtrées.
+  Station SAM : 645 phases VT filtrées.
+  Station MLM : 9 phases VT filtrées.
+  Station GBM : 85 phases VT filtrées.
+  Station CPM : 459 phases VT filtrées.
+  Station LAM : 161 phases VT filtrées.
+  Station BAM : 1466 phases VT filtrées.
+=== Bilan Jour 138 : 3279 phases -> 10 évènements ===
+
+--- Traitement du jour 139 ---
+  Station IA2 : 886 phases VT filtrées.
+  Station SAM : 466 phases VT filtrées.
+  Station MLM : 489 phases VT filtrées.
+  Station GBM : 327 phases VT filtrées.
+  Station CPM : 706 phases VT filtrées.
+  Station LAM : 83 phases VT filtrées.
+  Station BAM : 2275 phases VT filtrées.
+=== Bilan Jour 139 : 5023 phases -> 22 évènements ===
+
+--- Traitement du jour 140 ---
+  Station IA2 : 596 phases VT filtrées.
+  Station SAM : 877 phases VT filtrées.
+  Station MLM : 598 phases VT filtrées.
+  Station GBM : 624 phases VT filtrées.
+  Station CPM : 784 phases VT filtrées.
+  Station LAM : 194 phases VT filtrées.
+  Station BAM : 1991 phases VT filtrées.
+=== Bilan Jour 140 : 5432 phases -> 34 évènements ===
+
+--- Traitement du jour 141 ---
+  Station IA2 : 326 phases VT filtrées.
+  Station SAM : 735 phases VT filtrées.
+  Station MLM : 414 phases VT filtrées.
+  Station GBM : 329 phases VT filtrées.
+  Station CPM : 547 phases VT filtrées.
+  Station LAM : 126 phases VT filtrées.
+  Station BAM : 2022 phases VT filtrées.
+=== Bilan Jour 141 : 4351 phases -> 7 évènements ===
+
+--- Traitement du jour 142 ---
+  Station IA2 : 391 phases VT filtrées.
+  Station SAM : 543 phases VT filtrées.
+  Station MLM : 3 phases VT filtrées.
+  Station GBM : 116 phases VT filtrées.
+  Station CPM : 541 phases VT filtrées.
+  Station LAM : 237 phases VT filtrées.
+  Station BAM : 2270 phases VT filtrées.
+=== Bilan Jour 142 : 3950 phases -> 0 évènements ===
+
+--- Traitement du jour 143 ---
+  Station IA2 : 450 phases VT filtrées.
+  Station SAM : 529 phases VT filtrées.
+  Station MLM : 468 phases VT filtrées.
+  Station GBM : 271 phases VT filtrées.
+  Station CPM : 409 phases VT filtrées.
+  Station LAM : 251 phases VT filtrées.
+  Station BAM : 2310 phases VT filtrées.
+=== Bilan Jour 143 : 4505 phases -> 10 évènements ===
+
+--- Traitement du jour 144 ---
+  Station IA2 : 276 phases VT filtrées.
+  Station SAM : 824 phases VT filtrées.
+  Station MLM : 17 phases VT filtrées.
+  Station GBM : 94 phases VT filtrées.
+  Station CPM : 215 phases VT filtrées.
+  Station LAM : 137 phases VT filtrées.
+  Station BAM : 1925 phases VT filtrées.
+=== Bilan Jour 144 : 3339 phases -> 5 évènements ===
+
+--- Traitement du jour 145 ---
+  Station IA2 : 196 phases VT filtrées.
+  Station SAM : 7336 phases VT filtrées.
+  Station MLM : 46 phases VT filtrées.
+  Station GBM : 58 phases VT filtrées.
+  Station CPM : 188 phases VT filtrées.
+  Station LAM : 4052 phases VT filtrées.
+  Station BAM : 1623 phases VT filtrées.
+=== Bilan Jour 145 : 8868 phases -> 7 évènements ===
+
+--- Traitement du jour 146 ---
+Station IA2 : Aucun fichier .mseed trouvé.
+  Station SAM : 716 phases VT filtrées.
+  Station MLM : 440 phases VT filtrées.
+  Station GBM : 410 phases VT filtrées.
+  Station CPM : 267 phases VT filtrées.
+  Station LAM : 35 phases VT filtrées.
+  Station BAM : 1917 phases VT filtrées.
+=== Bilan Jour 146 : 3692 phases -> 7 évènements ===
+
+--- Traitement du jour 147 ---
+Station IA2 : Aucun fichier .mseed trouvé.
+  Station SAM : 689 phases VT filtrées.
+  Station MLM : 672 phases VT filtrées.
+  Station GBM : 511 phases VT filtrées.
+  Station CPM : 389 phases VT filtrées.
+  Station LAM : 64 phases VT filtrées.
+  Station BAM : 1755 phases VT filtrées.
+=== Bilan Jour 147 : 4004 phases -> 7 évènements ===
+
+--- Traitement du jour 148 ---
+Station IA2 : Aucun fichier .mseed trouvé.
+  Station SAM : 997 phases VT filtrées.
+  Station MLM : 620 phases VT filtrées.
+  Station GBM : 756 phases VT filtrées.
+  Station CPM : 599 phases VT filtrées.
+  Station LAM : 113 phases VT filtrées.
+  Station BAM : 2095 phases VT filtrées.
+=== Bilan Jour 148 : 5071 phases -> 35 évènements ===
+
+--- Traitement du jour 149 ---
+Station IA2 : Aucun fichier .mseed trouvé.
+  Station SAM : 1080 phases VT filtrées.
+  Station MLM : 11 phases VT filtrées.
+  Station GBM : 45 phases VT filtrées.
+  Station CPM : 359 phases VT filtrées.
+  Station LAM : 91 phases VT filtrées.
+  Station BAM : 1443 phases VT filtrées.
+=== Bilan Jour 149 : 2901 phases -> 0 évènements ===
+
+--- Traitement du jour 150 ---
+Station IA2 : Aucun fichier .mseed trouvé.
+  Station SAM : 879 phases VT filtrées.
+  Station MLM : 532 phases VT filtrées.
+  Station GBM : 449 phases VT filtrées.
+  Station CPM : 470 phases VT filtrées.
+  Station LAM : 61 phases VT filtrées.
+  Station BAM : 1478 phases VT filtrées.
+=== Bilan Jour 150 : 3741 phases -> 9 évènements ===
+
+--- Traitement du jour 151 ---
+Station IA2 : Aucun fichier .mseed trouvé.
+  Station SAM : 814 phases VT filtrées.
+  Station MLM : 79 phases VT filtrées.
+  Station GBM : 72 phases VT filtrées.
+  Station CPM : 415 phases VT filtrées.
+  Station LAM : 184 phases VT filtrées.
+  Station BAM : 1710 phases VT filtrées.
+=== Bilan Jour 151 : 3163 phases -> 1 évènements ===
+
+--- Sauvegarde des catalogues ---
+Catalogue des picks sauvegardé : ../data/seisbenchC/seisbench_nouv/catalogue_vt_detectes.csv
+Événements valides (stricts) sauvegardés (1994 événements) : ../data/seisbenchC/seisbench_nouv/catalogue_vt_detectes_evenements_valides.csv
+On veux une qualité minimal de c
+Chargement des catalogues
+Chargement de l'historique pour filtrage des doublons : ../data/seisbenchD/seisbench_format/metadata.csv
+ -> 1228 pointés existants chargés depuis la base initiale.
+1994 événements à analyser/extraire
+
+Début de l'extraction vers ../data/seisbenchC/seisbench_format_gold
+Traces converted: 0it [00:00, ?it/s]Traces converted: 2it [00:00,  9.91it/s]Traces converted: 3it [00:00,  5.60it/s]Traces converted: 4it [00:01,  1.93it/s]Traces converted: 7it [00:01,  3.60it/s]Traces converted: 9it [00:02,  4.05it/s]Traces converted: 14it [00:02,  8.45it/s]2026-08-21 10:54:22,806 | seisbench | WARNING | Found multiple traces for MQ.LAM.00.HHZ starting at 2014-02-20T06:54:59.750000Z. Completeness will be wrong in case of overlapping traces.
+2026-08-21 10:54:22,806 | seisbench | WARNING | Found multiple traces for MQ.LAM.00.HHN starting at 2014-02-20T06:54:59.750000Z. Completeness will be wrong in case of overlapping traces.
+2026-08-21 10:54:22,806 | seisbench | WARNING | Found multiple traces for MQ.LAM.00.HHE starting at 2014-02-20T06:54:59.750000Z. Completeness will be wrong in case of overlapping traces.
+Traces converted: 16it [00:03,  5.44it/s]2026-08-21 10:54:22,840 | seisbench | WARNING | Found multiple traces for MQ.IA2.00.EHZ starting at 2014-02-20T08:01:11.750000Z. Completeness will be wrong in case of overlapping traces.
+2026-08-21 10:54:22,840 | seisbench | WARNING | Found multiple traces for MQ.IA2.00.EHN starting at 2014-02-20T08:01:11.750000Z. Completeness will be wrong in case of overlapping traces.
+2026-08-21 10:54:22,840 | seisbench | WARNING | Found multiple traces for MQ.IA2.00.EHE starting at 2014-02-20T08:01:11.750000Z. Completeness will be wrong in case of overlapping traces.
+Traces converted: 22it [00:03, 10.08it/s]2026-08-21 10:54:22,987 | seisbench | WARNING | Found multiple traces for MQ.IA2.00.EHZ starting at 2014-02-20T08:21:18.750000Z. Completeness will be wrong in case of overlapping traces.
+2026-08-21 10:54:22,987 | seisbench | WARNING | Found multiple traces for MQ.IA2.00.EHN starting at 2014-02-20T08:21:18.750000Z. Completeness will be wrong in case of overlapping traces.
+2026-08-21 10:54:22,987 | seisbench | WARNING | Found multiple traces for MQ.IA2.00.EHE starting at 2014-02-20T08:21:18.750000Z. Completeness will be wrong in case of overlapping traces.
+Traces converted: 28it [00:03, 15.51it/s]2026-08-21 10:54:23,051 | seisbench | WARNING | Found multiple traces for MQ.IA2.00.EHZ starting at 2014-02-20T08:35:36.750000Z. Completeness will be wrong in case of overlapping traces.
+2026-08-21 10:54:23,052 | seisbench | WARNING | Found multiple traces for MQ.IA2.00.EHN starting at 2014-02-20T08:35:36.750000Z. Completeness will be wrong in case of overlapping traces.
+2026-08-21 10:54:23,052 | seisbench | WARNING | Found multiple traces for MQ.IA2.00.EHE starting at 2014-02-20T08:35:36.750000Z. Completeness will be wrong in case of overlapping traces.
+2026-08-21 10:54:23,130 | seisbench | WARNING | Found multiple traces for MQ.IA2.00.EHZ starting at 2014-02-20T09:01:32.750000Z. Completeness will be wrong in case of overlapping traces.
+2026-08-21 10:54:23,130 | seisbench | WARNING | Found multiple traces for MQ.IA2.00.EHN starting at 2014-02-20T09:01:32.750000Z. Completeness will be wrong in case of overlapping traces.
+2026-08-21 10:54:23,130 | seisbench | WARNING | Found multiple traces for MQ.IA2.00.EHE starting at 2014-02-20T09:01:32.750000Z. Completeness will be wrong in case of overlapping traces.
+Traces converted: 33it [00:03, 19.95it/s]Traces converted: 40it [00:03, 27.50it/s]2026-08-21 10:54:23,362 | seisbench | WARNING | Found multiple traces for MQ.IA2.00.EHZ starting at 2014-02-20T10:00:02.750000Z. Completeness will be wrong in case of overlapping traces.
+2026-08-21 10:54:23,362 | seisbench | WARNING | Found multiple traces for MQ.IA2.00.EHN starting at 2014-02-20T10:00:02.750000Z. Completeness will be wrong in case of overlapping traces.
+2026-08-21 10:54:23,362 | seisbench | WARNING | Found multiple traces for MQ.IA2.00.EHE starting at 2014-02-20T10:00:02.750000Z. Completeness will be wrong in case of overlapping traces.
+Traces converted: 47it [00:03, 33.95it/s]Traces converted: 55it [00:03, 42.87it/s]Traces converted: 65it [00:04, 53.46it/s]Traces converted: 72it [00:04, 55.68it/s]Traces converted: 81it [00:04, 61.29it/s]Traces converted: 90it [00:04, 64.12it/s]Traces converted: 98it [00:04, 66.59it/s]Traces converted: 106it [00:04, 64.74it/s]Traces converted: 118it [00:04, 76.91it/s]Traces converted: 128it [00:04, 79.52it/s]Traces converted: 137it [00:07, 10.32it/s]Traces converted: 143it [00:07, 10.98it/s]Traces converted: 155it [00:08, 16.70it/s]Traces converted: 165it [00:08, 22.54it/s]Traces converted: 175it [00:08, 29.37it/s]Traces converted: 184it [00:08, 36.16it/s]Traces converted: 193it [00:08, 41.92it/s]Traces converted: 201it [00:08, 47.51it/s]Traces converted: 211it [00:08, 56.16it/s]Traces converted: 220it [00:08, 61.19it/s]Traces converted: 231it [00:08, 71.81it/s]Traces converted: 240it [00:09, 33.40it/s]Traces converted: 247it [00:10, 26.39it/s]Traces converted: 253it [00:11, 11.53it/s]Traces converted: 257it [00:13,  6.58it/s]Traces converted: 265it [00:13,  9.52it/s]Traces converted: 270it [00:13,  9.66it/s]2026-08-21 10:54:33,877 | seisbench | WARNING | Found multiple traces for MQ.IA2.00.EHZ starting at 2014-02-24T03:00:46.090000Z. Completeness will be wrong in case of overlapping traces.
+2026-08-21 10:54:33,878 | seisbench | WARNING | Found multiple traces for MQ.IA2.00.EHN starting at 2014-02-24T03:00:46.090000Z. Completeness will be wrong in case of overlapping traces.
+2026-08-21 10:54:33,878 | seisbench | WARNING | Found multiple traces for MQ.IA2.00.EHE starting at 2014-02-24T03:00:46.090000Z. Completeness will be wrong in case of overlapping traces.
+Traces converted: 274it [00:15,  7.02it/s]Traces converted: 277it [00:15,  7.54it/s]Traces converted: 280it [00:15,  8.01it/s]Traces converted: 282it [00:16,  6.38it/s]Traces converted: 284it [00:16,  6.25it/s]Traces converted: 287it [00:16,  7.01it/s]Traces converted: 289it [00:17,  7.35it/s]Traces converted: 291it [00:17,  7.87it/s]Traces converted: 293it [00:17,  8.63it/s]Traces converted: 295it [00:17,  8.39it/s]Traces converted: 296it [00:18,  7.25it/s]Traces converted: 297it [00:18,  7.43it/s]Traces converted: 298it [00:18,  5.13it/s]Traces converted: 299it [00:18,  5.75it/s]Traces converted: 301it [00:18,  7.45it/s]Traces converted: 302it [00:18,  7.69it/s]Traces converted: 303it [00:19,  6.94it/s]Traces converted: 304it [00:19,  5.90it/s]Traces converted: 306it [00:19,  6.48it/s]Traces converted: 307it [00:19,  6.73it/s]Traces converted: 309it [00:20,  6.52it/s]Traces converted: 310it [00:20,  4.51it/s]Traces converted: 312it [00:20,  6.40it/s]Traces converted: 320it [00:20, 17.34it/s]Traces converted: 331it [00:20, 33.41it/s]Traces converted: 340it [00:20, 44.47it/s]Traces converted: 351it [00:21, 57.89it/s]Traces converted: 363it [00:21, 70.17it/s]Traces converted: 374it [00:21, 79.69it/s]Traces converted: 385it [00:21, 87.10it/s]Traces converted: 397it [00:21, 94.07it/s]Traces converted: 409it [00:21, 100.28it/s]Traces converted: 420it [00:21, 102.33it/s]Traces converted: 431it [00:21, 100.02it/s]Traces converted: 443it [00:21, 103.94it/s]Traces converted: 455it [00:22, 107.37it/s]Traces converted: 466it [00:22, 106.82it/s]Traces converted: 477it [00:22, 103.74it/s]Traces converted: 488it [00:22, 103.35it/s]Traces converted: 499it [00:24, 17.99it/s] Traces converted: 507it [00:24, 16.95it/s]Traces converted: 517it [00:24, 22.36it/s]Traces converted: 530it [00:24, 31.65it/s]2026-08-21 10:54:44,598 | seisbench | WARNING | Found multiple traces for MQ.IA2.00.EHZ starting at 2014-02-25T14:44:40.760000Z. Completeness will be wrong in case of overlapping traces.
+2026-08-21 10:54:44,599 | seisbench | WARNING | Found multiple traces for MQ.IA2.00.EHN starting at 2014-02-25T14:44:40.760000Z. Completeness will be wrong in case of overlapping traces.
+2026-08-21 10:54:44,599 | seisbench | WARNING | Found multiple traces for MQ.IA2.00.EHE starting at 2014-02-25T14:44:40.760000Z. Completeness will be wrong in case of overlapping traces.
+Traces converted: 540it [00:25, 38.72it/s]Traces converted: 553it [00:25, 50.67it/s]Traces converted: 565it [00:25, 61.35it/s]Traces converted: 576it [00:25, 68.28it/s]Traces converted: 587it [00:25, 74.93it/s]Traces converted: 597it [00:27, 13.15it/s]Traces converted: 607it [00:28, 17.42it/s]Traces converted: 618it [00:28, 23.48it/s]Traces converted: 630it [00:28, 31.57it/s]Traces converted: 641it [00:28, 39.53it/s]Traces converted: 653it [00:28, 49.79it/s]Traces converted: 664it [00:28, 59.28it/s]Traces converted: 677it [00:28, 72.01it/s]Traces converted: 689it [00:28, 79.52it/s]Traces converted: 700it [00:28, 82.74it/s]Traces converted: 711it [00:30, 17.66it/s]Traces converted: 719it [00:31, 18.34it/s]Traces converted: 729it [00:31, 24.08it/s]Traces converted: 738it [00:31, 30.07it/s]Traces converted: 750it [00:31, 40.27it/s]Traces converted: 762it [00:31, 51.13it/s]Traces converted: 774it [00:31, 62.46it/s]Traces converted: 786it [00:31, 73.43it/s]Traces converted: 797it [00:31, 80.92it/s]Traces converted: 808it [00:33, 24.18it/s]Traces converted: 816it [00:34, 14.69it/s]Traces converted: 830it [00:34, 21.86it/s]Traces converted: 838it [00:35, 17.51it/s]Traces converted: 849it [00:35, 23.68it/s]Traces converted: 860it [00:35, 31.22it/s]Traces converted: 874it [00:35, 42.96it/s]Traces converted: 886it [00:35, 53.03it/s]Traces converted: 897it [00:37, 17.79it/s]Traces converted: 905it [00:37, 15.39it/s]Traces converted: 911it [00:38, 16.57it/s]Traces converted: 920it [00:38, 21.85it/s]Traces converted: 930it [00:38, 28.83it/s]Traces converted: 937it [00:39, 17.95it/s]Traces converted: 943it [00:40,  9.38it/s]Traces converted: 955it [00:41, 14.73it/s]Traces converted: 965it [00:41, 20.19it/s]Traces converted: 978it [00:41, 29.45it/s]Traces converted: 989it [00:41, 37.83it/s]Traces converted: 999it [00:41, 44.84it/s]Traces converted: 1008it [00:41, 38.39it/s]Traces converted: 1016it [00:43, 15.69it/s]Traces converted: 1022it [00:43, 12.72it/s]Traces converted: 1028it [00:44, 14.41it/s]Traces converted: 1038it [00:44, 20.57it/s]Traces converted: 1049it [00:44, 29.07it/s]Traces converted: 1062it [00:44, 40.78it/s]Traces converted: 1074it [00:44, 52.07it/s]Traces converted: 1084it [00:44, 60.24it/s]Traces converted: 1095it [00:44, 69.59it/s]Traces converted: 1105it [00:44, 75.13it/s]Traces converted: 1115it [00:45, 79.06it/s]Traces converted: 1125it [00:45, 84.17it/s]Traces converted: 1136it [00:45, 88.91it/s]Traces converted: 1146it [00:45, 90.42it/s]Traces converted: 1156it [00:45, 89.48it/s]Traces converted: 1166it [00:46, 23.34it/s]Traces converted: 1173it [00:47, 19.51it/s]Traces converted: 1179it [00:48, 13.58it/s]Traces converted: 1188it [00:48, 16.65it/s]Traces converted: 1197it [00:48, 22.30it/s]Traces converted: 1207it [00:48, 29.71it/s]Traces converted: 1214it [00:49, 25.65it/s]Traces converted: 1219it [00:49, 15.73it/s]Traces converted: 1223it [00:50, 11.79it/s]Traces converted: 1226it [00:51,  7.68it/s]Traces converted: 1237it [00:51, 13.54it/s]Traces converted: 1250it [00:51, 22.31it/s]Traces converted: 1258it [00:52, 24.82it/s]Traces converted: 1264it [00:52, 19.39it/s]Traces converted: 1269it [00:53, 11.79it/s]Traces converted: 1273it [00:54,  9.80it/s]Traces converted: 1277it [00:54,  9.90it/s]Traces converted: 1290it [00:54, 18.39it/s]Traces converted: 1301it [00:54, 26.73it/s]Traces converted: 1308it [00:55, 29.30it/s]Traces converted: 1315it [00:55, 31.19it/s]Traces converted: 1321it [00:57,  9.79it/s]Traces converted: 1325it [00:57, 10.82it/s]Traces converted: 1330it [00:57, 11.54it/s]Traces converted: 1333it [00:58,  9.29it/s]Traces converted: 1336it [00:58,  8.40it/s]Traces converted: 1338it [00:59,  8.63it/s]Traces converted: 1348it [00:59, 10.36it/s]Traces converted: 1362it [00:59, 19.82it/s]Traces converted: 1373it [01:00, 28.01it/s]Traces converted: 1385it [01:00, 38.72it/s]Traces converted: 1398it [01:00, 51.32it/s]Traces converted: 1411it [01:00, 63.02it/s]Traces converted: 1422it [01:00, 71.52it/s]Traces converted: 1434it [01:00, 81.13it/s]Traces converted: 1445it [01:00, 85.62it/s]Traces converted: 1456it [01:00, 89.27it/s]Traces converted: 1467it [01:00, 93.41it/s]Traces converted: 1478it [01:02, 16.01it/s]Traces converted: 1486it [01:03, 18.26it/s]Traces converted: 1497it [01:03, 24.67it/s]Traces converted: 1505it [01:03, 23.93it/s]Traces converted: 1517it [01:03, 32.76it/s]Traces converted: 1528it [01:03, 41.92it/s]Traces converted: 1539it [01:03, 51.11it/s]Traces converted: 1551it [01:04, 62.10it/s]Traces converted: 1561it [01:04, 68.71it/s]Traces converted: 1573it [01:04, 77.57it/s]Traces converted: 1583it [01:06, 12.80it/s]Traces converted: 1596it [01:06, 18.41it/s]Traces converted: 1610it [01:06, 26.17it/s]Traces converted: 1624it [01:07, 35.67it/s]Traces converted: 1636it [01:07, 44.69it/s]Traces converted: 1649it [01:07, 55.87it/s]Traces converted: 1661it [01:10, 12.36it/s]Traces converted: 1670it [01:10, 14.42it/s]Traces converted: 1682it [01:10, 19.77it/s]Traces converted: 1691it [01:10, 24.52it/s]Traces converted: 1701it [01:10, 30.88it/s]Traces converted: 1713it [01:10, 40.47it/s]Traces converted: 1726it [01:10, 51.72it/s]Traces converted: 1738it [01:11, 61.68it/s]Traces converted: 1749it [01:11, 68.43it/s]Traces converted: 1759it [01:13, 15.38it/s]Traces converted: 1771it [01:13, 21.19it/s]Traces converted: 1780it [01:13, 19.54it/s]Traces converted: 1792it [01:13, 26.75it/s]Traces converted: 1803it [01:14, 34.57it/s]Traces converted: 1816it [01:14, 45.75it/s]Traces converted: 1830it [01:14, 58.85it/s]Traces converted: 1842it [01:14, 68.83it/s]Traces converted: 1855it [01:14, 80.45it/s]Traces converted: 1869it [01:14, 92.66it/s]Traces converted: 1882it [01:14, 99.48it/s]Traces converted: 1895it [01:14, 103.68it/s]Traces converted: 1907it [01:14, 106.56it/s]Traces converted: 1919it [01:15, 106.96it/s]Traces converted: 1931it [01:15, 106.90it/s]Traces converted: 1943it [01:15, 104.11it/s]Traces converted: 1954it [01:15, 102.26it/s]Traces converted: 1966it [01:15, 104.60it/s]Traces converted: 1977it [01:15, 103.70it/s]Traces converted: 1988it [01:15, 101.08it/s]Traces converted: 2001it [01:15, 108.16it/s]Traces converted: 2012it [01:17, 20.16it/s] Traces converted: 2020it [01:18, 14.76it/s]Traces converted: 2030it [01:18, 19.48it/s]Traces converted: 2040it [01:18, 25.39it/s]Traces converted: 2051it [01:18, 33.40it/s]Traces converted: 2062it [01:18, 42.44it/s]Traces converted: 2073it [01:19, 51.84it/s]Traces converted: 2083it [01:19, 57.80it/s]Traces converted: 2093it [01:19, 63.85it/s]Traces converted: 2103it [01:19, 69.53it/s]Traces converted: 2114it [01:19, 78.37it/s]Traces converted: 2124it [01:19, 83.30it/s]Traces converted: 2134it [01:19, 83.72it/s]Traces converted: 2144it [01:19, 84.73it/s]Traces converted: 2155it [01:19, 90.89it/s]Traces converted: 2166it [01:20, 93.36it/s]Traces converted: 2176it [01:20, 93.41it/s]Traces converted: 2186it [01:21, 19.94it/s]Traces converted: 2193it [01:22, 14.35it/s]Traces converted: 2203it [01:22, 19.59it/s]Traces converted: 2212it [01:22, 25.05it/s]Traces converted: 2220it [01:22, 30.70it/s]Traces converted: 2230it [01:22, 39.21it/s]Traces converted: 2239it [01:23, 46.97it/s]Traces converted: 2248it [01:23, 39.61it/s]Traces converted: 2259it [01:23, 50.33it/s]Traces converted: 2269it [01:23, 58.76it/s]Traces converted: 2279it [01:23, 67.12it/s]Traces converted: 2288it [01:23, 71.23it/s]Traces converted: 2299it [01:23, 78.28it/s]Traces converted: 2309it [01:24, 82.84it/s]Traces converted: 2319it [01:24, 82.25it/s]Traces converted: 2328it [01:24, 81.76it/s]Traces converted: 2337it [01:24, 83.54it/s]Traces converted: 2349it [01:24, 93.38it/s]Traces converted: 2359it [01:24, 92.00it/s]Traces converted: 2369it [01:25, 23.93it/s]Traces converted: 2381it [01:26, 21.21it/s]Traces converted: 2393it [01:26, 28.86it/s]Traces converted: 2401it [01:27, 14.70it/s]Traces converted: 2413it [01:28, 20.79it/s]Traces converted: 2421it [01:29, 11.42it/s]Traces converted: 2427it [01:30, 10.23it/s]Traces converted: 2431it [01:30, 10.70it/s]Traces converted: 2442it [01:30, 16.51it/s]Traces converted: 2457it [01:31, 26.70it/s]Traces converted: 2468it [01:31, 34.40it/s]Traces converted: 2477it [01:32, 15.51it/s]Traces converted: 2485it [01:32, 19.24it/s]Traces converted: 2492it [01:33, 14.56it/s]Traces converted: 2499it [01:33, 18.18it/s]Traces converted: 2505it [01:33, 21.37it/s]Traces converted: 2514it [01:33, 28.45it/s]Traces converted: 2523it [01:34, 36.57it/s]Traces converted: 2530it [01:34, 41.37it/s]Traces converted: 2537it [01:34, 45.30it/s]Traces converted: 2545it [01:34, 51.04it/s]Traces converted: 2553it [01:34, 55.58it/s]Traces converted: 2561it [01:34, 60.34it/s]Traces converted: 2568it [01:34, 54.46it/s]Traces converted: 2575it [01:34, 57.79it/s]Traces converted: 2582it [01:34, 58.13it/s]Traces converted: 2589it [01:35, 59.95it/s]Traces converted: 2596it [01:35, 61.38it/s]Traces converted: 2603it [01:35, 56.49it/s]Traces converted: 2610it [01:35, 58.85it/s]Traces converted: 2618it [01:35, 63.78it/s]Traces converted: 2625it [01:35, 64.50it/s]Traces converted: 2632it [01:35, 60.13it/s]Traces converted: 2640it [01:35, 64.93it/s]Traces converted: 2647it [01:35, 63.41it/s]Traces converted: 2655it [01:36, 65.82it/s]Traces converted: 2662it [01:36, 66.93it/s]Traces converted: 2669it [01:36, 66.17it/s]Traces converted: 2678it [01:36, 72.21it/s]Traces converted: 2690it [01:36, 84.73it/s]Traces converted: 2702it [01:36, 94.47it/s]Traces converted: 2715it [01:36, 103.42it/s]Traces converted: 2729it [01:36, 112.43it/s]Traces converted: 2741it [01:36, 111.86it/s]Traces converted: 2753it [01:37, 112.42it/s]Traces converted: 2765it [01:37, 109.61it/s]Traces converted: 2776it [01:37, 108.17it/s]Traces converted: 2787it [01:37, 104.67it/s]Traces converted: 2798it [01:37, 104.41it/s]Traces converted: 2809it [01:38, 29.79it/s] Traces converted: 2817it [01:40, 13.66it/s]Traces converted: 2823it [01:40, 14.35it/s]Traces converted: 2835it [01:40, 21.05it/s]Traces converted: 2844it [01:40, 26.81it/s]Traces converted: 2856it [01:40, 36.72it/s]Traces converted: 2867it [01:40, 46.29it/s]Traces converted: 2877it [01:42, 16.59it/s]Traces converted: 2884it [01:42, 18.17it/s]Traces converted: 2897it [01:42, 26.71it/s]Traces converted: 2909it [01:43, 21.42it/s]Traces converted: 2921it [01:43, 29.02it/s]Traces converted: 2929it [01:44, 18.43it/s]Traces converted: 2935it [01:46,  9.79it/s]Traces converted: 2939it [01:48,  6.24it/s]Traces converted: 2942it [01:48,  5.88it/s]Traces converted: 2956it [01:49, 11.15it/s]Traces converted: 2962it [01:49, 10.64it/s]Traces converted: 2969it [01:50, 10.03it/s]Traces converted: 2982it [01:50, 16.45it/s]Traces converted: 2993it [01:50, 23.10it/s]Traces converted: 3004it [01:50, 27.63it/s]Traces converted: 3011it [01:52, 13.84it/s]Traces converted: 3016it [01:52, 14.94it/s]Traces converted: 3028it [01:53, 15.15it/s]Traces converted: 3042it [01:53, 23.38it/s]Traces converted: 3053it [01:53, 30.84it/s]Traces converted: 3065it [01:53, 40.31it/s]Traces converted: 3074it [01:55, 14.26it/s]Traces converted: 3085it [01:55, 19.50it/s]Traces converted: 3097it [01:55, 26.50it/s]Traces converted: 3106it [01:56, 22.66it/s]Traces converted: 3118it [01:56, 30.57it/s]Traces converted: 3128it [01:56, 37.73it/s]Traces converted: 3139it [01:56, 46.40it/s]Traces converted: 3149it [01:56, 54.26it/s]Traces converted: 3158it [01:57, 37.03it/s]Traces converted: 3165it [01:58, 12.98it/s]Traces converted: 3170it [01:59, 11.11it/s]Traces converted: 3181it [01:59, 16.68it/s]Traces converted: 3192it [01:59, 23.57it/s]Traces converted: 3205it [01:59, 33.74it/s]Traces converted: 3214it [02:01, 15.46it/s]Traces converted: 3221it [02:01, 14.36it/s]Traces converted: 3229it [02:01, 18.42it/s]Traces converted: 3240it [02:02, 25.91it/s]Traces converted: 3248it [02:02, 18.63it/s]Traces converted: 3256it [02:03, 21.43it/s]Traces converted: 3261it [02:05,  8.09it/s]Traces converted: 3265it [02:05,  9.02it/s]Traces converted: 3271it [02:05, 11.31it/s]Traces converted: 3275it [02:07,  6.94it/s]Traces converted: 3278it [02:07,  7.63it/s]2026-08-21 10:56:27,557 | seisbench | WARNING | Found multiple traces for MQ.LAM.00.HHE starting at 2014-03-30T17:27:18.710000Z. Completeness will be wrong in case of overlapping traces.
+Traces converted: 3287it [02:07,  9.31it/s]2026-08-21 10:56:27,632 | seisbench | WARNING | Found multiple traces for MQ.LAM.00.HHE starting at 2014-03-30T20:02:35.860000Z. Completeness will be wrong in case of overlapping traces.
+Traces converted: 3297it [02:08, 14.87it/s]Traces converted: 3305it [02:08, 18.39it/s]Traces converted: 3310it [02:08, 14.38it/s]Traces converted: 3314it [02:09, 10.51it/s]Traces converted: 3320it [02:09, 12.93it/s]Traces converted: 3333it [02:10, 22.78it/s]Traces converted: 3344it [02:10, 18.09it/s]Traces converted: 3354it [02:10, 24.52it/s]Traces converted: 3368it [02:11, 36.16it/s]Traces converted: 3378it [02:11, 44.15it/s]Traces converted: 3393it [02:11, 60.29it/s]Traces converted: 3404it [02:11, 68.55it/s]Traces converted: 3417it [02:11, 80.02it/s]Traces converted: 3429it [02:12, 24.35it/s]Traces converted: 3437it [02:13, 22.43it/s]Traces converted: 3444it [02:13, 16.82it/s]Traces converted: 3455it [02:14, 23.23it/s]Traces converted: 3468it [02:14, 32.71it/s]Traces converted: 3479it [02:14, 41.37it/s]Traces converted: 3493it [02:14, 54.10it/s]Traces converted: 3503it [02:14, 57.62it/s]Traces converted: 3514it [02:14, 65.98it/s]Traces converted: 3524it [02:16, 13.80it/s]Traces converted: 3535it [02:17, 18.68it/s]Traces converted: 3545it [02:17, 24.07it/s]Traces converted: 3555it [02:17, 30.40it/s]Traces converted: 3566it [02:17, 38.93it/s]Traces converted: 3575it [02:17, 37.83it/s]Traces converted: 3585it [02:17, 46.12it/s]Traces converted: 3597it [02:17, 57.51it/s]Traces converted: 3609it [02:17, 67.97it/s]Traces converted: 3620it [02:18, 76.48it/s]Traces converted: 3632it [02:18, 85.34it/s]Traces converted: 3643it [02:18, 87.13it/s]Traces converted: 3655it [02:18, 92.33it/s]Traces converted: 3666it [02:18, 95.93it/s]Traces converted: 3677it [02:18, 93.17it/s]Traces converted: 3687it [02:19, 21.95it/s]Traces converted: 3695it [02:21, 13.66it/s]Traces converted: 3704it [02:21, 17.82it/s]Traces converted: 3715it [02:21, 24.31it/s]Traces converted: 3726it [02:21, 31.97it/s]Traces converted: 3740it [02:21, 43.79it/s]Traces converted: 3752it [02:21, 53.62it/s]Traces converted: 3764it [02:21, 63.78it/s]Traces converted: 3775it [02:22, 71.52it/s]Traces converted: 3786it [02:22, 79.57it/s]Traces converted: 3797it [02:23, 25.47it/s]Traces converted: 3805it [02:24, 13.98it/s]Traces converted: 3816it [02:24, 18.54it/s]Traces converted: 3829it [02:24, 26.38it/s]Traces converted: 3840it [02:25, 33.54it/s]Traces converted: 3852it [02:25, 42.98it/s]Traces converted: 3864it [02:25, 53.51it/s]Traces converted: 3875it [02:25, 49.80it/s]Traces converted: 3884it [02:26, 17.80it/s]Traces converted: 3890it [02:27, 13.09it/s]Traces converted: 3895it [02:28, 14.10it/s]Traces converted: 3903it [02:28, 16.37it/s]Traces converted: 3907it [02:29,  9.22it/s]Traces converted: 3910it [02:30,  8.68it/s]Traces converted: 3920it [02:30, 14.30it/s]Traces converted: 3925it [02:32,  6.52it/s]Traces converted: 3929it [02:32,  7.46it/s]Traces converted: 3937it [02:33, 10.20it/s]Traces converted: 3949it [02:33, 17.13it/s]Traces converted: 3962it [02:33, 26.56it/s]Traces converted: 3973it [02:33, 34.85it/s]Traces converted: 3985it [02:33, 45.32it/s]Traces converted: 3994it [02:34, 21.43it/s]Traces converted: 4001it [02:35, 19.13it/s]Traces converted: 4008it [02:35, 14.27it/s]Traces converted: 4023it [02:35, 23.29it/s]Traces converted: 4034it [02:36, 30.81it/s]Traces converted: 4043it [02:37, 14.94it/s]Traces converted: 4049it [02:38, 10.73it/s]Traces converted: 4058it [02:38, 14.59it/s]Traces converted: 4068it [02:38, 20.11it/s]Traces converted: 4079it [02:39, 27.56it/s]Traces converted: 4090it [02:39, 36.44it/s]Traces converted: 4099it [02:39, 26.43it/s]Traces converted: 4106it [02:41, 13.48it/s]Traces converted: 4120it [02:41, 21.06it/s]Traces converted: 4134it [02:41, 30.35it/s]Traces converted: 4148it [02:41, 41.37it/s]Traces converted: 4159it [02:41, 49.93it/s]Traces converted: 4170it [02:42, 29.79it/s]Traces converted: 4178it [02:43, 17.39it/s]Traces converted: 4184it [02:44, 12.55it/s]2026-08-21 10:57:04,079 | seisbench | WARNING | Found multiple traces for MQ.IA2.00.EHZ starting at 2014-04-11T11:27:47.120000Z. Completeness will be wrong in case of overlapping traces.
+2026-08-21 10:57:04,079 | seisbench | WARNING | Found multiple traces for MQ.IA2.00.EHN starting at 2014-04-11T11:27:47.120000Z. Completeness will be wrong in case of overlapping traces.
+2026-08-21 10:57:04,079 | seisbench | WARNING | Found multiple traces for MQ.IA2.00.EHE starting at 2014-04-11T11:27:47.120000Z. Completeness will be wrong in case of overlapping traces.
+Traces converted: 4195it [02:44, 17.80it/s]Traces converted: 4207it [02:44, 25.14it/s]Traces converted: 4217it [02:45, 19.23it/s]Traces converted: 4223it [02:46, 12.86it/s]Traces converted: 4228it [02:49,  6.24it/s]Traces converted: 4239it [02:49,  9.66it/s]Traces converted: 4250it [02:49, 14.10it/s]Traces converted: 4261it [02:49, 19.74it/s]Traces converted: 4269it [02:51, 10.69it/s]Traces converted: 4281it [02:51, 15.77it/s]Traces converted: 4289it [02:51, 14.78it/s]Traces converted: 4300it [02:51, 20.67it/s]Traces converted: 4307it [02:52, 15.57it/s]Traces converted: 4313it [02:53, 11.55it/s]Traces converted: 4317it [02:53, 12.56it/s]Traces converted: 4330it [02:54, 21.05it/s]Traces converted: 4341it [02:54, 20.01it/s]2026-08-21 10:57:14,295 | seisbench | WARNING | Found multiple traces for MQ.IA2.00.EHZ starting at 2014-04-15T15:02:40.100000Z. Completeness will be wrong in case of overlapping traces.
+2026-08-21 10:57:14,295 | seisbench | WARNING | Found multiple traces for MQ.IA2.00.EHN starting at 2014-04-15T15:02:40.100000Z. Completeness will be wrong in case of overlapping traces.
+2026-08-21 10:57:14,295 | seisbench | WARNING | Found multiple traces for MQ.IA2.00.EHE starting at 2014-04-15T15:02:40.100000Z. Completeness will be wrong in case of overlapping traces.
+Traces converted: 4352it [02:54, 27.52it/s]Traces converted: 4364it [02:54, 37.31it/s]Traces converted: 4373it [02:55, 18.84it/s]Traces converted: 4380it [02:57, 12.21it/s]Traces converted: 4385it [02:57, 13.30it/s]Traces converted: 4397it [02:57, 20.38it/s]Traces converted: 4410it [02:57, 29.60it/s]Traces converted: 4423it [02:57, 40.09it/s]Traces converted: 4435it [02:57, 50.43it/s]Traces converted: 4447it [02:58, 61.30it/s]Traces converted: 4458it [02:59, 26.31it/s]Traces converted: 4466it [02:59, 18.81it/s]Traces converted: 4472it [03:00, 15.32it/s]Traces converted: 4480it [03:00, 18.01it/s]Traces converted: 4484it [03:02,  9.36it/s]Traces converted: 4487it [03:02,  9.97it/s]Traces converted: 4490it [03:03,  7.80it/s]Traces converted: 4495it [03:03,  9.72it/s]Traces converted: 4497it [03:04,  7.55it/s]Traces converted: 4499it [03:04,  7.61it/s]Traces converted: 4501it [03:05,  4.42it/s]Traces converted: 4504it [03:06,  3.91it/s]Traces converted: 4512it [03:06,  7.07it/s]Traces converted: 4524it [03:06, 14.10it/s]Traces converted: 4536it [03:07, 22.67it/s]Traces converted: 4545it [03:07, 29.61it/s]Traces converted: 4553it [03:07, 25.96it/s]2026-08-21 10:57:27,604 | seisbench | WARNING | Found multiple traces for MQ.IA2.00.EHN starting at 2014-04-20T02:37:11.760000Z. Completeness will be wrong in case of overlapping traces.
+Traces converted: 4559it [03:09, 11.28it/s]2026-08-21 10:57:28,653 | seisbench | WARNING | Found multiple traces for MQ.IA2.00.EHN starting at 2014-04-20T07:30:52.800000Z. Completeness will be wrong in case of overlapping traces.
+Traces converted: 4568it [03:09, 11.09it/s]2026-08-21 10:57:29,517 | seisbench | WARNING | Found multiple traces for MQ.IA2.00.EHN starting at 2014-04-20T21:10:56.550000Z. Completeness will be wrong in case of overlapping traces.
+Traces converted: 4575it [03:10, 13.18it/s]Traces converted: 4578it [03:10, 10.32it/s]Traces converted: 4581it [03:11, 10.28it/s]Traces converted: 4583it [03:11,  7.17it/s]Traces converted: 4594it [03:12, 13.95it/s]Traces converted: 4604it [03:12, 21.32it/s]Traces converted: 4610it [03:12, 14.79it/s]Traces converted: 4615it [03:13, 15.71it/s]Traces converted: 4619it [03:13, 16.77it/s]Traces converted: 4623it [03:14, 11.65it/s]Traces converted: 4626it [03:14,  8.07it/s]Traces converted: 4637it [03:14, 15.29it/s]Traces converted: 4646it [03:15, 22.13it/s]Traces converted: 4657it [03:15, 32.24it/s]Traces converted: 4668it [03:15, 43.06it/s]Traces converted: 4680it [03:15, 55.33it/s]Traces converted: 4692it [03:15, 66.92it/s]Traces converted: 4704it [03:15, 75.67it/s]Traces converted: 4714it [03:15, 80.05it/s]Traces converted: 4725it [03:15, 85.43it/s]Traces converted: 4736it [03:15, 91.41it/s]Traces converted: 4747it [03:15, 93.28it/s]Traces converted: 4758it [03:16, 93.04it/s]Traces converted: 4768it [03:16, 37.58it/s]Traces converted: 4776it [03:18, 11.96it/s]Traces converted: 4782it [03:19, 13.42it/s]Traces converted: 4794it [03:19, 19.91it/s]Traces converted: 4806it [03:19, 27.85it/s]Traces converted: 4818it [03:19, 37.04it/s]Traces converted: 4830it [03:19, 46.98it/s]Traces converted: 4840it [03:19, 54.58it/s]Traces converted: 4851it [03:19, 63.67it/s]Traces converted: 4861it [03:19, 69.28it/s]Traces converted: 4873it [03:19, 78.08it/s]Traces converted: 4885it [03:20, 86.76it/s]Traces converted: 4896it [03:21, 19.45it/s]Traces converted: 4904it [03:22, 18.34it/s]Traces converted: 4910it [03:22, 14.50it/s]Traces converted: 4921it [03:23, 20.49it/s]Traces converted: 4935it [03:23, 30.35it/s]Traces converted: 4948it [03:23, 40.30it/s]Traces converted: 4961it [03:23, 51.04it/s]Traces converted: 4973it [03:23, 61.66it/s]Traces converted: 4984it [03:25, 17.52it/s]Traces converted: 4992it [03:26, 14.95it/s]Traces converted: 5004it [03:26, 20.82it/s]Traces converted: 5014it [03:26, 26.48it/s]Traces converted: 5027it [03:26, 36.27it/s]Traces converted: 5038it [03:26, 44.87it/s]Traces converted: 5050it [03:26, 54.91it/s]Traces converted: 5062it [03:26, 65.76it/s]Traces converted: 5073it [03:26, 72.72it/s]Traces converted: 5087it [03:26, 85.13it/s]Traces converted: 5099it [03:27, 90.75it/s]Traces converted: 5111it [03:27, 97.07it/s]Traces converted: 5124it [03:27, 101.57it/s]Traces converted: 5136it [03:27, 101.32it/s]Traces converted: 5147it [03:28, 34.25it/s] Traces converted: 5155it [03:30, 13.97it/s]Traces converted: 5167it [03:30, 19.53it/s]Traces converted: 5178it [03:30, 25.85it/s]Traces converted: 5187it [03:32, 11.46it/s]Traces converted: 5194it [03:32, 12.26it/s]Traces converted: 5199it [03:32, 13.55it/s]Traces converted: 5204it [03:33, 10.66it/s]Traces converted: 5208it [03:34, 11.52it/s]Traces converted: 5211it [03:34,  8.07it/s]Traces converted: 5221it [03:35, 13.75it/s]Traces converted: 5232it [03:35, 21.55it/s]Traces converted: 5245it [03:35, 32.59it/s]Traces converted: 5256it [03:35, 42.26it/s]Traces converted: 5268it [03:35, 54.23it/s]Traces converted: 5280it [03:36, 29.09it/s]Traces converted: 5288it [03:38, 12.29it/s]Traces converted: 5294it [03:38, 12.36it/s]Traces converted: 5299it [03:38, 13.43it/s]Traces converted: 5312it [03:38, 21.46it/s]Traces converted: 5323it [03:39, 29.00it/s]Traces converted: 5334it [03:39, 37.98it/s]Traces converted: 5343it [03:41, 11.29it/s]Traces converted: 5349it [03:41, 13.09it/s]Traces converted: 5356it [03:41, 15.58it/s]Traces converted: 5361it [03:43,  8.98it/s]Traces converted: 5365it [03:43,  8.20it/s]Traces converted: 5368it [03:44,  6.80it/s]Traces converted: 5380it [03:44, 12.69it/s]Traces converted: 5391it [03:44, 19.28it/s]Traces converted: 5403it [03:45, 28.03it/s]Traces converted: 5413it [03:45, 35.99it/s]Traces converted: 5422it [03:45, 42.15it/s]Traces converted: 5433it [03:45, 52.47it/s]Traces converted: 5444it [03:45, 61.92it/s]Traces converted: 5456it [03:45, 73.07it/s]Traces converted: 5467it [03:45, 79.59it/s]Traces converted: 5477it [03:45, 84.09it/s]Traces converted: 5487it [03:45, 87.33it/s]Traces converted: 5498it [03:46, 92.10it/s]Traces converted: 5509it [03:46, 95.17it/s]Traces converted: 5520it [03:46, 97.46it/s]Traces converted: 5531it [03:46, 97.20it/s]Traces converted: 5542it [03:46, 98.80it/s]Traces converted: 5553it [03:46, 100.60it/s]Traces converted: 5564it [03:46, 101.27it/s]Traces converted: 5575it [03:46, 102.93it/s]Traces converted: 5587it [03:46, 105.65it/s]Traces converted: 5600it [03:46, 111.84it/s]Traces converted: 5613it [03:47, 115.69it/s]Traces converted: 5625it [03:47, 112.07it/s]Traces converted: 5637it [03:47, 107.15it/s]Traces converted: 5649it [03:47, 108.27it/s]Traces converted: 5660it [03:47, 103.45it/s]Traces converted: 5671it [03:47, 103.28it/s]Traces converted: 5683it [03:47, 107.68it/s]Traces converted: 5694it [03:47, 105.52it/s]Traces converted: 5705it [03:47, 104.45it/s]Traces converted: 5716it [03:48, 96.60it/s] Traces converted: 5726it [03:48, 97.44it/s]Traces converted: 5736it [03:48, 96.10it/s]Traces converted: 5746it [03:48, 96.44it/s]Traces converted: 5756it [03:48, 94.51it/s]Traces converted: 5767it [03:48, 97.57it/s]Traces converted: 5778it [03:48, 100.37it/s]Traces converted: 5789it [03:48, 95.04it/s] Traces converted: 5800it [03:48, 94.77it/s]Traces converted: 5811it [03:49, 98.05it/s]Traces converted: 5821it [03:49, 97.82it/s]Traces converted: 5835it [03:49, 108.47it/s]Traces converted: 5846it [03:49, 107.69it/s]Traces converted: 5857it [03:49, 100.17it/s]Traces converted: 5869it [03:49, 104.30it/s]Traces converted: 5880it [03:49, 103.50it/s]Traces converted: 5891it [03:49, 101.12it/s]Traces converted: 5902it [03:49, 99.60it/s] Traces converted: 5913it [03:50, 91.71it/s]Traces converted: 5923it [03:50, 83.11it/s]Traces converted: 5932it [03:50, 77.83it/s]Traces converted: 5943it [03:50, 81.25it/s]Traces converted: 5952it [03:50, 81.41it/s]Traces converted: 5961it [03:50, 83.23it/s]Traces converted: 5970it [03:50, 81.89it/s]Traces converted: 5980it [03:50, 85.58it/s]Traces converted: 5990it [03:51, 85.04it/s]Traces converted: 5999it [03:51, 85.23it/s]Traces converted: 6008it [03:51, 83.44it/s]Traces converted: 6018it [03:51, 85.41it/s]Traces converted: 6027it [03:51, 84.12it/s]Traces converted: 6038it [03:51, 90.64it/s]Traces converted: 6048it [03:51, 89.06it/s]Traces converted: 6059it [03:51, 94.22it/s]Traces converted: 6069it [03:51, 93.53it/s]Traces converted: 6079it [03:52, 92.82it/s]Traces converted: 6089it [03:52, 93.75it/s]Traces converted: 6101it [03:52, 99.92it/s]Traces converted: 6112it [03:52, 97.12it/s]Traces converted: 6123it [03:52, 97.92it/s]Traces converted: 6133it [03:52, 95.06it/s]Traces converted: 6144it [03:52, 94.12it/s]Traces converted: 6155it [03:52, 96.00it/s]Traces converted: 6167it [03:52, 101.36it/s]Traces converted: 6178it [03:53, 99.69it/s] Traces converted: 6189it [03:53, 102.45it/s]Traces converted: 6200it [03:53, 103.17it/s]Traces converted: 6211it [03:53, 104.47it/s]Traces converted: 6222it [03:53, 99.40it/s] Traces converted: 6233it [03:53, 92.56it/s]Traces converted: 6244it [03:53, 96.10it/s]Traces converted: 6255it [03:53, 98.24it/s]Traces converted: 6266it [03:53, 99.76it/s]Traces converted: 6277it [03:54, 102.49it/s]Traces converted: 6288it [03:54, 103.06it/s]Traces converted: 6299it [03:54, 103.16it/s]Traces converted: 6311it [03:54, 104.22it/s]Traces converted: 6322it [03:54, 96.92it/s] Traces converted: 6332it [03:54, 92.57it/s]Traces converted: 6342it [03:54, 91.13it/s]Traces converted: 6352it [03:54, 89.35it/s]Traces converted: 6361it [03:54, 86.04it/s]Traces converted: 6372it [03:55, 88.26it/s]Traces converted: 6381it [03:55, 83.88it/s]Traces converted: 6390it [03:55, 82.77it/s]Traces converted: 6399it [03:55, 81.30it/s]Traces converted: 6408it [03:55, 82.01it/s]Traces converted: 6417it [03:55, 83.94it/s]Traces converted: 6426it [03:55, 84.68it/s]Traces converted: 6435it [03:55, 81.08it/s]Traces converted: 6444it [03:55, 82.17it/s]Traces converted: 6453it [03:56, 80.74it/s]Traces converted: 6462it [03:56, 77.45it/s]Traces converted: 6470it [03:56, 66.47it/s]Traces converted: 6478it [03:56, 68.46it/s]Traces converted: 6487it [03:56, 73.73it/s]2026-08-21 10:58:16,197 | seisbench | WARNING | Found multiple traces for MQ.IA2.00.EHZ starting at 2014-05-17T02:27:00.250000Z. Completeness will be wrong in case of overlapping traces.
+2026-08-21 10:58:16,197 | seisbench | WARNING | Found multiple traces for MQ.IA2.00.EHN starting at 2014-05-17T02:27:00.250000Z. Completeness will be wrong in case of overlapping traces.
+2026-08-21 10:58:16,197 | seisbench | WARNING | Found multiple traces for MQ.IA2.00.EHE starting at 2014-05-17T02:27:00.250000Z. Completeness will be wrong in case of overlapping traces.
+Traces converted: 6498it [03:56, 82.22it/s]Traces converted: 6508it [03:56, 83.94it/s]Traces converted: 6517it [03:56, 84.91it/s]Traces converted: 6526it [03:57, 84.22it/s]Traces converted: 6537it [03:57, 87.91it/s]Traces converted: 6547it [03:57, 88.97it/s]Traces converted: 6558it [03:57, 90.51it/s]Traces converted: 6568it [03:57, 91.92it/s]Traces converted: 6579it [03:57, 95.97it/s]Traces converted: 6589it [03:57, 84.05it/s]Traces converted: 6599it [03:57, 87.74it/s]Traces converted: 6609it [03:57, 88.70it/s]Traces converted: 6619it [03:58, 86.42it/s]Traces converted: 6629it [03:58, 88.40it/s]Traces converted: 6638it [03:58, 87.05it/s]Traces converted: 6648it [03:58, 89.67it/s]Traces converted: 6660it [03:58, 96.55it/s]Traces converted: 6671it [03:58, 98.87it/s]Traces converted: 6681it [03:58, 95.83it/s]Traces converted: 6691it [03:58, 96.69it/s]Traces converted: 6701it [03:58, 96.26it/s]Traces converted: 6711it [03:59, 88.27it/s]Traces converted: 6720it [03:59, 87.39it/s]Traces converted: 6729it [03:59, 85.26it/s]Traces converted: 6740it [03:59, 89.03it/s]Traces converted: 6750it [03:59, 88.52it/s]Traces converted: 6760it [03:59, 90.29it/s]Traces converted: 6770it [03:59, 88.42it/s]Traces converted: 6781it [03:59, 90.35it/s]Traces converted: 6792it [03:59, 94.31it/s]Traces converted: 6803it [04:00, 97.65it/s]Traces converted: 6814it [04:00, 99.68it/s]Traces converted: 6827it [04:00, 105.67it/s]Traces converted: 6838it [04:00, 106.45it/s]Traces converted: 6849it [04:00, 105.41it/s]Traces converted: 6860it [04:00, 101.79it/s]Traces converted: 6871it [04:00, 102.33it/s]Traces converted: 6882it [04:00, 91.50it/s] Traces converted: 6892it [04:00, 84.59it/s]Traces converted: 6903it [04:01, 90.45it/s]Traces converted: 6913it [04:01, 89.13it/s]Traces converted: 6923it [04:01, 85.29it/s]2026-08-21 10:58:20,964 | seisbench | WARNING | Found multiple traces for WI.SAM.00.HHE starting at 2014-05-25T06:09:40.760000Z. Completeness will be wrong in case of overlapping traces.
+Traces converted: 6932it [04:01, 81.23it/s]Traces converted: 6941it [04:01, 81.15it/s]Traces converted: 6952it [04:01, 86.84it/s]Traces converted: 6963it [04:01, 92.42it/s]Traces converted: 6973it [04:01, 92.35it/s]Traces converted: 6985it [04:01, 99.71it/s]Traces converted: 6996it [04:02, 100.88it/s]Traces converted: 7007it [04:02, 100.23it/s]Traces converted: 7018it [04:02, 97.43it/s] Traces converted: 7028it [04:02, 97.21it/s]Traces converted: 7038it [04:02, 97.15it/s]Traces converted: 7050it [04:02, 101.91it/s]Traces converted: 7061it [04:02, 101.95it/s]Traces converted: 7072it [04:02, 101.42it/s]Traces converted: 7084it [04:02, 105.27it/s]Traces converted: 7095it [04:03, 99.74it/s] Traces converted: 7106it [04:03, 91.73it/s]Traces converted: 7116it [04:03, 90.89it/s]Traces converted: 7126it [04:03, 92.98it/s]Traces converted: 7136it [04:03, 91.73it/s]Traces converted: 7146it [04:03, 88.39it/s]Traces converted: 7157it [04:03, 94.21it/s]Traces converted: 7168it [04:03, 94.14it/s]Traces converted: 7178it [04:03, 95.05it/s]Traces converted: 7180it [04:08, 28.93it/s]
+
+Création du dataset terminée.
+Événements/Traces initialement connus  : 1228
+Événements/Traces connus RETROUVÉS     : 586 (47.7%)
+-> 7180 traces ont été sauvegardées dans ../data/seisbenchC/seisbench_format_gold
+On veux une qualité minimal de c
+Chargement des datasets sources
+-> Original : 797 traces chargées.
+-> Bruit : 657 traces chargées.
+-> Gold : 7180 traces chargées.
+
+Début de la fusion dans ../data/seisbenchC/seisbench_dataset_ultime
+Copie des traces depuis : Original
+Traces converted: 0it [00:00, ?it/s]Traces converted: 27it [00:00, 267.78it/s]Traces converted: 56it [00:00, 278.99it/s]Traces converted: 84it [00:00, 261.97it/s]Traces converted: 111it [00:00, 254.53it/s]Traces converted: 137it [00:00, 255.92it/s]Traces converted: 163it [00:00, 256.36it/s]Traces converted: 190it [00:00, 260.05it/s]Traces converted: 217it [00:00, 253.33it/s]Traces converted: 243it [00:00, 248.26it/s]Traces converted: 268it [00:01, 243.80it/s]Traces converted: 295it [00:01, 249.98it/s]Traces converted: 322it [00:01, 255.03it/s]Traces converted: 349it [00:01, 259.21it/s]Traces converted: 375it [00:01, 259.07it/s]Traces converted: 402it [00:01, 260.76it/s]Traces converted: 429it [00:01, 258.12it/s]Traces converted: 455it [00:01, 256.14it/s]Traces converted: 481it [00:01, 256.35it/s]Traces converted: 507it [00:01, 257.32it/s]Traces converted: 533it [00:02, 251.52it/s]Traces converted: 559it [00:02, 216.93it/s]Traces converted: 587it [00:02, 231.18it/s]Traces converted: 613it [00:02, 237.00it/s]Traces converted: 639it [00:02, 242.48it/s]Traces converted: 664it [00:02, 243.55it/s]Traces converted: 691it [00:02, 249.40it/s]Traces converted: 717it [00:02, 251.54it/s]Traces converted: 743it [00:02, 248.17it/s]Traces converted: 769it [00:03, 250.16it/s]Traces converted: 795it [00:03, 250.01it/s]Traces converted: 821it [00:03, 248.55it/s]Traces converted: 846it [00:03, 192.91it/s]Traces converted: 871it [00:03, 206.53it/s]Traces converted: 897it [00:03, 218.89it/s]Traces converted: 924it [00:03, 230.90it/s]Traces converted: 952it [00:03, 242.96it/s]Traces converted: 978it [00:04, 205.46it/s]Traces converted: 1003it [00:04, 215.91it/s]Traces converted: 1029it [00:04, 226.94it/s]Traces converted: 1053it [00:04, 229.76it/s]Traces converted: 1078it [00:04, 234.72it/s]Traces converted: 1103it [00:04, 237.54it/s]Traces converted: 1128it [00:04, 228.73it/s]Traces converted: 1155it [00:04, 239.85it/s]Traces converted: 1182it [00:04, 247.36it/s]Traces converted: 1209it [00:04, 253.62it/s]Traces converted: 1236it [00:05, 255.88it/s]Traces converted: 1263it [00:05, 259.87it/s]Traces converted: 1290it [00:05, 190.21it/s]Traces converted: 1317it [00:05, 207.92it/s]Traces converted: 1342it [00:05, 217.69it/s]Traces converted: 1368it [00:05, 227.11it/s]Traces converted: 1393it [00:05, 227.98it/s]Traces converted: 1417it [00:06, 194.69it/s]Traces converted: 1441it [00:06, 204.65it/s]Traces converted: 1467it [00:06, 216.60it/s]Traces converted: 1490it [00:06, 216.24it/s]Traces converted: 1513it [00:06, 218.04it/s]Traces converted: 1537it [00:06, 223.15it/s]Traces converted: 1561it [00:06, 227.69it/s]Traces converted: 1586it [00:06, 231.99it/s]Traces converted: 1610it [00:06, 230.33it/s]Traces converted: 1634it [00:06, 221.38it/s]Traces converted: 1659it [00:07, 227.25it/s]Traces converted: 1682it [00:07, 226.11it/s]Traces converted: 1706it [00:07, 228.64it/s]Traces converted: 1731it [00:07, 234.63it/s]Traces converted: 1756it [00:07, 237.78it/s]Traces converted: 1780it [00:07, 236.38it/s]Traces converted: 1806it [00:07, 242.96it/s]Traces converted: 1831it [00:07, 241.88it/s]Traces converted: 1857it [00:07, 245.57it/s]Traces converted: 1882it [00:07, 242.05it/s]Traces converted: 1907it [00:08, 243.04it/s]Traces converted: 1932it [00:08, 240.18it/s]Traces converted: 1957it [00:08, 240.79it/s]Traces converted: 1983it [00:08, 243.39it/s]Traces converted: 2010it [00:08, 249.58it/s]Traces converted: 2035it [00:08, 245.05it/s]Traces converted: 2061it [00:08, 241.99it/s]Traces converted: 2087it [00:08, 246.01it/s]Traces converted: 2112it [00:08, 245.43it/s]Traces converted: 2138it [00:09, 249.54it/s]Traces converted: 2163it [00:09, 249.07it/s]Traces converted: 2188it [00:09, 246.70it/s]Traces converted: 2213it [00:09, 238.97it/s]Traces converted: 2237it [00:09, 236.74it/s]Traces converted: 2261it [00:09, 233.10it/s]Traces converted: 2285it [00:09, 228.74it/s]Traces converted: 2309it [00:09, 230.27it/s]Traces converted: 2333it [00:09, 230.73it/s]Traces converted: 2358it [00:09, 233.39it/s]Traces converted: 2383it [00:10, 236.17it/s]Traces converted: 2409it [00:10, 240.53it/s]Traces converted: 2434it [00:10, 241.63it/s]Traces converted: 2459it [00:10, 241.64it/s]Traces converted: 2485it [00:10, 244.47it/s]Traces converted: 2511it [00:10, 247.94it/s]Traces converted: 2538it [00:10, 252.45it/s]Traces converted: 2564it [00:10, 253.45it/s]Traces converted: 2590it [00:10, 203.48it/s]Traces converted: 2616it [00:11, 216.96it/s]Traces converted: 2640it [00:11, 213.95it/s]Traces converted: 2665it [00:11, 221.35it/s]Traces converted: 2688it [00:11, 220.34it/s]Traces converted: 2713it [00:11, 227.26it/s]Traces converted: 2737it [00:11, 230.47it/s]Traces converted: 2761it [00:11, 229.27it/s]Traces converted: 2785it [00:11, 226.78it/s]Traces converted: 2808it [00:11, 223.71it/s]Traces converted: 2831it [00:12, 215.80it/s]Traces converted: 2853it [00:12, 213.27it/s]Traces converted: 2877it [00:12, 218.35it/s]Traces converted: 2899it [00:12, 215.62it/s]Traces converted: 2921it [00:12, 210.80it/s]Traces converted: 2943it [00:12, 209.76it/s]Traces converted: 2965it [00:12, 207.32it/s]Traces converted: 2986it [00:12, 205.81it/s]Traces converted: 3007it [00:12, 204.53it/s]Traces converted: 3028it [00:13, 195.63it/s]Traces converted: 3050it [00:13, 202.36it/s]Traces converted: 3074it [00:13, 212.16it/s]Traces converted: 3098it [00:13, 218.40it/s]Traces converted: 3120it [00:13, 213.89it/s]Traces converted: 3143it [00:13, 216.75it/s]Traces converted: 3165it [00:13, 213.14it/s]Traces converted: 3187it [00:13, 213.15it/s]Traces converted: 3210it [00:13, 215.92it/s]Traces converted: 3233it [00:13, 218.30it/s]Traces converted: 3255it [00:14, 215.56it/s]Traces converted: 3277it [00:14, 214.29it/s]Traces converted: 3299it [00:14, 213.02it/s]Traces converted: 3321it [00:14, 214.91it/s]Traces converted: 3344it [00:14, 218.29it/s]Traces converted: 3366it [00:14, 215.81it/s]Traces converted: 3390it [00:14, 221.82it/s]Traces converted: 3414it [00:14, 225.09it/s]Traces converted: 3437it [00:14, 224.85it/s]Traces converted: 3460it [00:14, 221.31it/s]Traces converted: 3484it [00:15, 224.41it/s]Traces converted: 3509it [00:15, 229.19it/s]Traces converted: 3532it [00:15, 228.21it/s]Traces converted: 3556it [00:15, 229.15it/s]Traces converted: 3582it [00:15, 235.78it/s]Traces converted: 3606it [00:15, 227.96it/s]Traces converted: 3631it [00:15, 233.12it/s]Traces converted: 3656it [00:15, 237.16it/s]Traces converted: 3682it [00:15, 241.17it/s]Traces converted: 3707it [00:16, 237.08it/s]Traces converted: 3731it [00:16, 228.95it/s]Traces converted: 3754it [00:16, 227.03it/s]Traces converted: 3779it [00:16, 232.56it/s]Traces converted: 3803it [00:16, 230.49it/s]Traces converted: 3827it [00:16, 228.95it/s]Traces converted: 3850it [00:16, 180.77it/s]Traces converted: 3873it [00:16, 192.03it/s]Traces converted: 3894it [00:16, 195.57it/s]Traces converted: 3915it [00:17, 195.86it/s]Traces converted: 3939it [00:17, 206.34it/s]Traces converted: 3961it [00:17, 208.42it/s]Traces converted: 3983it [00:17, 209.36it/s]Traces converted: 4005it [00:17, 211.71it/s]Traces converted: 4027it [00:17, 208.21it/s]Traces converted: 4049it [00:17, 209.24it/s]Traces converted: 4072it [00:17, 213.47it/s]Traces converted: 4094it [00:17, 212.30it/s]Traces converted: 4116it [00:17, 210.84it/s]Traces converted: 4138it [00:18, 204.95it/s]Traces converted: 4159it [00:18, 202.17it/s]Traces converted: 4180it [00:18, 198.85it/s]Traces converted: 4202it [00:18, 202.86it/s]Traces converted: 4224it [00:18, 206.13it/s]Traces converted: 4246it [00:18, 209.30it/s]Traces converted: 4269it [00:18, 213.79it/s]Traces converted: 4292it [00:18, 215.55it/s]Traces converted: 4314it [00:18, 208.97it/s]Traces converted: 4335it [00:19, 174.50it/s]Traces converted: 4357it [00:19, 185.31it/s]Traces converted: 4379it [00:19, 194.37it/s]Traces converted: 4401it [00:19, 199.14it/s]Traces converted: 4422it [00:19, 201.42it/s]Traces converted: 4444it [00:19, 205.68it/s]Traces converted: 4467it [00:19, 211.50it/s]Traces converted: 4490it [00:19, 216.87it/s]Traces converted: 4513it [00:19, 219.56it/s]Traces converted: 4536it [00:20, 216.38it/s]Traces converted: 4558it [00:20, 212.65it/s]Traces converted: 4580it [00:20, 209.56it/s]Traces converted: 4602it [00:20, 206.22it/s]Traces converted: 4623it [00:20, 205.31it/s]Traces converted: 4644it [00:20, 204.10it/s]Traces converted: 4665it [00:20, 203.29it/s]Traces converted: 4686it [00:20, 201.59it/s]Traces converted: 4709it [00:20, 207.00it/s]Traces converted: 4731it [00:21, 206.96it/s]Traces converted: 4752it [00:21, 205.41it/s]Traces converted: 4773it [00:21, 205.92it/s]Traces converted: 4795it [00:21, 208.09it/s]Traces converted: 4818it [00:21, 212.76it/s]Traces converted: 4840it [00:21, 211.17it/s]Traces converted: 4863it [00:21, 214.24it/s]Traces converted: 4888it [00:21, 223.48it/s]Traces converted: 4911it [00:21, 225.09it/s]Traces converted: 4936it [00:21, 232.20it/s]Traces converted: 4961it [00:22, 235.56it/s]Traces converted: 4985it [00:22, 236.12it/s]Traces converted: 5010it [00:22, 238.53it/s]Traces converted: 5035it [00:22, 239.03it/s]Traces converted: 5059it [00:22, 236.38it/s]Traces converted: 5083it [00:22, 236.60it/s]Traces converted: 5107it [00:22, 192.60it/s]Traces converted: 5132it [00:22, 204.27it/s]Traces converted: 5155it [00:22, 210.17it/s]Traces converted: 5179it [00:23, 216.52it/s]Traces converted: 5202it [00:23, 219.08it/s]Traces converted: 5226it [00:23, 222.44it/s]Traces converted: 5250it [00:23, 226.95it/s]Traces converted: 5275it [00:23, 230.79it/s]Traces converted: 5299it [00:23, 224.56it/s]Traces converted: 5323it [00:23, 226.66it/s]Traces converted: 5346it [00:23, 227.39it/s]Traces converted: 5369it [00:23, 227.91it/s]Traces converted: 5393it [00:23, 231.37it/s]Traces converted: 5417it [00:24, 229.03it/s]Traces converted: 5440it [00:24, 227.95it/s]Traces converted: 5463it [00:24, 228.22it/s]Traces converted: 5486it [00:24, 224.51it/s]Traces converted: 5512it [00:24, 232.70it/s]Traces converted: 5537it [00:24, 236.78it/s]Traces converted: 5561it [00:24, 233.18it/s]Traces converted: 5585it [00:24, 227.17it/s]Traces converted: 5608it [00:24, 221.46it/s]Traces converted: 5632it [00:25, 224.15it/s]Traces converted: 5657it [00:25, 229.28it/s]Traces converted: 5680it [00:25, 220.42it/s]Traces converted: 5705it [00:25, 227.65it/s]Traces converted: 5730it [00:25, 233.89it/s]Traces converted: 5754it [00:25, 235.61it/s]Traces converted: 5780it [00:25, 240.36it/s]Traces converted: 5805it [00:25, 240.79it/s]Traces converted: 5831it [00:25, 244.11it/s]Traces converted: 5857it [00:25, 247.88it/s]Traces converted: 5882it [00:26, 246.74it/s]Traces converted: 5907it [00:26, 242.09it/s]Traces converted: 5932it [00:26, 240.65it/s]Traces converted: 5957it [00:26, 236.05it/s]Traces converted: 5981it [00:26, 235.19it/s]Traces converted: 6005it [00:26, 230.04it/s]Traces converted: 6029it [00:26, 231.96it/s]Traces converted: 6054it [00:26, 235.11it/s]Traces converted: 6079it [00:26, 237.66it/s]Traces converted: 6105it [00:26, 242.07it/s]Traces converted: 6130it [00:27, 244.16it/s]Traces converted: 6155it [00:27, 241.69it/s]Traces converted: 6180it [00:27, 237.09it/s]Traces converted: 6205it [00:27, 239.99it/s]Traces converted: 6230it [00:27, 239.93it/s]Traces converted: 6255it [00:27, 239.71it/s]Traces converted: 6279it [00:27, 238.01it/s]Traces converted: 6303it [00:27, 223.75it/s]Traces converted: 6328it [00:27, 230.20it/s]Traces converted: 6352it [00:28, 227.77it/s]Traces converted: 6376it [00:28, 230.87it/s]Traces converted: 6400it [00:28, 231.52it/s]Traces converted: 6424it [00:28, 185.35it/s]Traces converted: 6446it [00:28, 192.77it/s]Traces converted: 6469it [00:28, 200.64it/s]Traces converted: 6492it [00:28, 207.36it/s]Traces converted: 6514it [00:28, 206.98it/s]Traces converted: 6536it [00:32, 18.42it/s] Traces converted: 6557it [00:32, 24.85it/s]Traces converted: 6578it [00:32, 33.33it/s]Traces converted: 6599it [00:33, 44.11it/s]Traces converted: 6619it [00:33, 56.48it/s]Traces converted: 6639it [00:33, 71.11it/s]Traces converted: 6659it [00:33, 87.14it/s]Traces converted: 6679it [00:33, 104.20it/s]Traces converted: 6699it [00:33, 120.43it/s]Traces converted: 6719it [00:33, 135.92it/s]Traces converted: 6739it [00:33, 150.19it/s]Traces converted: 6761it [00:33, 165.62it/s]Traces converted: 6782it [00:33, 173.93it/s]Traces converted: 6802it [00:35, 31.88it/s] Traces converted: 6817it [00:39, 12.03it/s]Traces converted: 6828it [00:39, 14.52it/s]Traces converted: 6848it [00:39, 21.23it/s]Traces converted: 6868it [00:39, 29.95it/s]Traces converted: 6888it [00:39, 41.03it/s]Traces converted: 6911it [00:40, 56.95it/s]Traces converted: 6932it [00:40, 73.19it/s]Traces converted: 6953it [00:40, 91.25it/s]Traces converted: 6973it [00:40, 108.26it/s]Traces converted: 6993it [00:40, 123.99it/s]Traces converted: 7014it [00:40, 141.81it/s]Traces converted: 7035it [00:40, 156.18it/s]Traces converted: 7055it [00:40, 166.55it/s]Traces converted: 7077it [00:40, 179.36it/s]Traces converted: 7101it [00:41, 194.01it/s]Traces converted: 7125it [00:41, 205.53it/s]Traces converted: 7148it [00:41, 209.97it/s]Traces converted: 7170it [00:41, 209.13it/s]Traces converted: 7193it [00:41, 214.08it/s]Traces converted: 7215it [00:41, 214.32it/s]Traces converted: 7237it [00:41, 211.83it/s]Traces converted: 7259it [00:41, 205.55it/s]Traces converted: 7281it [00:41, 208.82it/s]Traces converted: 7304it [00:41, 214.17it/s]Traces converted: 7327it [00:42, 217.61it/s]Traces converted: 7350it [00:42, 219.58it/s]Traces converted: 7373it [00:42, 221.83it/s]Traces converted: 7396it [00:42, 221.12it/s]Traces converted: 7419it [00:42, 217.85it/s]Traces converted: 7441it [00:42, 200.22it/s]Traces converted: 7462it [00:42, 197.90it/s]Traces converted: 7485it [00:42, 206.78it/s]Traces converted: 7508it [00:42, 210.50it/s]Traces converted: 7530it [00:43, 207.83it/s]Traces converted: 7552it [00:43, 209.59it/s]Traces converted: 7574it [00:43, 203.82it/s]Traces converted: 7595it [00:43, 204.42it/s]Traces converted: 7618it [00:43, 209.08it/s]Traces converted: 7639it [00:43, 207.06it/s]Traces converted: 7662it [00:43, 212.03it/s]Traces converted: 7684it [00:43, 212.14it/s]Traces converted: 7706it [00:43, 207.62it/s]Traces converted: 7729it [00:43, 211.39it/s]Traces converted: 7751it [00:44, 170.46it/s]Traces converted: 7772it [00:44, 178.89it/s]Traces converted: 7791it [00:44, 177.80it/s]Traces converted: 7811it [00:44, 182.61it/s]Traces converted: 7832it [00:44, 188.38it/s]Traces converted: 7855it [00:44, 198.77it/s]Traces converted: 7876it [00:44, 200.98it/s]Traces converted: 7898it [00:44, 206.41it/s]Traces converted: 7922it [00:44, 215.50it/s]Traces converted: 7944it [00:45, 208.78it/s]Traces converted: 7967it [00:45, 212.88it/s]Traces converted: 7991it [00:45, 218.61it/s]Traces converted: 8013it [00:45, 214.87it/s]Traces converted: 8035it [00:45, 214.57it/s]Traces converted: 8059it [00:45, 219.65it/s]Traces converted: 8082it [00:45, 221.91it/s]Traces converted: 8106it [00:45, 225.43it/s]Traces converted: 8129it [00:45, 225.06it/s]Traces converted: 8152it [00:46, 215.11it/s]Traces converted: 8174it [00:46, 213.46it/s]Traces converted: 8199it [00:46, 222.19it/s]Traces converted: 8224it [00:46, 228.15it/s]Traces converted: 8248it [00:46, 230.71it/s]Traces converted: 8272it [00:46, 211.20it/s]Traces converted: 8294it [00:46, 211.02it/s]Traces converted: 8316it [00:46, 207.90it/s]Traces converted: 8338it [00:46, 209.92it/s]Traces converted: 8360it [00:47, 206.42it/s]Traces converted: 8381it [00:47, 206.12it/s]Traces converted: 8403it [00:47, 208.27it/s]Traces converted: 8424it [00:47, 205.98it/s]Traces converted: 8445it [00:47, 203.44it/s]Traces converted: 8466it [00:47, 203.94it/s]Traces converted: 8487it [00:47, 204.83it/s]Traces converted: 8508it [00:47, 204.67it/s]Traces converted: 8529it [00:47, 203.71it/s]Traces converted: 8551it [00:47, 206.04it/s]Traces converted: 8573it [00:48, 209.86it/s]Traces converted: 8594it [00:48, 208.09it/s]Traces converted: 8616it [00:48, 211.15it/s]Traces converted: 8634it [00:54, 158.59it/s]
+Copie des traces depuis : Bruit
+Copie des traces depuis : Gold
+
+Fusion terminée
+Dataset final prêt à l'emploi : ../data/seisbenchC/seisbench_dataset_ultime
+Mode : FINE-TUNING LOCAL depuis seisbenchC/ml_model_v1.pt
+On veux une qualité minimal de c
+Succès ! Dataset chargé. Train: 6849 | Val: 888
+
+Début de l'entraînement
+Époque 01/150 | Train Loss: 0.07945 | Val Loss: 0.06934
+  -> Nouveau meilleur modèle
+Époque 02/150 | Train Loss: 0.06686 | Val Loss: 0.06507
+  -> Nouveau meilleur modèle
+Époque 03/150 | Train Loss: 0.06385 | Val Loss: 0.06213
+  -> Nouveau meilleur modèle
+Époque 04/150 | Train Loss: 0.06187 | Val Loss: 0.06212
+  -> Nouveau meilleur modèle
+Époque 05/150 | Train Loss: 0.06025 | Val Loss: 0.06142
+  -> Nouveau meilleur modèle
+Époque 06/150 | Train Loss: 0.05901 | Val Loss: 0.06036
+  -> Nouveau meilleur modèle
+Époque 07/150 | Train Loss: 0.05805 | Val Loss: 0.05897
+  -> Nouveau meilleur modèle
+Époque 08/150 | Train Loss: 0.05748 | Val Loss: 0.05951
+Époque 09/150 | Train Loss: 0.05720 | Val Loss: 0.05733
+  -> Nouveau meilleur modèle
+Époque 10/150 | Train Loss: 0.05607 | Val Loss: 0.05855
+Époque 11/150 | Train Loss: 0.05602 | Val Loss: 0.05671
+  -> Nouveau meilleur modèle
+Époque 12/150 | Train Loss: 0.05497 | Val Loss: 0.05669
+  -> Nouveau meilleur modèle
+Époque 13/150 | Train Loss: 0.05529 | Val Loss: 0.05607
+  -> Nouveau meilleur modèle
+Époque 14/150 | Train Loss: 0.05434 | Val Loss: 0.05620
+Époque 15/150 | Train Loss: 0.05404 | Val Loss: 0.05761
+Époque 16/150 | Train Loss: 0.05357 | Val Loss: 0.05717
+Époque 17/150 | Train Loss: 0.05353 | Val Loss: 0.05512
+  -> Nouveau meilleur modèle
+Époque 18/150 | Train Loss: 0.05336 | Val Loss: 0.05521
+Époque 19/150 | Train Loss: 0.05266 | Val Loss: 0.05756
+Époque 20/150 | Train Loss: 0.05289 | Val Loss: 0.05517
+Époque 21/150 | Train Loss: 0.05262 | Val Loss: 0.05485
+  -> Nouveau meilleur modèle
+Époque 22/150 | Train Loss: 0.05192 | Val Loss: 0.05466
+  -> Nouveau meilleur modèle
+Époque 23/150 | Train Loss: 0.05191 | Val Loss: 0.05475
+Époque 24/150 | Train Loss: 0.05188 | Val Loss: 0.05566
+Époque 25/150 | Train Loss: 0.05158 | Val Loss: 0.05410
+  -> Nouveau meilleur modèle
+Époque 26/150 | Train Loss: 0.05143 | Val Loss: 0.05451
+Époque 27/150 | Train Loss: 0.05160 | Val Loss: 0.05582
+Époque 28/150 | Train Loss: 0.05128 | Val Loss: 0.05377
+  -> Nouveau meilleur modèle
+Époque 29/150 | Train Loss: 0.05103 | Val Loss: 0.05502
+Époque 30/150 | Train Loss: 0.05078 | Val Loss: 0.05494
+Époque 31/150 | Train Loss: 0.05070 | Val Loss: 0.05581
+Époque 32/150 | Train Loss: 0.05065 | Val Loss: 0.05356
+  -> Nouveau meilleur modèle
+Époque 33/150 | Train Loss: 0.05059 | Val Loss: 0.05378
+Époque 34/150 | Train Loss: 0.05032 | Val Loss: 0.05374
+Époque 35/150 | Train Loss: 0.05061 | Val Loss: 0.05456
+Époque 36/150 | Train Loss: 0.05032 | Val Loss: 0.05242
+  -> Nouveau meilleur modèle
+Époque 37/150 | Train Loss: 0.05004 | Val Loss: 0.05356
+Époque 38/150 | Train Loss: 0.04989 | Val Loss: 0.05361
+Époque 39/150 | Train Loss: 0.04980 | Val Loss: 0.05331
+Époque 40/150 | Train Loss: 0.04998 | Val Loss: 0.05326
+Époque 41/150 | Train Loss: 0.04955 | Val Loss: 0.05432
+Époque 42/150 | Train Loss: 0.04961 | Val Loss: 0.05359
+Époque 43/150 | Train Loss: 0.04956 | Val Loss: 0.05351
+Époque 44/150 | Train Loss: 0.04924 | Val Loss: 0.05393
+Époque 45/150 | Train Loss: 0.04917 | Val Loss: 0.05417
+Époque 46/150 | Train Loss: 0.04923 | Val Loss: 0.05317
+Arrêt car pas d'amélioration depuis 10 Epoche 
+Fin au bout de 45 EPOCHE
+
+Historique d'entraînement sauvegardé sous : ../data/seisbenchC/loss_history_finetuning.csv
+
+Entraînement terminé avec succès.
+--- Lancement : Modèle V2 | Qualité 'C' ---
+Chargement du modèle depuis : seisbenchC/ml_model_v2.pt
+897 traces disponibles dans test
+Recherche échantillons avec proba P/S comprises entre 0.8 et 1
+-> 153 échantillons trouvés
+Echantillon n°364GOLD | proba P max : 0.840
+Echantillon n°294GOLD | proba P max : 0.879
+Echantillon n°790GOLD | proba P max : 0.818
+Echantillon n°873GOLD | proba P max : 0.866
+Echantillon n°750GOLD | proba P max : 0.841
+Echantillon n°743GOLD | proba P max : 0.862
+Echantillon n°560GOLD | proba P max : 0.839
+Echantillon n°665GOLD | proba P max : 0.813
+Echantillon n°255GOLD | proba P max : 0.866
+Echantillon n°229GOLD | proba P max : 0.914
+Echantillon n°784GOLD | proba P max : 0.803
+Echantillon n°734GOLD | proba P max : 0.815
+Echantillon n°366GOLD | proba P max : 0.844
+Echantillon n°868GOLD | proba P max : 0.811
+Echantillon n°409GOLD | proba P max : 0.805
+Echantillon n°866GOLD | proba P max : 0.850
+Echantillon n°549GOLD | proba P max : 0.845
+Echantillon n°763GOLD | proba P max : 0.866
+Echantillon n°176GOLD | proba P max : 0.863
+Echantillon n°144GOLD | proba P max : 0.834
+Graphique mis à jour sauvegardé : ../images/seisbenchC/distribution_journaliere_vt.png
+
+-> Graphique Train et Val loss sauvegardé avec succès sous : ../images/seisbenchC/loss_curve_c_finetuning.png
+
+--- Modèle V2 ---
+Évaluation sur 836 traces dans ../data/seisbenchC/seisbench_dataset_ultime...
+-> Graphique V2 seule sauvegardé sous : ../images/seisbenchC/confiance_V2_c.png
+Graphique score de confiance terminé avec succès.
+
+--- Modèle V2 ---
+Évaluation sur 61 traces dans ../data/seisbenchC/seisbench_dataset_ultime...
+-> Graphique V2 seule sauvegardé sous : ../images/seisbenchC/noise_V2_c.png
+Graphique score de confiance terminé avec succès.
+FIN
+
+done
+Fri Aug 21 13:32:29 CEST 2026
