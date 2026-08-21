@@ -11,32 +11,46 @@ os.environ['QT_XCB_GL_INTEGRATION'] = 'none'
 os.environ['LIBGL_ALWAYS_SOFTWARE'] = '1'
 os.environ['QT_QPA_PLATFORM_PLUGIN_PATH'] = '/home/guiga/miniconda3/envs/phasenet/plugins/platforms'
 
+#arg
+args_lower = [arg.lower() for arg in sys.argv]
+is_pyocto = "pyocto" in args_lower
 
+var = 'c'
+for arg in args_lower[1:]:
+    if arg in ['a', 'b', 'c']:
+        var = arg
+        break
 
-if len(sys.argv) > 1:
-    var = sys.argv[1].lower()
-    if var == 'a':
-        BASE_OUT = "../data/seisbenchA/seisbench_nouv"
-        os.makedirs("../images/seisbenchA", exist_ok=True)
-        OUTPUT_PLOT = os.path.join("../images/seisbenchA", "distribution_journaliere_vt.png")
-    elif var == 'b':
-        BASE_OUT = "../data/seisbenchB/seisbench_nouv"
-        os.makedirs("../images/seisbenchB", exist_ok=True)
-        OUTPUT_PLOT = os.path.join("../images/seisbenchB", "distribution_journaliere_vt.png")
-    else:
-        BASE_OUT = "../data/seisbenchC/seisbench_nouv"
-        os.makedirs("../images/seisbenchC", exist_ok=True)
-        OUTPUT_PLOT = os.path.join("../images/seisbenchC", "distribution_journaliere_vt.png")
+if var == 'a':
+    DOSSIER = "seisbenchA"
+elif var == 'b':
+    DOSSIER = "seisbenchB"
+else:
+    DOSSIER = "seisbenchC"
+
+os.makedirs(f"../images/{DOSSIER}", exist_ok=True)
+
+#configuration selon arg "pyocto"
+if is_pyocto:
+    EVENTS_CSV = f"../data/{DOSSIER}/results_pyocto/catalogue_evenements.csv"
+    OUTPUT_PLOT = f"../images/{DOSSIER}/distribution_journaliere_pyocto.png"
+    time_col = "time"
+    titre = "Distribution journalière des événements avec PyOcto"
 else:
     var = 'c'
-    BASE_OUT = "../data/seisbenchC/seisbench_nouv"
+    EVENTS_CSV = f"../data/{DOSSIER}/seisbench_nouv/catalogue_vt_detectes_evenements_valides.csv"
+    OUTPUT_PLOT = f"../images/{DOSSIER}/distribution_journaliere_vt.png"
+    time_col = "time_debut"
+    titre = "Distribution journalière des événements VT sans PyOcto"
 
-# ------------ PARAMÈTRES ------------
-EVENTS_CSV = os.path.join(BASE_OUT, "catalogue_vt_detectes_evenements_valides.csv")
 
 if not os.path.exists(EVENTS_CSV):
-    print(f"Erreur : Le fichier {EVENTS_CSV} est introuvable.")
-    sys.exit(1)
+    if is_pyocto:
+        print(f"Le catalogue PyOcto n'est pas encore généré ({EVENTS_CSV})")
+        sys.exit(0)
+    else:
+        print(f"Erreur : Le fichier {EVENTS_CSV} est introuvable.")
+        sys.exit(1)
 
 
 df = pd.read_csv(EVENTS_CSV)
@@ -45,7 +59,11 @@ if df.empty:
     sys.exit(0)
 
 #conversion date et jour
-df["time_dt"] = pd.to_datetime(df["time_debut"], format="ISO8601")
+try:
+    df["time_dt"] = pd.to_datetime(df[time_col], format="ISO8601")
+except ValueError:
+    df["time_dt"] = pd.to_datetime(df[time_col])
+    
 df.set_index("time_dt", inplace=True)
 counts_daily = df.resample("D").size()
 
@@ -55,11 +73,12 @@ fig, ax = plt.subplots(figsize=(10, 4.5), dpi=300)
 #barres
 ax.bar(counts_daily.index, counts_daily.values, color="indianred", edgecolor="white", linewidth=0.5, width=1.0, align="center")
 
-ax.set_xlim(counts_daily.index.min(), counts_daily.index.max())
-ax.set_ylim(0, max(counts_daily.values.max() * 1.05, 10))
+if not counts_daily.empty:
+    ax.set_xlim(counts_daily.index.min(), counts_daily.index.max())
+    ax.set_ylim(0, max(counts_daily.values.max() * 1.05, 10))
 
-#titres + labels
-ax.set_title("Distribution journalière des événements VT", fontsize=14, fontweight='bold', pad=15, color='#333333')
+# titres + labels
+ax.set_title(titre, fontsize=14, fontweight='bold', pad=15, color='#333333')
 ax.set_ylabel("Nombre d'événements", fontsize=11, color='#333333')
 
 #format des mois
