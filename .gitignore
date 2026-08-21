@@ -16,6 +16,7 @@
 
 *seisbench_dataset*
 *format_noise*
+*.hdf5
 
 /prg_python/__pycache__/
 
