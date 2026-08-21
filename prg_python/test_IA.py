@@ -159,10 +159,11 @@ def tracer_predictions(index_trace, sample):
 
     #manuel, IA, ou Bruit
     label_source = meta['name']
+    label_source = label_source.upper()
 
     #trace graphique
     fig, axs = plt.subplots(4, 1, figsize=(12, 9), sharex=True)
-    fig.suptitle(f"Modèle {mode_modele}{label_source} | Trace n°{index_trace} | Station: {station} | Date: {jour}/{mois}")
+    fig.suptitle(f"Modèle {mode_modele} | [{label_source}] | Trace n°{index_trace} | Station: {station} | Date: {jour}/{mois}")
     
     canaux = ["Z", "N", "E"]
     couleurs = ["black", "black", "black"]
