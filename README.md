@@ -121,25 +121,25 @@ Que ce soit pour la V1 ou la V2, il peut aussi y avoir [NOISE]. Il s'agit donc d
     <img src="https://github.com/clementbedour/GET_apprentissage_PhaseNet/blob/main/images/seisbenchB/V1/trace_8_modele_1_qualite_b.png" alt="Picture Modele 1" width="49%">
     <img src="https://github.com/clementbedour/GET_apprentissage_PhaseNet/blob/main/images/seisbenchB/V2/trace_152_modele_2_qualite_b.png" alt="Picture Modele 2" width="49%">
 </div>
-
+<br>
 *   **Affichage fonction de perte :** Lancez `loss_curve.py 1 <qualite>` ou `loss_curve.py 2 <qualite>` pour vérifier l'évolution des courbes des pertes (courbes d'apprentissage) au fur et à mesure des epochs.
 <div align="center">
     <img src="https://github.com/clementbedour/GET_apprentissage_PhaseNet/blob/main/images/seisbenchB/loss_curve_b_scratch.png" alt="Picture Loss Curve scratch" width="49%">
     <img src="https://github.com/clementbedour/GET_apprentissage_PhaseNet/blob/main/images/seisbenchB/loss_curve_b_finetuning.png" alt="Picture Loss Curve finetuning" width="49%">
 </div>
-
+<br>
 *   **Scores de confiance :** Lancez `compare_trust.py 1 <qualite>` ou `compare_trust.py 2 <qualite>` pour constater la répartition du score de confiance sur tous les événements détectés.
 <div align="center">
     <img src="https://github.com/clementbedour/GET_apprentissage_PhaseNet/blob/main/images/seisbenchB/confiance_V1_b.png" alt="Picture Score Confidence scratch" width="49%">
     <img src="https://github.com/clementbedour/GET_apprentissage_PhaseNet/blob/main/images/seisbenchB/confiance_V2_b.png" alt="Picture Score Confidence detection" width="49%">
 </div>
-
+<br>
 *   **Scores de confiance pour le bruit :** Lancez `compare_nosie.py 1 <qualite>` ou `compare_noise.py 2 <qualite>` pour constater la répartition du score de confiance sur le bruit. J'ai ajouté cette fonction car j'avais eu des problèmes et ça m'avait aidé pour vérifier que le modèle était cohérent.
 <div align="center">
     <img src="https://github.com/clementbedour/GET_apprentissage_PhaseNet/blob/main/images/seisbenchB/noise_V1_b.png" alt="Picture Score Confidence noise scratch" width="49%">
     <img src="https://github.com/clementbedour/GET_apprentissage_PhaseNet/blob/main/images/seisbenchB/noise_V2_b.png" alt="Picture Score Confidence noise finetuning" width="49%">
 </div>
-
+<br>
 *   **Répartition temporelle :** Lancez `image_event_day.py <qualite>` pour visualiser la répartition du nombre de nouveaux événements découverts. Si vous avez utilisé l'associateur PyOcto, il va utiliser ce répertoire s'il existe.
 <div align="center">
     <img src="https://github.com/clementbedour/GET_apprentissage_PhaseNet/blob/main/images//seisbenchB/distribution_journaliere_vt.png" alt="Picture Event Day" width="75%">
