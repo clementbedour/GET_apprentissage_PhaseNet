@@ -118,7 +118,8 @@ Pour le modèle 2, les pointés magenta et cyan sont les pointés trouvés par l
 Pour les images de la V2, si vous avez [MANUEL] alors l'événement fait partie de votre base de données Ground Truth et si [GOLD] alors l'événement et tous les pointés ont été faits par l'IA.<br>
 Que ce soit pour la V1 ou la V2, il peut aussi y avoir [NOISE]. Il s'agit donc d'une donnée qui vient de la génération du bruit. Durant mes différentes utilisations, les probabilités de P et S étaient toujours à 0.0, si elles changent, vous allez avoir un problème.
 <div align="center">
-    <img src="https://github.com/clementbedour/GET_apprentissage_PhaseNet/blob/main/images/seisbenchB/V2/trace_182_modele_2_qualite_b.png" alt="Picture Modele 2" width="50%">
+    <img src="https://github.com/clementbedour/GET_apprentissage_PhaseNet/blob/main/images/seisbenchB/V1/trace_8_modele_1_qualite_b.png" alt="Picture Modele 1" width="49%">
+    <img src="https://github.com/clementbedour/GET_apprentissage_PhaseNet/blob/main/images/seisbenchB/V2/trace_152_modele_2_qualite_b.png" alt="Picture Modele 2" width="49%">
 </div>
 
 *   **Affichage fonction de perte :** Lancez `loss_curve.py 1 <qualite>` ou `loss_curve.py 2 <qualite>` pour vérifier l'évolution des courbes des pertes (courbes d'apprentissage) au fur et à mesure des epochs.
