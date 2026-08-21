@@ -53,7 +53,7 @@ Cette première phase permet de formater les données brutes et de valider visue
 
 *   **Sauvegarde des pointés :** Dans Snuffler, après vérification et/ou modification des pointés, faites *File -> Save Markers...* et enregistrez dans `/data/phase_snuffler` en utilisant le nom exact du fichier d'origine. Trouvable facilement dans la sortie du terminal à côté de "Traitement de ...".
 
-*   **Gestion de la confiance :** Lors de l'enregistrement des pointés, je vous conseille fortement d'ajouter un suffixe de confiance `_a`, `_b`, `_c` ou `_d` (ou même `_dTE`). Attention, les pointés avec `_d` seront exclus des étapes suivantes.
+*   **Gestion de la confiance :** Lors de l'enregistrement des pointés, vous êtes obligé d'ajouter un suffixe de confiance `_a`, `_b`, `_c` ou `_d` (ou même `_dTE`). Attention, les pointés avec `_d` seront exclus des étapes suivantes.
 
 *   **Reprise de session :** En quittant Snuffler, le terminal vous propose de continuer. Entrez `1` pour arrêter le programme (le dernier fichier traité s'affichera pour faciliter la reprise), ou laissez continuer jusqu'à la fin. Pour reprendre là où vous en étiez, relancer simplement `affichage_snuffler.py` en indiquant le dernier document traité.
 
@@ -64,7 +64,7 @@ Cette première phase permet de formater les données brutes et de valider visue
 ## Étape 2 : Machine Learning (IA)
 
 Tous les fichiers générés à cette étape seront stockés dans `data/seisbench<qualite>`. Les poids des modèles entraînés seront sauvegardés dans `prg_python/seisbench<qualite>`. En fonction des qualités choisies, la localisation des sauvegardes pourra légèrement différer (mais tout sera semblable à l'intérieur).<br>
-Pour tous les programmes suivants, nous devons rentrer comme paramètres le minimum de qualité voulu `a` (que les qualités a), `b` (les qualités a et b) ou `c`(les qualités a, b et c). Si aucun argument n'est donné, il prendra par défaut la qualité `c`.<br>
+Pour tous les programmes suivants, vous allez devoir rentrer comme paramètres le minimum de qualité voulu `a` (que les qualités a), `b` (les qualités a et b) ou `c`(les qualités a, b et c). Si aucun argument n'est donné, il prendra par défaut la qualité `c`.<br>
 Pour l'emplacement des miniseed, le chemin d'accès peut probablement différer. La constante est toujours vers le début des programmes `BASE_MSEED`. Il faudra modifier les programmes format_csv_hdf5, gene_noise, detection_nouv.py et extraire_nouv.py.<br>
 Tous les codes vont générer un fichier `metadata.csv` et `waveform.hdf5` (les noms ne sont malheureusement pas changeables, obligation SeisBench), je préciserais donc seulement le dossier où ils seront créés.<br>
 Pour un exemple des sorties que le terminal peut vous afficher, vous pouvez regarder dans /out.
@@ -92,7 +92,7 @@ Vous pouvez donc lancer `association_pyocto.py <qualite>` pour associer les arri
 
 
 *   **Base de données ultime :** Lancez `fusion_dataset.py <qualite>` pour regrouper le Ground Truth, le Bruit et la base Gold dans `seisbench_dataset_ultime`. Nous avons donc maintenant la base de données pour le second entraînement prête. Nous allons pouvoir faire du transfert pour affiner nos poids.<br>
-Attention, si vous avez lancé `association_pyocto.py`, lors de la fusion des bases de données, il va regarder l'existence de `results_pyocto`. Si le répertoire existe, alors il ne va pas fusionner avec la base Gold, mais avec la base de PyOcto. Donc, si vous voulez tout relancer pour tester, vous devez supprimer le répertoire.
+Attention, si vous avez lancé `association_pyocto.py`, lors de la fusion des bases de données, il va regarder l'existence de `results_pyocto`. Si le répertoire existe, alors il ne va pas fusionner avec la base Gold, mais avec la base de PyOcto. Donc, si vous voulez tout relancer pour tester sans PyOcto, vous devez supprimer le répertoire.
 
 *   **Affinement par Fine-Tuning (Modèle 2) :** Exécutez `IA_seisbench_Tuning.py 2 <qualite>`. Les paramètres `EPOCHS`, `LEARNING_RATE` et `SIGMA` sont réduits pour cette étape de précision (ligne 60 à 62). Je trouve que les paramètres choisis sont optimaux pour ma base de données. Seulement le paramètre `poids_classes` n'est pas changé, je n'ai pas réussi à trouver une certaine logique pour lui indiquer la marche à suivre.
 
@@ -134,6 +134,12 @@ Que ce soit pour la V1 ou la V2, il peut aussi y avoir [NOISE]. Il s'agit donc d
     <img src="https://github.com/clementbedour/GET_apprentissage_PhaseNet/blob/main/images/seisbenchB/confiance_V2_b.png" alt="Picture Score Confidence detection" width="49%">
 </div>
 
+*   **Scores de confiance pour le bruit :** Lancez `compare_nosie.py 1 <qualite>` ou `compare_noise.py 2 <qualite>` pour constater la répartition du score de confiance sur le bruit. J'ai ajouté cette fonction car j'avais eu des problèmes et ça m'avait aidé pour vérifier que le modèle était cohérent.
+<div align="center">
+    <img src="https://github.com/clementbedour/GET_apprentissage_PhaseNet/blob/main/images/seisbenchB/noise_V1_b.png" alt="Picture Score Confidence noise scratch" width="49%">
+    <img src="https://github.com/clementbedour/GET_apprentissage_PhaseNet/blob/main/images/seisbenchB/noise_V2_b.png" alt="Picture Score Confidence noise finetuning" width="49%">
+</div>
+
 *   **Répartition temporelle :** Lancez `image_event_day.py <qualite>` pour visualiser la répartition du nombre de nouveaux événements découverts. Si vous avez utilisé l'associateur PyOcto, il va utiliser ce répertoire s'il existe.
 <div align="center">
     <img src="https://github.com/clementbedour/GET_apprentissage_PhaseNet/blob/main/images//seisbenchB/distribution_journaliere_vt.png" alt="Picture Event Day" width="75%">
@@ -163,7 +169,6 @@ Ce tag est juste une version antérieure. Si vous avez des problèmes avec la de
 Tous les codes liés à l'utilisation d'une base manuelle sont corrects et marchent.<br>
 Pour Volpick, je n'ai malheureusement pas eu le temps de finir. Les codes sont présents mais je pense qu'il existe des problèmes après le second entraînement (via Fine-Tuning sur toutes nos données). L'affichage de `volpick_test_IA` n'est pas complet. Plusieurs fonctionnalités présentes dans le traitement classique n'ont pas été reportées pour Volpick. Il serait intéressant de faire une harmonisation des versions. La version la plus récente sera toujours la version qui commence from scratch.
 
-mettre le bon nom pour les images
 
 # Améliorations possibles
 
