@@ -1,22 +1,19 @@
 /Support.docx
-/images
 /data/2014/MQ/
 /data/phase_evenement/
 /data/phase_magnetude/
 /data/phase_separe/
 /data/phase_snuffler/
 /data/phase_vt/
-/data/seisbench
-/data/seisbenchA
-/data/seisbenchB
+
+*/seisbench_format/
+*/seisbench_format_noise/
+*/seisbench_nouv/
+*/seisbench_format_gold/
+
+/data/volpick/
+/images/volpick/
 
 
 /prg_python/__pycache__/
-/prg_python/seisbench
-/prg_python/seisbenchA
-/prg_python/seisbenchB
 
-/prg_python/*volpick*
-
-*.csv
-*.hdf5
